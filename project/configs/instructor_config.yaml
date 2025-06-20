@@ -1,0 +1,335 @@
+# Q-AVIOGEN Instructor Configuration v2.1
+# Amedeo Pelliccia - Personalized Avatar & Voice
+# Procedure: ATA 32-11-00 Nose Landing Gear Visual Inspection
+
+scene_config:
+  name: "AMPEL360 Nose Gear Inspection - Instructor Guided"
+  scene_id: "ata_32_11_00_amedeo_v1"
+  version: "2.1"
+  duration: 55.0
+  fps: 30
+  resolution:
+    width: 1920
+    height: 1080
+  background_color: [0.2, 0.3, 0.4, 1.0]
+
+# Instructor Avatar Configuration
+avatar:
+  name: "Amedeo Pelliccia"
+  model_path: "assets/avatars/amedeo/avatar_model.blend"
+  texture_path: "assets/avatars/amedeo/face_texture.png"
+  position: [2.5, -1.0, 0.8]  # Positioned to right of aircraft
+  scale: [1.0, 1.0, 1.0]
+  initial_pose: "instructor_ready"
+  clothing:
+    type: "maintenance_uniform"
+    color: [0.2, 0.4, 0.8]  # Professional blue
+    accessories: ["safety_vest", "clipboard"]
+  
+  # Avatar animations for each step
+  animations:
+    - name: "point_aircraft_position"
+      start_time: 0.0
+      duration: 6.5
+      action: "point_down_gesture"
+    
+    - name: "gesture_area_clearance"
+      start_time: 6.5
+      duration: 6.0
+      action: "sweeping_arm_gesture"
+    
+    - name: "inspect_strut_detail"
+      start_time: 14.0
+      duration: 8.0
+      action: "pointing_close_inspection"
+    
+    - name: "kneel_tire_inspection"
+      start_time: 21.0
+      duration: 5.0
+      action: "crouch_inspect_tire"
+    
+    - name: "trace_steering_linkage"
+      start_time: 30.0
+      duration: 4.5
+      action: "trace_mechanical_parts"
+    
+    - name: "point_q_sensors"
+      start_time: 36.0
+      duration: 7.0
+      action: "point_technology_display"
+    
+    - name: "completion_gesture"
+      start_time: 49.0
+      duration: 6.0
+      action: "thumbs_up_approval"
+
+# Voice and Narration Configuration
+voice_config:
+  provider: "azure_cognitive_services"  # or "elevenlabs", "local_tts"
+  voice_name: "amedeo_custom"
+  audio_file: "assets/audio/amedeo_voice.wav"  # Placeholder voice sample
+  
+  # Real Audio Files (when available)
+  real_audio_files:
+    source_recording: "assets/audio/real_samples/Grabación.m4a"
+    processed_sample: "assets/audio/real_samples/amedeo_voice_48k.wav"
+    use_real_audio: false  # Set to true when real files are integrated
+  
+  # Audio Processing Settings
+  audio_processing:
+    auto_convert_m4a: true
+    preferred_format: "wav"
+    target_sample_rate: 48000
+    target_channels: 1  # mono
+    target_bit_depth: 24
+  language: "es-ES"  # Spanish primary, en-US secondary
+  speed: 1.0
+  pitch: 0.0
+  volume: 0.8
+  emotion_support: true
+
+# Enhanced Narration with Emotions
+narration:
+  total_duration: 55.0
+  segments:
+    - text: "Este procedimiento verificará visualmente el tren de nariz antes del vuelo."
+      start_time: 0.0
+      duration: 6.0
+      emotion: "explaining"
+      voice_config:
+        pitch: 0.1
+        speed: 0.95
+
+    - text: "Paso 1: Asegúrese de que la aeronave esté bien estacionada con freno aplicado y calzos colocados."
+      start_time: 6.5
+      duration: 7.0
+      emotion: "focused"
+      voice_config:
+        pitch: 0.0
+        speed: 1.0
+
+    - text: "Paso 2: Verifique que el área alrededor del tren de nariz esté libre de obstrucciones y GSE."
+      start_time: 14.0
+      duration: 6.0
+      emotion: "explaining"
+      voice_config:
+        pitch: 0.05
+        speed: 1.0
+
+    - text: "Paso 3: Revise el amortiguador por fugas hidráulicas, daños estructurales o suciedad."
+      start_time: 21.0
+      duration: 8.0
+      emotion: "warning"
+      voice_config:
+        pitch: -0.1
+        speed: 0.9
+        emphasis: ["fugas hidráulicas", "daños estructurales"]
+
+    - text: "Paso 4: Inspeccione el neumático por cortes, bultos o desgaste excesivo."
+      start_time: 30.0
+      duration: 5.0
+      emotion: "focused"
+      voice_config:
+        pitch: 0.0
+        speed: 1.0
+
+    - text: "Paso 5: Revise los actuadores y mangueras del sistema de dirección."
+      start_time: 36.0
+      duration: 4.5
+      emotion: "serious"
+      voice_config:
+        pitch: -0.05
+        speed: 0.95
+
+    - text: "Paso 6: Si su avión tiene sensores cuánticos, asegúrese que la coherencia supere 0.95 y no haya vibraciones anómalas."
+      start_time: 41.0
+      duration: 7.0
+      emotion: "neutral"
+      voice_config:
+        pitch: 0.0
+        speed: 1.0
+        emphasis: ["sensores cuánticos", "coherencia supere 0.95"]
+
+    - text: "Paso final: Cierre el ítem en el gemelo digital y reporte cualquier anomalía."
+      start_time: 49.0
+      duration: 6.0
+      emotion: "friendly"
+      voice_config:
+        pitch: 0.1
+        speed: 1.0
+
+# Aircraft and Scene Objects
+objects:
+  - name: "AMPEL360_BWB_Q100"
+    type: "aircraft"
+    model_path: "assets/models/ampel360_bwq_q100.blend"
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+    scale: [1.0, 1.0, 1.0]
+    materials:
+      - name: "aircraft_livery"
+        type: "PBR"
+        color: [0.9, 0.9, 0.95]
+        metallic: 0.1
+        roughness: 0.3
+
+  - name: "nose_landing_gear"
+    type: "landing_gear"
+    parent: "AMPEL360_BWB_Q100"
+    position: [0.0, -8.5, -1.2]
+    highlight_material: "inspection_highlight"
+    
+  - name: "wheel_chocks"
+    type: "ground_equipment"
+    model_path: "assets/models/wheel_chocks.blend"
+    position: [-0.5, -8.0, -1.8]
+    
+  - name: "inspection_checklist"
+    type: "ui_element"
+    position: [3.0, 0.0, 1.5]
+    scale: [0.8, 0.8, 0.8]
+
+# Lighting Setup
+lights:
+  - name: "hangar_main_light"
+    type: "area"
+    position: [0.0, 0.0, 8.0]
+    rotation: [90.0, 0.0, 0.0]
+    energy: 50.0
+    color: [1.0, 1.0, 0.95]
+    
+  - name: "inspection_spot"
+    type: "spot"
+    position: [1.0, -6.0, 3.0]
+    target_position: [0.0, -8.5, -1.2]  # Focus on nose gear
+    energy: 30.0
+    spot_angle: 45.0
+    color: [1.0, 1.0, 1.0]
+
+  - name: "avatar_key_light"
+    type: "spot"
+    position: [3.0, -2.0, 2.5]
+    target_position: [2.5, -1.0, 0.8]  # Focus on avatar
+    energy: 25.0
+    spot_angle: 60.0
+
+# Camera Setup
+cameras:
+  - name: "main_procedure_cam"
+    position: [4.0, -12.0, 2.0]
+    target: [0.0, -6.0, 0.0]
+    focal_length: 35.0
+    
+  - name: "close_inspection_cam"
+    position: [1.5, -9.0, 0.5]
+    target: [0.0, -8.5, -1.2]  # Nose gear focus
+    focal_length: 85.0
+    
+  - name: "avatar_interaction_cam"
+    position: [1.0, -2.0, 1.2]
+    target: [2.5, -1.0, 0.8]  # Avatar focus
+    focal_length: 50.0
+
+# Camera Animation Sequence
+camera_sequence:
+  - camera: "main_procedure_cam"
+    start_time: 0.0
+    duration: 14.0
+    
+  - camera: "close_inspection_cam" 
+    start_time: 14.0
+    duration: 22.0
+    
+  - camera: "avatar_interaction_cam"
+    start_time: 36.0
+    duration: 12.0
+    
+  - camera: "main_procedure_cam"
+    start_time: 49.0
+    duration: 6.0
+
+# Timeline Markers for Synchronization
+timeline_markers:
+  - name: "procedure_start"
+    time: 0.0
+    marker_type: "section_start"
+    
+  - name: "aircraft_position_check"
+    time: 6.5
+    marker_type: "step_transition"
+    
+  - name: "area_clearance_check"
+    time: 14.0
+    marker_type: "step_transition"
+    
+  - name: "strut_inspection_start"
+    time: 21.0
+    marker_type: "critical_step"
+    
+  - name: "tire_inspection"
+    time: 30.0
+    marker_type: "step_transition"
+    
+  - name: "steering_check"
+    time: 36.0
+    marker_type: "step_transition"
+    
+  - name: "q_sensor_verification"
+    time: 41.0
+    marker_type: "technology_feature"
+    
+  - name: "completion_documentation"
+    time: 49.0
+    marker_type: "step_transition"
+    
+  - name: "procedure_complete"
+    time: 55.0
+    marker_type: "section_end"
+
+# Post-processing Effects
+postprocessing:
+  enabled: true
+  effects:
+    - type: "color_correction"
+      contrast: 1.1
+      saturation: 1.05
+      brightness: 0.02
+      
+    - type: "bloom"
+      threshold: 1.5
+      intensity: 0.3
+      
+    - type: "depth_of_field"
+      focus_distance: 8.0
+      aperture: 2.8
+      
+    - type: "ambient_occlusion"
+      strength: 0.8
+      radius: 1.0
+
+# Metadata and Security
+metadata:
+  procedure_code: "ATA_32_11_00"
+  aircraft_type: "AMPEL360_BWB_Q100"
+  instructor: "Amedeo_Pelliccia"
+  creation_date: "2025-06-20"
+  revision: "1.0"
+  approved_by: "Q_AVIATION_SYSTEMS"
+  classification: "training_material"
+  export_restrictions: "none"
+  
+security:
+  access_level: "instructor_plus"
+  encryption: false
+  watermark: true
+  usage_tracking: true
+
+# Output Configuration
+output:
+  format: "mp4"
+  codec: "h264"
+  bitrate: "10M"
+  audio_codec: "aac"
+  audio_bitrate: "192k"
+  quality: "high"
+  filename: "ata_32_11_00_nosegear_inspection_amedeo_v1.mp4"

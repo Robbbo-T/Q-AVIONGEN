@@ -1,0 +1,327 @@
+# 📊 00-10-30-02-01-ERSpecs.xlsx
+
+**GAIA-QAO Object ID:** `GQOIS-Q-AIR-00-10-30-02-01-ERSPECS-001`  
+**Document Type:** Technical Specifications Workbook  
+**Revision:** 2.0  
+**Date:** 2025-06-17  
+**Author:** GAIA-QAO Technical Team  
+**Classification:** GAIA-QAO Internal Technical Data  
+**Update Note:** Extended Range variant specifications aligned with corrected platform baseline
+
+---
+
+## 📋 Workbook Overview
+
+This Excel workbook contains comprehensive technical specifications for the **AMPEL360 BWB-Q100ER Extended Range Aircraft**. The data is organized across multiple worksheets showing differences from the baseline platform and enhanced capabilities for ultra-long-haul operations.
+
+---
+
+## 📊 Sheet 1: General Specifications
+
+| **Parameter** | **Value** | **Units** | **Tolerance** | **Reference** | **Notes** |
+|---------------|-----------|-----------|---------------|---------------|-----------|
+| **Aircraft Designation** | AMPEL360 BWB-Q100ER | - | - | GAIA-QAO-002 | Extended range variant |
+| **Model Code** | AS-M-PAX-BW-Q1C | - | - | GQOIS Standard | GAIA-QAO Model ID |
+| **ICAO Aircraft Type** | A36E | - | - | Pending | ER variant designation |
+| **Maximum Seating** | 120 | PAX | - | Layout A | ER configuration |
+| **Typical Seating** | 120 | PAX | - | Layout B | 3-class layout |
+| **Crew Complement** | 8 | Persons | - | Ops Manual | 2 pilots + 6 cabin crew |
+| **Design Life** | 120,000 | Cycles | - | Design Req | Or 30 years |
+| **Flight Hours Design** | 180,000 | Hours | - | Design Req | Whichever occurs first |
+| **Certification Basis** | CS-25/Part 25 | - | - | EASA/FAA | Amendment 27 + SC |
+| **Technology Readiness** | TRL 4-6 | - | - | Assessment | Enhanced systems |
+| **ETOPS Capability** | 240 | minutes | - | Target | Ultra-long-haul |
+| **First Flight Target** | Q4 2028 | Date | ±6 months | Program Plan | After base variant |
+| **Entry Into Service** | Q2 2031 | Date | ±12 months | Program Plan | Commercial operations |
+
+---
+
+## 📐 Sheet 2: Dimensions and Areas
+
+| **Parameter** | **Value** | **Units** | **Measurement Method** | **Drawing Ref** | **Notes** |
+|---------------|-----------|-----------|------------------------|-----------------|-----------|
+| **Overall Length** | 42.3 | m | Fuselage centerline | DWG-GA-002 | Same as base |
+| **Overall Wingspan** | 65.5 | m | Tip to tip | DWG-GA-002 | Same as base |
+| **Overall Height** | 8.75 | m | Ground to highest point | DWG-GA-002 | Same as base |
+| **Wing Reference Area** | 825 | m² | Theoretical area | DWG-WG-002 | Same as base |
+| **Wing Aspect Ratio** | 5.2 | - | Calculated | Analysis | Same as base |
+| **Wing Sweep (LE)** | 35 | degrees | At 25% chord | DWG-WG-002 | Same as base |
+| **Wing Taper Ratio** | 0.35 | - | Tip/Root chord | DWG-WG-002 | Same as base |
+| **Wing Mean Chord** | 14.5 | m | MAC | Analysis | Same as base |
+| **Cabin Length** | 28.5 | m | Internal usable | DWG-CA-002 | Same as base |
+| **Cabin Maximum Width** | 23.0 | m | Internal clear | DWG-CA-002 | Same as base |
+| **Cabin Maximum Height** | 2.50 | m | Internal clear | DWG-CA-002 | Same as base |
+| **Cargo Volume** | 285 | m³ | Total usable | DWG-CA-003 | Same as base |
+| **Crew Rest Volume** | 25 | m³ | Upper deck | DWG-CR-001 | ER addition |
+| **Landing Gear Track** | 14.2 | m | Main gear centerline | DWG-LG-002 | Same as base |
+| **Landing Gear Wheelbase** | 18.5 | m | Nose to main gear | DWG-LG-002 | Same as base |
+
+---
+
+## ⚖️ Sheet 3: Weight and Balance
+
+| **Weight Category** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **CG Location** | **Comments** |
+|---------------------|------------------|----------------|------------|-----------------|--------------|
+| **Manufacturer Empty Weight** | 95,000 kg | 98,500 kg | +3,500 kg | 49.0% MAC | Additional systems |
+| **Operating Empty Weight** | 98,000 kg | 101,500 kg | +3,500 kg | 49.5% MAC | ER configuration |
+| **Maximum Payload** | 47,000 kg | 46,500 kg | -500 kg | Variable | 120 PAX + baggage |
+| **Maximum Fuel Load** | 42,000 kg | 57,000 kg | +15,000 kg | 35.2% MAC | Extended tanks |
+| **Maximum Zero Fuel Weight** | 145,000 kg | 148,000 kg | +3,000 kg | 47.0% MAC | Structural increase |
+| **Maximum Takeoff Weight** | 185,000 kg | 205,000 kg | +20,000 kg | 47.5% MAC | Increased MTOW |
+| **Maximum Landing Weight** | 155,000 kg | 165,000 kg | +10,000 kg | 48.0% MAC | Higher MLW |
+| **Maximum Taxi Weight** | 187,000 kg | 207,000 kg | +20,000 kg | 47.6% MAC | 2,000 kg taxi fuel |
+| **Typical Mission Weight** | 165,500 kg | 184,500 kg | +19,000 kg | 47.8% MAC | 5,500 nm mission |
+| **Weight Empty CG Range** | 46.0-50.0% | 47.0-51.0% | +1.0% | % MAC | ER configuration |
+| **Forward CG Limit** | 45.0% | 45.5% | +0.5% | % MAC | Slightly aft |
+| **Aft CG Limit** | 52.0% | 53.0% | +1.0% | % MAC | Increased envelope |
+
+---
+
+## 🚀 Sheet 4: Performance Data
+
+| **Parameter** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Reference** | **Comments** |
+|---------------|------------------|----------------|------------|---------------|-------------|
+| **Maximum Operating Mach** | 0.82 | 0.82 | No change | Flight Manual | Same limit |
+| **Maximum Operating Altitude** | 43,000 ft | 43,000 ft | No change | Flight Manual | Same ceiling |
+| **Design Cruise Mach** | 0.78 | 0.76 | -0.02 | Performance | LRC for range |
+| **Design Cruise Altitude** | 37,000 ft | 39,000 ft | +2,000 ft | Performance | Higher initial |
+| **Maximum Range** | 5,200 nm | 6,200 nm | +1,000 nm | Performance | 100 PAX, optimal |
+| **Design Range** | 4,500 nm | 5,500 nm | +1,000 nm | Performance | 120 PAX |
+| **Takeoff Distance** | 1,800 m | 1,950 m | +150 m | Performance | Higher MTOW |
+| **Landing Distance** | 1,500 m | 1,600 m | +100 m | Performance | Higher MLW |
+| **Second Segment Climb** | 3.2% | 3.0% | -0.2% | Performance | Higher weight |
+| **Service Ceiling OEI** | 25,000 ft | 23,000 ft | -2,000 ft | Performance | Weight penalty |
+| **Fuel Consumption** | 41.1 kg/seat/1000nm | 39.5 kg/seat/1000nm | -1.6 | Performance | ER optimization |
+| **Block Fuel (5,500 nm)** | - | 28,500 kg | New | Performance | ER mission |
+| **Block Fuel (4,500 nm)** | 18,500 kg | 21,000 kg | +2,500 kg | Performance | Higher weight |
+| **Turn Around Time** | 35 min | 90 min | +55 min | Operations | Long-haul service |
+| **Daily Utilization** | 12.5 hours | 14.0 hours | +1.5 hours | Operations | Ultra-long sectors |
+
+---
+
+## ⚡ Sheet 5: Propulsion Specifications
+
+| **Component** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Supplier** | **Comments** |
+|---------------|------------------|----------------|------------|--------------|-------------|
+| **Primary Fans** | GAIA-E-FAN2500 | GAIA-E-FAN2500 | Same | GAIA Electric | No change |
+| **Fan Thrust (Takeoff)** | 55 kN | 55 kN | Same | - | Same thrust |
+| **Fan Thrust (Cruise)** | 25 kN | 25 kN | Same | - | Same cruise |
+| **Fan Diameter** | 2.5 m | 2.5 m | Same | - | Same fans |
+| **Turbogenerators** | GAIA-TG-5000 | GAIA-TG-5000 | Same | GAIA Propulsion | No change |
+| **Generator Power** | 5.0 MW | 5.0 MW | Same | - | Same power |
+| **Generator Efficiency** | 92% | 92% | Same | - | Same efficiency |
+| **Electric Motors** | Fan Motors | Fan Motors | Same | GAIA Electric | No change |
+| **Motor Power** | 3.5 MW | 3.5 MW | Same | - | Same power |
+| **Motor Efficiency** | 96% | 96% | Same | - | Same efficiency |
+| **Battery System** | Li-S-2000 | Li-S-3000 | Enhanced | GAIA Battery | Solid-state upgrade |
+| **Battery Capacity** | 2,000 kWh | 3,000 kWh | +1,000 kWh | - | Extended operations |
+| **Battery Power** | 8 MW | 8 MW | Same | - | Same peak power |
+
+---
+
+## ⛽ Sheet 6: Fuel System Specifications
+
+| **Parameter** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Location** | **Comments** |
+|---------------|------------------|----------------|------------|--------------|-------------|
+| **Total Fuel Capacity** | 42,000 kg | 57,000 kg | +15,000 kg | All tanks | Extended capacity |
+| **Usable Fuel** | 40,000 kg | 55,000 kg | +15,000 kg | All tanks | Extended usable |
+| **Jet-A1 Capacity** | 42,000 kg | 57,000 kg | +15,000 kg | Wing tanks | Extended tanks |
+| **Fuel Transfer Rate** | 1,000 kg/min | 1,000 kg/min | Same | Pumps | Same capability |
+| **Fuel Jettison Rate** | 800 kg/min | 800 kg/min | Same | Dump system | Same rate |
+| **Center Tank Capacity** | 12,000 kg | 12,000 kg | Same | Center wing | No change |
+| **Wing Tank Capacity** | 30,000 kg | 45,000 kg | +15,000 kg | Left/right | Extended tanks |
+| **Reserve Fuel (Regulations)** | 3,500 kg | 5,500 kg | +2,000 kg | Various | ETOPS 240 |
+| **Taxi Fuel** | 800 kg | 1,200 kg | +400 kg | Generators | Longer ground time |
+| **APU Fuel Consumption** | 250 kg/hr | 250 kg/hr | Same | APU tank | Same consumption |
+
+---
+
+## 🔧 Sheet 7: Systems Specifications
+
+| **System** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Redundancy** | **Comments** |
+|------------|------------------|----------------|------------|----------------|-------------|
+| **Hydraulic System 1** | 5,000 psi | 5,000 psi | Same | Triple redundant | No change |
+| **Hydraulic System 2** | 5,000 psi | 5,000 psi | Same | Triple redundant | No change |
+| **Hydraulic System 3** | 5,000 psi | 5,000 psi | Same | Triple redundant | No change |
+| **Hydraulic Fluid** | Skydrol LD-4 | Skydrol LD-4 | Same | - | Same fluid |
+| **Electrical System** | 400 Hz | 400 Hz | Same | Dual redundant | No change |
+| **AC Voltage** | 115/200 VAC | 115/200 VAC | Same | - | Same voltage |
+| **DC Voltage** | 28 VDC | 28 VDC | Same | - | Same voltage |
+| **Emergency Power** | 2.5 MW | 3.0 MW | +0.5 MW | Battery backup | Enhanced battery |
+| **Pneumatic System** | 45 psig | 45 psig | Same | Dual redundant | No change |
+| **APU Bleed** | 35 psig | 35 psig | Same | Backup | No change |
+| **Cabin Pressure** | 6,000 ft | 6,000 ft | Same | Dual redundant | No change |
+| **Air Flow Rate** | 2,500 kg/hr | 3,000 kg/hr | +500 kg/hr | - | More passengers |
+| **Flight Controls** | EHA | EHA | Same | Triple redundant | No change |
+| **Backup Actuators** | Manual | Manual | Same | Manual | No change |
+
+---
+
+## 🧠 Sheet 8: Quantum Systems Specifications (Enhanced)
+
+| **System** | **Base (Q100H)** | **ER (Q100C)** | **Enhancement** | **Technology** | **Status** |
+|------------|------------------|----------------|-----------------|----------------|------------|
+| **Quantum Processing Unit** | QPU-5000 (128 qubits) | QPU-6000 (128 qubits) | Enhanced algorithms | Superconducting | Development |
+| **QPU Operating Temperature** | 0.015 K | 0.015 K | Same | Dilution refrigerator | Target |
+| **QPU Coherence Time** | 100 μs | 120 μs | +20% improvement | Design target | Research |
+| **QPU Gate Fidelity** | 99.5% | 99.7% | +0.2% improvement | Error correction | Target |
+| **Quantum Sensors** | 500 units | 750 units | +250 sensors | NV centers/fiber | Development |
+| **QS Magnetic Sensitivity** | 10 nT/√Hz | 5 nT/√Hz | 2x improvement | Enhanced sensitivity | Target |
+| **QS Temperature Range** | -40 to +85°C | -55 to +85°C | Extended low temp | Arctic operations | Design |
+| **Quantum Navigation** | QNS-2000 | ER-QNS-3000 | Polar capability | Enhanced accuracy | Development |
+| **QN Drift Performance** | 100 m/hr | 5 m/hr | 20x improvement | Long-range ops | Target |
+| **QN GPS-Free Accuracy** | 100 m/hr | 5 m/hr | Enhanced precision | Polar operations | Target |
+| **Quantum Network** | QKD-1000 | QKD-2000 | Extended range | Fiber + satellite | Development |
+| **QN Data Rate** | 1 Mbps | 2 Mbps | 2x improvement | Quantum key | Target |
+| **QN Range** | 500 km | 1,000 km | 2x range | Enhanced power | Target |
+| **Quantum Memory** | 1 GB | 2 GB | 2x capacity | Enhanced storage | Research |
+
+---
+
+## 🌱 Sheet 9: Environmental Specifications
+
+| **Parameter** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Standard** | **Comments** |
+|---------------|------------------|----------------|------------|--------------|-------------|
+| **CO₂ Emissions** | 68 g/PAX/km | 68 g/PAX/km | Same | ICAO CORSIA | Maintained efficiency |
+| **NOₓ Emissions** | 30% below CAEP/8 | 30% below CAEP/8 | Same | ICAO Annex 16 | Same engines |
+| **Noise Level (Takeoff)** | 84 EPNdB | 85 EPNdB | +1 dB | ICAO Chapter 14 | Higher weight |
+| **Noise Level (Approach)** | 92 EPNdB | 93 EPNdB | +1 dB | ICAO Chapter 14 | Higher weight |
+| **Noise Level (Sideline)** | 91 EPNdB | 92 EPNdB | +1 dB | ICAO Chapter 14 | Higher weight |
+| **Cabin Noise** | 68 dB(A) | 67 dB(A) | -1 dB | Design target | Enhanced insulation |
+| **Vibration** | 0.02 g RMS | 0.015 g RMS | -25% | Design target | Quantum damping |
+| **EMI Compliance** | DO-160G Cat M | DO-160G Cat M | Same | RTCA standard | Same standard |
+| **Lightning Protection** | Zone 1A | Zone 1A | Same | ARP5414 | Same protection |
+| **Bird Strike** | 1.8 kg @ 350 kts | 1.8 kg @ 350 kts | Same | CS 25.775 | Same requirement |
+| **Operating Temperature** | -54 to +50°C | -60 to +50°C | Extended cold | ISA + polar | Polar operations |
+| **Operating Altitude** | 43,000 ft | 43,000 ft | Same | Pressurized | Same ceiling |
+| **Icing Conditions** | Appendix C | Appendix C + Polar | Enhanced | CS-25 | Polar capability |
+| **Recyclability** | 95% | 95% | Same | Design target | Same target |
+
+---
+
+## 📜 Sheet 10: Certification Data
+
+| **Requirement** | **Base Status** | **ER Status** | **Additional** | **Authority** | **Date** |
+|-----------------|-----------------|---------------|----------------|---------------|----------|
+| **Airworthiness** | Planned | Planned | ER certification | EASA/FAA | 2030-2031 |
+| **ETOPS 180** | Planned | Baseline | Standard ETOPS | EASA/FAA | 2030 |
+| **ETOPS 240** | N/A | Planned | Extended ETOPS | EASA/FAA | 2031 |
+| **Polar Operations** | N/A | Planned | Arctic capability | EASA/FAA | 2031 |
+| **Emissions** | Planned | Planned | Same standards | EASA/FAA | 2030 |
+| **Noise** | Planned | Planned | Higher weight test | EASA/FAA | 2030 |
+| **Software** | Development | Development | Enhanced algorithms | DER | 2029 |
+| **Hardware** | Development | Development | Enhanced systems | DER | 2029 |
+| **Avionics** | Planned | Planned | Same systems | Suppliers | 2029 |
+| **Systems Safety** | Development | Development | ETOPS assessment | OEM | 2029 |
+| **Human Factors** | Planned | Planned | Crew rest facility | EASA | 2030 |
+| **Flight Test** | Planned | Planned | Extended envelope | EASA/FAA | 2029-2031 |
+| **Production** | Applied | Applied | Same POA | EASA | 2031 |
+| **Quality System** | Current | Current | Same system | BSI | Valid |
+| **Export Certificate** | Development | Development | Same classification | State/Commerce | 2031 |
+
+---
+
+## 🎯 Sheet 11: Operating Limitations
+
+| **Limitation Type** | **Base (Q100H)** | **ER (Q100C)** | **Change** | **Reference** | **Comments** |
+|---------------------|------------------|----------------|------------|---------------|-------------|
+| **VMO/MMO** | 0.82 Mach | 0.82 Mach | Same | Flight Manual | Same limit |
+| **VLE** | 250 kts | 250 kts | Same | Flight Manual | Same gear limit |
+| **VFE** | 220 kts | 220 kts | Same | Flight Manual | Same flap limit |
+| **Maximum Altitude** | 43,000 ft | 43,000 ft | Same | Flight Manual | Same ceiling |
+| **Minimum Altitude** | -1,000 ft | -1,000 ft | Same | Flight Manual | Same minimum |
+| **MTOW** | 185,000 kg | 205,000 kg | +20,000 kg | Type Certificate | Increased limit |
+| **MLW** | 155,000 kg | 165,000 kg | +10,000 kg | Type Certificate | Increased limit |
+| **MZFW** | 145,000 kg | 148,000 kg | +3,000 kg | Type Certificate | Increased limit |
+| **Forward CG** | 45.0% MAC | 45.5% MAC | +0.5% | Flight Manual | Slightly aft |
+| **Aft CG** | 52.0% MAC | 53.0% MAC | +1.0% | Flight Manual | Extended envelope |
+| **Wind Limits** | 35 kts | 35 kts | Same | AFM | Same crosswind |
+| **Turbulence** | Severe avoid | Severe avoid | Same | AFM | Same limitation |
+| **Runway Slope** | ±2.0% | ±2.0% | Same | AFM | Same gradient |
+| **Fuel Imbalance** | 2,000 kg | 3,000 kg | +1,000 kg | AFM | Larger tanks |
+
+---
+
+## 🛫 Sheet 12: ETOPS Specific Requirements
+
+| **ETOPS Parameter** | **180 Minutes** | **240 Minutes** | **Units** | **Compliance** | **Comments** |
+|---------------------|-----------------|-----------------|-----------|----------------|-------------|
+| **Engine Reliability** | 0.02/1000 hrs | 0.015/1000 hrs | IFSD rate | Target | Enhanced monitoring |
+| **APU Reliability** | 99.5% | 99.7% | Dispatch | Target | Improved APU |
+| **Cargo Fire Suppression** | 180 min | 240 min | Duration | Enhanced | Longer capability |
+| **Medical Equipment** | Enhanced | Enhanced+ | Level | Required | Defibrillator, O2 |
+| **Communication** | Dual HF/SATCOM | Triple redundant | Systems | Required | Enhanced coverage |
+| **Navigation** | Triple INS/GPS | Quantum backup | Systems | Enhanced | QNS capability |
+| **Fuel Planning** | Conservative | Ultra-conservative | Method | Required | Enhanced margins |
+| **Diversion Airports** | 180 min | 240 min | Flight time | Required | More remote routes |
+| **Crew Training** | Standard ETOPS | Extended ETOPS | Hours | Required | Additional training |
+| **Maintenance** | ETOPS program | Enhanced program | Intervals | Required | Stricter checks |
+| **Weather Monitoring** | Standard | Enhanced | Systems | Required | Quantum prediction |
+| **Flight Following** | 15 min | 10 min | Intervals | Required | More frequent |
+
+---
+
+## 🏔️ Sheet 13: Polar Operations Capability
+
+| **Polar Parameter** | **Specification** | **Value** | **Units** | **Standard** | **Comments** |
+|---------------------|-------------------|-----------|-----------|--------------|-------------|
+| **Temperature Range** | Operating minimum | -60 | °C | Arctic | Enhanced capability |
+| **Ice Protection** | Wing/Engine/Probes | Enhanced | System | CS-25 | Polar conditions |
+| **Navigation** | GPS-denied capability | <5 m/hr | Drift | Quantum | Arctic accuracy |
+| **Communication** | HF backup required | Iridium | System | Polar | Satellite coverage |
+| **Fuel Temperature** | Minimum operating | -45 | °C | Specification | Cold weather |
+| **Battery Performance** | Cold weather | 90% | Capacity | -40°C | Enhanced cells |
+| **Hydraulic Fluid** | Cold weather grade | Type IV | Specification | -55°C | Arctic fluid |
+| **Emergency Equipment** | Cold weather kit | Enhanced | Package | Required | Survival gear |
+| **Runway Conditions** | Snow/Ice capability | Enhanced | Braking | Required | Anti-skid |
+| **Medical Diversion** | Maximum distance | 240 min | Flight time | Regulation | Remote areas |
+| **Crew Training** | Polar operations | 40 hrs | Training | Required | Specialized |
+| **Weather Monitoring** | Polar prediction | Quantum | System | Enhanced | Ice crystal forecast |
+
+---
+
+## 📋 Document Control
+
+**File Information:**
+- **Filename:** 00-10-30-02-01-ERSpecs.xlsx
+- **File Size:** ~3.2 MB (estimated)
+- **Worksheets:** 13 tabs
+- **Last Modified:** 2025-06-17
+- **Version:** 2.0
+- **Security:** GAIA-QAO Confidential
+
+**Change Control:**
+- **Author:** GAIA-QAO Extended Range Team
+- **Reviewer:** Chief Engineer - Long Range Systems
+- **Approver:** Program Manager - AMPEL360 ER
+- **Next Review:** 2025-12-17
+
+**Key ER Enhancements:**
+- **MTOW increase:** +20,000 kg for extended fuel
+- **Fuel capacity:** +15,000 kg for 1,000+ nm additional range
+- **Quantum systems:** Enhanced for polar/oceanic operations
+- **ETOPS 240:** Ultra-long-haul capability
+- **Polar operations:** Arctic route capability
+- **Crew facilities:** Rest compartment for long sectors
+
+**Distribution:**
+- Extended Range Flight Test Team
+- ETOPS Certification Team  
+- Long Range Performance Engineering
+- Polar Operations Specialists
+- Regulatory Authorities (as required)
+
+---
+
+**Notes:**
+1. All ER specifications maintain platform commonality with base variant
+2. Enhanced quantum systems are development targets requiring validation
+3. ETOPS 240 certification requires extensive demonstration program
+4. Polar operations capability subject to regulatory approval
+5. Weight increases optimized for structural efficiency
+6. Performance data requires validation through extended flight testing
+7. All enhanced systems maintain same safety and redundancy levels
+
+---
+
+*This document represents the Excel workbook content for the Extended Range variant in markdown format. The actual Excel file would contain these specifications in spreadsheet format with comparative charts, performance curves, and detailed analysis.*

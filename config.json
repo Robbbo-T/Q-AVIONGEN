@@ -1,0 +1,28 @@
+{
+  "project_name": "Q-AVIOGEN",
+  "start_date": "2025-06-20",
+  "daily_hours": 4.5,
+  "work_days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+  "notifications": {
+    "startup": true,
+    "daily_reminder": true,
+    "weekly_summary": true
+  },
+  "revenue_targets": {
+    "month_1": 25000,
+    "month_3": 100000,
+    "month_6": 500000,
+    "month_12": 2000000
+  },
+  "marketplace_launch_dates": {
+    "azure": "2025-07-15",
+    "aws": "2025-07-25",
+    "gcp": "2025-08-05"
+  },
+  "pricing_tiers": {
+    "personal": 49,
+    "professional": 149,
+    "business": 499,
+    "enterprise": 2000
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "c:\Users\amate\OneDrive\Structured\Q-AVIONGEN\main.py", line 21, in <module>
+    from blender.simulated_renderer import get_renderer_class
+  File "c:\Users\amate\OneDrive\Structured\Q-AVIONGEN\blender\__init__.py", line 6, in <module>
+    from .render_scene import BlenderRenderer
+  File "c:\Users\amate\OneDrive\Structured\Q-AVIONGEN\blender\render_scene.py", line 6, in <module>
+    import bpy
+ModuleNotFoundError: No module named 'bpy'

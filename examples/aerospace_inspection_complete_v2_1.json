@@ -1,0 +1,464 @@
+{
+  "name": "AerospaceEngineInspectionComplete_v2_1",
+  "description": "Procedimiento completo de inspección de motor aeronáutico con avatar personalizado Amedeo, narración en español e interfaz técnica profesional",
+  "version": "2.1.0",
+  "camera": {
+    "position": {"x": 8.5, "y": -7.2, "z": 4.8},
+    "rotation": {"x": 65.0, "y": 0.0, "z": 48.5},
+    "target": {"x": 0.0, "y": 0.0, "z": 1.5},
+    "lens_focal_length": 85.0,
+    "sensor_width": 36.0,
+    "depth_of_field": true,
+    "focus_distance": 12.0,
+    "aperture": 1.8,
+    "animated": true,
+    "animation_type": "flythrough",
+    "keyframes": [
+      {"frame": 1, "position": {"x": 8.5, "y": -7.2, "z": 4.8}, "target": {"x": 0, "y": 0, "z": 1.5}},
+      {"frame": 60, "position": {"x": 2.0, "y": -3.0, "z": 2.0}, "target": {"x": 0, "y": 0, "z": 0.8}},
+      {"frame": 120, "position": {"x": -1.5, "y": 2.5, "z": 1.2}, "target": {"x": 0, "y": 0, "z": 0.5}},
+      {"frame": 180, "position": {"x": 3.0, "y": 1.0, "z": 3.5}, "target": {"x": 0, "y": 0, "z": 1.0}},
+      {"frame": 240, "position": {"x": 8.5, "y": -7.2, "z": 4.8}, "target": {"x": 0, "y": 0, "z": 1.5}}
+    ],
+    "animation_duration": 10.0,
+    "easing": "ease_in_out"
+  },
+  "environment": {
+    "type": "hdri",
+    "hdri_path": "assets/hdri/hangar_industrial_4k.hdr",
+    "hdri_rotation": 45.0,
+    "hdri_strength": 1.8,
+    "hdri_saturation": 0.9,
+    "hdri_hue_shift": 5.0,
+    "background_color": {"r": 0.02, "g": 0.025, "b": 0.03, "a": 1.0},
+    "background_strength": 0.8,
+    "ambient_strength": 0.4,
+    "sun_rotation": {"x": 45.0, "y": 135.0, "z": 0.0},
+    "sun_strength": 4.5,
+    "sun_color": {"r": 1.0, "g": 0.95, "b": 0.85, "a": 1.0}
+  },
+  "render_settings": {
+    "resolution_x": 3840,
+    "resolution_y": 2160,
+    "frame_start": 1,
+    "frame_end": 240,
+    "frame_step": 1,
+    "fps": 24,
+    "samples": 512,
+    "max_bounces": 16,
+    "diffuse_bounces": 6,
+    "glossy_bounces": 6,
+    "transmission_bounces": 16,
+    "volume_bounces": 2,
+    "codec": "prores",
+    "bitrate": 50000,
+    "quality": "lossless",
+    "audio_codec": "pcm",
+    "audio_bitrate": 1536,
+    "output_format": "mov",
+    "output_path": "output/aerospace_inspection_4k_prores.mov",
+    "file_naming": "frame_####",
+    "motion_blur": true,
+    "motion_blur_shutter": 0.3,
+    "use_denoising": true,
+    "denoising_algorithm": "OPENIMAGEDENOISE",
+    "post_processing": {
+      "exposure": 0.2,
+      "gamma": 1.1,
+      "contrast": 1.15,
+      "brightness": 0.05,
+      "saturation": 1.1,
+      "hue_shift": 0.0,
+      "vignette": true,
+      "vignette_intensity": 0.3,
+      "bloom": true,
+      "bloom_threshold": 1.2,
+      "bloom_intensity": 0.4,
+      "bloom_radius": 8.0,
+      "glare": true,
+      "glare_threshold": 1.5,
+      "motion_blur": true,
+      "motion_blur_samples": 24,
+      "motion_blur_shutter": 0.3,
+      "depth_of_field": true,
+      "dof_focus_distance": 12.0,
+      "dof_aperture": 1.8,
+      "dof_blades": 8,
+      "film_grain": true,
+      "grain_intensity": 0.15,
+      "grain_size": 1.2,
+      "chromatic_aberration": true,
+      "chromatic_intensity": 0.2
+    }
+  },
+  "objects": [
+    {
+      "name": "TurbofanEngine_Main",
+      "type": "mesh",
+      "mesh_path": "assets/engines/cfm56_detailed.blend",
+      "asset_type": "blend",
+      "blend_collection_name": "CFM56_Complete_Assembly",
+      "position": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "scale": {"x": 1.0, "y": 1.0, "z": 1.0},
+      "material_name": "Engine_PBR_Material",
+      "material_override": {
+        "metallic": 0.9,
+        "roughness": 0.3,
+        "emission_strength": 0.1
+      },
+      "visible": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "render_layer": "main_objects"
+    },
+    {
+      "name": "FanBlade_Assembly",
+      "type": "mesh",
+      "mesh_path": "assets/engines/cfm56_detailed.blend",
+      "asset_type": "blend",
+      "blend_object_name": "Fan_Blades_Group",
+      "position": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "scale": {"x": 1.0, "y": 1.0, "z": 1.0},
+      "material_name": "Titanium_Composite",
+      "visible": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "render_layer": "animated_components"
+    },
+    {
+      "name": "InspectionTool_Borescope",
+      "type": "mesh",
+      "mesh_path": "assets/tools/professional_borescope.gltf",
+      "asset_type": "gltf",
+      "position": {"x": 2.5, "y": -1.8, "z": 1.2},
+      "rotation": {"x": 15.0, "y": -25.0, "z": 0.0},
+      "scale": {"x": 1.0, "y": 1.0, "z": 1.0},
+      "material_name": "Professional_Tool_Material",
+      "visible": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "render_layer": "tools"
+    },
+    {
+      "name": "WorkBench_Platform",
+      "type": "mesh",
+      "mesh_path": "assets/furniture/industrial_workbench.obj",
+      "asset_type": "obj",
+      "position": {"x": 0.0, "y": 0.0, "z": -0.8},
+      "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "scale": {"x": 1.2, "y": 1.2, "z": 1.0},
+      "material_name": "Industrial_Steel",
+      "visible": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "render_layer": "environment"
+    },
+    {
+      "name": "TechnicalManual_Display",
+      "type": "mesh",
+      "mesh_path": "assets/ui/holographic_display.blend",
+      "asset_type": "blend",
+      "blend_object_name": "Technical_Display_Screen",
+      "position": {"x": -3.5, "y": 2.0, "z": 2.5},
+      "rotation": {"x": -10.0, "y": 45.0, "z": 0.0},
+      "scale": {"x": 0.8, "y": 0.8, "z": 0.8},
+      "material_name": "Holographic_Interface",
+      "material_override": {
+        "emission_color": [0.2, 0.6, 1.0, 1.0],
+        "emission_strength": 2.5,
+        "transparency": 0.15
+      },
+      "visible": true,
+      "cast_shadows": false,
+      "receive_shadows": false,
+      "render_layer": "ui_elements"
+    }
+  ],
+  "animations": [
+    {
+      "target_object": "FanBlade_Assembly",
+      "property_path": "rotation_euler.z",
+      "keyframes": [[1, 0.0], [240, 12.566]],
+      "interpolation": "LINEAR",
+      "easing": "linear"
+    },
+    {
+      "target_object": "InspectionTool_Borescope",
+      "property_path": "location.x",
+      "keyframes": [[60, 2.5], [120, 0.8], [180, 1.2]],
+      "interpolation": "BEZIER",
+      "easing": "ease_in_out"
+    },
+    {
+      "target_object": "TechnicalManual_Display",
+      "property_path": "material.emission_strength",
+      "keyframes": [[1, 0.0], [30, 2.5], [210, 2.5], [240, 0.0]],
+      "interpolation": "BEZIER",
+      "easing": "ease_in_out"
+    }
+  ],
+  "timeline_markers": [
+    {
+      "label": "Introducción del Procedimiento",
+      "frame": 1,
+      "color": {"r": 0.0, "g": 0.8, "b": 0.2, "a": 1.0},
+      "description": "Amedeo presenta el procedimiento de inspección",
+      "event_type": "voice",
+      "metadata": {
+        "section": "introduction",
+        "priority": "high",
+        "compliance": "AS9100"
+      }
+    },
+    {
+      "label": "Enfoque en Motor",
+      "frame": 60,
+      "color": {"r": 0.8, "g": 0.4, "b": 0.0, "a": 1.0},
+      "description": "Cámara se enfoca en el motor principal",
+      "event_type": "animation",
+      "metadata": {
+        "camera_action": "focus_transition",
+        "target": "TurbofanEngine_Main"
+      }
+    },
+    {
+      "label": "Inspección con Boroscopio",
+      "frame": 120,
+      "color": {"r": 0.2, "g": 0.4, "b": 0.9, "a": 1.0},
+      "description": "Demostración del uso del boroscopio",
+      "event_type": "voice",
+      "metadata": {
+        "tool": "borescope",
+        "inspection_type": "internal_combustion_chamber"
+      }
+    },
+    {
+      "label": "Análisis de Resultados",
+      "frame": 180,
+      "color": {"r": 0.9, "g": 0.2, "b": 0.8, "a": 1.0},
+      "description": "Evaluación de resultados en display técnico",
+      "event_type": "voice",
+      "metadata": {
+        "analysis_phase": "result_evaluation",
+        "display_active": true
+      }
+    },
+    {
+      "label": "Conclusión y Certificación",
+      "frame": 220,
+      "color": {"r": 0.0, "g": 0.9, "b": 0.0, "a": 1.0},
+      "description": "Conclusiones finales y certificación",
+      "event_type": "voice",
+      "metadata": {
+        "section": "conclusion",
+        "certification_required": true,
+        "compliance": ["AS9100", "ISO-9001"]
+      }
+    }
+  ],
+  "layers": [
+    {
+      "name": "MainObjects_Beauty",
+      "include_objects": ["TurbofanEngine_Main", "FanBlade_Assembly"],
+      "exclude_objects": [],
+      "render_pass": "combined",
+      "output_path": "output/layers/main_objects_beauty.exr",
+      "enabled": true,
+      "opacity": 1.0,
+      "blend_mode": "normal"
+    },
+    {
+      "name": "Tools_Layer",
+      "include_objects": ["InspectionTool_Borescope"],
+      "exclude_objects": [],
+      "render_pass": "combined",
+      "output_path": "output/layers/tools_layer.exr",
+      "enabled": true,
+      "opacity": 1.0,
+      "blend_mode": "normal"
+    },
+    {
+      "name": "UI_Elements",
+      "include_objects": ["TechnicalManual_Display"],
+      "exclude_objects": [],
+      "render_pass": "emission",
+      "output_path": "output/layers/ui_elements.exr",
+      "enabled": true,
+      "opacity": 0.8,
+      "blend_mode": "add"
+    },
+    {
+      "name": "Environment_Base",
+      "include_objects": ["WorkBench_Platform"],
+      "exclude_objects": [],
+      "render_pass": "combined",
+      "output_path": "output/layers/environment.exr",
+      "enabled": true,
+      "opacity": 1.0,
+      "blend_mode": "normal"
+    },
+    {
+      "name": "Depth_Pass",
+      "include_objects": ["TurbofanEngine_Main", "FanBlade_Assembly"],
+      "exclude_objects": [],
+      "render_pass": "z",
+      "output_path": "output/layers/depth_pass.exr",
+      "enabled": true,
+      "opacity": 1.0,
+      "blend_mode": "normal"
+    },
+    {
+      "name": "Normal_Pass",
+      "include_objects": ["TurbofanEngine_Main"],
+      "exclude_objects": [],
+      "render_pass": "normal",
+      "output_path": "output/layers/normal_pass.exr",
+      "enabled": true,
+      "opacity": 1.0,
+      "blend_mode": "normal"
+    }
+  ],
+  "narration": {
+    "voice_config": {
+      "use_custom_voice": true,
+      "custom_voice_path": "assets/voice/amedeo_voice_samples.wav",
+      "voice_clone_model": "tortoise_tts",
+      "tts_engine": "azure",
+      "voice_name": "es-ES-AlvaroNeural",
+      "voice_gender": "male",
+      "voice_age": "adult",
+      "pitch": 0.1,
+      "speed": 0.95,
+      "volume": 1.0,
+      "emphasis": 0.2,
+      "language": "es-ES",
+      "accent": "español_profesional",
+      "pronunciation_guide": {
+        "boroscopio": "bo-ros-co-pi-o",
+        "CFM56": "ce-efe-eme-cincuenta-y-seis",
+        "turbofan": "tur-bo-fan"
+      }
+    },
+    "avatar_config": {
+      "enabled": true,
+      "avatar_type": "technical_instructor",
+      "avatar_model_path": "assets/avatars/amedeo_instructor_v2.blend",
+      "avatar_name": "Amedeo",
+      "scale": 1.0,
+      "position": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "default_emotion": "friendly",
+      "animation_set": "assets/avatars/amedeo_gestures_professional.blend",
+      "gesture_library": [
+        "point_to_engine",
+        "explain_procedure",
+        "show_caution",
+        "indicate_measurement",
+        "confirm_completion",
+        "technical_explanation"
+      ],
+      "lighting_setup": "assets/lighting/avatar_professional_setup.blend",
+      "materials_override": {
+        "skin": "assets/materials/realistic_skin_professional.blend",
+        "clothing": "assets/materials/technician_uniform.blend"
+      },
+      "look_at_camera": false,
+      "auto_gestures": true,
+      "emotion_sync_with_speech": true,
+      "screen_position": "bottom_right",
+      "screen_size_percent": 32.0,
+      "transparency": 0.95
+    },
+    "segments": [
+      {
+        "text": "Bienvenidos al procedimiento de inspección del motor turbofan CFM56. Soy Amedeo, y hoy les guiaré a través de este proceso crítico de mantenimiento aeronáutico.",
+        "start_time": 0.0,
+        "duration": 8.0,
+        "emotion": "friendly",
+        "gestures": ["greeting", "technical_explanation"],
+        "emphasis_words": ["procedimiento", "inspección", "CFM56", "crítico"],
+        "voice_modulation": {"speed": 0.9, "pitch": 0.1, "volume": 1.0},
+        "sync_with_animation": true,
+        "sync_markers": ["Introducción del Procedimiento"]
+      },
+      {
+        "text": "Primero, observaremos la estructura general del motor. Note la disposición de los álabes del fan y la carcasa exterior. Es fundamental verificar la integridad estructural antes de proceder.",
+        "start_time": 8.5,
+        "duration": 10.0,
+        "emotion": "explaining",
+        "gestures": ["point_to_engine", "indicate_measurement"],
+        "emphasis_words": ["estructura", "álabes", "integridad", "fundamental"],
+        "voice_modulation": {"speed": 0.95, "pitch": 0.0, "volume": 1.0},
+        "sync_with_animation": true,
+        "sync_markers": ["Enfoque en Motor"]
+      },
+      {
+        "text": "Ahora utilizaremos el boroscopio profesional para inspeccionar la cámara de combustión interna. Esta herramienta nos permite visualizar áreas internas sin desmontar el motor.",
+        "start_time": 19.0,
+        "duration": 9.5,
+        "emotion": "focused",
+        "gestures": ["show_tool", "technical_explanation"],
+        "emphasis_words": ["boroscopio", "cámara de combustión", "herramienta", "visualizar"],
+        "voice_modulation": {"speed": 0.9, "pitch": -0.1, "volume": 1.0},
+        "sync_with_animation": true,
+        "sync_markers": ["Inspección con Boroscopio"]
+      },
+      {
+        "text": "Los resultados de la inspección aparecen en tiempo real en nuestra interfaz técnica. Podemos observar el estado de las superficies internas y detectar cualquier anomalía.",
+        "start_time": 29.0,
+        "duration": 8.5,
+        "emotion": "focused",
+        "gestures": ["point_to_display", "analyze_data"],
+        "emphasis_words": ["resultados", "tiempo real", "interfaz", "anomalía"],
+        "voice_modulation": {"speed": 1.0, "pitch": 0.0, "volume": 1.0},
+        "sync_with_animation": true,
+        "sync_markers": ["Análisis de Resultados"]
+      },
+      {
+        "text": "Excelente. La inspección ha sido completada satisfactoriamente. Todos los parámetros están dentro de las especificaciones AS9100. El motor está certificado para continuar en servicio.",
+        "start_time": 38.0,
+        "duration": 9.0,
+        "emotion": "encouraging",
+        "gestures": ["confirm_completion", "show_approval"],
+        "emphasis_words": ["satisfactoriamente", "especificaciones", "AS9100", "certificado"],
+        "voice_modulation": {"speed": 0.95, "pitch": 0.2, "volume": 1.0},
+        "sync_with_animation": true,
+        "sync_markers": ["Conclusión y Certificación"]
+      }
+    ],
+    "auto_generate_segments": false,
+    "segment_duration_max": 10.0,
+    "pause_between_segments": 0.5,
+    "background_music_path": "assets/audio/ambient_technical_low.wav",
+    "background_music_volume": 0.15,
+    "fade_music_during_speech": true,
+    "export_audio_separately": true,
+    "audio_format": "wav",
+    "audio_bitrate": 192
+  },
+  "metadata": {
+    "author": "Amedeo - Q-AVIOGEN Industrial Team",
+    "version": "2.1.0",
+    "created_at": "2025-06-20T10:30:00Z",
+    "modified_at": "2025-06-20T15:45:00Z",
+    "checksum": "sha256:a1b2c3d4e5f6789abcdef1234567890abcdef1234567890abcdef1234567890",
+    "signature": "aerospace_certified_content_v2.1",
+    "encryption_level": "aerospace",
+    "certification_level": "production",
+    "compliance_standards": ["AS9100", "ISO-9001", "EASA-Part-145", "FAA-Part-43"],
+    "approved_by": "Amedeo Rodriguez - Chief Technical Officer",
+    "approval_date": "2025-06-20",
+    "software_version": "Q-AVIOGEN v2.1.0 Industrial",
+    "render_engine": "Blender Cycles + OIDN",
+    "dependencies": [
+      "Blender 4.1+",
+      "CUDA 12.0+",
+      "FFmpeg 6.0+",
+      "OpenImageDenoise 2.0+",
+      "TorToise-TTS",
+      "Azure Cognitive Services"
+    ]
+  }
+}

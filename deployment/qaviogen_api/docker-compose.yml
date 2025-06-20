@@ -1,0 +1,209 @@
+# Q-AVIOGEN FastAPI Service Docker Compose Configuration
+# For development, testing, and local deployment
+
+version: '3.8'
+
+services:
+  # Main Q-AVIOGEN API service
+  qaviogen-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: qaviogen-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      # Application settings
+      - ENVIRONMENT=development
+      - QAVIOGEN_DEBUG=true
+      - QAVIOGEN_LOG_LEVEL=INFO
+      - QAVIOGEN_HOST=0.0.0.0
+      - QAVIOGEN_PORT=8000
+      
+      # Security settings
+      - QAVIOGEN_ENABLE_AUTH=false
+      - QAVIOGEN_API_TOKEN=dev-token-change-in-production
+      
+      # Directory settings
+      - QAVIOGEN_TEMP_DIR=/app/temp
+      - QAVIOGEN_OUTPUT_DIR=/app/output
+      - QAVIOGEN_LOGS_DIR=/app/logs
+      
+      # Processing settings
+      - QAVIOGEN_MAX_CONCURRENT_JOBS=2
+      - QAVIOGEN_JOB_TIMEOUT_SECONDS=3600
+      
+      # CORS settings
+      - QAVIOGEN_CORS_ORIGINS=["http://localhost:3000", "http://localhost:8080"]
+      
+      # Optional: Redis connection
+      - QAVIOGEN_REDIS_URL=redis://redis:6379/0
+      
+    volumes:
+      # Persistent storage for outputs
+      - qaviogen-output:/app/output
+      - qaviogen-temp:/app/temp
+      - qaviogen-logs:/app/logs
+      
+      # Development: mount source code for hot reload
+      - ./app:/app/app
+      
+      # Mount Q-AVIOGEN assets and core
+      - ../../assets:/app/assets
+      - ../../core:/app/core
+      - ../../project:/app/project
+      
+    depends_on:
+      - redis
+    networks:
+      - qaviogen-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis for job queue and caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: qaviogen-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - qaviogen-network
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # PostgreSQL for persistent storage (optional)
+  postgres:
+    image: postgres:15-alpine
+    container_name: qaviogen-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=qaviogen
+      - POSTGRES_USER=qaviogen
+      - POSTGRES_PASSWORD=qaviogen_dev_password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - qaviogen-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U qaviogen -d qaviogen"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx reverse proxy (for production-like setup)
+  nginx:
+    image: nginx:alpine
+    container_name: qaviogen-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - qaviogen-api
+    networks:
+      - qaviogen-network
+    profiles:
+      - production
+
+  # Prometheus for monitoring (optional)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: qaviogen-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    networks:
+      - qaviogen-network
+    profiles:
+      - monitoring
+
+  # Grafana for metrics visualization (optional)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: qaviogen-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    depends_on:
+      - prometheus
+    networks:
+      - qaviogen-network
+    profiles:
+      - monitoring
+
+# Named volumes for data persistence
+volumes:
+  qaviogen-output:
+    driver: local
+  qaviogen-temp:
+    driver: local
+  qaviogen-logs:
+    driver: local
+  redis-data:
+    driver: local
+  postgres-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+# Custom network
+networks:
+  qaviogen-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+# Development override file (docker-compose.override.yml)
+---
+# This section would be in a separate docker-compose.override.yml file
+version: '3.8'
+
+services:
+  qaviogen-api:
+    build:
+      target: builder  # Use builder stage for development
+    environment:
+      - QAVIOGEN_DEBUG=true
+      - QAVIOGEN_LOG_LEVEL=DEBUG
+      - QAVIOGEN_ENABLE_DOCS=true
+    volumes:
+      # Mount source for hot reload in development
+      - .:/app
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

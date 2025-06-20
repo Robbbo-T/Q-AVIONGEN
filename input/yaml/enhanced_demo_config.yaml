@@ -1,0 +1,461 @@
+---
+# Q-AVIOGEN Enhanced Configuration Example
+# Complete production-ready configuration for aerospace video generation
+
+metadata:
+  title: "Aircraft Towbar Attachment Procedure - Enhanced Demo"
+  aircraft_type: "Boeing 737-800"
+  procedure_code: "ATA-09-30-10-01"
+  language: "en-US"
+  version: "2.1.0"
+  created_by: "Q-AVIOGEN System"
+  approved_by: "Engineering Team"
+  last_updated: "2025-06-20"
+
+# Global render settings
+render_config:
+  resolution: "1920x1080"
+  fps: 30
+  format: "mp4"
+  quality: "high"
+  duration_per_step: 15.0
+  total_duration: 180.0
+  output_path: "./output/videos/"
+
+# TTS Configuration
+tts_config:
+  engine: "aws_polly"
+  voice: "Joanna"
+  language: "en-US"
+  speed: 1.0
+  pitch: 0
+  volume: 0.8
+  output_format: "mp3"
+
+# Scene configurations
+scenes:
+  - scene_id: "intro_scene"
+    step_number: 0
+    title: "Introduction"
+    description: "Overview of towbar attachment procedure"
+    duration: 10.0
+    
+    camera_config:
+      position: [0, -15, 8]
+      target: [0, 0, 2]
+      fov: 45
+      camera_type: "perspective"
+      
+    lighting:
+      type: "daylight"
+      intensity: 1.2
+      shadows: true
+      ambient_color: [0.2, 0.2, 0.3]
+      sun_angle: 45
+      
+    environment:
+      type: "hangar"
+      weather: "clear"
+      ground_material: "concrete"
+      background: "hangar_interior"
+      
+    objects:
+      - name: "aircraft"
+        type: "boeing_737"
+        position: [0, 0, 0]
+        rotation: [0, 0, 0]
+        scale: [1, 1, 1]
+        materials:
+          - name: "fuselage"
+            type: "metal"
+            color: [0.9, 0.9, 0.9]
+            roughness: 0.3
+            metallic: 0.8
+          - name: "windows"
+            type: "glass"
+            color: [0.8, 0.9, 1.0]
+            transparency: 0.1
+            
+      - name: "towbar"
+        type: "aircraft_towbar"
+        position: [0, -8, 0]
+        rotation: [0, 0, 0]
+        scale: [1, 1, 1]
+        materials:
+          - name: "steel"
+            type: "metal"
+            color: [0.7, 0.7, 0.8]
+            roughness: 0.4
+            metallic: 0.9
+            
+      - name: "ground_crew"
+        type: "human_character"
+        position: [-2, -6, 0]
+        rotation: [0, 45, 0]
+        animation: "standing_ready"
+        
+    annotations:
+      - type: "text_overlay"
+        text: "Aircraft Towbar Attachment Procedure"
+        position: "top_center"
+        font_size: 24
+        color: [1, 1, 1]
+        background: [0, 0, 0, 0.7]
+        
+      - type: "arrow"
+        start_position: [0, -8, 2]
+        end_position: [0, -3, 1]
+        color: [1, 0.8, 0]
+        thickness: 0.1
+
+  - scene_id: "step_1_approach"
+    step_number: 1
+    title: "Position towbar near aircraft"
+    description: "Move the towbar into position near the nose gear"
+    duration: 15.0
+    
+    camera_config:
+      position: [-5, -10, 3]
+      target: [0, -4, 1]
+      fov: 50
+      
+    lighting:
+      type: "daylight"
+      intensity: 1.0
+      shadows: true
+      
+    environment:
+      type: "hangar"
+      weather: "clear"
+      
+    objects:
+      - name: "aircraft"
+        type: "boeing_737"
+        position: [0, 0, 0]
+        
+      - name: "towbar"
+        type: "aircraft_towbar"
+        position: [0, -8, 0]
+        animation:
+          type: "move"
+          start_position: [0, -8, 0]
+          end_position: [0, -4, 0]
+          duration: 12.0
+          easing: "ease_in_out"
+          
+      - name: "ground_crew"
+        type: "human_character"
+        position: [-2, -6, 0]
+        animation:
+          type: "walk_with_equipment"
+          path: [[-2, -6, 0], [-1, -5, 0], [0, -4.5, 0]]
+          duration: 12.0
+          
+    annotations:
+      - type: "text_overlay"
+        text: "Step 1: Position towbar near aircraft"
+        position: "bottom_left"
+        
+      - type: "highlight"
+        target: "towbar"
+        color: [1, 1, 0]
+        intensity: 1.5
+        
+      - type: "measurement"
+        start_object: "towbar"
+        end_object: "aircraft"
+        dimension: "distance"
+        unit: "meters"
+        precision: 1
+
+  - scene_id: "step_2_align"
+    step_number: 2
+    title: "Align towbar with nose gear"
+    description: "Carefully align the towbar attachment point with the nose gear"
+    duration: 20.0
+    
+    camera_config:
+      position: [2, -5, 2]
+      target: [0, -2, 1]
+      fov: 35
+      
+    lighting:
+      type: "daylight"
+      intensity: 1.1
+      shadows: true
+      
+    environment:
+      type: "hangar"
+      weather: "clear"
+      
+    objects:
+      - name: "aircraft"
+        type: "boeing_737"
+        position: [0, 0, 0]
+        
+      - name: "towbar"
+        type: "aircraft_towbar"
+        position: [0, -4, 0]
+        animation:
+          type: "precise_movement"
+          phases:
+            - start_position: [0, -4, 0]
+              end_position: [0, -3.2, 0]
+              duration: 8.0
+              easing: "ease_in_out"
+            - rotation_adjustment:
+                start_rotation: [0, 0, 0]
+                end_rotation: [0, 2, 0]
+                duration: 6.0
+            - fine_positioning:
+                start_position: [0, -3.2, 0]
+                end_position: [0, -3.0, 0]
+                duration: 6.0
+                
+      - name: "nose_gear"
+        type: "aircraft_component"
+        parent: "aircraft"
+        highlight: true
+        
+      - name: "ground_crew"
+        type: "human_character"
+        position: [1, -4, 0]
+        animation:
+          type: "guiding_alignment"
+          duration: 20.0
+          
+    annotations:
+      - type: "text_overlay"
+        text: "Step 2: Align towbar with nose gear"
+        position: "bottom_left"
+        
+      - type: "detail_callout"
+        target: "nose_gear"
+        text: "Nose Gear Attachment Point"
+        position: "top_right"
+        
+      - type: "alignment_guide"
+        object_a: "towbar"
+        object_b: "nose_gear"
+        tolerance: 0.1
+        color: [0, 1, 0]
+
+  - scene_id: "step_3_connect"
+    step_number: 3
+    title: "Connect towbar to aircraft"
+    description: "Secure the towbar to the nose gear attachment point"
+    duration: 25.0
+    
+    camera_config:
+      position: [1, -2, 1.5]
+      target: [0, -2.5, 1]
+      fov: 30
+      
+    lighting:
+      type: "mixed"
+      daylight:
+        intensity: 0.8
+      spot_lights:
+        - position: [2, -2, 3]
+          target: [0, -2.5, 1]
+          intensity: 1.0
+          color: [1, 1, 0.9]
+          
+    environment:
+      type: "hangar"
+      weather: "clear"
+      
+    objects:
+      - name: "aircraft"
+        type: "boeing_737"
+        position: [0, 0, 0]
+        
+      - name: "towbar"
+        type: "aircraft_towbar"
+        position: [0, -3.0, 0]
+        
+      - name: "attachment_mechanism"
+        type: "towbar_connector"
+        parent: "towbar"
+        animation:
+          type: "connection_sequence"
+          phases:
+            - insert_pin:
+                duration: 5.0
+                movement: "linear"
+            - rotate_lock:
+                duration: 3.0
+                rotation: 90
+            - verify_connection:
+                duration: 2.0
+                visual_feedback: true
+                
+      - name: "ground_crew"
+        type: "human_character"
+        position: [0.5, -3.5, 0]
+        animation:
+          type: "operating_mechanism"
+          duration: 25.0
+          
+    annotations:
+      - type: "text_overlay"
+        text: "Step 3: Connect towbar to aircraft"
+        position: "bottom_left"
+        
+      - type: "procedure_steps"
+        steps:
+          - "Insert connection pin"
+          - "Rotate locking mechanism"
+          - "Verify secure connection"
+        position: "top_right"
+        
+      - type: "safety_warning"
+        text: "CAUTION: Ensure proper alignment before connecting"
+        position: "bottom_center"
+        color: [1, 0.8, 0]
+
+  - scene_id: "step_4_verify"
+    step_number: 4
+    title: "Verify connection security"
+    description: "Perform safety checks to ensure towbar is securely attached"
+    duration: 15.0
+    
+    camera_config:
+      position: [0, -6, 4]
+      target: [0, -2, 1]
+      fov: 40
+      camera_movement:
+        type: "orbit"
+        radius: 6
+        duration: 15.0
+        
+    lighting:
+      type: "daylight"
+      intensity: 1.0
+      shadows: true
+      
+    environment:
+      type: "hangar"
+      weather: "clear"
+      
+    objects:
+      - name: "aircraft"
+        type: "boeing_737"
+        position: [0, 0, 0]
+        
+      - name: "towbar"
+        type: "aircraft_towbar"
+        position: [0, -3.0, 0]
+        connected: true
+        
+      - name: "connection_indicator"
+        type: "status_light"
+        parent: "towbar"
+        animation:
+          type: "status_change"
+          states:
+            - color: [1, 0, 0]  # Red
+              duration: 3.0
+            - color: [1, 1, 0]  # Yellow
+              duration: 2.0
+            - color: [0, 1, 0]  # Green
+              duration: 10.0
+              
+      - name: "ground_crew"
+        type: "human_character"
+        position: [1, -4, 0]
+        animation:
+          type: "inspection"
+          duration: 15.0
+          
+    annotations:
+      - type: "text_overlay"
+        text: "Step 4: Verify connection security"
+        position: "bottom_left"
+        
+      - type: "checklist"
+        items:
+          - "✓ Pin fully inserted"
+          - "✓ Lock mechanism engaged"
+          - "✓ Safety indicators green"
+          - "✓ Visual inspection complete"
+        position: "top_left"
+        
+      - type: "status_indicator"
+        text: "CONNECTION SECURE"
+        position: "bottom_center"
+        color: [0, 1, 0]
+        background: [0, 0, 0, 0.8]
+
+# Audio narration script
+narration:
+  intro: |
+    Welcome to the aircraft towbar attachment procedure. This video demonstrates
+    the proper method for safely connecting a towbar to a Boeing 737-800 aircraft.
+    Please follow all safety protocols during this procedure.
+    
+  step_1: |
+    Step one: Position the towbar near the aircraft. Move the towbar using appropriate
+    ground support equipment to within three meters of the nose gear. Ensure the
+    area is clear of personnel and obstacles.
+    
+  step_2: |
+    Step two: Align the towbar with the nose gear. Carefully maneuver the towbar
+    so that the attachment mechanism is properly aligned with the nose gear
+    attachment point. Take time to ensure precise alignment.
+    
+  step_3: |
+    Step three: Connect the towbar to the aircraft. Insert the connection pin
+    fully into the attachment point. Rotate the locking mechanism ninety degrees
+    clockwise until it clicks into place. Verify the connection is secure.
+    
+  step_4: |
+    Step four: Verify connection security. Perform a visual inspection of the
+    connection. Check that all safety indicators show green status. The towbar
+    is now safely attached and ready for aircraft pushback operations.
+    
+  conclusion: |
+    The towbar attachment procedure is now complete. Always remember to follow
+    proper safety protocols and verify connections before beginning pushback
+    operations. Thank you for following Q-AVIOGEN procedures.
+
+# Quality assurance settings
+quality_assurance:
+  validation_enabled: true
+  auto_review: true
+  metrics_tracking: true
+  performance_monitoring: true
+  
+  checks:
+    - scene_continuity
+    - audio_sync
+    - visual_quality
+    - timing_accuracy
+    - safety_compliance
+    
+  thresholds:
+    min_resolution: "1080p"
+    max_file_size: "500MB"
+    audio_quality: "192kbps"
+    render_time_limit: "30min"
+
+# Export settings
+export:
+  formats:
+    - type: "mp4"
+      codec: "h264"
+      quality: "high"
+      
+    - type: "webm"
+      codec: "vp9"
+      quality: "medium"
+      
+  metadata:
+    embed_procedure_info: true
+    include_timestamps: true
+    add_watermark: false
+    
+  delivery:
+    upload_to_cloud: false
+    generate_thumbnails: true
+    create_preview: true

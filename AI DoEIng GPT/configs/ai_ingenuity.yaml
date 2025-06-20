@@ -1,0 +1,5 @@
+version: 0.1
+mode: transposition
+tracing: enabled
+input_format: markdown
+output_format: JSON+RDF

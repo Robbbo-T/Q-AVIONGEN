@@ -1,0 +1,139 @@
+# GAIA-QAO-AdVent Production Docker Compose Configuration
+# Version: 2.0.0
+#
+# DESCRIPTION:
+# This file defines the service stack for a PRODUCTION environment. It is optimized
+# for performance, security, and stability. It assumes that container images
+# have already been built and are available in a remote container registry.
+#
+# USAGE:
+# This file is typically used by an orchestrator like Docker Swarm or as a reference
+# for creating Kubernetes manifests. It is NOT intended for local development.
+#
+# To run with Docker Compose (e.g., on a single node production server):
+#   docker-compose -f docker-compose.prod.yml up -d
+
+version: '3.8'
+
+services:
+  # --- API Gateway ---
+  # The single entry point for all client requests. Handles routing, auth, and rate limiting.
+  api-gateway:
+    image: ${REGISTRY_URL}/gaia-qao/api-gateway:${IMAGE_TAG:-latest}
+    restart: always
+    ports:
+      - "80:8080" # Expose standard HTTP port 80, mapped to the container's port 8080.
+    environment:
+      - NODE_ENV=production
+      - LOG_LEVEL=warn # Reduce log verbosity in production.
+      - SECRET_KEY=${SECRET_KEY} # Passed from the host environment or a secrets manager.
+      - TELEMETRY_SERVICE_URL=http://telemetry-processor:5000
+      - QNS_SOLVER_SERVICE_URL=http://qns-solver:5002
+    depends_on:
+      - telemetry-processor
+      - qns-solver
+    networks:
+      - gaia-qao-net
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # --- Telemetry Processing Service ---
+  # Ingests, processes, and stores raw telemetry data.
+  telemetry-processor:
+    image: ${REGISTRY_URL}/gaia-qao/telemetry-processor:${IMAGE_TAG:-latest}
+    restart: always
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+      - POSTGRES_DB=${POSTGRES_DB}
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+    networks:
+      - gaia-qao-net
+    secrets:
+      - postgres_password
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # --- Quantum Navigation Solver (Simulated) ---
+  # Provides high-precision navigation solutions.
+  qns-solver:
+    image: ${REGISTRY_URL}/gaia-qao/qns-solver:${IMAGE_TAG:-latest}
+    restart: always
+    networks:
+      - gaia-qao-net
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5m"
+        max-file: "2"
+
+  # --- Flight Operations Dashboard ---
+  # Serves the static build of the React frontend.
+  flightops-dashboard:
+    image: ${REGISTRY_URL}/gaia-qao/flightops-dashboard:${IMAGE_TAG:-latest}
+    restart: always
+    # This service is served through the API Gateway (or a dedicated web server like Nginx),
+    # so it does not need to expose a port directly to the host.
+    networks:
+      - gaia-qao-net
+
+  # --- PostgreSQL Database ---
+  # The primary data store for the platform.
+  db:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persist data across container restarts.
+    networks:
+      - gaia-qao-net
+    secrets:
+      - postgres_password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- RabbitMQ Message Broker ---
+  # Used for asynchronous communication and task queuing between services.
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest # In a real prod, use secrets!
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "15672:15672" # Expose management UI only to trusted networks.
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq/
+    networks:
+      - gaia-qao-net
+
+# --- Global Definitions ---
+volumes:
+  postgres_data:
+    driver: local # Or a cloud-specific driver like 'rexray/ebs' for AWS
+  rabbitmq_data:
+    driver: local
+
+networks:
+  gaia-qao-net:
+    driver: bridge
+
+secrets:
+  postgres_password:
+    file: ./secrets/postgres_password.txt # Path to the secret file on the host machine.

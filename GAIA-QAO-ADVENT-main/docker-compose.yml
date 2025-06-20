@@ -1,0 +1,126 @@
+# GAIA-QAO-AdVent Local Development Docker Compose Configuration
+# Version: 2.0.0
+#
+# DESCRIPTION:
+# This file defines the service stack for LOCAL DEVELOPMENT. It is optimized
+# for rapid iteration, hot-reloading, and ease of debugging.
+#
+# USAGE:
+# Run from the project root using the helper scripts:
+#   - To start: ./scripts/start.sh
+#   - To stop: ./scripts/start.sh stop
+#   - To view logs: ./scripts/start.sh logs
+
+version: '3.8'
+
+services:
+  # --- API Gateway (Node.js/Express) ---
+  # Serves as the primary entry point. Runs with nodemon for hot-reloading.
+  api-gateway:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile.dev # Use a development-specific Dockerfile
+    volumes:
+      - ./api:/app # Mount the local source code into the container
+      - /app/node_modules # Use an anonymous volume to prevent local node_modules from overwriting container's
+    ports:
+      - "${API_GATEWAY_PORT:-8080}:8080" # Map to host for direct API access
+      - "9229:9229" # Expose Node.js debug port
+    environment:
+      - NODE_ENV=development
+      - LOG_LEVEL=${LOG_LEVEL:-debug}
+      - SECRET_KEY=${SECRET_KEY}
+      - TELEMETRY_SERVICE_URL=http://telemetry-processor:5000 # Service discovery within the Docker network
+    depends_on:
+      - telemetry-processor
+    networks:
+      - gaia-qao-net
+    command: npm run dev # Start the development server (e.g., nodemon)
+
+  # --- Telemetry Processing Service (Python/Flask) ---
+  # Processes incoming telemetry data.
+  telemetry-processor:
+    build:
+      context: .
+      dockerfile: ./telemetry/Dockerfile.dev
+    volumes:
+      - ./telemetry:/app
+    ports:
+      - "5000:5000" # Expose for direct testing if needed
+    environment:
+      - FLASK_ENV=development
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      db:
+        condition: service_healthy # Wait for the DB to be ready before starting
+      rabbitmq:
+        condition: service_started
+    networks:
+      - gaia-qao-net
+    command: flask run --host=0.0.0.0
+
+  # --- Flight Operations Dashboard (React) ---
+  # Frontend application served via a development server.
+  dashboard:
+    build:
+      context: .
+      dockerfile: ./dashboard/Dockerfile.dev
+    volumes:
+      - ./dashboard/src:/app/src
+      - ./dashboard/public:/app/public
+    ports:
+      - "${FLIGHTOPS_DASHBOARD_PORT:-3000}:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true # Helps with hot-reloading in some Docker setups
+    networks:
+      - gaia-qao-net
+    command: npm start
+
+  # --- PostgreSQL Database ---
+  # Shared database for local development.
+  db:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD} # Less secure for dev, but simpler.
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data # Persist data between 'docker-compose up/down'
+    ports:
+      - "5432:5432" # Expose port 5432 to allow connecting with a local DB client
+    networks:
+      - gaia-qao-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- RabbitMQ Message Broker ---
+  # For local testing of asynchronous tasks.
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    restart: unless-stopped
+    ports:
+      - "5672:5672"   # AMQP protocol port
+      - "15672:15672" # Management UI port
+    volumes:
+      - rabbitmq_data_dev:/var/lib/rabbitmq/
+    networks:
+      - gaia-qao-net
+
+# --- Global Definitions ---
+volumes:
+  postgres_data_dev:
+    driver: local
+  rabbitmq_data_dev:
+    driver: local
+
+networks:
+  gaia-qao-net:
+    driver: bridge

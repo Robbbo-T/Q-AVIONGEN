@@ -1,0 +1,112 @@
+version: '1.0'
+procedure:
+  id: '00-30-10-01'
+  title: 'Towbar Attachment Procedure'
+  aircraft: 'BWB-Q100'
+  ata_code: '00-30-10-01'
+  overview: 'Safe attachment of towbar to BWB-Q100 nose gear following ATA standards'
+
+settings:
+  default_duration: 5.0
+  default_camera: 'front_view'
+  quality: 'high'
+  resolution: '1080p'
+  fps: 30
+
+steps:
+  - id: 'step_01'
+    title: 'Initial Preparation'
+    description: 'Verify aircraft security and inspect towbar equipment'
+    camera: 'overview'
+    duration: 6.0
+    narration: 'Comenzamos verificando que la aeronave esté asegurada y chocada correctamente. Inspeccionamos el towbar para detectar cualquier daño o desgaste visible.'
+    overlay: 'Verificación inicial - PPE requerido'
+    safety_notes:
+      - 'Verificar que la aeronave esté chocada'
+      - 'Usar equipo de protección personal'
+      - 'Mantener área despejada'
+    animation:
+      type: 'highlight'
+      target: 'aircraft_bwb'
+      duration: 3.0
+
+  - id: 'step_02'
+    title: 'Position Towbar'
+    description: 'Align towbar with nose gear connection point maintaining proper clearance'
+    camera: 'side_view'
+    duration: 8.0
+    narration: 'Posicionamos el towbar alineándolo cuidadosamente con el punto de conexión del tren de aterrizaje delantero. Es crítico mantener una separación mínima de 10 centímetros.'
+    overlay: 'Separación mínima: 10cm'
+    animation:
+      type: 'sequence'
+      actions:
+        - action: 'move'
+          target: 'towbar'
+          duration: 4.0
+          start_position: [0, -3, 0]
+          end_position: [0, 1.2, -0.5]
+        - action: 'highlight'
+          target: 'nose_gear'
+          duration: 2.0
+
+  - id: 'step_03'
+    title: 'Secure Connection'
+    description: 'Insert connection pin and apply specified torque'
+    camera: 'close_up'
+    duration: 10.0
+    narration: 'Insertamos el pin de conexión a través de los orificios designados, asegurándonos de que pase completamente. Aplicamos el torque especificado de 100 Newton-metro usando una llave dinamométrica calibrada.'
+    overlay: 'Torque: 100Nm - Llave calibrada'
+    safety_notes:
+      - 'Verificar inserción completa del pin'
+      - 'Usar llave dinamométrica calibrada'
+    animation:
+      type: 'sequence'
+      actions:
+        - action: 'move'
+          target: 'tools'
+          duration: 3.0
+        - action: 'rotate'
+          target: 'connector'
+          duration: 4.0
+          rotation: [0, 0, 90]
+        - action: 'highlight'
+          target: 'connection_point'
+          duration: 2.0
+
+  - id: 'step_04'
+    title: 'Safety Verification'
+    description: 'Perform comprehensive safety check of all connections'
+    camera: 'overview'
+    duration: 7.0
+    narration: 'Realizamos una inspección visual completa de todas las conexiones. Verificamos que todos los pines de seguridad estén correctamente instalados y probamos el movimiento del towbar dentro de límites seguros.'
+    overlay: 'Inspección visual - Todos los puntos de conexión'
+    animation:
+      type: 'highlight'
+      target: 'towbar'
+      duration: 5.0
+
+  - id: 'step_05'
+    title: 'Documentation'
+    description: 'Complete maintenance documentation and sign-off'
+    camera: 'overview'
+    duration: 4.0
+    narration: 'Finalizamos registrando la finalización del procedimiento en el log de mantenimiento de la aeronave. Documentamos cualquier observación inusual y firmamos la finalización del procedimiento.'
+    overlay: 'Documentación completada ✓'
+    metadata:
+      requires_signature: true
+      log_entry_required: true
+
+# Metadata adicional para el sistema
+metadata:
+  created_by: 'Q-AVIOGEN System'
+  creation_date: '2025-06-19'
+  version: '1.0'
+  estimated_total_duration: 35.0
+  required_personnel: 1
+  required_equipment:
+    - 'Towbar'
+    - 'Torque wrench (calibrated)'
+    - 'Safety equipment (PPE)'
+    - 'Inspection checklist'
+  safety_level: 'standard'
+  complexity: 'medium'

@@ -1,0 +1,5 @@
+{
+  "name": "AI Document Generation Panel",
+  "description": "An interactive AI-powered document generation panel based on a structured catalog of Prompt IDs, organized by Q-division teams. Users can select a division, then a specific prompt, and generate document content using AI.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,737 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://q-aviogen.gaia-qao.com/schemas/scene_config_v2_1.json",
+  "title": "Q-AVIOGEN Scene Configuration v2.1",
+  "description": "Schema completo para configuración de escenas Q-AVIOGEN con soporte para avatar personalizado, voz grabada, timeline markers, capas, postproceso y validación aerospace-grade",
+  "version": "2.1.0",
+  "type": "object",
+  "required": ["name", "camera", "environment", "render_settings"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Nombre de la escena"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descripción de la escena"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "default": "2.1.0",
+      "description": "Versión del esquema"
+    },
+    "camera": {
+      "$ref": "#/definitions/CameraConfig"
+    },
+    "environment": {
+      "$ref": "#/definitions/EnvironmentConfig"
+    },
+    "render_settings": {
+      "$ref": "#/definitions/RenderSettings"
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ObjectConfig"
+      },
+      "description": "Lista de objetos en la escena"
+    },
+    "animations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AnimationConfig"
+      },
+      "description": "Lista de animaciones"
+    },
+    "timeline_markers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TimelineMarker"
+      },
+      "description": "Marcadores de timeline sincronizados"
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SceneLayer"
+      },
+      "description": "Capas de composición con render passes"
+    },
+    "narration": {
+      "$ref": "#/definitions/EnhancedNarrationConfig"
+    },
+    "metadata": {
+      "$ref": "#/definitions/SceneMetadata"
+    }
+  },
+  "definitions": {
+    "Vector3D": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": {"type": "number"},
+        "y": {"type": "number"},
+        "z": {"type": "number"}
+      }
+    },
+    "RGBAColor": {
+      "type": "object",
+      "required": ["r", "g", "b", "a"],
+      "properties": {
+        "r": {"type": "number", "minimum": 0, "maximum": 1},
+        "g": {"type": "number", "minimum": 0, "maximum": 1},
+        "b": {"type": "number", "minimum": 0, "maximum": 1},
+        "a": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "AssetType": {
+      "type": "string",
+      "enum": ["auto", "gltf", "obj", "fbx", "blend", "collada", "ply", "stl"]
+    },
+    "VideoCodec": {
+      "type": "string",
+      "enum": ["h264", "h265", "vp9", "av1", "prores", "dnxhd", "ffvhuff"]
+    },
+    "RenderPass": {
+      "type": "string",
+      "enum": ["combined", "z", "normal", "diffuse", "glossy", "transmission", "emission", "environment", "ao", "shadow", "mist", "object_index", "material_index"]
+    },
+    "EnvironmentType": {
+      "type": "string",
+      "enum": ["hdri", "gradient", "solid_color", "studio", "outdoor"]
+    },
+    "AvatarType": {
+      "type": "string",
+      "enum": ["virtual_human", "cartoon_character", "technical_instructor", "hologram", "custom_model"]
+    },
+    "VoiceGender": {
+      "type": "string",
+      "enum": ["male", "female", "neutral", "custom"]
+    },
+    "AvatarEmotionState": {
+      "type": "string",
+      "enum": ["neutral", "friendly", "focused", "explaining", "warning", "encouraging", "serious"]
+    },
+    "TimelineMarker": {
+      "type": "object",
+      "required": ["label", "frame"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Etiqueta del marcador"
+        },
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Frame del marcador"
+        },
+        "color": {
+          "$ref": "#/definitions/RGBAColor"
+        },
+        "description": {
+          "type": "string",
+          "description": "Descripción del marcador"
+        },
+        "event_type": {
+          "type": "string",
+          "enum": ["general", "voice", "animation", "effect"],
+          "default": "general"
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+    "SceneMetadata": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "default": "unknown"
+        },
+        "version": {
+          "type": "string",
+          "default": "1.0"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "modified_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "checksum": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        },
+        "encryption_level": {
+          "type": "string",
+          "enum": ["none", "basic", "aerospace"],
+          "default": "none"
+        },
+        "certification_level": {
+          "type": "string",
+          "enum": ["development", "testing", "production", "certified"],
+          "default": "development"
+        },
+        "compliance_standards": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Estándares de compliance (ISO-9001, AS9100, etc.)"
+        },
+        "approved_by": {
+          "type": "string"
+        },
+        "approval_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "software_version": {
+          "type": "string",
+          "default": "Q-AVIOGEN 2.1"
+        },
+        "render_engine": {
+          "type": "string",
+          "default": "Blender Cycles"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "VoiceConfig": {
+      "type": "object",
+      "properties": {
+        "use_custom_voice": {
+          "type": "boolean",
+          "default": false,
+          "description": "Usar voz personalizada grabada"
+        },
+        "custom_voice_path": {
+          "type": "string",
+          "description": "Ruta a muestras de voz grabadas"
+        },
+        "voice_clone_model": {
+          "type": "string",
+          "description": "Modelo de clonación de voz AI"
+        },
+        "tts_engine": {
+          "type": "string",
+          "enum": ["azure", "google", "amazon", "local"],
+          "default": "azure"
+        },
+        "voice_name": {
+          "type": "string",
+          "default": "es-ES-AlvaroNeural"
+        },
+        "voice_gender": {
+          "$ref": "#/definitions/VoiceGender"
+        },
+        "voice_age": {
+          "type": "string",
+          "enum": ["child", "young", "adult", "elderly"],
+          "default": "adult"
+        },
+        "pitch": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1,
+          "default": 0
+        },
+        "speed": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 2,
+          "default": 1
+        },
+        "volume": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "emphasis": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1,
+          "default": 0
+        },
+        "language": {
+          "type": "string",
+          "default": "es-ES"
+        },
+        "accent": {
+          "type": "string"
+        },
+        "pronunciation_guide": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "AvatarConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "avatar_type": {
+          "$ref": "#/definitions/AvatarType"
+        },
+        "avatar_model_path": {
+          "type": "string",
+          "description": "Ruta al modelo 3D del avatar (.blend, .fbx, .gltf)"
+        },
+        "avatar_name": {
+          "type": "string",
+          "default": "Instructor"
+        },
+        "scale": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 10,
+          "default": 1
+        },
+        "position": {
+          "$ref": "#/definitions/Vector3D"
+        },
+        "rotation": {
+          "$ref": "#/definitions/Vector3D"
+        },
+        "default_emotion": {
+          "$ref": "#/definitions/AvatarEmotionState"
+        },
+        "animation_set": {
+          "type": "string",
+          "description": "Ruta a archivos de animación"
+        },
+        "gesture_library": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lighting_setup": {
+          "type": "string",
+          "description": "Configuración especial de iluminación para avatar"
+        },
+        "materials_override": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "look_at_camera": {
+          "type": "boolean",
+          "default": true
+        },
+        "auto_gestures": {
+          "type": "boolean",
+          "default": true
+        },
+        "emotion_sync_with_speech": {
+          "type": "boolean",
+          "default": true
+        },
+        "screen_position": {
+          "type": "string",
+          "enum": ["bottom_right", "bottom_left", "top_right", "top_left", "center"],
+          "default": "bottom_right"
+        },
+        "screen_size_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 25
+        },
+        "transparency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.9
+        }
+      }
+    },
+    "NarrationSegment": {
+      "type": "object",
+      "required": ["text", "start_time", "duration"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Texto de narración"
+        },
+        "start_time": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Tiempo de inicio en segundos"
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.1,
+          "description": "Duración en segundos"
+        },
+        "emotion": {
+          "$ref": "#/definitions/AvatarEmotionState"
+        },
+        "gestures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "emphasis_words": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "voice_modulation": {
+          "type": "object",
+          "properties": {
+            "speed": {"type": "number"},
+            "pitch": {"type": "number"},
+            "volume": {"type": "number"}
+          }
+        },
+        "sync_with_animation": {
+          "type": "boolean",
+          "default": true
+        },
+        "sync_markers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "EnhancedNarrationConfig": {
+      "type": "object",
+      "properties": {
+        "voice_config": {
+          "$ref": "#/definitions/VoiceConfig"
+        },
+        "avatar_config": {
+          "$ref": "#/definitions/AvatarConfig"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NarrationSegment"
+          }
+        },
+        "auto_generate_segments": {
+          "type": "boolean",
+          "default": true
+        },
+        "segment_duration_max": {
+          "type": "number",
+          "minimum": 1,
+          "default": 30
+        },
+        "pause_between_segments": {
+          "type": "number",
+          "minimum": 0,
+          "default": 1
+        },
+        "background_music_path": {
+          "type": "string"
+        },
+        "background_music_volume": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.3
+        },
+        "fade_music_during_speech": {
+          "type": "boolean",
+          "default": true
+        },
+        "export_audio_separately": {
+          "type": "boolean",
+          "default": true
+        },
+        "audio_format": {
+          "type": "string",
+          "enum": ["wav", "mp3", "flac"],
+          "default": "wav"
+        },
+        "audio_bitrate": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 320,
+          "default": 192
+        }
+      }
+    },
+    "PostProcessingSettings": {
+      "type": "object",
+      "properties": {
+        "exposure": {"type": "number", "default": 0},
+        "gamma": {"type": "number", "minimum": 0.1, "default": 1},
+        "contrast": {"type": "number", "default": 1},
+        "brightness": {"type": "number", "default": 0},
+        "saturation": {"type": "number", "default": 1},
+        "hue_shift": {"type": "number", "default": 0},
+        "vignette": {"type": "boolean", "default": false},
+        "vignette_intensity": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5},
+        "bloom": {"type": "boolean", "default": false},
+        "bloom_threshold": {"type": "number", "minimum": 0, "default": 1},
+        "bloom_intensity": {"type": "number", "minimum": 0, "default": 0.5},
+        "bloom_radius": {"type": "number", "minimum": 0, "default": 6.5},
+        "glare": {"type": "boolean", "default": false},
+        "glare_threshold": {"type": "number", "minimum": 0, "default": 1},
+        "motion_blur": {"type": "boolean", "default": false},
+        "motion_blur_samples": {"type": "integer", "minimum": 1, "default": 16},
+        "motion_blur_shutter": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5},
+        "depth_of_field": {"type": "boolean", "default": false},
+        "dof_focus_distance": {"type": "number", "minimum": 0.1, "default": 10},
+        "dof_aperture": {"type": "number", "minimum": 0.1, "default": 2.8},
+        "dof_blades": {"type": "integer", "minimum": 3, "default": 6},
+        "film_grain": {"type": "boolean", "default": false},
+        "grain_intensity": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5},
+        "grain_size": {"type": "number", "minimum": 0.1, "default": 1},
+        "chromatic_aberration": {"type": "boolean", "default": false},
+        "chromatic_intensity": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5}
+      }
+    },
+    "EnvironmentConfig": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/EnvironmentType"
+        },
+        "hdri_path": {
+          "type": "string",
+          "description": "Ruta al archivo HDRI"
+        },
+        "hdri_rotation": {
+          "type": "number",
+          "default": 0,
+          "description": "Rotación HDRI en grados"
+        },
+        "hdri_strength": {
+          "type": "number",
+          "minimum": 0,
+          "default": 1
+        },
+        "hdri_saturation": {
+          "type": "number",
+          "default": 1
+        },
+        "hdri_hue_shift": {
+          "type": "number",
+          "default": 0
+        },
+        "background_color": {
+          "$ref": "#/definitions/RGBAColor"
+        },
+        "background_strength": {
+          "type": "number",
+          "minimum": 0,
+          "default": 1
+        },
+        "ambient_strength": {
+          "type": "number",
+          "minimum": 0,
+          "default": 0.1
+        },
+        "sun_rotation": {
+          "$ref": "#/definitions/Vector3D"
+        },
+        "sun_strength": {
+          "type": "number",
+          "minimum": 0,
+          "default": 3
+        },
+        "sun_color": {
+          "$ref": "#/definitions/RGBAColor"
+        }
+      }
+    },
+    "SceneLayer": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "include_objects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclude_objects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "render_pass": {
+          "$ref": "#/definitions/RenderPass"
+        },
+        "output_path": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "blend_mode": {
+          "type": "string",
+          "enum": ["normal", "multiply", "add", "subtract"],
+          "default": "normal"
+        }
+      }
+    },
+    "RenderSettings": {
+      "type": "object",
+      "properties": {
+        "resolution_x": {"type": "integer", "minimum": 1, "default": 1920},
+        "resolution_y": {"type": "integer", "minimum": 1, "default": 1080},
+        "frame_start": {"type": "integer", "minimum": 1, "default": 1},
+        "frame_end": {"type": "integer", "minimum": 1, "default": 250},
+        "frame_step": {"type": "integer", "minimum": 1, "default": 1},
+        "fps": {"type": "integer", "minimum": 1, "default": 24},
+        "samples": {"type": "integer", "minimum": 1, "default": 128},
+        "max_bounces": {"type": "integer", "minimum": 0, "default": 12},
+        "diffuse_bounces": {"type": "integer", "minimum": 0, "default": 4},
+        "glossy_bounces": {"type": "integer", "minimum": 0, "default": 4},
+        "transmission_bounces": {"type": "integer", "minimum": 0, "default": 12},
+        "volume_bounces": {"type": "integer", "minimum": 0, "default": 0},
+        "codec": {"$ref": "#/definitions/VideoCodec"},
+        "bitrate": {"type": "integer", "minimum": 1},
+        "quality": {"type": "string", "enum": ["low", "medium", "high", "lossless"], "default": "high"},
+        "audio_codec": {"type": "string", "default": "aac"},
+        "audio_bitrate": {"type": "integer", "minimum": 64, "default": 192},
+        "output_format": {"type": "string", "default": "mp4"},
+        "output_path": {"type": "string", "default": "output/render.mp4"},
+        "file_naming": {"type": "string", "default": "frame_###"},
+        "motion_blur": {"type": "boolean", "default": false},
+        "motion_blur_shutter": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5},
+        "use_denoising": {"type": "boolean", "default": true},
+        "denoising_algorithm": {"type": "string", "enum": ["OPENIMAGEDENOISE", "NLM"], "default": "OPENIMAGEDENOISE"},
+        "post_processing": {"$ref": "#/definitions/PostProcessingSettings"}
+      }
+    },
+    "CameraConfig": {
+      "type": "object",
+      "properties": {
+        "position": {"$ref": "#/definitions/Vector3D"},
+        "rotation": {"$ref": "#/definitions/Vector3D"},
+        "target": {"$ref": "#/definitions/Vector3D"},
+        "lens_focal_length": {"type": "number", "minimum": 1, "default": 50},
+        "sensor_width": {"type": "number", "minimum": 1, "default": 36},
+        "depth_of_field": {"type": "boolean", "default": false},
+        "focus_distance": {"type": "number", "minimum": 0.1, "default": 10},
+        "aperture": {"type": "number", "minimum": 0.1, "default": 2.8},
+        "animated": {"type": "boolean", "default": false},
+        "animation_type": {"type": "string", "enum": ["keyframe", "path", "orbit", "flythrough"], "default": "keyframe"},
+        "keyframes": {"type": "array", "items": {"type": "object"}},
+        "animation_duration": {"type": "number", "minimum": 0.1, "default": 10},
+        "easing": {"type": "string", "enum": ["linear", "ease_in", "ease_out", "ease_in_out"], "default": "ease_in_out"}
+      }
+    },
+    "ObjectConfig": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": ["mesh", "light", "camera", "empty", "curve"],
+          "default": "mesh"
+        },
+        "mesh_path": {
+          "type": "string",
+          "description": "Ruta al archivo de malla 3D"
+        },
+        "asset_type": {
+          "$ref": "#/definitions/AssetType"
+        },
+        "blend_object_name": {
+          "type": "string",
+          "description": "Nombre del objeto dentro del archivo .blend"
+        },
+        "blend_collection_name": {
+          "type": "string",
+          "description": "Nombre de la colección dentro del archivo .blend"
+        },
+        "position": {"$ref": "#/definitions/Vector3D"},
+        "rotation": {"$ref": "#/definitions/Vector3D"},
+        "scale": {"$ref": "#/definitions/Vector3D"},
+        "material_name": {"type": "string"},
+        "material_override": {"type": "object", "additionalProperties": true},
+        "visible": {"type": "boolean", "default": true},
+        "cast_shadows": {"type": "boolean", "default": true},
+        "receive_shadows": {"type": "boolean", "default": true},
+        "render_layer": {"type": "string", "default": "default"}
+      }
+    },
+    "AnimationConfig": {
+      "type": "object",
+      "required": ["target_object", "property_path", "keyframes"],
+      "properties": {
+        "target_object": {
+          "type": "string",
+          "minLength": 1
+        },
+        "property_path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Ruta de la propiedad a animar (ej: location.x, rotation_euler.z)"
+        },
+        "keyframes": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "items": [
+              {"type": "integer", "description": "frame"},
+              {"type": "number", "description": "value"}
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "interpolation": {
+          "type": "string",
+          "enum": ["LINEAR", "BEZIER", "CONSTANT"],
+          "default": "BEZIER"
+        },
+        "easing": {
+          "type": "string",
+          "default": "ease_in_out"
+        }
+      }
+    }
+  }
+}

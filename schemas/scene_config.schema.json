@@ -1,0 +1,358 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://q-aviogen.com/schemas/scene-config.json",
+  "title": "Q-AVIOGEN Scene Configuration - Enhanced",
+  "description": "Enhanced JSON Schema for Q-AVIOGEN 3D scene configurations with full validation",
+  "version": "2.0",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique name for the scene",
+      "minLength": 1
+    },
+    "duration_seconds": {
+      "type": "number",
+      "description": "Duration of the scene in seconds",
+      "minimum": 0.1,
+      "maximum": 3600
+    },
+    "camera": {
+      "type": "object",
+      "description": "Camera configuration",
+      "properties": {
+        "position": {
+          "type": "array",
+          "description": "Camera position [x, y, z]",
+          "items": {"type": "number"},
+          "minItems": 3,
+          "maxItems": 3,
+          "default": [0, -5, 3]
+        },
+        "target": {
+          "type": "array",
+          "description": "Camera target point [x, y, z]",
+          "items": {"type": "number"},
+          "minItems": 3,
+          "maxItems": 3,
+          "default": [0, 0, 0]
+        },
+        "fov": {
+          "type": "number",
+          "description": "Field of view in degrees",
+          "minimum": 1,
+          "maximum": 180,
+          "default": 45
+        },
+        "type": {
+          "type": "string",
+          "enum": ["default", "overview", "front_view", "side_view", "close_up", "top_down", "custom"],
+          "default": "default"
+        }
+      }
+    },
+    "lights": {
+      "type": "array",
+      "description": "Light sources in the scene",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Light name"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["SUN", "AREA", "POINT", "SPOT"],
+            "description": "Type of light"
+          },
+          "position": {
+            "type": "array",
+            "description": "Light position [x, y, z]",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3,
+            "default": [0, 0, 5]
+          },
+          "energy": {
+            "type": "number",
+            "description": "Light energy/intensity",
+            "minimum": 0,
+            "default": 10
+          },
+          "color": {
+            "type": "array",
+            "description": "Light color [r, g, b] (0-1 range)",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 3,
+            "maxItems": 3,
+            "default": [1, 1, 1]
+          }
+        }
+      }
+    },
+    "objects": {
+      "type": "array",
+      "description": "3D objects in the scene",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Object name"
+          },
+          "file_path": {
+            "type": ["string", "null"],
+            "description": "Path to 3D model file (.glb, .obj, .fbx)"
+          },
+          "position": {
+            "type": "array",
+            "description": "Object position [x, y, z]",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3,
+            "default": [0, 0, 0]
+          },
+          "rotation": {
+            "type": "array",
+            "description": "Object rotation [x, y, z] in radians",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3,
+            "default": [0, 0, 0]
+          },
+          "scale": {
+            "type": "array",
+            "description": "Object scale [x, y, z]",
+            "items": {
+              "type": "number",
+              "minimum": 0.001
+            },
+            "minItems": 3,
+            "maxItems": 3,
+            "default": [1, 1, 1]
+          },
+          "visible": {
+            "type": "boolean",
+            "description": "Object visibility",
+            "default": true
+          },
+          "material": {
+            "type": "object",
+            "description": "Material properties",
+            "properties": {
+              "base_color": {
+                "type": "array",
+                "description": "Base color [r, g, b, a] (0-1 range)",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 4,
+                "maxItems": 4,
+                "default": [0.8, 0.8, 0.8, 1.0]
+              },
+              "metallic": {
+                "type": "number",
+                "description": "Metallic factor (0-1)",
+                "minimum": 0,
+                "maximum": 1,
+                "default": 0
+              },
+              "roughness": {
+                "type": "number",
+                "description": "Roughness factor (0-1)",
+                "minimum": 0,
+                "maximum": 1,
+                "default": 0.5
+              },
+              "emission_strength": {
+                "type": "number",
+                "description": "Emission strength",
+                "minimum": 0,
+                "default": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "animations": {
+      "type": "array",
+      "description": "Animations for objects",
+      "items": {
+        "type": "object",
+        "required": ["type", "target_object"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["highlight", "move", "rotate", "scale", "sequence"],
+            "description": "Type of animation"
+          },
+          "target_object": {
+            "type": "string",
+            "description": "Name of the object to animate"
+          },
+          "start_frame": {
+            "type": "integer",
+            "description": "Starting frame (relative to scene start)",
+            "minimum": 1,
+            "default": 1
+          },
+          "end_frame": {
+            "type": "integer",
+            "description": "Ending frame (relative to scene start)",
+            "minimum": 1,
+            "default": 30
+          },
+          "start_position": {
+            "type": "array",
+            "description": "Starting position for move animation [x, y, z]",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "end_position": {
+            "type": "array",
+            "description": "Ending position for move animation [x, y, z]",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "easing": {
+            "type": "string",
+            "enum": ["BEZIER", "LINEAR", "CONSTANT"],
+            "default": "BEZIER"
+          }
+        }
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "description": "Text overlays",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "Overlay text content"
+          },
+          "position": {
+            "type": "array",
+            "description": "Screen position [x, y] (0-1 normalized)",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 2,
+            "maxItems": 2,
+            "default": [0.5, 0.1]
+          },
+          "font_size": {
+            "type": "integer",
+            "description": "Font size in pixels",
+            "minimum": 8,
+            "maximum": 200,
+            "default": 24
+          },
+          "duration": {
+            "type": "number",
+            "description": "Display duration in seconds",
+            "minimum": 0.1,
+            "default": 5.0
+          }
+        }
+      }
+    },
+    "audio_file": {
+      "type": ["string", "null"],
+      "description": "Path to audio file for this scene"
+    },
+    "background_color": {
+      "type": "array",
+      "description": "Background color [r, g, b] (0-1 range)",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "default": [0.2, 0.2, 0.2]
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "name": "towbar_attachment_step1",
+      "duration_seconds": 8.0,
+      "camera": {
+        "position": [0, -5, 3],
+        "target": [0, 0, 0],
+        "fov": 45,
+        "type": "default"
+      },
+      "lights": [
+        {
+          "name": "KeyLight",
+          "type": "SUN",
+          "position": [5, 5, 10],
+          "energy": 5.0,
+          "color": [1.0, 1.0, 1.0]
+        }
+      ],
+      "objects": [
+        {
+          "name": "BWB_Aircraft",
+          "file_path": "assets/models/bwb_aircraft.glb",
+          "position": [0, 0, 0],
+          "rotation": [0, 0, 0],
+          "scale": [1, 1, 1],
+          "visible": true,
+          "material": {
+            "base_color": [0.7, 0.7, 0.8, 1.0],
+            "metallic": 0.1,
+            "roughness": 0.3
+          }
+        },
+        {
+          "name": "Towbar",
+          "file_path": "assets/models/towbar.glb",
+          "position": [0, -3, 0],
+          "visible": true
+        }
+      ],
+      "animations": [
+        {
+          "type": "move",
+          "target_object": "Towbar",
+          "start_frame": 1,
+          "end_frame": 60,
+          "start_position": [0, -5, 0],
+          "end_position": [0, -1.5, 0],
+          "easing": "BEZIER"
+        }
+      ],
+      "overlays": [
+        {
+          "text": "Step 1: Position towbar near aircraft nose gear",
+          "position": [0.5, 0.9],
+          "font_size": 28,
+          "duration": 8.0
+        }
+      ],
+      "audio_file": "audio/step_01_towbar_position.wav",
+      "background_color": [0.15, 0.15, 0.2]
+    }
+  ]
+}

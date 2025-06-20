@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-AVIOGEN - Demo de Presentación Ejecutiva</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .presentation-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide.prev {
+            transform: translateX(-100%);
+        }
+
+        /* Slide 1: Hook */
+        .slide-1 {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            text-align: center;
+        }
+
+        .slide-1 h1 {
+            font-size: 4em;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        .slide-1 p {
+            font-size: 1.8em;
+            max-width: 800px;
+            line-height: 1.4;
+        }
+
+        /* Slide 2: Problem */
+        .slide-2 {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .problem-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Slide 3: Solution */
+        .slide-3 {
+            background: linear-gradient(45deg, #11998e, #38ef7d);
+            flex-direction: column;
+        }
+
+        .demo-preview {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .before-after {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .document-preview {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 0.9em;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .video-preview {
+            background: #000;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+
+        /* Slide 4: Benefits */
+        .slide-4 {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            flex-direction: column;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: scale(1);
+        }
+
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        /* Slide 5: Pricing */
+        .slide-5 {
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            flex-direction: column;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: #ffd700;
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured {
+            border-color: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffd700;
+            margin: 15px 0;
+        }
+
+        /* Slide 6: CTA */
+        .slide-6 {
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .cta-btn {
+            padding: 20px 40px;
+            font-size: 1.3em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .cta-primary {
+            background: #ff6b6b;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.4);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255,107,107,0.6);
+        }
+
+        /* Navigation */
+        .nav-controls {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+
+        .slide-indicator {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .indicator-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator-dot.active {
+            background: #ffd700;
+            transform: scale(1.3);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slide-1 h1 { font-size: 2.5em; }
+            .slide-1 p { font-size: 1.3em; }
+            .problem-stats { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .pricing-cards { grid-template-columns: repeat(2, 1fr); }
+            .demo-preview { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Hook -->
+        <div class="slide slide-1 active">
+            <div class="animated">
+                <h1>🚀 Q-AVIOGEN</h1>
+                <p><strong>La Revolución en Documentación Aeroespacial</strong><br>
+                De semanas de trabajo manual a videos profesionales en 5 minutos</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem -->
+        <div class="slide slide-2">
+            <div class="animated">
+                <h1>💔 El Problema Actual</h1>
+                <p style="font-size: 1.5em; margin-bottom: 20px;">La industria aeroespacial pierde millones en documentación ineficiente</p>
+                
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <p>del tiempo se pierde en documentación manual</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">€50K</div>
+                        <p>costo promedio por manual técnico</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6 meses</div>
+                        <p>tiempo típico de producción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Solution -->
+        <div class="slide slide-3">
+            <div class="animated">
+                <h1>✨ La Solución: Q-AVIOGEN</h1>
+                
+                <div class="demo-preview">
+                    <div class="before-after">
+                        <h3>ANTES: Documento ATA</h3>
+                        <div class="document-preview">
+ATA 32-21-00-001
+LANDING GEAR OPERATION
+
+1. Check hydraulic pressure
+2. Verify gear position
+3. Test warning systems
+4. Inspect gear doors
+5. Check actuator operation
+...
+                        </div>
+                        
+                        <h3>DESPUÉS: Video Profesional</h3>
+                        <div class="video-preview">
+                            <i class="fas fa-play-circle" style="font-size: 4em; color: #ffd700;"></i>
+                            <div style="margin-left: 20px;">
+                                <p>Video 3D Interactivo</p>
+                                <p>Narración Profesional</p>
+                                <p>Overlays Técnicos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h2 style="color: #ffd700; margin-bottom: 30px;">⚡ Transformación Automática</h2>
+                        <div style="font-size: 1.2em;">
+                            <p>✅ IA avanzada para análisis ATA</p>
+                            <p>✅ Modelos 3D aeroespaciales</p>
+                            <p>✅ Voz profesional multipláforma</p>
+                            <p>✅ Cumple estándares FAA/EASA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Benefits -->
+        <div class="slide slide-4">
+            <div class="animated">
+                <h1>🎯 Beneficios Clave</h1>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>90% Menos Tiempo</h3>
+                        <p>De semanas a minutos de producción</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💰</div>
+                        <h3>80% Menos Costo</h3>
+                        <p>ROI inmediato desde el primer uso</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎥</div>
+                        <h3>Calidad Profesional</h3>
+                        <p>Videos broadcast-ready</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔒</div>
+                        <h3>Cumplimiento Total</h3>
+                        <p>Estándares aeroespaciales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Pricing -->
+        <div class="slide slide-5">
+            <div class="animated">
+                <h1>💎 Planes y Precios</h1>
+                
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>FREE</h3>
+                        <div class="price">€0</div>
+                        <p>3 videos/mes</p>
+                        <p>720p</p>
+                        <p>Marca de agua</p>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <h3>BASE</h3>
+                        <div class="price">€49</div>
+                        <p>20 videos/mes</p>
+                        <p>1080p</p>
+                        <p>Sin marca de agua</p>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <h3>PLUS</h3>
+                        <div class="price">€149</div>
+                        <p>100 videos/mes</p>
+                        <p>4K + API</p>
+                        <p>Múltiples idiomas</p>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <h3>PRO</h3>
+                        <div class="price">€299</div>
+                        <p>Ilimitado</p>
+                        <p>8K + White-label</p>
+                        <p>Soporte prioritario</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <h3 style="color: #ffd700;">🚀 Planes Especiales</h3>
+                    <p>Startups: 50% descuento primer año | Enterprise: Desde €2,000/mes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: CTA -->
+        <div class="slide slide-6">
+            <div class="animated">
+                <h1>🚀 ¡Comience Ahora!</h1>
+                <p style="font-size: 1.5em; margin-bottom: 20px;">Únase a la revolución en documentación aeroespacial</p>
+                
+                <div class="cta-buttons">
+                    <a href="demo.html" class="cta-btn cta-primary">
+                        🎮 DEMO GRATIS
+                    </a>
+                    <a href="app.html" class="cta-btn cta-secondary">
+                        💎 COMENZAR PRUEBA
+                    </a>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <p>✅ Sin tarjeta de crédito | ✅ Configuración en 2 minutos | ✅ Soporte 24/7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="nav-btn" id="playBtn"><i class="fas fa-play"></i></button>
+        <button class="nav-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="slide-indicator">
+        <div class="indicator-dot active" data-slide="0"></div>
+        <div class="indicator-dot" data-slide="1"></div>
+        <div class="indicator-dot" data-slide="2"></div>
+        <div class="indicator-dot" data-slide="3"></div>
+        <div class="indicator-dot" data-slide="4"></div>
+        <div class="indicator-dot" data-slide="5"></div>
+    </div>
+
+    <script>
+        class PresentationDemo {
+            constructor() {
+                this.currentSlide = 0;
+                this.totalSlides = 6;
+                this.isPlaying = false;
+                this.autoPlayInterval = null;
+                
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+                this.updateSlideIndicators();
+            }
+
+            bindEvents() {
+                // Navigation buttons
+                document.getElementById('prevBtn').addEventListener('click', () => this.prevSlide());
+                document.getElementById('nextBtn').addEventListener('click', () => this.nextSlide());
+                document.getElementById('playBtn').addEventListener('click', () => this.toggleAutoPlay());
+
+                // Slide indicators
+                document.querySelectorAll('.indicator-dot').forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    switch(e.key) {
+                        case 'ArrowLeft':
+                        case 'ArrowUp':
+                            this.prevSlide();
+                            break;
+                        case 'ArrowRight':
+                        case 'ArrowDown':
+                        case ' ':
+                            this.nextSlide();
+                            break;
+                        case 'Home':
+                            this.goToSlide(0);
+                            break;
+                        case 'End':
+                            this.goToSlide(this.totalSlides - 1);
+                            break;
+                        case 'Escape':
+                            this.stopAutoPlay();
+                            break;
+                    }
+                });
+
+                // Mouse wheel navigation
+                document.addEventListener('wheel', (e) => {
+                    if (e.deltaY > 0) {
+                        this.nextSlide();
+                    } else {
+                        this.prevSlide();
+                    }
+                }, { passive: true });
+            }
+
+            goToSlide(slideIndex) {
+                if (slideIndex < 0 || slideIndex >= this.totalSlides) return;
+
+                // Hide current slide
+                const currentSlideEl = document.querySelector('.slide.active');
+                currentSlideEl.classList.remove('active');
+                
+                // Show new slide
+                const newSlideEl = document.querySelector(`.slide:nth-child(${slideIndex + 1})`);
+                newSlideEl.classList.add('active');
+                
+                // Add animation class to content
+                const animatedEl = newSlideEl.querySelector('.animated');
+                if (animatedEl) {
+                    animatedEl.style.animation = 'none';
+                    setTimeout(() => {
+                        animatedEl.style.animation = 'fadeInUp 1s ease-out';
+                    }, 50);
+                }
+
+                this.currentSlide = slideIndex;
+                this.updateSlideIndicators();
+            }
+
+            nextSlide() {
+                const nextIndex = (this.currentSlide + 1) % this.totalSlides;
+                this.goToSlide(nextIndex);
+            }
+
+            prevSlide() {
+                const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.goToSlide(prevIndex);
+            }
+
+            updateSlideIndicators() {
+                document.querySelectorAll('.indicator-dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            toggleAutoPlay() {
+                const playBtn = document.getElementById('playBtn');
+                
+                if (this.isPlaying) {
+                    this.stopAutoPlay();
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                } else {
+                    this.startAutoPlay();
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                }
+            }
+
+            startAutoPlay() {
+                this.isPlaying = true;
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 8000); // 8 seconds per slide
+            }
+
+            stopAutoPlay() {
+                this.isPlaying = false;
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            }
+        }
+
+        // Initialize presentation when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new PresentationDemo();
+        });
+
+        // Add some interactivity to pricing cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const pricingCards = document.querySelectorAll('.pricing-card');
+            pricingCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    // Remove featured class from all cards
+                    pricingCards.forEach(c => c.classList.remove('featured'));
+                    // Add featured class to clicked card
+                    card.classList.add('featured');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

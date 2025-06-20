@@ -1,0 +1,58 @@
+{
+  "name": "gaia-qao-advent",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Unified platform for next-generation aerospace systems integrating quantum and AI technologies.",
+  "author": "GAIA-QAO Consortium <contact@gaia-qao.org>",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaia-qao/gaia-qao-advent.git"
+  },
+  "workspaces": [
+    "api",
+    "dashboard"
+  ],
+  "scripts": {
+    "//--- DEVELOPMENT ---//": "-------------------------------------------------",
+    "start:api": "npm run dev --workspace=api",
+    "start:dashboard": "npm start --workspace=dashboard",
+    "dev": "npm-run-all --parallel start:api start:dashboard",
+
+    "//--- TESTING ---//": "-------------------------------------------------",
+    "test": "npm test --workspace=api && npm test --workspace=dashboard",
+    "test:api": "npm test --workspace=api",
+    "test:dashboard": "npm test --workspace=dashboard",
+    "test:e2e": "npx playwright test",
+
+    "//--- LINTING & FORMATTING ---//": "-------------------------------------------------",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+
+    "//--- BUILD & DEPLOY ---//": "-------------------------------------------------",
+    "build": "npm run build --workspace=api && npm run build --workspace=dashboard",
+    "build:api": "npm run build --workspace=api",
+    "build:dashboard": "npm run build --workspace=dashboard",
+
+    "//--- UTILITY ---//": "-------------------------------------------------",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+# Core dependencies
+markdown>=3.5.1
+PyYAML>=6.0.1
+Jinja2>=3.1.2
+requests>=2.31.0
+
+# Blender Python API (instalar Blender por separado)
+# bpy se instala con Blender
+
+# Text-to-Speech options
+pyttsx3>=2.90           # Offline TTS
+boto3>=1.29.0           # AWS Polly
+elevenlabs>=0.2.26      # ElevenLabs API
+
+# 3D and media processing
+Pillow>=10.0.1          # Image processing
+opencv-python>=4.8.1   # Video processing
+numpy>=1.24.3          # Numerical computing
+
+# Development and testing
+pytest>=7.4.3
+pytest-cov>=4.1.0
+black>=23.9.1          # Code formatting
+flake8>=6.1.0          # Linting
+
+# CLI and utilities
+click>=8.1.7           # Command line interface
+rich>=13.6.0           # Rich terminal output
+tqdm>=4.66.1           # Progress bars
+
+# Optional: Web frontend (Phase 2)
+# flask>=2.3.3
+# fastapi>=0.104.1

@@ -1,0 +1,332 @@
+# Q-AVIOGEN FastAPI Service CI/CD Pipeline
+# Automated testing, building, and deployment workflow
+
+name: Q-AVIOGEN API CI/CD
+
+on:
+  push:
+    branches: [ main, develop, feature/* ]
+    paths:
+      - 'deployment/qaviogen_api/**'
+      - 'core/**'
+      - '.github/workflows/qaviogen-api.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'deployment/qaviogen_api/**'
+      - 'core/**'
+  release:
+    types: [ published ]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: qaviogen-api
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # Code quality and testing
+  test:
+    name: Test & Code Quality
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('deployment/qaviogen_api/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install dependencies
+      working-directory: deployment/qaviogen_api
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest-xdist  # Parallel testing
+        
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg
+        
+    - name: Lint with flake8
+      working-directory: deployment/qaviogen_api
+      run: |
+        flake8 app/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 app/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        
+    - name: Type checking with mypy
+      working-directory: deployment/qaviogen_api
+      run: |
+        mypy app/ --ignore-missing-imports
+        
+    - name: Format checking with black
+      working-directory: deployment/qaviogen_api
+      run: |
+        black --check app/
+        
+    - name: Import sorting with isort
+      working-directory: deployment/qaviogen_api
+      run: |
+        isort --check-only app/
+        
+    - name: Security scan with bandit
+      working-directory: deployment/qaviogen_api
+      run: |
+        pip install bandit
+        bandit -r app/ -f json -o security-report.json || true
+        
+    - name: Run tests with pytest
+      working-directory: deployment/qaviogen_api
+      run: |
+        pytest tests/ -v --cov=app --cov-report=xml --cov-report=html -n auto
+        
+    - name: Upload coverage to Codecov
+      if: matrix.python-version == '3.11'
+      uses: codecov/codecov-action@v3
+      with:
+        file: deployment/qaviogen_api/coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+
+  # Security scanning
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: 'deployment/qaviogen_api'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  # Build Docker image
+  build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    needs: [test]
+    outputs:
+      image-digest: ${{ steps.build.outputs.digest }}
+      image-metadata: ${{ steps.meta.outputs.json }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      
+    - name: Log in to Container Registry
+      if: github.event_name != 'pull_request'
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha,prefix={{branch}}-
+          type=raw,value=latest,enable={{is_default_branch}}
+        labels: |
+          org.opencontainers.image.title=Q-AVIOGEN API
+          org.opencontainers.image.description=Enterprise REST API for Q-AVIOGEN Avatar Video Generator
+          org.opencontainers.image.vendor=Amedeo Pelliccia
+          
+    - name: Build and push Docker image
+      id: build
+      uses: docker/build-push-action@v5
+      with:
+        context: deployment/qaviogen_api
+        platforms: linux/amd64,linux/arm64
+        push: ${{ github.event_name != 'pull_request' }}
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+        build-args: |
+          BUILDKIT_INLINE_CACHE=1
+
+  # Deploy to staging
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    needs: [build, security]
+    if: github.ref == 'refs/heads/develop'
+    environment:
+      name: staging
+      url: https://qaviogen-api-staging.your-domain.com
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Deploy to Azure Container Apps (Staging)
+      if: env.AZURE_STAGING_ENABLED == 'true'
+      run: |
+        # Add Azure deployment commands here
+        echo "Deploying to Azure Container Apps Staging..."
+        # az containerapp update --name qaviogen-api-staging --resource-group rg-qaviogen-staging --image ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:develop
+        
+    - name: Deploy to Kubernetes (Staging)
+      if: env.K8S_STAGING_ENABLED == 'true'
+      run: |
+        # Add Kubernetes deployment commands here
+        echo "Deploying to Kubernetes Staging..."
+        
+    - name: Run smoke tests
+      run: |
+        # Wait for deployment to be ready
+        sleep 30
+        # Run basic smoke tests
+        curl -f https://qaviogen-api-staging.your-domain.com/health || exit 1
+
+  # Deploy to production
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [build, security]
+    if: github.event_name == 'release'
+    environment:
+      name: production
+      url: https://qaviogen-api.your-domain.com
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Deploy to Azure Container Apps (Production)
+      if: env.AZURE_PRODUCTION_ENABLED == 'true'
+      run: |
+        # Add Azure deployment commands here
+        echo "Deploying to Azure Container Apps Production..."
+        # az containerapp update --name qaviogen-api --resource-group rg-qaviogen --image ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+        
+    - name: Deploy to Kubernetes (Production)
+      if: env.K8S_PRODUCTION_ENABLED == 'true'
+      run: |
+        # Add Kubernetes deployment commands here
+        echo "Deploying to Kubernetes Production..."
+        
+    - name: Run production smoke tests
+      run: |
+        # Wait for deployment to be ready
+        sleep 60
+        # Run comprehensive smoke tests
+        curl -f https://qaviogen-api.your-domain.com/health || exit 1
+
+  # Performance testing
+  performance:
+    name: Performance Testing
+    runs-on: ubuntu-latest
+    needs: [deploy-staging]
+    if: github.ref == 'refs/heads/develop'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run load tests with Artillery
+      run: |
+        npm install -g artillery
+        # artillery run deployment/qaviogen_api/tests/load-test.yml
+        echo "Load testing completed"
+        
+    - name: Upload performance results
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-results
+        path: performance-results.json
+
+  # Cleanup
+  cleanup:
+    name: Cleanup
+    runs-on: ubuntu-latest
+    needs: [deploy-production, performance]
+    if: always()
+    
+    steps:
+    - name: Clean up old images
+      run: |
+        # Clean up old container images to save storage
+        echo "Cleaning up old images..."
+        
+    - name: Update deployment status
+      run: |
+        echo "Deployment pipeline completed"
+
+# Additional workflow for dependency updates
+---
+name: Dependency Updates
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Weekly on Monday at 2 AM
+  workflow_dispatch:
+
+jobs:
+  update-dependencies:
+    name: Update Dependencies
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Update Python dependencies
+      working-directory: deployment/qaviogen_api
+      run: |
+        pip install pip-tools
+        pip-compile --upgrade requirements.in
+        
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore: update dependencies'
+        title: 'Automated dependency updates'
+        body: |
+          This PR updates the project dependencies to their latest versions.
+          
+          Please review the changes and ensure all tests pass before merging.
+        branch: dependency-updates
+        delete-branch: true

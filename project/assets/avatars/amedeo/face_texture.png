@@ -1,0 +1,45 @@
+# AMPEL360 BWB-Q100 - Amedeo Pelliccia Face Texture
+# Placeholder for avatar face texture file
+#
+# This file should contain:
+# - High-resolution facial texture (2048x2048 or 4096x4096)
+# - Professional appearance suitable for aviation training
+# - Realistic skin tones and features representing Amedeo Pelliccia
+# - Normal maps for facial detail
+# - Specular/roughness maps for realistic material properties
+# - UV unwrapped to match avatar_model.blend
+#
+# Texture specifications:
+# - Format: PNG or EXR
+# - Resolution: 2048x2048 minimum, 4096x4096 preferred
+# - Color space: sRGB
+# - Alpha channel: Optional (for facial hair blending)
+# - Compression: Lossless
+#
+# Associated maps (should be created alongside):
+# - face_normal.png (normal map for surface detail)
+# - face_roughness.png (material properties)
+# - face_specular.png (reflection properties)
+# - face_displacement.png (optional, for fine detail)
+#
+# Professional appearance guidelines:
+# - Clean-shaven or well-groomed facial hair
+# - Professional expression (neutral, approachable)
+# - Suitable for instructional/training context
+# - Compatible with various lighting conditions
+#
+# Note: This is a placeholder file. Replace with actual texture maps.
+
+TEXTURE_INFO = {
+    "texture_version": "1.0",
+    "created_date": "2025-06-20",
+    "author": "Q-AVIOGEN Avatar Team",
+    "avatar_name": "Amedeo Pelliccia",
+    "texture_type": "facial_diffuse",
+    "resolution": "2048x2048",
+    "file_format": "PNG",
+    "color_space": "sRGB",
+    "uv_layout": "standard_face_unwrap",
+    "compatible_with": "avatar_model.blend",
+    "status": "placeholder_awaiting_texture_maps"
+}

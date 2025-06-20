@@ -1,0 +1,49 @@
+{
+  "name": "gaia-qao-digital-twin-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard and visualization interface for the GAIA-QAO MDO framework, supporting the AMPEL360 aircraft.",
+  "private": true,
+  "author": "GAIA-QAO Consortium <mdo@gaia-qao.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaia-qao-consortium/q-air-monorepo.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "run:parser": "python ./fleet/AMPEL360/BWBQ100/quantum_mdo/parsers/step_parser.py",
+    "run:mdo:weight": "python ./fleet/AMPEL360/BWBQ100/quantum_mdo/workflows/weight_optimization_mdo.py"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.0",
+    "@mui/x-charts": "^7.0.0",
+    "d3": "^7.4.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.140.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "eslint": "^8.16.0",
+    "eslint-config-react-app": "^7.0.1",
+    "prettier": "^2.6.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

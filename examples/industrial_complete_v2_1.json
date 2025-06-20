@@ -1,0 +1,496 @@
+{
+  "name": "Q-AVIOGEN_Industrial_Complete_v2.1",
+  "description": "Configuración industrial completa demostrando todas las características v2.1: .blend, HDRI, timeline markers, postprocesado avanzado, capas de composición y metadata aerospace.",
+  "scene_id": "IND-DEMO-2025",
+  
+  "metadata": {
+    "author": "Q-AVIOGEN Certification Team",
+    "version": "2.1.0",
+    "procedure_id": "AMM-32-41-001",
+    "aircraft_type": "Airbus A320-200",
+    "ata_chapter": "32-41-00",
+    "created_at": "2025-06-20T10:30:00Z",
+    "approved_by": "Chief Technical Officer",
+    "compliance_level": "certified",
+    "signature": "SHA256:abcd1234...",
+    "checksum": "md5:xyz789..."
+  },
+  
+  "camera": {
+    "position": [8.0, -12.0, 6.0],
+    "target": [0.0, 0.0, 2.0],
+    "focal_length": 85.0,
+    "sensor_width": 36.0,
+    "aperture": 1.8,
+    "focus_distance": 15.0,
+    "shift_x": 0.0,
+    "shift_y": 0.0,
+    "clip_start": 0.1,
+    "clip_end": 1000.0,
+    "use_animation": true,
+    "animation_type": "camera_path",
+    "follow_target": null,
+    "camera_shake": false,
+    "shake_intensity": 0.05
+  },
+  
+  "objects": [
+    {
+      "name": "MainAircraft",
+      "mesh_path": "assets/aircraft/a320_detailed.blend",
+      "asset_type": "blend",
+      "blend_object_name": "A320_Fuselage",
+      "blend_collection_name": "Aircraft_Main",
+      "blend_link_vs_append": "append",
+      "position": [0.0, 0.0, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "material": "Aircraft_Aluminum",
+      "override_material": null,
+      "wireframe": false,
+      "visibility": true,
+      "camera_visibility": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "motion_blur": true,
+      "caustics": false,
+      "parent": null,
+      "collections": ["Aircraft", "MainObjects"],
+      "layers": ["Beauty", "Aircraft_Layer"],
+      "custom_properties": {
+        "registration": "D-AIAA",
+        "operator": "Lufthansa",
+        "model_year": 2019
+      }
+    },
+    {
+      "name": "LandingGear_Main",
+      "mesh_path": "assets/aircraft/a320_detailed.blend",
+      "asset_type": "blend",
+      "blend_object_name": "Landing_Gear_Main",
+      "blend_collection_name": "Landing_Gear",
+      "blend_link_vs_append": "append",
+      "position": [0.0, -3.2, -1.8],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "material": "Steel_Chrome",
+      "visibility": true,
+      "cast_shadows": true,
+      "receive_shadows": true,
+      "motion_blur": true,
+      "collections": ["Aircraft", "LandingGear"],
+      "layers": ["Beauty", "Mechanical"],
+      "custom_properties": {
+        "part_number": "A320-32-41-001",
+        "inspection_due": "2025-12-31"
+      }
+    },
+    {
+      "name": "MaintenanceTools",
+      "mesh_path": "assets/tools/maintenance_kit.blend",
+      "asset_type": "blend",
+      "blend_collection_name": "ToolKit_Complete",
+      "blend_link_vs_append": "append",
+      "position": [5.0, -8.0, 0.0],
+      "rotation": [0.0, 0.0, 45.0],
+      "scale": [1.0, 1.0, 1.0],
+      "material": "Tool_Metal",
+      "collections": ["Tools", "MaintenanceEquipment"],
+      "layers": ["Beauty", "Tools"],
+      "custom_properties": {
+        "kit_id": "MK-A320-001",
+        "calibration_date": "2025-01-15"
+      }
+    },
+    {
+      "name": "InspectionPlatform",
+      "mesh_path": "assets/equipment/platform.blend",
+      "asset_type": "blend",
+      "blend_object_name": "Platform_Adjustable",
+      "position": [2.0, -5.0, -2.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.2, 1.0, 1.0],
+      "material": "Platform_Steel",
+      "collections": ["Equipment", "Safety"],
+      "layers": ["Beauty", "Equipment"]
+    }
+  ],
+  
+  "lights": [
+    {
+      "name": "MainSun",
+      "light_type": "SUN",
+      "position": [0.0, 0.0, 20.0],
+      "rotation": [45.0, 0.0, 135.0],
+      "energy": 8.0,
+      "color": [1.0, 0.95, 0.8],
+      "temperature": 5500.0,
+      "use_temperature": true,
+      "size": 0.545,
+      "cast_shadows": true,
+      "shadow_soft_size": 0.1,
+      "shadow_color": [0.2, 0.3, 0.4]
+    },
+    {
+      "name": "KeyLight_Aircraft",
+      "light_type": "AREA",
+      "position": [-8.0, -6.0, 8.0],
+      "rotation": [25.0, 0.0, 45.0],
+      "energy": 150.0,
+      "color": [1.0, 1.0, 1.0],
+      "temperature": 6500.0,
+      "use_temperature": true,
+      "size": 4.0,
+      "size_y": 2.0,
+      "cast_shadows": true,
+      "shadow_soft_size": 0.5
+    },
+    {
+      "name": "FillLight_Hangar",
+      "light_type": "AREA",
+      "position": [12.0, 8.0, 6.0],
+      "rotation": [-15.0, 0.0, -120.0],
+      "energy": 80.0,
+      "color": [0.9, 0.95, 1.0],
+      "temperature": 7000.0,
+      "use_temperature": true,
+      "size": 6.0,
+      "size_y": 3.0,
+      "cast_shadows": false
+    },
+    {
+      "name": "SpotLight_Detail",
+      "light_type": "SPOT",
+      "position": [3.0, -10.0, 4.0],
+      "rotation": [30.0, 0.0, 15.0],
+      "energy": 200.0,
+      "color": [1.0, 1.0, 0.95],
+      "temperature": 5000.0,
+      "use_temperature": true,
+      "size": 0.5,
+      "spot_size": 35.0,
+      "spot_blend": 0.2,
+      "cast_shadows": true,
+      "shadow_soft_size": 0.3,
+      "use_animation": true,
+      "follow_target": "LandingGear_Main"
+    }
+  ],
+  
+  "animations": [
+    {
+      "target_object": "Camera",
+      "property_path": "location",
+      "animation_type": "camera_path",
+      "keyframes": [
+        {
+          "frame": 1,
+          "value": [8.0, -12.0, 6.0],
+          "interpolation": "BEZIER"
+        },
+        {
+          "frame": 150,
+          "value": [2.0, -15.0, 8.0],
+          "interpolation": "BEZIER"
+        },
+        {
+          "frame": 300,
+          "value": [-5.0, -8.0, 4.0],
+          "interpolation": "BEZIER"
+        },
+        {
+          "frame": 450,
+          "value": [8.0, -12.0, 6.0],
+          "interpolation": "BEZIER"
+        }
+      ],
+      "start_frame": 1,
+      "end_frame": 450,
+      "loop": true,
+      "ease_in": 0.3,
+      "ease_out": 0.3
+    },
+    {
+      "target_object": "SpotLight_Detail",
+      "property_path": "energy",
+      "animation_type": "keyframe",
+      "keyframes": [
+        {
+          "frame": 1,
+          "value": 50.0,
+          "interpolation": "LINEAR"
+        },
+        {
+          "frame": 75,
+          "value": 200.0,
+          "interpolation": "LINEAR"
+        },
+        {
+          "frame": 225,
+          "value": 250.0,
+          "interpolation": "LINEAR"
+        },
+        {
+          "frame": 375,
+          "value": 150.0,
+          "interpolation": "LINEAR"
+        },
+        {
+          "frame": 450,
+          "value": 50.0,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "start_frame": 1,
+      "end_frame": 450,
+      "loop": true
+    },
+    {
+      "target_object": "MaintenanceTools",
+      "property_path": "rotation",
+      "animation_type": "rotate",
+      "keyframes": [
+        {
+          "frame": 150,
+          "value": [0.0, 0.0, 45.0],
+          "interpolation": "BEZIER"
+        },
+        {
+          "frame": 225,
+          "value": [0.0, 0.0, 90.0],
+          "interpolation": "BEZIER"
+        },
+        {
+          "frame": 300,
+          "value": [0.0, 0.0, 45.0],
+          "interpolation": "BEZIER"
+        }
+      ],
+      "start_frame": 150,
+      "end_frame": 300
+    }
+  ],
+  
+  "timeline_markers": [
+    {
+      "label": "Safety Briefing",
+      "frame": 1,
+      "color": [0.0, 1.0, 0.0, 1.0],
+      "description": "Initial safety check and briefing",
+      "sync_audio": true,
+      "trigger_event": "safety_check_start"
+    },
+    {
+      "label": "Equipment Setup",
+      "frame": 75,
+      "color": [0.0, 0.5, 1.0, 1.0],
+      "description": "Positioning tools and equipment",
+      "sync_audio": true,
+      "trigger_event": "equipment_ready"
+    },
+    {
+      "label": "Inspection Begin",
+      "frame": 150,
+      "color": [1.0, 1.0, 0.0, 1.0],
+      "description": "Start of detailed inspection procedure",
+      "sync_audio": true,
+      "trigger_event": "inspection_start"
+    },
+    {
+      "label": "Critical Check Point",
+      "frame": 225,
+      "color": [1.0, 0.5, 0.0, 1.0],
+      "description": "Critical component inspection",
+      "sync_audio": true,
+      "trigger_event": "critical_check"
+    },
+    {
+      "label": "Documentation Phase",
+      "frame": 300,
+      "color": [0.5, 0.0, 1.0, 1.0],
+      "description": "Recording findings and measurements",
+      "sync_audio": true,
+      "trigger_event": "documentation_start"
+    },
+    {
+      "label": "Quality Verification",
+      "frame": 375,
+      "color": [1.0, 0.0, 0.5, 1.0],
+      "description": "Final quality check and verification",
+      "sync_audio": true,
+      "trigger_event": "quality_check"
+    },
+    {
+      "label": "Procedure Complete",
+      "frame": 450,
+      "color": [1.0, 0.0, 0.0, 1.0],
+      "description": "Maintenance procedure completed",
+      "sync_audio": true,
+      "trigger_event": "procedure_complete"
+    }
+  ],
+  
+  "environment": {
+    "type": "hdri_environment",
+    "hdri_path": "assets/hdri/aircraft_hangar_16k.hdr",
+    "hdri_rotation": 135.0,
+    "hdri_strength": 2.5,
+    "hdri_background_visible": true,
+    "use_sky_texture": false,
+    "sky_turbidity": 2.0,
+    "sky_ground_albedo": 0.3,
+    "sky_ozone": 1.0,
+    "sun_elevation": 45.0,
+    "sun_rotation": 135.0,
+    "sun_size": 0.545,
+    "sun_strength": 5.0,
+    "background_color": [0.05, 0.05, 0.05, 1.0]
+  },
+  
+  "layers": [
+    {
+      "name": "Beauty_Pass",
+      "include_collections": ["Aircraft", "Tools", "Equipment"],
+      "exclude_objects": [],
+      "render_pass": "combined",
+      "enabled": true,
+      "blend_mode": "normal",
+      "opacity": 1.0,
+      "use_alpha": true,
+      "output_path": "output/layers/beauty.exr",
+      "file_format": "EXR",
+      "color_depth": 32
+    },
+    {
+      "name": "Aircraft_Layer",
+      "include_collections": ["Aircraft"],
+      "exclude_collections": ["Tools", "Equipment"],
+      "render_pass": "combined",
+      "enabled": true,
+      "blend_mode": "normal",
+      "opacity": 1.0,
+      "use_alpha": true,
+      "output_path": "output/layers/aircraft.exr",
+      "file_format": "EXR",
+      "color_depth": 32
+    },
+    {
+      "name": "Depth_Pass",
+      "include_collections": ["Aircraft", "Tools", "Equipment"],
+      "render_pass": "z_depth",
+      "enabled": true,
+      "blend_mode": "normal",
+      "opacity": 0.8,
+      "use_alpha": false,
+      "output_path": "output/layers/depth.exr",
+      "file_format": "EXR",
+      "color_depth": 32
+    },
+    {
+      "name": "Normal_Pass",
+      "include_collections": ["Aircraft"],
+      "render_pass": "normal",
+      "enabled": true,
+      "blend_mode": "normal",
+      "opacity": 1.0,
+      "use_alpha": false,
+      "output_path": "output/layers/normals.exr",
+      "file_format": "EXR",
+      "color_depth": 32
+    },
+    {
+      "name": "Shadow_Pass",
+      "include_collections": ["Aircraft", "Tools", "Equipment"],
+      "render_pass": "shadow",
+      "enabled": true,
+      "blend_mode": "multiply",
+      "opacity": 0.8,
+      "use_alpha": true,
+      "output_path": "output/layers/shadows.exr",
+      "file_format": "EXR",
+      "color_depth": 16
+    },
+    {
+      "name": "AO_Pass",
+      "include_collections": ["Aircraft", "Tools"],
+      "render_pass": "ambient_occlusion",
+      "enabled": true,
+      "blend_mode": "multiply",
+      "opacity": 0.6,
+      "use_alpha": false,
+      "output_path": "output/layers/ao.exr",
+      "file_format": "EXR",
+      "color_depth": 16
+    }
+  ],
+  
+  "render_config": {
+    "resolution_x": 3840,
+    "resolution_y": 2160,
+    "resolution_percentage": 100,
+    "frame_start": 1,
+    "frame_end": 450,
+    "frame_step": 1,
+    "fps": 30,
+    "output_path": "output/Q-AVIOGEN_Industrial_Demo_v2.1.mov",
+    "file_format": "FFMPEG",
+    "codec": "PRORES",
+    "bitrate": null,
+    "quality": "LOSSLESS",
+    "constant_rate_factor": null,
+    "audio_codec": "PCM",
+    "audio_bitrate": null,
+    "audio_channels": 2,
+    "audio_sample_rate": 48000,
+    "engine": "CYCLES",
+    "device": "GPU",
+    "samples": 512,
+    "preview_samples": 64,
+    "light_bounces": 16,
+    "max_bounces": 16,
+    "caustics_reflective": true,
+    "caustics_refractive": true,
+    "taa_render_samples": 64,
+    "volumetric_samples": 128,
+    "bloom": true,
+    "motion_blur": true,
+    "motion_blur_shutter": 0.5,
+    "use_denoising": true,
+    "denoiser": "OPTIX",
+    "use_persistent_data": true,
+    "tile_size": 512,
+    "threads": 0,
+    "post_processing": {
+      "exposure": 0.2,
+      "gamma": 1.0,
+      "contrast": 1.1,
+      "brightness": 0.05,
+      "saturation": 1.05,
+      "hue_shift": 0.0,
+      "vignette": true,
+      "vignette_intensity": 0.3,
+      "bloom": true,
+      "bloom_threshold": 1.2,
+      "bloom_intensity": 0.8,
+      "bloom_radius": 6.5,
+      "glare": true,
+      "glare_threshold": 1.5,
+      "motion_blur": true,
+      "motion_blur_samples": 32,
+      "motion_blur_shutter": 0.5,
+      "depth_of_field": true,
+      "dof_focus_distance": 15.0,
+      "dof_aperture": 1.8,
+      "dof_blades": 8,
+      "film_grain": true,
+      "grain_intensity": 0.25,
+      "grain_size": 1.2,
+      "chromatic_aberration": true,
+      "chromatic_intensity": 0.3
+    }
+  },
+  
+  "frame_range": [1, 450],
+  "global_scale": 1.0,
+  "units": "METRIC"
+}

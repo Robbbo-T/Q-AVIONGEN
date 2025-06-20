@@ -1,0 +1,35 @@
+# Q-AVIOGEN PayPal Integration Requirements
+# Día 6 del plan de comercialización
+
+# FastAPI y servidor
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Modelos y validación
+pydantic==2.5.0
+pydantic[email]==2.5.0
+
+# HTTP requests
+requests==2.31.0
+httpx==0.25.2
+
+# Variables de entorno
+python-dotenv==1.0.0
+
+# Logging y monitoreo
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Security
+cryptography==41.0.8
+
+# Optional: para production
+gunicorn==21.2.0  # Para deployment
+redis==5.0.1      # Para caching (opcional)

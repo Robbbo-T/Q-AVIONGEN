@@ -1,0 +1,68 @@
+# ================================
+# GAIA Innovation Management Platform
+# README metadata file
+# ================================
+
+id: "GAIA-QAO-README_v1.1.0"
+title: "GAIA Innovation Management Platform – README"
+version: "1.1.0"
+author: "Amedeo Pelliccia"
+issued_by: "GAIA Quantum Aerospace Optimization"
+release_date: "2025-05-28"
+last_updated: "2025-06-09"
+language: "en"
+license: "GAIA-QAO Open Innovation License v1.0"
+
+context:
+  platform: "GAIA Innovation Management Platform"
+  domain:
+    - "Quantum Aerospace"
+    - "Sustainable Engineering"
+    - "AI Lifecycle Orchestration"
+
+structure:
+  sections:
+    - "Vision Statement"
+    - "Architecture Overview"
+    - "Module DPM&A Index"
+    - "Key Features"
+    - "Installation & Setup"
+    - "Security & Encryption"
+    - "BOM / PLM Integration"
+    - "Performance Metrics"
+    - "Development Roadmap"
+    - "CI/CD Integration"
+    - "Contributing"
+    - "License"
+    - "Contact"
+
+linked_documents:
+  technical_docs:
+    - ../Technical/integration_analysis.md
+    - ../Technical/patent_preparation.xml
+    - ../Exports/industry_summary.pdf
+  module_boms:
+    - ../boms/fan_module.yaml      # Assembly ID GQ-AIR-TURB-FAN-01
+    - ../boms/compressor_module.yaml   # Assembly ID GQ-AIR-TURB-COMP-02
+    - ../boms/combustion_module.yaml   # Assembly ID GQ-AIR-TURB-COMB-03
+    - ../boms/turbine_module.yaml      # Assembly ID GQ-AIR-TURB-TRBN-04
+    - ../boms/exhaust_module.yaml      # Assembly ID GQ-AIR-TURB-EXH-05
+  renders:
+    - ../Figures/fan_exploded_turn13.png
+    - ../Figures/compressor_exploded_turn14.png
+    - ../Figures/combustion_exploded_turn15.png
+    - ../Figures/turbine_exploded_turn15.png
+    - ../Figures/exhaust_exploded_turn16.png
+  manifest:
+    - ../../META-INF/manifest.json
+
+hash:
+  sha3_512: "2f16c7a4a3e1d857c9f14e99e0d9d00e1ccf9971cd9f451f7d0b13ea1d40582e6d76bbfdfb32dbe135df09b476d50d4ae34d06a1d1c5297b627d3e3c4d507a0b"
+  blake3: "9d39c91c84e7f6c2138cdb4b69e7b7f4f34d74f2f2bfae0d88841794f0a1b0e2"
+
+notes: >
+  This README.yaml provides structured metadata for the GAIA-QAO
+  documentation set.  
+  Each ‘linked_documents’ entry maps to the relative location in the monorepo
+  (Nx workspace) to maintain digital-thread traceability between design files,
+  BOMs, renders and certification artefacts.
