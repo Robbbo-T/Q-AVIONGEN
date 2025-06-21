@@ -16,6 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
             line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         /* Navigation */
@@ -43,27 +44,34 @@
             font-size: 1.5em;
             font-weight: bold;
         }
+        .logo i {
+            margin-right: 8px;
+        }
 
         .nav-menu {
             display: flex;
-            gap: 30px;
+            gap: 25px; /* Slightly reduced gap */
         }
 
         .nav-item {
             cursor: pointer;
             padding: 10px 15px;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .nav-item:hover {
-            background: rgba(255,255,255,0.1);
+        .nav-item:hover, .nav-item.active-nav { /* Added active-nav class for top nav */
+            background: rgba(255,255,255,0.15);
+            color: #f0f8ff; /* Alice blue for active/hover */
         }
 
         .user-info {
             display: flex;
             align-items: center;
             gap: 15px;
+        }
+        .user-info i {
+            margin-right: 5px;
         }
 
         .plan-badge {
@@ -72,38 +80,51 @@
             border-radius: 15px;
             font-size: 0.8em;
             font-weight: bold;
+            color: white;
         }
 
         .plan-badge.free {
             background: #ffc107;
             color: #212529;
         }
+         .plan-badge.popular { /* For modal popular plan */
+            background-color: #28a745;
+            color: white;
+        }
 
         /* Main Container */
         .main-container {
-            margin-top: 80px;
-            min-height: calc(100vh - 80px);
+            margin-top: 70px; /* Assuming navbar height is around 70px */
+            min-height: calc(100vh - 70px);
             display: flex;
         }
 
         /* Sidebar */
         .sidebar {
-            width: 250px;
+            width: 260px; /* Slightly wider */
             background: white;
             border-right: 1px solid #e0e0e0;
             padding: 20px;
+            height: calc(100vh - 70px); 
+            overflow-y: auto; 
+            position: fixed; /* Fixed sidebar */
+            left:0;
+            top: 70px;
         }
 
         .sidebar-section {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .sidebar-title {
-            font-weight: bold;
+            font-weight: 600; /* Semibold */
             color: #333;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 1px solid #e9ecef; /* Lighter border */
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .sidebar-item {
@@ -111,86 +132,117 @@
             margin: 5px 0;
             border-radius: 8px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.2s ease-in-out;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px; /* Increased gap */
+            font-size: 0.95em;
+            color: #495057;
         }
 
         .sidebar-item:hover {
-            background: #f8f9fa;
+            background: #f0f4f8; 
+            color: #1e3c72;
         }
 
         .sidebar-item.active {
             background: #e3f2fd;
             color: #1976d2;
-            font-weight: bold;
+            font-weight: 600;
+        }
+        
+        .sidebar-item i.fa-fw { /* Ensure fixed width icons align */
+            width: 20px; 
+            text-align: center;
+            margin-right: 5px; /* Space between icon and text */
         }
 
         /* Content Area */
         .content-area {
             flex: 1;
             padding: 30px;
+            height: calc(100vh - 70px); 
+            overflow-y: auto; 
+            margin-left: 260px; /* Account for fixed sidebar */
         }
 
         .page-header {
             margin-bottom: 30px;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 15px;
         }
 
         .page-title {
             font-size: 2em;
-            color: #333;
-            margin-bottom: 10px;
+            font-weight: 600; /* Semibold */
+            color: #2a5298;
+            margin-bottom: 5px;
         }
 
         .page-subtitle {
-            color: #666;
+            color: #555;
             font-size: 1.1em;
         }
 
-        /* Dashboard Cards */
-        .dashboard-grid {
+        .dashboard-grid, .ergonomics-control-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+            gap: 25px; /* Increased gap */
             margin-bottom: 30px;
         }
 
-        .dashboard-card {
+        .dashboard-card, .card { 
             background: white;
             padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px; /* Smoother radius */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07); 
             text-align: center;
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+            border: 1px solid #e9ecef;
+        }
+        .dashboard-card:hover, .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 { 
+             font-size: 1.25em; /* Standardized */
+             color: #1e3c72; /* Darker blue */
+             margin-bottom: 15px;
+        }
+        .card p {
+            color: #555;
+            margin-bottom: 12px;
+            font-size: 0.9em;
         }
 
         .card-icon {
-            font-size: 3em;
+            font-size: 2.8em;
             color: #2a5298;
             margin-bottom: 15px;
         }
 
-        .card-title {
-            font-size: 1.2em;
-            font-weight: bold;
+        .card-title { 
+            font-size: 1.15em;
+            font-weight: 600;
             margin-bottom: 10px;
+            color: #333;
         }
 
         .card-value {
             font-size: 2em;
-            font-weight: bold;
+            font-weight: 700; /* Bolder */
             color: #2a5298;
             margin-bottom: 5px;
         }
 
         .card-limit {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
-        /* Usage Progress */
         .usage-bar {
-            background: #e0e0e0;
+            background: #e9ecef; 
             height: 10px;
             border-radius: 5px;
             margin: 10px 0;
@@ -200,119 +252,203 @@
         .usage-fill {
             height: 100%;
             background: linear-gradient(90deg, #28a745, #20c997);
-            transition: width 0.3s ease;
+            transition: width 0.4s ease-in-out;
+            border-radius: 5px;
         }
-
+        .usage-fill.ok { /* Added for RULA bar */
+             background: linear-gradient(90deg, #28a745, #20c997);
+        }
         .usage-fill.warning {
             background: linear-gradient(90deg, #ffc107, #fd7e14);
         }
-
         .usage-fill.danger {
             background: linear-gradient(90deg, #dc3545, #e74c3c);
         }
 
-        /* Create Video Section */
         .create-section {
             background: white;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
             margin-bottom: 30px;
+            border: 1px solid #e9ecef;
         }
 
         .upload-zone {
-            border: 3px dashed #ddd;
-            border-radius: 15px;
-            padding: 50px;
+            border: 2px dashed #ced4da; /* Slightly thinner */
+            border-radius: 12px;
+            padding: 40px; /* Reduced padding */
             text-align: center;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.2s ease-in-out;
+            background-color: #f8f9fa;
         }
 
         .upload-zone:hover {
             border-color: #2a5298;
-            background: #f8f9ff;
+            background: #f1f3f5; 
         }
 
         .upload-zone.dragover {
-            border-color: #2a5298;
-            background: #e3f2fd;
-            transform: scale(1.02);
+            border-color: #1e3c72; /* Darker blue on dragover */
+            background: #e9ecef;
+            transform: scale(1.01);
+        }
+        
+        .upload-zone h3 {
+            color: #333;
+            font-size: 1.2em;
+        }
+        .upload-zone p {
+            color: #666;
+            font-size: 0.9em;
         }
 
         .recent-videos {
             background: white;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+            border: 1px solid #e9ecef;
         }
 
         .video-list {
             display: grid;
-            gap: 15px;
+            gap: 20px; /* Increased gap */
         }
 
         .video-item {
             display: flex;
             align-items: center;
             padding: 15px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #e9ecef; 
             border-radius: 10px;
-            transition: all 0.3s;
+            transition: all 0.2s ease-in-out;
+            background-color: white;
         }
 
         .video-item:hover {
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            border-color: #ced4da;
+            transform: translateY(-2px);
         }
 
         .video-thumbnail {
-            width: 120px;
-            height: 68px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 100px; /* Slightly smaller */
+            height: 56px;
+            background: linear-gradient(135deg, #6a7ee8 0%, #7d51a9 100%); /* Adjusted gradient */
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            margin-right: 15px;
+            margin-right: 20px; /* Increased margin */
+            flex-shrink: 0;
+        }
+        
+        .video-thumbnail i {
+            font-size: 1.5em;
         }
 
         .video-info {
             flex: 1;
+            min-width: 0; 
         }
 
-        .video-title {
-            font-weight: bold;
+        .video-title { 
+            font-weight: 600; /* Semibold */
             margin-bottom: 5px;
+            color: #2a5298; /* Theme color */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.05em;
+        }
+        .video-item h4.video-title { 
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2a5298;
         }
 
         .video-meta {
-            color: #666;
-            font-size: 0.9em;
+            color: #555; /* Darker meta */
+            font-size: 0.85em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .video-actions {
             display: flex;
-            gap: 10px;
+            gap: 8px; /* Reduced gap */
+            margin-left: 15px; 
         }
 
         .btn {
             padding: 8px 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px; /* Slightly more rounded */
             cursor: pointer;
             font-size: 0.9em;
-            transition: all 0.3s;
+            transition: all 0.2s ease-in-out;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+        .btn-sm { 
+            padding: 6px 12px;
+            font-size: 0.8em;
+        }
+        .btn-success { 
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            box-shadow: 0 2px 8px rgba(40,167,69,0.3);
+        }
+        .btn-warning { 
+             background-color: #ffc107;
+             color: #212529;
+        }
+        .btn-warning:hover {
+             background-color: #e0a800;
+             box-shadow: 0 2px 8px rgba(255,193,7,0.3);
+        }
+         .btn-danger { 
+             background-color: #dc3545;
+             color: white;
+        }
+        .btn-danger:hover {
+             background-color: #c82333;
+             box-shadow: 0 2px 8px rgba(220,53,69,0.3);
+        }
+         .btn-outline-primary { 
+            background: transparent;
+            border: 1px solid #2a5298;
+            color: #2a5298;
+        }
+        .btn-outline-primary:hover {
+            background: #2a5298;
+            color: white;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.2);
         }
 
         .btn-primary {
             background: #2a5298;
             color: white;
         }
+        .btn-primary:hover {
+             background: #1e3c72;
+             box-shadow: 0 2px 8px rgba(30,60,114,0.3);
+        }
 
         .btn-secondary {
             background: #6c757d;
             color: white;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+            box-shadow: 0 2px 8px rgba(108,117,125,0.3);
         }
 
         .btn-outline {
@@ -320,49 +456,68 @@
             border: 1px solid #2a5298;
             color: #2a5298;
         }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        .btn-outline:hover {
+            background: #2a5298;
+            color: white;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.2);
         }
 
-        /* Freemium Limitations */
         .limitation-notice {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffcc80 100%);
-            border-left: 4px solid #ff9800;
-            padding: 20px;
-            border-radius: 10px;
+            background: #fff8e1; /* Even softer yellow */
+            border-left: 4px solid #ffab00; /* Amber color */
+            padding: 18px 20px; /* Adjusted padding */
+            border-radius: 8px; /* Consistent radius */
             margin: 20px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        .limitation-notice h4 {
+            color: #c66900; /* Darker amber */
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        .limitation-notice p {
+            color: #5f4c00; /* Dark yellow-brown text */
+            font-size: 0.9em;
         }
 
         .upgrade-cta {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 30px; /* Increased padding */
+            border-radius: 12px;
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0; /* Increased margin */
+            box-shadow: 0 8px 25px rgba(42, 82, 152, 0.35);
+        }
+        .upgrade-cta h3{
+            margin-bottom: 12px;
+            font-size: 1.5em;
+        }
+        .upgrade-cta p{
+            font-size: 1.05em;
+            opacity: 0.9;
         }
 
         .upgrade-btn {
             background: white;
-            color: #ee5a24;
-            padding: 12px 30px;
+            color: #1e3c72; /* Match CTA gradient */
+            padding: 12px 35px; /* Wider padding */
             border: none;
             border-radius: 25px;
             font-weight: bold;
             font-size: 1.1em;
             cursor: pointer;
-            margin-top: 15px;
-            transition: all 0.3s;
+            margin-top: 20px; /* Increased margin */
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         .upgrade-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            background: #f0f8ff; /* Light blue hover */
         }
 
-        /* Modal */
         .modal {
             display: none;
             position: fixed;
@@ -371,57 +526,157 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.65); 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; /* Padding for small screens */
+        }
+        
+        .modal.show { 
+            display: flex;
         }
 
         .modal-content {
             background: white;
-            margin: 5% auto;
             padding: 30px;
-            border-radius: 15px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
+            border-radius: 12px; /* Consistent radius */
+            width: 100%; /* Full width up to max */
+            max-width: 850px; 
+            max-height: 90vh; 
             overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            animation: fadeInModal 0.3s ease-out;
+        }
+        
+        @keyframes fadeInModal {
+            from { opacity: 0; transform: scale(0.95) translateY(-10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
         }
 
         .close {
-            color: #aaa;
+            color: #888; /* Lighter close */
             float: right;
-            font-size: 28px;
+            font-size: 32px; /* Larger close */
             font-weight: bold;
             cursor: pointer;
+            line-height: 0.8;
+            padding: 5px;
+            transition: color 0.2s;
         }
 
-        .close:hover {
-            color: black;
+        .close:hover,
+        .close:focus { 
+            color: #333; /* Darker on hover */
+            text-decoration: none;
         }
 
-        /* Responsive */
+        
+        /* Modal Plan Styling */
+        .modal-plan-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease-in-out;
+        }
+        .modal-plan-card:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        .modal-plan-card h3 { color: #1e3c72; }
+        .modal-plan-card .plan-price { font-size: 2.5em; font-weight: bold; color: #1e3c72; margin: 15px 0; }
+        .modal-plan-card ul { text-align: left; margin-bottom: 25px; list-style: none; padding-left:0; font-size: 0.9em; }
+        .modal-plan-card ul li { margin-bottom: 8px; display: flex; align-items: center; }
+        .modal-plan-card ul li i { color: #28a745; margin-right: 8px; font-size: 1.1em; }
+
+        .modal-plan-card.popular-plan {
+            border-width: 2px;
+            border-color: #28a745;
+            box-shadow: 0 0 25px rgba(40,167,69,0.2);
+        }
+        .popular-plan h3 { color: #28a745; }
+        .popular-plan .plan-price { color: #28a745; }
+        .popular-plan .btn-primary { background: #28a745; border-color:#28a745; }
+        .popular-plan .btn-primary:hover { background: #218838; }
+
+        @media (max-width: 1199px) { /* For fixed sidebar, content area needs to adjust earlier */
+             .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                z-index: 1100; /* Above navbar for overlay */
+             }
+             .sidebar.open {
+                 transform: translateX(0);
+             }
+             .content-area {
+                 margin-left: 0;
+             }
+             /* Add a burger menu button - placeholder */
+             .burger-menu { 
+                 display: block; 
+                 position: fixed; 
+                 left: 15px; top: 18px; 
+                 z-index: 1200; 
+                 color:white; font-size: 1.8em; cursor:pointer;
+             }
+             .nav-container .logo { margin-left: 50px;}
+        }
+
+        @media (min-width: 1200px) { /* Hide burger on large screens */
+            .burger-menu { display: none; }
+        }
+
         @media (max-width: 768px) {
-            .main-container {
+             .dashboard-grid, .ergonomics-control-grid {
+                grid-template-columns: 1fr; 
+            }
+            .video-item { 
                 flex-direction: column;
+                align-items: stretch; /* Stretch items */
             }
-            
-            .sidebar {
+            .video-thumbnail {
+                margin-bottom: 15px; /* Increased margin */
                 width: 100%;
-                order: 2;
+                height: 150px; /* Fixed height for consistency */
             }
-            
-            .nav-menu {
-                display: none;
+            .video-actions {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: flex-start; /* Align left */
+            }
+            .modal-content {
+                margin: 20px auto; /* Ensure some margin */
+                width: 95%;
+                padding: 20px; /* Reduced padding for modal */
+            }
+            .nav-menu { /* Keep this hidden from previous rule or handle burger menu specifically */
+                display: none; 
             }
         }
 
-        /* Animation keyframes */
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 82, 152, 0.4); }
+            70% { transform: scale(1.03); box-shadow: 0 0 0 10px rgba(42, 82, 152, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 82, 152, 0); }
         }
 
         .pulse {
-            animation: pulse 2s infinite;
+            animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
     </style>
 </head>
@@ -435,6 +690,8 @@
             <div class="nav-menu">
                 <div class="nav-item" onclick="showPage('dashboard')">Dashboard</div>
                 <div class="nav-item" onclick="showPage('create')">Crear Video</div>
+                <div class="nav-item" onclick="showPage('procedures')">Procedimientos</div>
+                <div class="nav-item" onclick="showPage('robotics')">Robotics & FAL</div>
                 <div class="nav-item" onclick="showPage('library')">Biblioteca</div>
                 <div class="nav-item" onclick="showPage('analytics')">Analytics</div>
             </div>
@@ -456,6 +713,12 @@
                 </div>
                 <div class="sidebar-item" onclick="showPage('create')">
                     <i class="fas fa-plus-circle"></i> Crear Video
+                </div>
+                <div class="sidebar-item" onclick="showPage('procedures')">
+                    <i class="fas fa-clipboard-list"></i> Procedimientos
+                </div>
+                <div class="sidebar-item" onclick="showPage('robotics')">
+                    <i class="fas fa-robot"></i> Robotics & FAL
                 </div>
                 <div class="sidebar-item" onclick="showPage('library')">
                     <i class="fas fa-video"></i> Mi Biblioteca
@@ -551,10 +814,10 @@
                     </div>
                     
                     <div class="dashboard-card">
-                        <div class="card-icon"><i class="fas fa-star"></i></div>
-                        <div class="card-title">Calidad Media</div>
-                        <div class="card-value">4.8/5</div>
-                        <div class="card-limit">rating usuarios</div>
+                        <div class="card-icon"><i class="fas fa-robot"></i></div>
+                        <div class="card-title">Sistemas Robóticos</div>
+                        <div class="card-value">3</div>
+                        <div class="card-limit">activos (2 FAL, 1 RepArob)</div>
                     </div>
                 </div>
 
@@ -564,6 +827,12 @@
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
                         <button class="btn btn-primary" onclick="showPage('create')" style="padding: 20px; font-size: 1.1em;">
                             <i class="fas fa-plus-circle"></i><br>Crear Nuevo Video
+                        </button>
+                        <button class="btn btn-primary" onclick="showPage('robotics')" style="padding: 20px; font-size: 1.1em; background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+                            <i class="fas fa-robot"></i><br>Sistemas Robóticos
+                        </button>
+                        <button class="btn btn-outline" onclick="showLibraryTab('standard'); showPage('library')" style="padding: 20px; font-size: 1.1em;">
+                            <i class="fas fa-book"></i><br>Biblioteca Estándar
                         </button>
                         <button class="btn btn-outline" onclick="openDemo()" style="padding: 20px; font-size: 1.1em;">
                             <i class="fas fa-play"></i><br>Ver Demo Interactivo
@@ -679,269 +948,130 @@
                 </div>
             </div>
 
-            <!-- Other pages placeholder -->
-            <div id="library-page" class="page" style="display: none;">
+            <!-- Procedures Page - Centralized Library & Generator -->
+            <div id="procedures-page" class="page" style="display: none;">
                 <div class="page-header">
-                    <h1 class="page-title">Mi Biblioteca</h1>
-                    <p class="page-subtitle">Gestione todos sus videos técnicos</p>
-                </div>
-                <div class="limitation-notice">
-                    <p>En el plan gratuito, solo puede almacenar hasta 5 videos. Actualice para almacenamiento ilimitado.</p>
-                </div>
-                <!-- Video library content would go here -->
-            </div>
-
-            <div id="analytics-page" class="page" style="display: none;">
-                <div class="page-header">
-                    <h1 class="page-title">Analytics</h1>
-                    <p class="page-subtitle">Analice el rendimiento de sus videos</p>
-                </div>
-                <div class="limitation-notice">
-                    <p>Analytics detallados disponibles en planes de pago. Plan gratuito muestra estadísticas básicas.</p>
-                </div>
-                <!-- Analytics content would go here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Upgrade Modal -->
-    <div id="upgradeModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeUpgradeModal()">&times;</span>
-            <h2 style="text-align: center; margin-bottom: 30px;"><i class="fas fa-rocket"></i> Actualizar Su Plan</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <!-- Base Plan -->
-                <div style="border: 2px solid #2a5298; border-radius: 15px; padding: 25px; text-align: center;">
-                    <h3 style="color: #2a5298;">PLAN BASE</h3>
-                    <div style="font-size: 2.5em; font-weight: bold; color: #2a5298; margin: 15px 0;">€49</div>
-                    <p style="margin-bottom: 20px;">/mes</p>
-                    <ul style="text-align: left; margin-bottom: 25px;">
-                        <li>✅ 20 videos por mes</li>
-                        <li>✅ Hasta 2 minutos por video</li>
-                        <li>✅ Resolución 1080p</li>
-                        <li>✅ Sin marca de agua</li>
-                        <li>✅ Voz profesional</li>
-                        <li>✅ Email support</li>
-                    </ul>
-                    <button class="btn btn-primary" style="width: 100%; padding: 15px;">Seleccionar Plan</button>
+                    <h1 class="page-title"><i class="fas fa-clipboard-list"></i> Biblioteca Centralizada de Procedimientos</h1>
+                    <p class="page-subtitle">Repositorio técnico industrial | Q-AVIOGEN v2.1 | GAIA-QAO IETP/CSDB</p>
                 </div>
 
-                <!-- Plus Plan -->
-                <div style="border: 2px solid #28a745; border-radius: 15px; padding: 25px; text-align: center; position: relative;">
-                    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #28a745; color: white; padding: 5px 15px; border-radius: 15px; font-size: 0.8em;">
-                        MÁS POPULAR
-                    </div>
-                    <h3 style="color: #28a745;">PLAN PLUS</h3>
-                    <div style="font-size: 2.5em; font-weight: bold; color: #28a745; margin: 15px 0;">€149</div>
-                    <p style="margin-bottom: 20px;">/mes</p>
-                    <ul style="text-align: left; margin-bottom: 25px;">
-                        <li>✅ 100 videos por mes</li>
-                        <li>✅ Hasta 5 minutos por video</li>
-                        <li>✅ Resolución 4K</li>
-                        <li>✅ Múltiples idiomas</li>
-                        <li>✅ API access</li>
-                        <li>✅ Chat support</li>
-                        <li>✅ Custom branding</li>
-                    </ul>
-                    <button class="btn btn-primary" style="width: 100%; padding: 15px; background: #28a745;">Seleccionar Plan</button>
-                </div>
-
-                <!-- Pro Plan -->
-                <div style="border: 2px solid #6f42c1; border-radius: 15px; padding: 25px; text-align: center;">
-                    <h3 style="color: #6f42c1;">PLAN PRO</h3>
-                    <div style="font-size: 2.5em; font-weight: bold; color: #6f42c1; margin: 15px 0;">€299</div>
-                    <p style="margin-bottom: 20px;">/mes</p>
-                    <ul style="text-align: left; margin-bottom: 25px;">
-                        <li>✅ Videos ilimitados</li>
-                        <li>✅ Hasta 15 minutos por video</li>
-                        <li>✅ Resolución 8K</li>
-                        <li>✅ Voz personalizada</li>
-                        <li>✅ API ilimitado</li>
-                        <li>✅ Phone support</li>
-                        <li>✅ White-label completo</li>
-                    </ul>
-                    <button class="btn btn-primary" style="width: 100%; padding: 15px; background: #6f42c1;">Seleccionar Plan</button>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
-                <h4>🎯 Oferta Especial de Lanzamiento</h4>
-                <p>Use el código <strong>LAUNCH50</strong> y obtenga 50% de descuento en su primer mes</p>
-                <p style="font-size: 0.9em; color: #666;">Válido hasta el 31 de enero de 2024</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Global state
-        let currentUser = {
-            plan: 'free',
-            videosUsed: 2,
-            videosLimit: 3,
-            storageUsed: 45, // seconds
-            storageLimit: 30 // seconds for free plan
-        };
-
-        // Page navigation
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page').forEach(page => {
-                page.style.display = 'none';
-            });
-            
-            // Show selected page
-            document.getElementById(pageId + '-page').style.display = 'block';
-            
-            // Update sidebar active state
-            document.querySelectorAll('.sidebar-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            event.target.classList.add('active');
-        }
-
-        // File upload simulation
-        document.getElementById('fileUpload').addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                if (currentUser.videosUsed >= currentUser.videosLimit) {
-                    alert('Ha alcanzado el límite de videos para su plan gratuito. Actualice para continuar.');
-                    showUpgradeModal();
-                    return;
-                }
-                
-                alert(`Archivo "${file.name}" cargado exitosamente.\n\nProcesando con limitaciones del plan gratuito:\n• Máximo 30 segundos\n• Resolución 720p\n• Marca de agua incluida`);
-                
-                // Simulate video creation
-                setTimeout(() => {
-                    alert('¡Video creado exitosamente!\n\nNota: Su video incluye marca de agua Q-AVIOGEN.\nActualice a un plan de pago para videos sin marca de agua.');
-                    currentUser.videosUsed++;
-                    updateUsageDisplay();
-                }, 2000);
-            }
-        });
-
-        // Template selection
-        function useTemplate(templateType) {
-            if (currentUser.videosUsed >= currentUser.videosLimit) {
-                alert('Ha alcanzado el límite de videos para su plan gratuito. Actualice para continuar.');
-                showUpgradeModal();
-                return;
-            }
-            
-            const templates = {
-                maintenance: 'Plantilla de Mantenimiento Motor ATA-72-00-00',
-                inspection: 'Plantilla de Inspección Visual ATA-05-10-00'
-            };
-            
-            alert(`Usando ${templates[templateType]}\n\nGenerando video con limitaciones del plan gratuito...`);
-            
-            setTimeout(() => {
-                alert('¡Video generado desde plantilla!\n\nEl video incluye marca de agua y está limitado a 30 segundos.');
-                currentUser.videosUsed++;
-                updateUsageDisplay();
-            }, 1500);
-        }
-
-        // Update usage display
-        function updateUsageDisplay() {
-            document.getElementById('video-usage').textContent = `${currentUser.videosUsed}/${currentUser.videosLimit}`;
-            
-            // Update progress bar
-            const usagePercent = (currentUser.videosUsed / currentUser.videosLimit) * 100;
-            const progressBar = document.querySelector('.usage-fill');
-            progressBar.style.width = usagePercent + '%';
-            
-            if (usagePercent >= 100) {
-                progressBar.className = 'usage-fill danger';
-            } else if (usagePercent >= 70) {
-                progressBar.className = 'usage-fill warning';
-            }
-        }
-
-        // Modal functions
-        function showUpgradeModal() {
-            document.getElementById('upgradeModal').style.display = 'block';
-        }
-
-        function closeUpgradeModal() {
-            document.getElementById('upgradeModal').style.display = 'none';
-        }
-
-        // External links
-        function openDemo() {
-            window.open('demo.html', '_blank');
-        }
-
-        // Drag and drop for upload zone
-        const uploadZone = document.querySelector('.upload-zone');
-        if (uploadZone) {
-            uploadZone.addEventListener('dragover', function(e) {
-                e.preventDefault();
-                this.classList.add('dragover');
-            });
-
-            uploadZone.addEventListener('dragleave', function(e) {
-                this.classList.remove('dragover');
-            });
-
-            uploadZone.addEventListener('drop', function(e) {
-                e.preventDefault();
-                this.classList.remove('dragover');
-                
-                const file = e.dataTransfer.files[0];
-                if (file) {
-                    const event = new Event('change');
-                    document.getElementById('fileUpload').files = e.dataTransfer.files;
-                    document.getElementById('fileUpload').dispatchEvent(event);
-                }
-            });
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('upgradeModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // Initialize
-        updateUsageDisplay();
-
-        // Simulate real-time notifications
-        setTimeout(() => {
-            if (currentUser.videosUsed >= currentUser.videosLimit - 1) {
-                const notification = document.createElement('div');
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 100px;
-                    right: 20px;
-                    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-                    color: white;
-                    padding: 20px;
-                    border-radius: 10px;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-                    z-index: 1500;
-                    max-width: 300px;
-                `;
-                notification.innerHTML = `
-                    <h4><i class="fas fa-exclamation-triangle"></i> ¡Límite Casi Alcanzado!</h4>
-                    <p>Solo le queda 1 video en su plan gratuito.</p>
-                    <button onclick="showUpgradeModal(); this.parentElement.remove();" 
-                            style="background: white; color: #ee5a24; border: none; padding: 8px 15px; border-radius: 5px; margin-top: 10px; cursor: pointer;">
-                        Actualizar Ahora
+                <!-- Procedure Navigation Tabs -->
+                <div style="display: flex; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid #e0e0e0;">
+                    <button class="btn" onclick="showProcedureTab('browse')" id="proc-tab-browse" style="border-bottom: 3px solid #2a5298; background: transparent; color: #2a5298;">
+                        <i class="fas fa-search"></i> Explorar Biblioteca
                     </button>
-                `;
-                document.body.appendChild(notification);
-                
-                setTimeout(() => {
-                    if (notification.parentElement) {
-                        notification.remove();
-                    }
-                }, 8000);
-            }
-        }, 3000);
-    </script>
-</body>
-</html>
+                    <button class="btn" onclick="showProcedureTab('generator')" id="proc-tab-generator" style="border-bottom: 3px solid transparent; background: transparent; color: #666;">
+                        <i class="fas fa-magic"></i> Generador Personalizado
+                    </button>
+                    <button class="btn" onclick="showProcedureTab('metadata')" id="proc-tab-metadata" style="border-bottom: 3px solid transparent; background: transparent; color: #666;">
+                        <i class="fas fa-tags"></i> Gestión Metadata
+                    </button>
+                </div>
+
+                <!-- Browse Library Content -->
+                <div id="browse-procedures" class="procedure-content">
+                    <!-- Advanced Filter System -->
+                    <div class="create-section" style="padding: 25px; margin-bottom: 25px;">
+                        <h3 style="margin-bottom: 20px;"><i class="fas fa-filter"></i> Sistema de Filtrado Avanzado - Biblioteca Técnica Global</h3>
+                        
+                        <!-- Quick Search Bar -->
+                        <div style="margin-bottom: 25px;">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <div style="flex: 1; position: relative;">
+                                    <i class="fas fa-search" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666;"></i>
+                                    <input type="text" id="global-search" placeholder="Buscar por código ATA, modelo, procedimiento, fabricante..." style="width: 100%; padding: 15px 15px 15px 45px; border: 2px solid #ddd; border-radius: 25px; font-size: 1.1em;">
+                                </div>
+                                <button class="btn btn-primary" onclick="quickSearch()" style="padding: 15px 25px; border-radius: 25px;">
+                                    <i class="fas fa-search"></i> Buscar
+                                </button>
+                                <button class="btn btn-outline" onclick="clearAllFilters()" style="padding: 15px 25px; border-radius: 25px;">
+                                    <i class="fas fa-eraser"></i> Limpiar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                            <!-- Aerospace Filters -->
+                            <div style="background: linear-gradient(135deg, #2196f3 0%, #21cbf3 25%); padding: 20px; border-radius: 12px; color: white;">
+                                <h4 style="margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+                                    <i class="fas fa-plane"></i> Aeronáutica & Defensa
+                                </h4>
+                                <select id="aircraft-type" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                    <option value="">Seleccionar Aeronave</option>
+                                    <optgroup label="Boeing Commercial">
+                                        <option value="boeing737">Boeing 737 (MAX/NG/Classic)</option>
+                                        <option value="boeing747">Boeing 747 (8F/400/SP)</option>
+                                        <option value="boeing777">Boeing 777 (200/300/X)</option>
+                                        <option value="boeing787">Boeing 787 Dreamliner</option>
+                                    </optgroup>
+                                    <optgroup label="Airbus Commercial">
+                                        <option value="airbusa220">Airbus A220 (CS100/CS300)</option>
+                                        <option value="airbusa320">Airbus A320 family</option>
+                                        <option value="airbusa330">Airbus A330 (200/300/Neo)</option>
+                                        <option value="airbusa350">Airbus A350 XWB</option>
+                                        <option value="airbusa380">Airbus A380</option>
+                                    </optgroup>
+                                    <optgroup label="Regional & Business">
+                                        <option value="embraer190">Embraer E-Jets (170/175/190/195)</option>
+                                        <option value="bombardier">Bombardier CRJ/Global</option>
+                                        <option value="atr">ATR 42/72</option>
+                                        <option value="gulfstream">Gulfstream G550/G650</option>
+                                    </optgroup>
+                                    <optgroup label="Military & Defense">
+                                        <option value="f35">Lockheed Martin F-35</option>
+                                        <option value="eurofighter">Eurofighter Typhoon</option>
+                                        <option value="rafale">Dassault Rafale</option>
+                                        <option value="a400m">Airbus A400M Atlas</option>
+                                    </optgroup>
+                                </select>
+                                <select id="aircraft-system" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                    <option value="">Sistema ATA</option>
+                                    <optgroup label="Estructuras">
+                                        <option value="ata05">ATA-05 Límites de Tiempo</option>
+                                        <option value="ata53">ATA-53 Fuselaje</option>
+                                        <option value="ata54">ATA-54 Nacelles/Pylons</option>
+                                        <option value="ata55">ATA-55 Estabilizadores</option>
+                                        <option value="ata56">ATA-56 Windows/Doors</option>
+                                        <option value="ata57">ATA-57 Wings</option>
+                                    </optgroup>
+                                    <optgroup label="Sistemas">
+                                        <option value="ata21">ATA-21 Aire Acondicionado</option>
+                                        <option value="ata22">ATA-22 Piloto Automático</option>
+                                        <option value="ata23">ATA-23 Comunicaciones</option>
+                                        <option value="ata24">ATA-24 Sistema Eléctrico</option>
+                                        <option value="ata25">ATA-25 Equipment/Furnishing</option>
+                                        <option value="ata26">ATA-26 Fire Protection</option>
+                                        <option value="ata27">ATA-27 Controles de Vuelo</option>
+                                        <option value="ata28">ATA-28 Combustible</option>
+                                        <option value="ata29">ATA-29 Hydraulic Power</option>
+                                        <option value="ata30">ATA-30 Ice/Rain Protection</option>
+                                        <option value="ata31">ATA-31 Indicating/Recording</option>
+                                        <option value="ata32">ATA-32 Tren de Aterrizaje</option>
+                                        <option value="ata33">ATA-33 Lights</option>
+                                        <option value="ata34">ATA-34 Navigation</option>
+                                        <option value="ata35">ATA-35 Oxygen</option>
+                                        <option value="ata36">ATA-36 Pneumatic</option>
+                                        <option value="ata38">ATA-38 Water/Waste</option>
+                                    </optgroup>
+                                    <optgroup label="Propulsión">
+                                        <option value="ata70">ATA-70 Motor (General)</option>
+                                        <option value="ata71">ATA-71 Motor (Potencia)</option>
+                                        <option value="ata72">ATA-72 Motor (Combustible)</option>
+                                        <option value="ata73">ATA-73 Motor (Control)</option>
+                                        <option value="ata74">ATA-74 Motor (Ignition)</option>
+                                        <option value="ata75">ATA-75 Motor (Bleed Air)</option>
+                                        <option value="ata76">ATA-76 Motor (Controls)</option>
+                                        <option value="ata77">ATA-77 Motor (Indicating)</option>
+                                        <option value="ata78">ATA-78 Motor (Exhaust)</option>
+                                        <option value="ata79">ATA-79 Motor (Oil)</option>
+                                        <option value="ata80">ATA-80 Motor (Starting)</option>
+                                    </optgroup>
+                                </select>
+                                <select id="procedure-type" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                    <option value="">Tipo Procedimiento</option>
+                                    <option value="maintenance">Mantenimiento Preventivo</option>
+                                    <option value="inspection">Inspección (Visual/NDT)</option>
+                                    <option value="repair">Reparación/Overhaul</option>
+                                    <option value="assembly">Ensamblaje/Instalación</option>
+                                    <option value="testing">Pruebas/Certificación</option>
+   

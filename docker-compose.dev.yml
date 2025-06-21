@@ -1,0 +1,444 @@
+# Q-AIR Development Environment
+# Docker Compose configuration for local development
+version: '3.8'
+
+services:
+  # =============================================================================
+  # Core Application Services
+  # =============================================================================
+  
+  # Propulsion Core Service
+  propulsion-core:
+    build:
+      context: ./propulsion-core
+      dockerfile: Dockerfile.dev
+    container_name: qair-propulsion-core
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=development
+      - PYTHON_ENV=development
+      - DATABASE_URL=postgresql://qair:dev_password@postgres:5432/qair_propulsion
+      - REDIS_URL=redis://redis:6379/1
+      - SAFETY_MODE=development
+      - LOG_LEVEL=debug
+    volumes:
+      - ./propulsion-core:/app
+      - propulsion_logs:/app/logs
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    networks:
+      - qair-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Quantum Control Service
+  quantum-control:
+    build:
+      context: ./quantum-control
+      dockerfile: Dockerfile.dev
+    container_name: qair-quantum-control
+    ports:
+      - "8081:8081"
+    environment:
+      - PYTHON_ENV=development
+      - QUANTUM_BACKEND=qiskit_aer
+      - IBM_QUANTUM_TOKEN=${IBM_QUANTUM_TOKEN:-}
+      - DATABASE_URL=postgresql://qair:dev_password@postgres:5432/qair_quantum
+      - REDIS_URL=redis://redis:6379/2
+      - LOG_LEVEL=debug
+    volumes:
+      - ./quantum-control:/app
+      - quantum_logs:/app/logs
+      - quantum_cache:/app/cache
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    networks:
+      - qair-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8081/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Lifecycle Dashboard Service
+  lifecycle-dashboard:
+    build:
+      context: ./lifecycle-dashboard
+      dockerfile: Dockerfile.dev
+    container_name: qair-lifecycle-dashboard
+    ports:
+      - "8082:8082"
+    environment:
+      - PYTHON_ENV=development
+      - DATABASE_URL=postgresql://qair:dev_password@postgres:5432/qair_lifecycle
+      - REDIS_URL=redis://redis:6379/3
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_TOKEN=${INFLUXDB_TOKEN:-dev_token}
+      - LOG_LEVEL=debug
+    volumes:
+      - ./lifecycle-dashboard:/app
+      - lifecycle_logs:/app/logs
+    depends_on:
+      - postgres
+      - redis
+      - influxdb
+    restart: unless-stopped
+    networks:
+      - qair-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8082/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # XAI Visualizer Service (React Frontend)
+  xai-visualizer:
+    build:
+      context: ./xai-visualizer
+      dockerfile: Dockerfile.dev
+    container_name: qair-xai-visualizer
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_API_BASE_URL=http://localhost:8000
+      - REACT_APP_WS_URL=ws://localhost:8000/ws
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./xai-visualizer:/app
+      - /app/node_modules
+    depends_on:
+      - api-gateway
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # API Gateway
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile.dev
+    container_name: qair-api-gateway
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development
+      - PROPULSION_SERVICE_URL=http://propulsion-core:8080
+      - QUANTUM_SERVICE_URL=http://quantum-control:8081
+      - LIFECYCLE_SERVICE_URL=http://lifecycle-dashboard:8082
+      - REDIS_URL=redis://redis:6379/0
+      - JWT_SECRET=${JWT_SECRET:-dev_jwt_secret}
+      - LOG_LEVEL=debug
+    volumes:
+      - ./api-gateway:/app
+      - gateway_logs:/app/logs
+    depends_on:
+      - propulsion-core
+      - quantum-control
+      - lifecycle-dashboard
+      - redis
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # =============================================================================
+  # Database Services
+  # =============================================================================
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    container_name: qair-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=qair
+      - POSTGRES_PASSWORD=dev_password
+      - POSTGRES_DB=qair_main
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    networks:
+      - qair-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U qair"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: qair-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass dev_redis_password
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - qair-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # InfluxDB for Time Series Data
+  influxdb:
+    image: influxdb:2.6-alpine
+    container_name: qair-influxdb
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=qair
+      - DOCKER_INFLUXDB_INIT_PASSWORD=dev_password
+      - DOCKER_INFLUXDB_INIT_ORG=qair-org
+      - DOCKER_INFLUXDB_INIT_BUCKET=qair-metrics
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=dev_token
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+      - influxdb_config:/etc/influxdb2
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # =============================================================================
+  # Monitoring and Observability
+  # =============================================================================
+
+  # Prometheus Monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: qair-prometheus
+    ports:
+      - "9090:9090"
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # Grafana Dashboard
+  grafana:
+    image: grafana/grafana:latest
+    container_name: qair-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=dev_password
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # Jaeger Tracing
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: qair-jaeger
+    ports:
+      - "16686:16686"
+      - "14268:14268"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # =============================================================================
+  # Development Tools
+  # =============================================================================
+
+  # pgAdmin for Database Management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: qair-pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@qair.dev
+      - PGADMIN_DEFAULT_PASSWORD=dev_password
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # Redis Commander for Cache Management
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: qair-redis-commander
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379:0:dev_redis_password
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # Jupyter Notebook for Data Analysis
+  jupyter:
+    build:
+      context: ./notebooks
+      dockerfile: Dockerfile
+    container_name: qair-jupyter
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=dev_token
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - jupyter_data:/home/jovyan/.jupyter
+    depends_on:
+      - postgres
+      - influxdb
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # MinIO for Object Storage (Development)
+  minio:
+    image: minio/minio:latest
+    container_name: qair-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=qair
+      - MINIO_ROOT_PASSWORD=dev_password
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    restart: unless-stopped
+    networks:
+      - qair-network
+
+  # =============================================================================
+  # Testing and Quality Assurance
+  # =============================================================================
+
+  # Test Runner Container
+  test-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    container_name: qair-test-runner
+    environment:
+      - TEST_ENV=docker
+      - DATABASE_URL=postgresql://qair:dev_password@postgres:5432/qair_test
+      - REDIS_URL=redis://redis:6379/15
+    volumes:
+      - .:/app
+      - test_reports:/app/test-reports
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - qair-network
+    profiles:
+      - testing
+
+  # Selenium Grid for E2E Testing
+  selenium-hub:
+    image: selenium/hub:4.8.0
+    container_name: qair-selenium-hub
+    ports:
+      - "4444:4444"
+    networks:
+      - qair-network
+    profiles:
+      - testing
+
+  selenium-chrome:
+    image: selenium/node-chrome:4.8.0
+    container_name: qair-selenium-chrome
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+    networks:
+      - qair-network
+    profiles:
+      - testing
+
+# =============================================================================
+# Networks and Volumes
+# =============================================================================
+
+networks:
+  qair-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  # Database volumes
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  influxdb_data:
+    driver: local
+  influxdb_config:
+    driver: local
+
+  # Application logs
+  propulsion_logs:
+    driver: local
+  quantum_logs:
+    driver: local
+  lifecycle_logs:
+    driver: local
+  gateway_logs:
+    driver: local
+
+  # Monitoring data
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+  # Development tools
+  pgadmin_data:
+    driver: local
+  jupyter_data:
+    driver: local
+  minio_data:
+    driver: local
+
+  # Application data
+  quantum_cache:
+    driver: local
+  test_reports:
+    driver: local

@@ -766,1500 +766,1500 @@ export const PROMPT_DATA: PromptData = {
 "Q-GREENTECH": [
   { promptId: "QGREEN-P-001", docId: "GQOIS-QGREEN-DOC-001", path: "Q-GREENTECH/README.md", description: "Main README for the Q-GREENTECH division.", division: "Q-GREENTECH" },
   { promptId: "QGREEN-P-002", docId: "GQOIS-QGREEN-DOC-002", path: "Q-GREENTECH/PROPULSION_OVERVIEW.md", description: "Overview of the green propulsion systems.", division: "Q-GREENTECH" },
-QGREEN-P-003	GQOIS-QGREEN-DOC-003	Q-GREENTECH/LICENSE	Software license for the Q-GREENTECH division.
-QGREEN-P-004	GQOIS-QGREEN-DOC-004	Q-GREENTECH/HYBRID_ARCHITECTURE.md	Document detailing the hybrid-electric propulsion architecture.
-QGREEN-P-005	GQOIS-QGREEN-DOC-005	Q-GREENTECH/SUSTAINABILITY_METRICS.md	Metrics used to measure sustainability and emissions.
-QGREEN-P-006	GQOIS-QGREEN-DOC-006	Q-GREENTECH/API_REFERENCE.md	API reference for controlling green tech systems.
-QGREEN-P-007	GQOIS-QGREEN-DOC-007	Q-GREENTECH/QUANTUM_INTEGRATION.md	Plan for integrating quantum optimization into propulsion.
-QGREEN-P-008	GQOIS-QGREEN-DOC-008	Q-GREENTECH/CERTIFICATION_PATH.md	Certification path for novel propulsion systems.
-QGREEN-P-009	GQOIS-QGREEN-DOC-009	Q-GREENTECH/TESTING_STRATEGY.md	Strategy for testing and validating green technologies.
-QGREEN-P-010	GQOIS-QGREEN-DOC-010	Q-GREENTECH/EMISSIONS_TARGETS.md	Defined emissions targets for the project.
-QGREEN-P-011	GQOIS-QGREEN-DOC-011	Q-GREENTECH/.gitignore	Git ignore file for the Q-GREENTECH repository.
-QGREEN-P-012	GQOIS-QGREEN-DOC-012	Q-GREENTECH/Makefile	Makefile for building and managing the Q-GREENTECH codebase.
-QGREEN-P-013	GQOIS-QGREEN-DOC-013	Q-GREENTECH/requirements.txt	Python package requirements.
-QGREEN-P-014	GQOIS-QGREEN-DOC-014	Q-GREENTECH/environment.yml	Conda environment configuration.
-QGREEN-P-015	GQOIS-QGREEN-DOC-015	Q-GREENTECH/docker-compose.yml	Docker Compose file for multi-container applications.
-QGREEN-P-016	GQOIS-QGREEN-DOC-016	Q-GREENTECH/setup.py	Python package setup script.
-QGREEN-P-017	GQOIS-QGREEN-DOC-017	Q-GREENTECH/CHANGELOG.md	Changelog for the Q-GREENTECH division.
-QGREEN-P-018	GQOIS-QGREEN-DOC-018	Q-GREENTECH/CONTRIBUTING.md	Contribution guidelines for the Q-GREENTECH division.
-QGREEN-P-019	GQOIS-QGREEN-DOC-019	Q-GREENTECH/ROADMAP.md	Development roadmap for the Q-GREENTECH division.
-QGREEN-P-020	GQOIS-QGREEN-DOC-020	Q-GREENTECH/GLOSSARY.md	Glossary of terms for the Q-GREENTECH division.
-QGREEN-P-021	GQOIS-QGREEN-DOC-021	Q-GREENTECH/hybrid_propulsion/README.md	README for the hybrid propulsion sub-module.
-QGREEN-P-022	GQOIS-QGREEN-DOC-022	Q-GREENTECH/hybrid_propulsion/architecture/system_design.py	Script for the overall hybrid system design.
-QGREEN-P-023	GQOIS-QGREEN-DOC-023	Q-GREENTECH/hybrid_propulsion/architecture/power_split.py	Algorithm for splitting power between thermal and electric systems.
-QGREEN-P-024	GQOIS-QGREEN-DOC-024	Q-GREENTECH/hybrid_propulsion/architecture/operating_modes.py	Logic defining the different operating modes of the hybrid system.
-QGREEN-P-025	GQOIS-QGREEN-DOC-025	Q-GREENTECH/hybrid_propulsion/turbofan/engine_integration.py	Integration logic for the turbofan engine component.
-QGREEN-P-026	GQOIS-QGREEN-DOC-026	Q-GREENTECH/hybrid_propulsion/turbofan/efficiency_optimization.py	Optimization algorithms for turbofan efficiency.
-QGREEN-P-027	GQOIS-QGREEN-DOC-027	Q-GREENTECH/hybrid_propulsion/turbofan/saf_compatibility.py	Compatibility analysis for Sustainable Aviation Fuels (SAF).
-QGREEN-P-028	GQOIS-QGREEN-DOC-028	Q-GREENTECH/hybrid_propulsion/turbofan/emissions_control.py	Emissions control logic for the turbofan engine.
-QGREEN-P-029	GQOIS-QGREEN-DOC-029	Q-GREENTECH/hybrid_propulsion/electric_motor/motor_design.py	Design script for the primary electric motor.
-QGREEN-P-030	GQOIS-QGREEN-DOC-030	Q-GREENTECH/hybrid_propulsion/electric_motor/cooling_system.py	Cooling system design for the electric motor.
-QGREEN-P-031	GQOIS-QGREEN-DOC-031	Q-GREENTECH/hybrid_propulsion/electric_motor/superconducting_motor.py	Research and design of a superconducting motor.
-QGREEN-P-032	GQOIS-QGREEN-DOC-032	Q-GREENTECH/hybrid_propulsion/electric_motor/magnetic_bearings.py	Design of magnetic bearings for the electric motor.
-QGREEN-P-033	GQOIS-QGREEN-DOC-033	Q-GREENTECH/hybrid_propulsion/generator/starter_generator.py	Design of the starter-generator unit.
-QGREEN-P-034	GQOIS-QGREEN-DOC-034	Q-GREENTECH/hybrid_propulsion/generator/high_efficiency_design.py	High-efficiency design principles for the generator.
-QGREEN-P-035	GQOIS-QGREEN-DOC-035	Q-GREENTECH/hybrid_propulsion/generator/power_electronics.py	Power electronics interface for the generator.
-QGREEN-P-036	GQOIS-QGREEN-DOC-036	Q-GREENTECH/hybrid_propulsion/control/hybrid_controller.py	Main controller logic for the hybrid system.
-QGREEN-P-037	GQOIS-QGREEN-DOC-037	Q-GREENTECH/hybrid_propulsion/control/power_management.py	Power management algorithms for the hybrid controller.
-QGREEN-P-038	GQOIS-QGREEN-DOC-038	Q-GREENTECH/hybrid_propulsion/control/quantum_optimization.py	Quantum optimization for hybrid power management.
-QGREEN-P-039	GQOIS-QGREEN-DOC-039	Q-GREENTECH/hybrid_propulsion/control/ai_optimization.py	AI-based optimization for hybrid power management.
-QGREEN-P-040	GQOIS-QGREEN-DOC-040	Q-GREENTECH/hybrid_propulsion/control/mode_transition.py	Logic for smooth transitions between operating modes.
-QGREEN-P-041	GQOIS-QGREEN-DOC-041	Q-GREENTECH/hybrid_propulsion/monitoring/performance_tracking.py	System for tracking propulsion performance metrics.
-QGREEN-P-042	GQOIS-QGREEN-DOC-042	Q-GREENTECH/hybrid_propulsion/monitoring/emissions_monitoring.py	Real-time emissions monitoring system.
-QGREEN-P-043	GQOIS-QGREEN-DOC-043	Q-GREENTECH/hybrid_propulsion/monitoring/health_diagnostics.py	Health diagnostics and prognostics for the propulsion system.
-QGREEN-P-044	GQOIS-QGREEN-DOC-044	Q-GREENTECH/hybrid_propulsion/monitoring/quantum_sensors.py	Integration of quantum sensors for propulsion monitoring.
-QGREEN-P-045	GQOIS-QGREEN-DOC-045	Q-GREENTECH/hybrid_propulsion/testing/test_procedures.py	Test procedures for the hybrid propulsion system.
-QGREEN-P-046	GQOIS-QGREEN-DOC-046	Q-GREENTECH/hybrid_propulsion/testing/performance_validation.py	Scripts for validating propulsion performance against models.
-QGREEN-P-047	GQOIS-QGREEN-DOC-047	Q-GREENTECH/hybrid_propulsion/testing/emissions_testing.py	Procedures for emissions testing and certification.
-QGREEN-P-048	GQOIS-QGREEN-DOC-048	Q-GREENTECH/hybrid_propulsion/simulation/system_model.py	Simulation model of the complete hybrid system.
-QGREEN-P-049	GQOIS-QGREEN-DOC-049	Q-GREENTECH/hybrid_propulsion/simulation/efficiency_analysis.py	Simulation for analyzing system efficiency.
-QGREEN-P-050	GQOIS-QGREEN-DOC-050	Q-GREENTECH/hybrid_propulsion/simulation/mission_profile.py	Simulation of the propulsion system over a mission profile.
-QGREEN-P-051	GQOIS-QGREEN-DOC-051	Q-GREENTECH/hybrid_propulsion/config/system_parameters.yaml	Configuration file with key system parameters.
-QGREEN-P-052	GQOIS-QGREEN-DOC-052	Q-GREENTECH/hybrid_propulsion/config/control_settings.yaml	Configuration file for control system settings.
-QGREEN-P-053	GQOIS-QGREEN-DOC-053	Q-GREENTECH/hybrid_propulsion/docs/design_manual.md	Design manual for the hybrid propulsion system.
-QGREEN-P-054	GQOIS-QGREEN-DOC-054	Q-GREENTECH/hybrid_propulsion/docs/operation_manual.md	Operation manual for the hybrid propulsion system.
-QGREEN-P-055	GQOIS-QGREEN-DOC-055	Q-GREENTECH/hybrid_propulsion/docs/maintenance_guide.md	Maintenance guide for the hybrid propulsion system.
-QGREEN-P-056	GQOIS-QGREEN-DOC-056	Q-GREENTECH/energy_storage/README.md	README for the energy storage systems sub-module.
-QGREEN-P-057	GQOIS-QGREEN-DOC-057	Q-GREENTECH/energy_storage/battery/cell_design.py	Design and specification of battery cells.
-QGREEN-P-058	GQOIS-QGREEN-DOC-058	Q-GREENTECH/energy_storage/battery/pack_architecture.py	Architecture of the main battery pack.
-QGREEN-P-059	GQOIS-QGREEN-DOC-059	Q-GREENTECH/energy_storage/battery/thermal_management.py	Thermal management system for the battery pack.
-QGREEN-P-060	GQOIS-QGREEN-DOC-060	Q-GREENTECH/energy_storage/battery/bms_design.py	Design of the Battery Management System (BMS).
-QGREEN-P-061	GQOIS-QGREEN-DOC-061	Q-GREENTECH/energy_storage/battery/safety_systems.py	Safety systems for the battery (e.g., venting, disconnects).
-QGREEN-P-062	GQOIS-QGREEN-DOC-062	Q-GREENTECH/energy_storage/battery/fire_suppression.py	Fire suppression system for the battery pack.
-QGREEN-P-063	GQOIS-QGREEN-DOC-063	Q-GREENTECH/energy_storage/battery/quantum_monitoring.py	Quantum sensing for battery state-of-health monitoring.
-QGREEN-P-064	GQOIS-QGREEN-DOC-064	Q-GREENTECH/energy_storage/fuel_cell/sofc_design.py	Design of the Solid Oxide Fuel Cell (SOFC) stack.
-QGREEN-P-065	GQOIS-QGREEN-DOC-065	Q-GREENTECH/energy_storage/fuel_cell/hydrogen_storage.py	Design of the hydrogen storage system.
-QGREEN-P-066	GQOIS-QGREEN-DOC-066	Q-GREENTECH/energy_storage/fuel_cell/balance_of_plant.py	Design of the fuel cell's balance of plant (pumps, etc.).
-QGREEN-P-067	GQOIS-QGREEN-DOC-067	Q-GREENTECH/energy_storage/fuel_cell/water_management.py	Water management system for the fuel cell.
-QGREEN-P-068	GQOIS-QGREEN-DOC-068	Q-GREENTECH/energy_storage/supercapacitor/design.py	Design of the supercapacitor bank.
-QGREEN-P-069	GQOIS-QGREEN-DOC-069	Q-GREENTECH/energy_storage/supercapacitor/integration.py	Integration of supercapacitors with the main power bus.
-QGREEN-P-070	GQOIS-QGREEN-DOC-070	Q-GREENTECH/energy_storage/supercapacitor/power_boost.py	Logic for using supercapacitors for power boost.
-QGREEN-P-071	GQOIS-QGREEN-DOC-071	Q-GREENTECH/energy_storage/hybrid_storage/architecture.py	Architecture for the hybrid energy storage system (battery + FC + caps).
-QGREEN-P-072	GQOIS-QGREEN-DOC-072	Q-GREENTECH/energy_storage/hybrid_storage/energy_management.py	Energy management strategy for the hybrid storage system.
-QGREEN-P-073	GQOIS-QGREEN-DOC-073	Q-GREENTECH/energy_storage/hybrid_storage/optimization.py	Optimization algorithms for hybrid energy storage.
-QGREEN-P-074	GQOIS-QGREEN-DOC-074	Q-GREENTECH/energy_storage/charging/fast_charging.py	Fast charging protocols and hardware interface.
-QGREEN-P-075	GQOIS-QGREEN-DOC-075	Q-GREENTECH/energy_storage/charging/ground_infrastructure.py	Requirements for ground charging infrastructure.
-QGREEN-P-076	GQOIS-QGREEN-DOC-076	Q-GREENTECH/energy_storage/charging/wireless_charging.py	Research into wireless charging systems.
-QGREEN-P-077	GQOIS-QGREEN-DOC-077	Q-GREENTECH/energy_storage/monitoring/soh_estimation.py	State-of-Health (SOH) estimation algorithms.
-QGREEN-P-078	GQOIS-QGREEN-DOC-078	Q-GREENTECH/energy_storage/monitoring/predictive_analytics.py	Predictive analytics for battery and fuel cell life.
-QGREEN-P-079	GQOIS-QGREEN-DOC-079	Q-GREENTECH/energy_storage/testing/cell_testing.py	Procedures for testing individual cells.
-QGREEN-P-080	GQOIS-QGREEN-DOC-080	Q-GREENTECH/energy_storage/testing/pack_validation.py	Procedures for validating the full battery pack.
-QGREEN-P-081	GQOIS-QGREEN-DOC-081	Q-GREENTECH/energy_storage/testing/safety_testing.py	Safety and abuse testing procedures for energy storage.
-QGREEN-P-082	GQOIS-QGREEN-DOC-082	Q-GREENTECH/energy_storage/config/battery_params.yaml	Configuration file for battery parameters.
-QGREEN-P-083	GQOIS-QGREEN-DOC-083	Q-GREENTECH/energy_storage/config/fuel_cell_params.yaml	Configuration file for fuel cell parameters.
-QGREEN-P-084	GQOIS-QGREEN-DOC-084	Q-GREENTECH/energy_storage/docs/design_guide.md	Design guide for energy storage systems.
-QGREEN-P-085	GQOIS-QGREEN-DOC-085	Q-GREENTECH/energy_storage/docs/safety_manual.md	Safety manual for handling energy storage systems.
-QGREEN-P-086	GQOIS-QGREEN-DOC-086	Q-GREENTECH/power_management/README.md	README for the power management sub-module.
-QGREEN-P-087	GQOIS-QGREEN-DOC-087	Q-GREENTECH/power_management/architecture/hvdc_system.py	Design of the High-Voltage DC (HVDC) power bus.
-QGREEN-P-088	GQOIS-QGREEN-DOC-088	Q-GREENTECH/power_management/architecture/distribution_network.py	Architecture of the power distribution network.
-QGREEN-P-089	GQOIS-QGREEN-DOC-089	Q-GREENTECH/power_management/architecture/redundancy_design.py	Redundancy design for the power management system.
-QGREEN-P-090	GQOIS-QGREEN-DOC-090	Q-GREENTECH/power_management/converters/dc_dc_converter.py	Design of DC-DC power converters.
-QGREEN-P-091	GQOIS-QGREEN-DOC-091	Q-GREENTECH/power_management/converters/inverter_design.py	Design of power inverters.
-QGREEN-P-092	GQOIS-QGREEN-DOC-092	Q-GREENTECH/power_management/converters/sic_mosfet.py	Use of Silicon Carbide (SiC) MOSFETs in converters.
-QGREEN-P-093	GQOIS-QGREEN-DOC-093	Q-GREENTECH/power_management/converters/gan_devices.py	Use of Gallium Nitride (GaN) devices in converters.
-QGREEN-P-094	GQOIS-QGREEN-DOC-094	Q-GREENTECH/power_management/control/smart_grid.py	Onboard smart grid control logic.
-QGREEN-P-095	GQOIS-QGREEN-DOC-095	Q-GREENTECH/power_management/control/load_balancing.py	Algorithms for electrical load balancing.
-QGREEN-P-096	GQOIS-QGREEN-DOC-096	Q-GREENTECH/power_management/control/peak_shaving.py	Algorithms for electrical peak shaving.
-QGREEN-P-097	GQOIS-QGREEN-DOC-097	Q-GREENTECH/power_management/control/quantum_optimization.py	Quantum optimization for the smart grid.
-QGREEN-P-098	GQOIS-QGREEN-DOC-098	Q-GREENTECH/power_management/protection/fault_detection.py	Electrical fault detection systems.
-QGREEN-P-099	GQOIS-QGREEN-DOC-099	Q-GREENTECH/power_management/protection/arc_fault_detection.py	Arc fault detection systems.
-QGREEN-P-100	GQOIS-QGREEN-DOC-100	Q-GREENTECH/power_management/protection/isolation_systems.py	Electrical isolation systems and protocols.
-QGREEN-P-101	GQOIS-QGREEN-DOC-101	Q-GREENTECH/power_management/thermal/cooling_design.py	Cooling design for power electronics.
-QGREEN-P-102	GQOIS-QGREEN-DOC-102	Q-GREENTECH/power_management/thermal/heat_recovery.py	Waste heat recovery from power electronics.
-QGREEN-P-103	GQOIS-QGREEN-DOC-103	Q-GREENTECH/power_management/monitoring/power_quality.py	Power quality monitoring system.
-QGREEN-P-104	GQOIS-QGREEN-DOC-104	Q-GREENTECH/power_management/monitoring/efficiency_tracking.py	Efficiency tracking for the power management system.
-QGREEN-P-105	GQOIS-QGREEN-DOC-105	Q-GREENTECH/power_management/testing/converter_testing.py	Test procedures for power converters.
-QGREEN-P-106	GQOIS-QGREEN-DOC-106	Q-GREENTECH/power_management/testing/grid_stability.py	Test procedures for onboard grid stability.
-QGREEN-P-107	GQOIS-QGREEN-DOC-107	Q-GREENTECH/power_management/config/grid_parameters.yaml	Configuration file for grid parameters.
-QGREEN-P-108	GQOIS-QGREEN-DOC-108	Q-GREENTECH/power_management/config/converter_settings.yaml	Configuration file for converter settings.
-QGREEN-P-109	GQOIS-QGREEN-DOC-109	Q-GREENTECH/power_management/docs/design_manual.md	Design manual for the power management system.
-QGREEN-P-110	GQOIS-QGREEN-DOC-110	Q-GREENTECH/power_management/docs/integration_guide.md	Integration guide for the power management system.
-QGREEN-P-111	GQOIS-QGREEN-DOC-111	Q-GREENTECH/renewable_energy/README.md	README for the renewable energy integration sub-module.
-QGREEN-P-112	GQOIS-QGREEN-DOC-112	Q-GREENTECH/renewable_energy/solar/panel_integration.py	Integration of solar panels onto the aircraft structure.
-QGREEN-P-113	GQOIS-QGREEN-DOC-113	Q-GREENTECH/renewable_energy/solar/flexible_cells.py	Research and use of flexible solar cells.
-QGREEN-P-114	GQOIS-QGREEN-DOC-114	Q-GREENTECH/renewable_energy/solar/mppt_controller.py	Maximum Power Point Tracking (MPPT) controller for solar.
-QGREEN-P-115	GQOIS-QGREEN-DOC-115	Q-GREENTECH/renewable_energy/solar/energy_harvesting.py	General energy harvesting strategies from solar.
-QGREEN-P-116	GQOIS-QGREEN-DOC-116	Q-GREENTECH/renewable_energy/regenerative/brake_energy.py	Regenerative braking energy recovery system.
-QGREEN-P-117	GQOIS-QGREEN-DOC-117	Q-GREENTECH/renewable_energy/regenerative/landing_recovery.py	Energy recovery during the landing phase.
-QGREEN-P-118	GQOIS-QGREEN-DOC-118	Q-GREENTECH/renewable_energy/regenerative/taxi_recovery.py	Energy recovery during taxiing via electric motors.
-QGREEN-P-119	GQOIS-QGREEN-DOC-119	Q-GREENTECH/renewable_energy/thermal/waste_heat_recovery.py	System for recovering waste heat from engines and electronics.
-QGREEN-P-120	GQOIS-QGREEN-DOC-120	Q-GREENTECH/renewable_energy/thermal/thermoelectric_gen.py	Use of thermoelectric generators (TEGs).
-QGREEN-P-121	GQOIS-QGREEN-DOC-121	Q-GREENTECH/renewable_energy/thermal/orc_system.py	Use of Organic Rankine Cycle (ORC) systems for heat recovery.
-QGREEN-P-122	GQOIS-QGREEN-DOC-122	Q-GREENTECH/renewable_energy/wind/micro_turbines.py	Research into onboard micro-turbines for energy harvesting.
-QGREEN-P-123	GQOIS-QGREEN-DOC-123	Q-GREENTECH/renewable_energy/wind/boundary_layer_harvest.py	Research into harvesting energy from the boundary layer.
-QGREEN-P-124	GQOIS-QGREEN-DOC-124	Q-GREENTECH/renewable_energy/integration/energy_combiner.py	System for combining energy from multiple renewable sources.
-QGREEN-P-125	GQOIS-QGREEN-DOC-125	Q-GREENTECH/renewable_energy/integration/smart_routing.py	Smart routing of harvested energy to storage or systems.
-QGREEN-P-126	GQOIS-QGREEN-DOC-126	Q-GREENTECH/renewable_energy/monitoring/harvest_tracking.py	System for tracking and monitoring energy harvesting.
-QGREEN-P-127	GQOIS-QGREEN-DOC-127	Q-GREENTECH/renewable_energy/config/solar_params.yaml	Configuration file for solar panel parameters.
-QGREEN-P-128	GQOIS-QGREEN-DOC-128	Q-GREENTECH/renewable_energy/config/harvest_settings.yaml	Configuration file for energy harvesting settings.
-QGREEN-P-129	GQOIS-QGREEN-DOC-129	Q-GREENTECH/renewable_energy/docs/integration_guide.md	Integration guide for renewable energy systems.
-QGREEN-P-130	GQOIS-QGREEN-DOC-130	Q-GREENTECH/renewable_energy/docs/efficiency_report.md	Report on the efficiency of renewable energy systems.
-QGREEN-P-131	GQOIS-QGREEN-DOC-131	Q-GREENTECH/sustainability/README.md	README for the sustainability and emissions sub-module.
-QGREEN-P-132	GQOIS-QGREEN-DOC-132	Q-GREENTECH/sustainability/emissions/co2_tracking.py	System for tracking CO2 emissions in real-time.
-QGREEN-P-133	GQOIS-QGREEN-DOC-133	Q-GREENTECH/sustainability/emissions/nox_reduction.py	Strategies and systems for NOx reduction.
-QGREEN-P-134	GQOIS-QGREEN-DOC-134	Q-GREENTECH/sustainability/emissions/particulate_control.py	Systems for controlling particulate matter emissions.
-QGREEN-P-135	GQOIS-QGREEN-DOC-135	Q-GREENTECH/sustainability/emissions/real_time_monitoring.py	Real-time monitoring system for all regulated emissions.
-QGREEN-P-136	GQOIS-QGREEN-DOC-136	Q-GREENTECH/sustainability/lifecycle/lca_framework.py	Framework for Life Cycle Assessment (LCA) of the aircraft.
-QGREEN-P-137	GQOIS-QGREEN-DOC-137	Q-GREENTECH/sustainability/lifecycle/circular_economy.py	Principles of circular economy applied to the aircraft design.
-QGREEN-P-138	GQOIS-QGREEN-DOC-138	Q-GREENTECH/sustainability/lifecycle/recycling_design.py	Design for recyclability and end-of-life management.
-QGREEN-P-139	GQOIS-QGREEN-DOC-139	Q-GREENTECH/sustainability/materials/bio_materials.py	Research and use of bio-derived materials.
-QGREEN-P-140	GQOIS-QGREEN-DOC-140	Q-GREENTECH/sustainability/materials/recycled_composites.py	Use of recycled composites in manufacturing.
-QGREEN-P-141	GQOIS-QGREEN-DOC-141	Q-GREENTECH/sustainability/operations/eco_routing.py	Eco-friendly flight path routing algorithms.
-QGREEN-P-142	GQOIS-QGREEN-DOC-142	Q-GREENTECH/sustainability/operations/carbon_offsetting.py	Framework for carbon offsetting programs.
-QGREEN-P-143	GQOIS-QGREEN-DOC-143	Q-GREENTECH/sustainability/reporting/esg_metrics.py	System for tracking Environmental, Social, and Governance (ESG) metrics.
-QGREEN-P-144	GQOIS-QGREEN-DOC-144	Q-GREENTECH/sustainability/reporting/corsia_compliance.py	System for ensuring compliance with CORSIA regulations.
-QGREEN-P-145	GQOIS-QGREEN-DOC-145	Q-GREENTECH/sustainability/optimization/ai_sustainability.py	AI models for optimizing sustainability metrics.
-QGREEN-P-146	GQOIS-QGREEN-DOC-146	Q-GREENTECH/sustainability/optimization/quantum_routing.py	Quantum algorithms for optimizing eco-routing.
-QGREEN-P-147	GQOIS-QGREEN-DOC-147	Q-GREENTECH/sustainability/config/emissions_targets.yaml	Configuration file for emissions targets.
-QGREEN-P-148	GQOIS-QGREEN-DOC-148	Q-GREENTECH/sustainability/config/lca_parameters.yaml	Configuration file for Life Cycle Assessment parameters.
-QGREEN-P-149	GQOIS-QGREEN-DOC-149	Q-GREENTECH/sustainability/docs/sustainability_report.md	Annual sustainability report template.
-QGREEN-P-150	GQOIS-QGREEN-DOC-150	Q-GREENTECH/sustainability/docs/certification_guide.md	Guide to sustainability certifications.
-QGREEN-P-151	GQOIS-QGREEN-DOC-151	Q-GREENTECH/testing/README.md	README for the testing and validation sub-module.
-QGREEN-P-152	GQOIS-QGREEN-DOC-152	Q-GREENTECH/testing/propulsion/engine_test_cell.py	Software for controlling the engine test cell.
-QGREEN-P-153	GQOIS-QGREEN-DOC-153	Q-GREENTECH/testing/propulsion/altitude_simulation.py	Scripts for simulating altitude conditions during testing.
-QGREEN-P-154	GQOIS-QGREEN-DOC-154	Q-GREENTECH/testing/propulsion/thrust_measurement.py	Scripts for measuring and recording thrust.
-QGREEN-P-155	GQOIS-QGREEN-DOC-155	Q-GREENTECH/testing/battery/cell_characterization.py	Scripts for battery cell characterization.
-QGREEN-P-156	GQOIS-QGREEN-DOC-156	Q-GREENTECH/testing/battery/abuse_testing.py	Procedures and scripts for battery abuse testing.
-QGREEN-P-157	GQOIS-QGREEN-DOC-157	Q-GREENTECH/testing/battery/cycle_life_testing.py	Scripts for battery cycle life testing.
-QGREEN-P-158	GQOIS-QGREEN-DOC-158	Q-GREENTECH/testing/power/converter_efficiency.py	Scripts for testing power converter efficiency.
-QGREEN-P-159	GQOIS-QGREEN-DOC-159	Q-GREENTECH/testing/power/emi_emc_testing.py	Procedures for EMI/EMC testing of power systems.
-QGREEN-P-160	GQOIS-QGREEN-DOC-160	Q-GREENTECH/testing/integration/system_validation.py	Scripts for integrated system validation.
-QGREEN-P-161	GQOIS-QGREEN-DOC-161	Q-GREENTECH/testing/integration/iron_bird_testing.py	Procedures for "iron bird" ground testing.
-QGREEN-P-162	GQOIS-QGREEN-DOC-162	Q-GREENTECH/testing/certification/do160_compliance.py	Scripts for checking DO-160 compliance.
-QGREEN-P-163	GQOIS-QGREEN-DOC-163	Q-GREENTECH/testing/certification/power_quality.py	Tests for power quality certification.
-QGREEN-P-164	GQOIS-QGREEN-DOC-164	Q-GREENTECH/testing/performance/efficiency_validation.py	Validation of overall system efficiency.
-QGREEN-P-165	GQOIS-QGREEN-DOC-165	Q-GREENTECH/testing/performance/mission_simulation.py	Full mission simulation for performance testing.
-QGREEN-P-166	GQOIS-QGREEN-DOC-166	Q-GREENTECH/testing/config/test_parameters.yaml	Configuration file for test parameters.
-QGREEN-P-167	GQOIS-QGREEN-DOC-167	Q-GREENTECH/testing/config/certification_matrix.yaml	Certification test matrix.
-QGREEN-P-168	GQOIS-QGREEN-DOC-168	Q-GREENTECH/testing/reports/test_report_template.md	Template for generating test reports.
-QGREEN-P-169	GQOIS-QGREEN-DOC-169	Q-GREENTECH/testing/docs/procedures_manual.md	Manual of all testing procedures.
-QGREEN-P-170	GQOIS-QGREEN-DOC-170	Q-GREENTECH/testing/docs/validation_guide.md	Guide to system validation.
-QGREEN-P-171	GQOIS-QGREEN-DOC-171	Q-GREENTECH/digital_twin_green/README.md	README for the GreenTech Digital Twin sub-module.
-QGREEN-P-172	GQOIS-QGREEN-DOC-172	Q-GREENTECH/digital_twin_green/models/propulsion_model.py	Digital twin model for the propulsion system.
-QGREEN-P-173	GQOIS-QGREEN-DOC-173	Q-GREENTECH/digital_twin_green/models/energy_model.py	Digital twin model for the energy storage system.
-QGREEN-P-174	GQOIS-QGREEN-DOC-174	Q-GREENTECH/digital_twin_green/models/emissions_model.py	Digital twin model for emissions.
-QGREEN-P-175	GQOIS-QGREEN-DOC-175	Q-GREENTECH/digital_twin_green/optimization/real_time_opt.py	Real-time optimization using the digital twin.
-QGREEN-P-176	GQOIS-QGREEN-DOC-176	Q-GREENTECH/digital_twin_green/analytics/efficiency_analytics.py	Efficiency analytics using the digital twin.
-QGREEN-P-177	GQOIS-QGREEN-DOC-177	Q-GREENTECH/digital_twin_green/visualization/energy_flow.py	Visualization of energy flow in the digital twin.
-QGREEN-P-178	GQOIS-QGREEN-DOC-178	Q-GREENTECH/digital_twin_green/api/greentech_api.py	API for interacting with the GreenTech digital twin.
-QGREEN-P-179	GQOIS-QGREEN-DOC-179	Q-GREENTECH/digital_twin_green/config/model_params.yaml	Parameters for the digital twin models.
-QGREEN-P-180	GQOIS-QGREEN-DOC-180	Q-GREENTECH/docs/greentech_overview.md	High-level overview document for the Q-GREENTECH division.
-QGREEN-P-181	GQOIS-QGREEN-DOC-181	Q-GREENTECH/docs/propulsion_manual.md	Final, compiled propulsion system manual.
-QGREEN-P-182	GQOIS-QGREEN-DOC-182	Q-GREENTECH/docs/energy_systems_guide.md	Final, compiled guide to energy systems.
-QGREEN-P-183	GQOIS-QGREEN-DOC-183	Q-GREENTECH/docs/sustainability_report.md	Final, compiled sustainability report.
-QGREEN-P-184	GQOIS-QGREEN-DOC-184	Q-GREENTECH/docs/certification_compliance.md	Final, compiled certification compliance document.
-QGREEN-P-185	GQOIS-QGREEN-DOC-185	Q-GREENTECH/docs/release_notes_v1.0.md	Release notes for version 1.0 of the Q-GREENTECH module.],
+  { promptId: "QGREEN-P-003", docId: "GQOIS-QGREEN-DOC-003", path: "Q-GREENTECH/LICENSE", description: "Software license for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-004", docId: "GQOIS-QGREEN-DOC-004", path: "Q-GREENTECH/HYBRID_ARCHITECTURE.md", description: "Document detailing the hybrid-electric propulsion architecture.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-005", docId: "GQOIS-QGREEN-DOC-005", path: "Q-GREENTECH/SUSTAINABILITY_METRICS.md", description: "Metrics used to measure sustainability and emissions.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-006", docId: "GQOIS-QGREEN-DOC-006", path: "Q-GREENTECH/API_REFERENCE.md", description: "API reference for controlling green tech systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-007", docId: "GQOIS-QGREEN-DOC-007", path: "Q-GREENTECH/QUANTUM_INTEGRATION.md", description: "Plan for integrating quantum optimization into propulsion.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-008", docId: "GQOIS-QGREEN-DOC-008", path: "Q-GREENTECH/CERTIFICATION_PATH.md", description: "Certification path for novel propulsion systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-009", docId: "GQOIS-QGREEN-DOC-009", path: "Q-GREENTECH/TESTING_STRATEGY.md", description: "Strategy for testing and validating green technologies.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-010", docId: "GQOIS-QGREEN-DOC-010", path: "Q-GREENTECH/EMISSIONS_TARGETS.md", description: "Defined emissions targets for the project.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-011", docId: "GQOIS-QGREEN-DOC-011", path: "Q-GREENTECH/.gitignore", description: "Git ignore file for the Q-GREENTECH repository.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-012", docId: "GQOIS-QGREEN-DOC-012", path: "Q-GREENTECH/Makefile", description: "Makefile for building and managing the Q-GREENTECH codebase.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-013", docId: "GQOIS-QGREEN-DOC-013", path: "Q-GREENTECH/requirements.txt", description: "Python package requirements.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-014", docId: "GQOIS-QGREEN-DOC-014", path: "Q-GREENTECH/environment.yml", description: "Conda environment configuration.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-015", docId: "GQOIS-QGREEN-DOC-015", path: "Q-GREENTECH/docker-compose.yml", description: "Docker Compose file for multi-container applications.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-016", docId: "GQOIS-QGREEN-DOC-016", path: "Q-GREENTECH/setup.py", description: "Python package setup script.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-017", docId: "GQOIS-QGREEN-DOC-017", path: "Q-GREENTECH/CHANGELOG.md", description: "Changelog for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-018", docId: "GQOIS-QGREEN-DOC-018", path: "Q-GREENTECH/CONTRIBUTING.md", description: "Contribution guidelines for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-019", docId: "GQOIS-QGREEN-DOC-019", path: "Q-GREENTECH/ROADMAP.md", description: "Development roadmap for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-020", docId: "GQOIS-QGREEN-DOC-020", path: "Q-GREENTECH/GLOSSARY.md", description: "Glossary of terms for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-021", docId: "GQOIS-QGREEN-DOC-021", path: "Q-GREENTECH/hybrid_propulsion/README.md", description: "README for the hybrid propulsion sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-022", docId: "GQOIS-QGREEN-DOC-022", path: "Q-GREENTECH/hybrid_propulsion/architecture/system_design.py", description: "Script for the overall hybrid system design.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-023", docId: "GQOIS-QGREEN-DOC-023", path: "Q-GREENTECH/hybrid_propulsion/architecture/power_split.py", description: "Algorithm for splitting power between thermal and electric systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-024", docId: "GQOIS-QGREEN-DOC-024", path: "Q-GREENTECH/hybrid_propulsion/architecture/operating_modes.py", description: "Logic defining the different operating modes of the hybrid system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-025", docId: "GQOIS-QGREEN-DOC-025", path: "Q-GREENTECH/hybrid_propulsion/turbofan/engine_integration.py", description: "Integration logic for the turbofan engine component.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-026", docId: "GQOIS-QGREEN-DOC-026", path: "Q-GREENTECH/hybrid_propulsion/turbofan/efficiency_optimization.py", description: "Optimization algorithms for turbofan efficiency.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-027", docId: "GQOIS-QGREEN-DOC-027", path: "Q-GREENTECH/hybrid_propulsion/turbofan/saf_compatibility.py", description: "Compatibility analysis for Sustainable Aviation Fuels (SAF).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-028", docId: "GQOIS-QGREEN-DOC-028", path: "Q-GREENTECH/hybrid_propulsion/turbofan/emissions_control.py", description: "Emissions control logic for the turbofan engine.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-029", docId: "GQOIS-QGREEN-DOC-029", path: "Q-GREENTECH/hybrid_propulsion/electric_motor/motor_design.py", description: "Design script for the primary electric motor.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-030", docId: "GQOIS-QGREEN-DOC-030", path: "Q-GREENTECH/hybrid_propulsion/electric_motor/cooling_system.py", description: "Cooling system design for the electric motor.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-031", docId: "GQOIS-QGREEN-DOC-031", path: "Q-GREENTECH/hybrid_propulsion/electric_motor/superconducting_motor.py", description: "Research and design of a superconducting motor.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-032", docId: "GQOIS-QGREEN-DOC-032", path: "Q-GREENTECH/hybrid_propulsion/electric_motor/magnetic_bearings.py", description: "Design of magnetic bearings for the electric motor.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-033", docId: "GQOIS-QGREEN-DOC-033", path: "Q-GREENTECH/hybrid_propulsion/generator/starter_generator.py", description: "Design of the starter-generator unit.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-034", docId: "GQOIS-QGREEN-DOC-034", path: "Q-GREENTECH/hybrid_propulsion/generator/high_efficiency_design.py", description: "High-efficiency design principles for the generator.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-035", docId: "GQOIS-QGREEN-DOC-035", path: "Q-GREENTECH/hybrid_propulsion/generator/power_electronics.py", description: "Power electronics interface for the generator.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-036", docId: "GQOIS-QGREEN-DOC-036", path: "Q-GREENTECH/hybrid_propulsion/control/hybrid_controller.py", description: "Main controller logic for the hybrid system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-037", docId: "GQOIS-QGREEN-DOC-037", path: "Q-GREENTECH/hybrid_propulsion/control/power_management.py", description: "Power management algorithms for the hybrid controller.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-038", docId: "GQOIS-QGREEN-DOC-038", path: "Q-GREENTECH/hybrid_propulsion/control/quantum_optimization.py", description: "Quantum optimization for hybrid power management.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-039", docId: "GQOIS-QGREEN-DOC-039", path: "Q-GREENTECH/hybrid_propulsion/control/ai_optimization.py", description: "AI-based optimization for hybrid power management.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-040", docId: "GQOIS-QGREEN-DOC-040", path: "Q-GREENTECH/hybrid_propulsion/control/mode_transition.py", description: "Logic for smooth transitions between operating modes.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-041", docId: "GQOIS-QGREEN-DOC-041", path: "Q-GREENTECH/hybrid_propulsion/monitoring/performance_tracking.py", description: "System for tracking propulsion performance metrics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-042", docId: "GQOIS-QGREEN-DOC-042", path: "Q-GREENTECH/hybrid_propulsion/monitoring/emissions_monitoring.py", description: "Real-time emissions monitoring system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-043", docId: "GQOIS-QGREEN-DOC-043", path: "Q-GREENTECH/hybrid_propulsion/monitoring/health_diagnostics.py", description: "Health diagnostics and prognostics for the propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-044", docId: "GQOIS-QGREEN-DOC-044", path: "Q-GREENTECH/hybrid_propulsion/monitoring/quantum_sensors.py", description: "Integration of quantum sensors for propulsion monitoring.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-045", docId: "GQOIS-QGREEN-DOC-045", path: "Q-GREENTECH/hybrid_propulsion/testing/test_procedures.py", description: "Test procedures for the hybrid propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-046", docId: "GQOIS-QGREEN-DOC-046", path: "Q-GREENTECH/hybrid_propulsion/testing/performance_validation.py", description: "Scripts for validating propulsion performance against models.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-047", docId: "GQOIS-QGREEN-DOC-047", path: "Q-GREENTECH/hybrid_propulsion/testing/emissions_testing.py", description: "Procedures for emissions testing and certification.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-048", docId: "GQOIS-QGREEN-DOC-048", path: "Q-GREENTECH/hybrid_propulsion/simulation/system_model.py", description: "Simulation model of the complete hybrid system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-049", docId: "GQOIS-QGREEN-DOC-049", path: "Q-GREENTECH/hybrid_propulsion/simulation/efficiency_analysis.py", description: "Simulation for analyzing system efficiency.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-050", docId: "GQOIS-QGREEN-DOC-050", path: "Q-GREENTECH/hybrid_propulsion/simulation/mission_profile.py", description: "Simulation of the propulsion system over a mission profile.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-051", docId: "GQOIS-QGREEN-DOC-051", path: "Q-GREENTECH/hybrid_propulsion/config/system_parameters.yaml", description: "Configuration file with key system parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-052", docId: "GQOIS-QGREEN-DOC-052", path: "Q-GREENTECH/hybrid_propulsion/config/control_settings.yaml", description: "Configuration file for control system settings.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-053", docId: "GQOIS-QGREEN-DOC-053", path: "Q-GREENTECH/hybrid_propulsion/docs/design_manual.md", description: "Design manual for the hybrid propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-054", docId: "GQOIS-QGREEN-DOC-054", path: "Q-GREENTECH/hybrid_propulsion/docs/operation_manual.md", description: "Operation manual for the hybrid propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-055", docId: "GQOIS-QGREEN-DOC-055", path: "Q-GREENTECH/hybrid_propulsion/docs/maintenance_guide.md", description: "Maintenance guide for the hybrid propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-056", docId: "GQOIS-QGREEN-DOC-056", path: "Q-GREENTECH/energy_storage/README.md", description: "README for the energy storage systems sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-057", docId: "GQOIS-QGREEN-DOC-057", path: "Q-GREENTECH/energy_storage/battery/cell_design.py", description: "Design and specification of battery cells.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-058", docId: "GQOIS-QGREEN-DOC-058", path: "Q-GREENTECH/energy_storage/battery/pack_architecture.py", description: "Architecture of the main battery pack.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-059", docId: "GQOIS-QGREEN-DOC-059", path: "Q-GREENTECH/energy_storage/battery/thermal_management.py", description: "Thermal management system for the battery pack.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-060", docId: "GQOIS-QGREEN-DOC-060", path: "Q-GREENTECH/energy_storage/battery/bms_design.py", description: "Design of the Battery Management System (BMS).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-061", docId: "GQOIS-QGREEN-DOC-061", path: "Q-GREENTECH/energy_storage/battery/safety_systems.py", description: "Safety systems for the battery (e.g., venting, disconnects).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-062", docId: "GQOIS-QGREEN-DOC-062", path: "Q-GREENTECH/energy_storage/battery/fire_suppression.py", description: "Fire suppression system for the battery pack.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-063", docId: "GQOIS-QGREEN-DOC-063", path: "Q-GREENTECH/energy_storage/battery/quantum_monitoring.py", description: "Quantum sensing for battery state-of-health monitoring.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-064", docId: "GQOIS-QGREEN-DOC-064", path: "Q-GREENTECH/energy_storage/fuel_cell/sofc_design.py", description: "Design of the Solid Oxide Fuel Cell (SOFC) stack.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-065", docId: "GQOIS-QGREEN-DOC-065", path: "Q-GREENTECH/energy_storage/fuel_cell/hydrogen_storage.py", description: "Design of the hydrogen storage system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-066", docId: "GQOIS-QGREEN-DOC-066", path: "Q-GREENTECH/energy_storage/fuel_cell/balance_of_plant.py", description: "Design of the fuel cell's balance of plant (pumps, etc.).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-067", docId: "GQOIS-QGREEN-DOC-067", path: "Q-GREENTECH/energy_storage/fuel_cell/water_management.py", description: "Water management system for the fuel cell.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-068", docId: "GQOIS-QGREEN-DOC-068", path: "Q-GREENTECH/energy_storage/supercapacitor/design.py", description: "Design of the supercapacitor bank.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-069", docId: "GQOIS-QGREEN-DOC-069", path: "Q-GREENTECH/energy_storage/supercapacitor/integration.py", description: "Integration of supercapacitors with the main power bus.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-070", docId: "GQOIS-QGREEN-DOC-070", path: "Q-GREENTECH/energy_storage/supercapacitor/power_boost.py", description: "Logic for using supercapacitors for power boost.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-071", docId: "GQOIS-QGREEN-DOC-071", path: "Q-GREENTECH/energy_storage/hybrid_storage/architecture.py", description: "Architecture for the hybrid energy storage system (battery + FC + caps).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-072", docId: "GQOIS-QGREEN-DOC-072", path: "Q-GREENTECH/energy_storage/hybrid_storage/energy_management.py", description: "Energy management strategy for the hybrid storage system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-073", docId: "GQOIS-QGREEN-DOC-073", path: "Q-GREENTECH/energy_storage/hybrid_storage/optimization.py", description: "Optimization algorithms for hybrid energy storage.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-074", docId: "GQOIS-QGREEN-DOC-074", path: "Q-GREENTECH/energy_storage/charging/fast_charging.py", description: "Fast charging protocols and hardware interface.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-075", docId: "GQOIS-QGREEN-DOC-075", path: "Q-GREENTECH/energy_storage/charging/ground_infrastructure.py", description: "Requirements for ground charging infrastructure.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-076", docId: "GQOIS-QGREEN-DOC-076", path: "Q-GREENTECH/energy_storage/charging/wireless_charging.py", description: "Research into wireless charging systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-077", docId: "GQOIS-QGREEN-DOC-077", path: "Q-GREENTECH/energy_storage/monitoring/soh_estimation.py", description: "State-of-Health (SOH) estimation algorithms.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-078", docId: "GQOIS-QGREEN-DOC-078", path: "Q-GREENTECH/energy_storage/monitoring/predictive_analytics.py", description: "Predictive analytics for battery and fuel cell life.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-079", docId: "GQOIS-QGREEN-DOC-079", path: "Q-GREENTECH/energy_storage/testing/cell_testing.py", description: "Procedures for testing individual cells.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-080", docId: "GQOIS-QGREEN-DOC-080", path: "Q-GREENTECH/energy_storage/testing/pack_validation.py", description: "Procedures for validating the full battery pack.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-081", docId: "GQOIS-QGREEN-DOC-081", path: "Q-GREENTECH/energy_storage/testing/safety_testing.py", description: "Safety and abuse testing procedures for energy storage.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-082", docId: "GQOIS-QGREEN-DOC-082", path: "Q-GREENTECH/energy_storage/config/battery_params.yaml", description: "Configuration file for battery parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-083", docId: "GQOIS-QGREEN-DOC-083", path: "Q-GREENTECH/energy_storage/config/fuel_cell_params.yaml", description: "Configuration file for fuel cell parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-084", docId: "GQOIS-QGREEN-DOC-084", path: "Q-GREENTECH/energy_storage/docs/design_guide.md", description: "Design guide for energy storage systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-085", docId: "GQOIS-QGREEN-DOC-085", path: "Q-GREENTECH/energy_storage/docs/safety_manual.md", description: "Safety manual for handling energy storage systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-086", docId: "GQOIS-QGREEN-DOC-086", path: "Q-GREENTECH/power_management/README.md", description: "README for the power management sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-087", docId: "GQOIS-QGREEN-DOC-087", path: "Q-GREENTECH/power_management/architecture/hvdc_system.py", description: "Design of the High-Voltage DC (HVDC) power bus.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-088", docId: "GQOIS-QGREEN-DOC-088", path: "Q-GREENTECH/power_management/architecture/distribution_network.py", description: "Architecture of the power distribution network.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-089", docId: "GQOIS-QGREEN-DOC-089", path: "Q-GREENTECH/power_management/architecture/redundancy_design.py", description: "Redundancy design for the power management system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-090", docId: "GQOIS-QGREEN-DOC-090", path: "Q-GREENTECH/power_management/converters/dc_dc_converter.py", description: "Design of DC-DC power converters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-091", docId: "GQOIS-QGREEN-DOC-091", path: "Q-GREENTECH/power_management/converters/inverter_design.py", description: "Design of power inverters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-092", docId: "GQOIS-QGREEN-DOC-092", path: "Q-GREENTECH/power_management/converters/sic_mosfet.py", description: "Use of Silicon Carbide (SiC) MOSFETs in converters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-093", docId: "GQOIS-QGREEN-DOC-093", path: "Q-GREENTECH/power_management/converters/gan_devices.py", description: "Use of Gallium Nitride (GaN) devices in converters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-094", docId: "GQOIS-QGREEN-DOC-094", path: "Q-GREENTECH/power_management/control/smart_grid.py", description: "Onboard smart grid control logic.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-095", docId: "GQOIS-QGREEN-DOC-095", path: "Q-GREENTECH/power_management/control/load_balancing.py", description: "Algorithms for electrical load balancing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-096", docId: "GQOIS-QGREEN-DOC-096", path: "Q-GREENTECH/power_management/control/peak_shaving.py", description: "Algorithms for electrical peak shaving.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-097", docId: "GQOIS-QGREEN-DOC-097", path: "Q-GREENTECH/power_management/control/quantum_optimization.py", description: "Quantum optimization for the smart grid.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-098", docId: "GQOIS-QGREEN-DOC-098", path: "Q-GREENTECH/power_management/protection/fault_detection.py", description: "Electrical fault detection systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-099", docId: "GQOIS-QGREEN-DOC-099", path: "Q-GREENTECH/power_management/protection/arc_fault_detection.py", description: "Arc fault detection systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-100", docId: "GQOIS-QGREEN-DOC-100", path: "Q-GREENTECH/power_management/protection/isolation_systems.py", description: "Electrical isolation systems and protocols.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-101", docId: "GQOIS-QGREEN-DOC-101", path: "Q-GREENTECH/power_management/thermal/cooling_design.py", description: "Cooling design for power electronics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-102", docId: "GQOIS-QGREEN-DOC-102", path: "Q-GREENTECH/power_management/thermal/heat_recovery.py", description: "Waste heat recovery from power electronics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-103", docId: "GQOIS-QGREEN-DOC-103", path: "Q-GREENTECH/power_management/monitoring/power_quality.py", description: "Power quality monitoring system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-104", docId: "GQOIS-QGREEN-DOC-104", path: "Q-GREENTECH/power_management/monitoring/efficiency_tracking.py", description: "Efficiency tracking for the power management system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-105", docId: "GQOIS-QGREEN-DOC-105", path: "Q-GREENTECH/power_management/testing/converter_testing.py", description: "Test procedures for power converters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-106", docId: "GQOIS-QGREEN-DOC-106", path: "Q-GREENTECH/power_management/testing/grid_stability.py", description: "Test procedures for onboard grid stability.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-107", docId: "GQOIS-QGREEN-DOC-107", path: "Q-GREENTECH/power_management/config/grid_parameters.yaml", description: "Configuration file for grid parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-108", docId: "GQOIS-QGREEN-DOC-108", path: "Q-GREENTECH/power_management/config/converter_settings.yaml", description: "Configuration file for converter settings.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-109", docId: "GQOIS-QGREEN-DOC-109", path: "Q-GREENTECH/power_management/docs/design_manual.md", description: "Design manual for the power management system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-110", docId: "GQOIS-QGREEN-DOC-110", path: "Q-GREENTECH/power_management/docs/integration_guide.md", description: "Integration guide for the power management system.", division: "Q-GREENTECH" }
+  { promptId: "QGREEN-P-111", docId: "GQOIS-QGREEN-DOC-111", path: "Q-GREENTECH/renewable_energy/README.md", description: "README for the renewable energy integration sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-112", docId: "GQOIS-QGREEN-DOC-112", path: "Q-GREENTECH/renewable_energy/solar/panel_integration.py", description: "Integration of solar panels onto the aircraft structure.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-113", docId: "GQOIS-QGREEN-DOC-113", path: "Q-GREENTECH/renewable_energy/solar/flexible_cells.py", description: "Research and use of flexible solar cells.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-114", docId: "GQOIS-QGREEN-DOC-114", path: "Q-GREENTECH/renewable_energy/solar/mppt_controller.py", description: "Maximum Power Point Tracking (MPPT) controller for solar.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-115", docId: "GQOIS-QGREEN-DOC-115", path: "Q-GREENTECH/renewable_energy/solar/energy_harvesting.py", description: "General energy harvesting strategies from solar.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-116", docId: "GQOIS-QGREEN-DOC-116", path: "Q-GREENTECH/renewable_energy/regenerative/brake_energy.py", description: "Regenerative braking energy recovery system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-117", docId: "GQOIS-QGREEN-DOC-117", path: "Q-GREENTECH/renewable_energy/regenerative/landing_recovery.py", description: "Energy recovery during the landing phase.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-118", docId: "GQOIS-QGREEN-DOC-118", path: "Q-GREENTECH/renewable_energy/regenerative/taxi_recovery.py", description: "Energy recovery during taxiing via electric motors.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-119", docId: "GQOIS-QGREEN-DOC-119", path: "Q-GREENTECH/renewable_energy/thermal/waste_heat_recovery.py", description: "System for recovering waste heat from engines and electronics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-120", docId: "GQOIS-QGREEN-DOC-120", path: "Q-GREENTECH/renewable_energy/thermal/thermoelectric_gen.py", description: "Use of thermoelectric generators (TEGs).", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-121", docId: "GQOIS-QGREEN-DOC-121", path: "Q-GREENTECH/renewable_energy/thermal/orc_system.py", description: "Use of Organic Rankine Cycle (ORC) systems for heat recovery.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-122", docId: "GQOIS-QGREEN-DOC-122", path: "Q-GREENTECH/renewable_energy/wind/micro_turbines.py", description: "Research into onboard micro-turbines for energy harvesting.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-123", docId: "GQOIS-QGREEN-DOC-123", path: "Q-GREENTECH/renewable_energy/wind/boundary_layer_harvest.py", description: "Research into harvesting energy from the boundary layer.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-124", docId: "GQOIS-QGREEN-DOC-124", path: "Q-GREENTECH/renewable_energy/integration/energy_combiner.py", description: "System for combining energy from multiple renewable sources.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-125", docId: "GQOIS-QGREEN-DOC-125", path: "Q-GREENTECH/renewable_energy/integration/smart_routing.py", description: "Smart routing of harvested energy to storage or systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-126", docId: "GQOIS-QGREEN-DOC-126", path: "Q-GREENTECH/renewable_energy/monitoring/harvest_tracking.py", description: "System for tracking and monitoring energy harvesting.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-127", docId: "GQOIS-QGREEN-DOC-127", path: "Q-GREENTECH/renewable_energy/config/solar_params.yaml", description: "Configuration file for solar panel parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-128", docId: "GQOIS-QGREEN-DOC-128", path: "Q-GREENTECH/renewable_energy/config/harvest_settings.yaml", description: "Configuration file for energy harvesting settings.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-129", docId: "GQOIS-QGREEN-DOC-129", path: "Q-GREENTECH/renewable_energy/docs/integration_guide.md", description: "Integration guide for renewable energy systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-130", docId: "GQOIS-QGREEN-DOC-130", path: "Q-GREENTECH/renewable_energy/docs/efficiency_report.md", description: "Report on the efficiency of renewable energy systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-131", docId: "GQOIS-QGREEN-DOC-131", path: "Q-GREENTECH/sustainability/README.md", description: "README for the sustainability and emissions sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-132", docId: "GQOIS-QGREEN-DOC-132", path: "Q-GREENTECH/sustainability/emissions/co2_tracking.py", description: "System for tracking CO2 emissions in real-time.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-133", docId: "GQOIS-QGREEN-DOC-133", path: "Q-GREENTECH/sustainability/emissions/nox_reduction.py", description: "Strategies and systems for NOx reduction.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-134", docId: "GQOIS-QGREEN-DOC-134", path: "Q-GREENTECH/sustainability/emissions/particulate_control.py", description: "Systems for controlling particulate matter emissions.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-135", docId: "GQOIS-QGREEN-DOC-135", path: "Q-GREENTECH/sustainability/emissions/real_time_monitoring.py", description: "Real-time monitoring system for all regulated emissions.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-136", docId: "GQOIS-QGREEN-DOC-136", path: "Q-GREENTECH/sustainability/lifecycle/lca_framework.py", description: "Framework for Life Cycle Assessment (LCA) of the aircraft.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-137", docId: "GQOIS-QGREEN-DOC-137", path: "Q-GREENTECH/sustainability/lifecycle/circular_economy.py", description: "Principles of circular economy applied to the aircraft design.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-138", docId: "GQOIS-QGREEN-DOC-138", path: "Q-GREENTECH/sustainability/lifecycle/recycling_design.py", description: "Design for recyclability and end-of-life management.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-139", docId: "GQOIS-QGREEN-DOC-139", path: "Q-GREENTECH/sustainability/materials/bio_materials.py", description: "Research and use of bio-derived materials.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-140", docId: "GQOIS-QGREEN-DOC-140", path: "Q-GREENTECH/sustainability/materials/recycled_composites.py", description: "Use of recycled composites in manufacturing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-141", docId: "GQOIS-QGREEN-DOC-141", path: "Q-GREENTECH/sustainability/operations/eco_routing.py", description: "Eco-friendly flight path routing algorithms.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-142", docId: "GQOIS-QGREEN-DOC-142", path: "Q-GREENTECH/sustainability/operations/carbon_offsetting.py", description: "Framework for carbon offsetting programs.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-143", docId: "GQOIS-QGREEN-DOC-143", path: "Q-GREENTECH/sustainability/reporting/esg_metrics.py", description: "System for tracking Environmental, Social, and Governance (ESG) metrics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-144", docId: "GQOIS-QGREEN-DOC-144", path: "Q-GREENTECH/sustainability/reporting/corsia_compliance.py", description: "System for ensuring compliance with CORSIA regulations.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-145", docId: "GQOIS-QGREEN-DOC-145", path: "Q-GREENTECH/sustainability/optimization/ai_sustainability.py", description: "AI models for optimizing sustainability metrics.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-146", docId: "GQOIS-QGREEN-DOC-146", path: "Q-GREENTECH/sustainability/optimization/quantum_routing.py", description: "Quantum algorithms for optimizing eco-routing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-147", docId: "GQOIS-QGREEN-DOC-147", path: "Q-GREENTECH/sustainability/config/emissions_targets.yaml", description: "Configuration file for emissions targets.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-148", docId: "GQOIS-QGREEN-DOC-148", path: "Q-GREENTECH/sustainability/config/lca_parameters.yaml", description: "Configuration file for Life Cycle Assessment parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-149", docId: "GQOIS-QGREEN-DOC-149", path: "Q-GREENTECH/sustainability/docs/sustainability_report.md", description: "Annual sustainability report template.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-150", docId: "GQOIS-QGREEN-DOC-150", path: "Q-GREENTECH/sustainability/docs/certification_guide.md", description: "Guide to sustainability certifications.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-151", docId: "GQOIS-QGREEN-DOC-151", path: "Q-GREENTECH/testing/README.md", description: "README for the testing and validation sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-152", docId: "GQOIS-QGREEN-DOC-152", path: "Q-GREENTECH/testing/propulsion/engine_test_cell.py", description: "Software for controlling the engine test cell.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-153", docId: "GQOIS-QGREEN-DOC-153", path: "Q-GREENTECH/testing/propulsion/altitude_simulation.py", description: "Scripts for simulating altitude conditions during testing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-154", docId: "GQOIS-QGREEN-DOC-154", path: "Q-GREENTECH/testing/propulsion/thrust_measurement.py", description: "Scripts for measuring and recording thrust.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-155", docId: "GQOIS-QGREEN-DOC-155", path: "Q-GREENTECH/testing/battery/cell_characterization.py", description: "Scripts for battery cell characterization.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-156", docId: "GQOIS-QGREEN-DOC-156", path: "Q-GREENTECH/testing/battery/abuse_testing.py", description: "Procedures and scripts for battery abuse testing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-157", docId: "GQOIS-QGREEN-DOC-157", path: "Q-GREENTECH/testing/battery/cycle_life_testing.py", description: "Scripts for battery cycle life testing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-158", docId: "GQOIS-QGREEN-DOC-158", path: "Q-GREENTECH/testing/power/converter_efficiency.py", description: "Scripts for testing power converter efficiency.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-159", docId: "GQOIS-QGREEN-DOC-159", path: "Q-GREENTECH/testing/power/emi_emc_testing.py", description: "Procedures for EMI/EMC testing of power systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-160", docId: "GQOIS-QGREEN-DOC-160", path: "Q-GREENTECH/testing/integration/system_validation.py", description: "Scripts for integrated system validation.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-161", docId: "GQOIS-QGREEN-DOC-161", path: "Q-GREENTECH/testing/integration/iron_bird_testing.py", description: "Procedures for "iron bird" ground testing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-162", docId: "GQOIS-QGREEN-DOC-162", path: "Q-GREENTECH/testing/certification/do160_compliance.py", description: "Scripts for checking DO-160 compliance.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-163", docId: "GQOIS-QGREEN-DOC-163", path: "Q-GREENTECH/testing/certification/power_quality.py", description: "Tests for power quality certification.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-164", docId: "GQOIS-QGREEN-DOC-164", path: "Q-GREENTECH/testing/performance/efficiency_validation.py", description: "Validation of overall system efficiency.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-165", docId: "GQOIS-QGREEN-DOC-165", path: "Q-GREENTECH/testing/performance/mission_simulation.py", description: "Full mission simulation for performance testing.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-166", docId: "GQOIS-QGREEN-DOC-166", path: "Q-GREENTECH/testing/config/test_parameters.yaml", description: "Configuration file for test parameters.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-167", docId: "GQOIS-QGREEN-DOC-167", path: "Q-GREENTECH/testing/config/certification_matrix.yaml", description: "Certification test matrix.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-168", docId: "GQOIS-QGREEN-DOC-168", path: "Q-GREENTECH/testing/reports/test_report_template.md", description: "Template for generating test reports.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-169", docId: "GQOIS-QGREEN-DOC-169", path: "Q-GREENTECH/testing/docs/procedures_manual.md", description: "Manual of all testing procedures.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-170", docId: "GQOIS-QGREEN-DOC-170", path: "Q-GREENTECH/testing/docs/validation_guide.md", description: "Guide to system validation.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-171", docId: "GQOIS-QGREEN-DOC-171", path: "Q-GREENTECH/digital_twin_green/README.md", description: "README for the GreenTech Digital Twin sub-module.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-172", docId: "GQOIS-QGREEN-DOC-172", path: "Q-GREENTECH/digital_twin_green/models/propulsion_model.py", description: "Digital twin model for the propulsion system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-173", docId: "GQOIS-QGREEN-DOC-173", path: "Q-GREENTECH/digital_twin_green/models/energy_model.py", description: "Digital twin model for the energy storage system.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-174", docId: "GQOIS-QGREEN-DOC-174", path: "Q-GREENTECH/digital_twin_green/models/emissions_model.py", description: "Digital twin model for emissions.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-175", docId: "GQOIS-QGREEN-DOC-175", path: "Q-GREENTECH/digital_twin_green/optimization/real_time_opt.py", description: "Real-time optimization using the digital twin.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-176", docId: "GQOIS-QGREEN-DOC-176", path: "Q-GREENTECH/digital_twin_green/analytics/efficiency_analytics.py", description: "Efficiency analytics using the digital twin.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-177", docId: "GQOIS-QGREEN-DOC-177", path: "Q-GREENTECH/digital_twin_green/visualization/energy_flow.py", description: "Visualization of energy flow in the digital twin.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-178", docId: "GQOIS-QGREEN-DOC-178", path: "Q-GREENTECH/digital_twin_green/api/greentech_api.py", description: "API for interacting with the GreenTech digital twin.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-179", docId: "GQOIS-QGREEN-DOC-179", path: "Q-GREENTECH/digital_twin_green/config/model_params.yaml", description: "Parameters for the digital twin models.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-180", docId: "GQOIS-QGREEN-DOC-180", path: "Q-GREENTECH/docs/greentech_overview.md", description: "High-level overview document for the Q-GREENTECH division.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-181", docId: "GQOIS-QGREEN-DOC-181", path: "Q-GREENTECH/docs/propulsion_manual.md", description: "Final, compiled propulsion system manual.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-182", docId: "GQOIS-QGREEN-DOC-182", path: "Q-GREENTECH/docs/energy_systems_guide.md", description: "Final, compiled guide to energy systems.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-183", docId: "GQOIS-QGREEN-DOC-183", path: "Q-GREENTECH/docs/sustainability_report.md", description: "Final, compiled sustainability report.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-184", docId: "GQOIS-QGREEN-DOC-184", path: "Q-GREENTECH/docs/certification_compliance.md", description: "Final, compiled certification compliance document.", division: "Q-GREENTECH" },
+  { promptId: "QGREEN-P-185", docId: "GQOIS-QGREEN-DOC-185", path: "Q-GREENTECH/docs/release_notes_v1.0.md", description: "Release notes for version 1.0 of the Q-GREENTECH module.],", division: "Q-GREENTECH" },
   "Q-HPC": [Prompt ID	Doc ID	Unified Project Tree Path	Brief Description
-QHPC-P-001	GQOIS-QHPC-DOC-001	Q-HPC/README.md	Main README for the Q-HPC division.
-QHPC-P-002	GQOIS-QHPC-DOC-002	Q-HPC/COMPUTE_RESOURCES.md	Overview of available compute resources (CPU, GPU, QPU).
-QHPC-P-003	GQOIS-QHPC-DOC-003	Q-HPC/LICENSE	Software license for the Q-HPC division.
-QHPC-P-004	GQOIS-QHPC-DOC-004	Q-HPC/ARCHITECTURE.md	Architecture of the HPC and quantum computing cluster.
-QHPC-P-005	GQOIS-QHPC-DOC-005	Q-HPC/QUANTUM_INTEGRATION.md	Plan for integrating QPU hardware into the HPC infrastructure.
-QHPC-P-006	GQOIS-QHPC-DOC-006	Q-HPC/API_REFERENCE.md	API reference for submitting jobs and querying the HPC cluster.
-QHPC-P-007	GQOIS-QHPC-DOC-007	Q-HPC/SECURITY_POLICY.md	Security policy for the HPC environment.
-QHPC-P-008	GQOIS-QHPC-DOC-008	Q-HPC/PERFORMANCE_BENCHMARKS.md	Document detailing performance benchmarks and results.
-QHPC-P-009	GQOIS-QHPC-DOC-009	Q-HPC/DEPLOYMENT_GUIDE.md	Guide for deploying applications on the HPC cluster.
-QHPC-P-010	GQOIS-QHPC-DOC-010	Q-HPC/TROUBLESHOOTING.md	Troubleshooting guide for common HPC issues.
-QHPC-P-011	GQOIS-QHPC-DOC-011	Q-HPC/.gitignore	Git ignore file for the Q-HPC repository.
-QHPC-P-012	GQOIS-QHPC-DOC-012	Q-HPC/Makefile	Makefile for managing the Q-HPC codebase.
-QHPC-P-013	GQOIS-QHPC-DOC-013	Q-HPC/requirements.txt	Python package requirements for HPC tools.
-QHPC-P-014	GQOIS-QHPC-DOC-014	Q-HPC/environment.yml	Conda environment configuration for HPC.
-QHPC-P-015	GQOIS-QHPC-DOC-015	Q-HPC/docker-compose.yml	Docker Compose for deploying HPC services.
-QHPC-P-016	GQOIS-QHPC-DOC-016	Q-HPC/Dockerfile	Dockerfile for containerizing HPC tools.
-QHPC-P-017	GQOIS-QHPC-DOC-017	Q-HPC/.dockerignore	Docker ignore file for HPC containers.
-QHPC-P-018	GQOIS-QHPC-DOC-018	Q-HPC/setup.py	Python package setup script for HPC tools.
-QHPC-P-019	GQOIS-QHPC-DOC-019	Q-HPC/pyproject.toml	pyproject.toml configuration file.
-QHPC-P-020	GQOIS-QHPC-DOC-020	Q-HPC/CHANGELOG.md	Changelog for the Q-HPC division.
-QHPC-P-021	GQOIS-QHPC-DOC-021	Q-HPC/CONTRIBUTING.md	Contribution guidelines for the Q-HPC division.
-QHPC-P-022	GQOIS-QHPC-DOC-022	Q-HPC/CODE_OF_CONDUCT.md	Code of conduct for the Q-HPC division.
-QHPC-P-023	GQOIS-QHPC-DOC-023	Q-HPC/ROADMAP.md	Development roadmap for the Q-HPC division.
-QHPC-P-024	GQOIS-QHPC-DOC-024	Q-HPC/GLOSSARY.md	Glossary of terms for the Q-HPC division.
-QHPC-P-025	GQOIS-QHPC-DOC-025	Q-HPC/FAQ.md	Frequently Asked Questions for the Q-HPC division.
-QHPC-P-026	GQOIS-QHPC-DOC-026	Q-HPC/cluster_management/README.md	README for the cluster management sub-module.
-QHPC-P-027	GQOIS-QHPC-DOC-027	Q-HPC/cluster_management/scheduler_configs/slurm.conf	Main configuration file for the SLURM scheduler.
-QHPC-P-028	GQOIS-QHPC-DOC-028	Q-HPC/cluster_management/scheduler_configs/slurmdbd.conf	Configuration file for the SLURM database daemon.
-QHPC-P-029	GQOIS-QHPC-DOC-029	Q-HPC/cluster_management/scheduler_configs/job_submit.lua	LUA script for custom job submission logic in SLURM.
-QHPC-P-030	GQOIS-QHPC-DOC-030	Q-HPC/cluster_management/scheduler_configs/partition_config.yaml	Configuration for compute partitions (e.g., CPU, GPU, quantum).
-QHPC-P-031	GQOIS-QHPC-DOC-031	Q-HPC/cluster_management/scheduler_configs/qos_config.conf	Quality of Service (QoS) configuration for job prioritization.
-QHPC-P-032	GQOIS-QHPC-DOC-032	Q-HPC/cluster_management/scheduler_configs/accounting.conf	Configuration for job accounting and resource tracking.
-QHPC-P-033	GQOIS-QHPC-DOC-033	Q-HPC/cluster_management/scheduler_configs/topology.conf	Network topology configuration for SLURM.
-QHPC-P-034	GQOIS-QHPC-DOC-034	Q-HPC/cluster_management/scheduler_configs/gres.conf	Generic Resource (GRES) configuration for GPUs, etc.
-QHPC-P-035	GQOIS-QHPC-DOC-035	Q-HPC/cluster_management/scheduler_configs/burst_buffer.conf	Burst buffer configuration for high-speed I/O.
-QHPC-P-036	GQOIS-QHPC-DOC-036	Q-HPC/cluster_management/environment_modules/openfoam-10.lua	Environment module file for OpenFOAM 10.
-QHPC-P-037	GQOIS-QHPC-DOC-037	Q-HPC/cluster_management/environment_modules/ansys-2024r1.lua	Environment module file for Ansys 2024R1.
-QHPC-P-038	GQOIS-QHPC-DOC-038	Q-HPC/cluster_management/environment_modules/quantum-sdk-2.0.lua	Environment module file for the Quantum SDK v2.0.
-QHPC-P-039	GQOIS-QHPC-DOC-039	Q-HPC/cluster_management/environment_modules/python-ml-stack.lua	Environment module for the standard Python ML stack.
-QHPC-P-040	GQOIS-QHPC-DOC-040	Q-HPC/cluster_management/environment_modules/cuda-12.2.lua	Environment module for CUDA Toolkit 12.2.
-QHPC-P-041	GQOIS-QHPC-DOC-041	Q-HPC/cluster_management/environment_modules/mpi-4.1.lua	Environment module for MPI v4.1.
-QHPC-P-042	GQOIS-QHPC-DOC-042	Q-HPC/cluster_management/environment_modules/tensorflow-2.13.lua	Environment module for TensorFlow 2.13.
-QHPC-P-043	GQOIS-QHPC-DOC-043	Q-HPC/cluster_management/environment_modules/pytorch-2.0.lua	Environment module for PyTorch 2.0.
-QHPC-P-044	GQOIS-QHPC-DOC-044	Q-HPC/cluster_management/environment_modules/qiskit-0.43.lua	Environment module for Qiskit 0.43.
-QHPC-P-045	GQOIS-QHPC-DOC-045	Q-HPC/cluster_management/environment_modules/pennylane-0.31.lua	Environment module for PennyLane 0.31.
-QHPC-P-046	GQOIS-QHPC-DOC-046	Q-HPC/cluster_management/monitoring/prometheus.yml	Prometheus configuration for scraping metrics.
-QHPC-P-047	GQOIS-QHPC-DOC-047	Q-HPC/cluster_management/monitoring/grafana_dashboards/hpc_overview.json	Grafana dashboard for HPC cluster overview.
-QHPC-P-048	GQOIS-QHPC-DOC-048	Q-HPC/cluster_management/monitoring/grafana_dashboards/job_metrics.json	Grafana dashboard for job metrics and scheduling.
-QHPC-P-049	GQOIS-QHPC-DOC-049	Q-HPC/cluster_management/monitoring/grafana_dashboards/quantum_status.json	Grafana dashboard for QPU status and health.
-QHPC-P-050	GQOIS-QHPC-DOC-050	Q-HPC/cluster_management/monitoring/grafana_dashboards/storage_metrics.json	Grafana dashboard for storage system metrics.
-QHPC-P-051	GQOIS-QHPC-DOC-051	Q-HPC/cluster_management/monitoring/grafana_dashboards/network_performance.json	Grafana dashboard for network performance.
-QHPC-P-052	GQOIS-QHPC-DOC-052	Q-HPC/cluster_management/monitoring/alert_rules.yaml	Alerting rules for Prometheus Alertmanager.
-QHPC-P-053	GQOIS-QHPC-DOC-053	Q-HPC/cluster_management/monitoring/metrics_exporter.py	Custom metrics exporter for specific hardware/software.
-QHPC-P-054	GQOIS-QHPC-DOC-054	Q-HPC/cluster_management/monitoring/log_aggregator.py	Script for aggregating logs from cluster nodes.
-QHPC-P-055	GQOIS-QHPC-DOC-055	Q-HPC/cluster_management/monitoring/health_check.sh	Script for performing routine cluster health checks.
-QHPC-P-056	GQOIS-QHPC-DOC-056	Q-HPC/cluster_management/provisioning/ansible_playbook.yml	Main Ansible playbook for node provisioning.
-QHPC-P-057	GQOIS-QHPC-DOC-057	Q-HPC/cluster_management/provisioning/node_configuration.yaml	Node configuration variables for Ansible.
-QHPC-P-058	GQOIS-QHPC-DOC-058	Q-HPC/cluster_management/provisioning/inventory.ini	Ansible inventory file for cluster hosts.
-QHPC-P-059	GQOIS-QHPC-DOC-059	Q-HPC/cluster_management/provisioning/roles/common/tasks/main.yml	Ansible tasks for the 'common' node role.
-QHPC-P-060	GQOIS-QHPC-DOC-060	Q-HPC/cluster_management/provisioning/roles/compute/tasks/main.yml	Ansible tasks for the 'compute' node role.
-QHPC-P-061	GQOIS-QHPC-DOC-061	Q-HPC/cluster_management/provisioning/roles/quantum/tasks/main.yml	Ansible tasks for the 'quantum' node role.
-QHPC-P-062	GQOIS-QHPC-DOC-062	Q-HPC/cluster_management/provisioning/roles/storage/tasks/main.yml	Ansible tasks for the 'storage' node role.
-QHPC-P-063	GQOIS-QHPC-DOC-063	Q-HPC/cluster_management/provisioning/group_vars/all.yml	Global variables for all Ansible hosts.
-QHPC-P-064	GQOIS-QHPC-DOC-064	Q-HPC/cluster_management/provisioning/host_vars/quantum_node.yml	Specific variables for a quantum node host.
-QHPC-P-065	GQOIS-QHPC-DOC-065	Q-HPC/cluster_management/scripts/node_health_check.sh	Script to check the health of an individual node.
-QHPC-P-066	GQOIS-QHPC-DOC-066	Q-HPC/cluster_management/scripts/job_cleanup.sh	Script to clean up failed or leftover jobs.
-QHPC-P-067	GQOIS-QHPC-DOC-067	Q-HPC/cluster_management/scripts/backup_config.sh	Script to backup cluster configuration files.
-QHPC-P-068	GQOIS-QHPC-DOC-068	Q-HPC/cluster_management/scripts/update_modules.sh	Script to update environment modules.
-QHPC-P-069	GQOIS-QHPC-DOC-069	Q-HPC/cluster_management/scripts/quota_management.py	Script for managing user and group storage quotas.
-QHPC-P-070	GQOIS-QHPC-DOC-070	Q-HPC/cluster_management/scripts/performance_tuning.sh	Script for applying performance tuning settings to nodes.
-QHPC-P-071	GQOIS-QHPC-DOC-071	Q-HPC/workloads/quantum_algorithms/README.md	README for the quantum algorithms sub-module.
-QHPC-P-072	GQOIS-QHPC-DOC-072	Q-HPC/workloads/quantum_algorithms/qaoa/README.md	README for the QAOA algorithm implementation.
-QHPC-P-073	GQOIS-QHPC-DOC-073	Q-HPC/workloads/quantum_algorithms/qaoa/route_optimization.py	QAOA implementation for route optimization problems.
-QHPC-P-074	GQOIS-QHPC-DOC-074	Q-HPC/workloads/quantum_algorithms/qaoa/circuit_design.qasm	OpenQASM file defining the QAOA quantum circuit.
-QHPC-P-075	GQOIS-QHPC-DOC-075	Q-HPC/workloads/quantum_algorithms/qaoa/parameter_tuning.py	Script for tuning QAOA parameters (p, angles).
-QHPC-P-076	GQOIS-QHPC-DOC-076	Q-HPC/workloads/quantum_algorithms/qaoa/cost_function.py	Definition of the cost function for the optimization problem.
-QHPC-P-077	GQOIS-QHPC-DOC-077	Q-HPC/workloads/quantum_algorithms/qaoa/mixer_hamiltonian.py	Definition of the mixer Hamiltonian for QAOA.
-QHPC-P-078	GQOIS-QHPC-DOC-078	Q-HPC/workloads/quantum_algorithms/qaoa/ansatz_builder.py	Script to build the QAOA ansatz.
-QHPC-P-079	GQOIS-QHPC-DOC-079	Q-HPC/workloads/quantum_algorithms/qaoa/classical_optimizer.py	Interface to classical optimizers (e.g., COBYLA, SPSA).
-QHPC-P-080	GQOIS-QHPC-DOC-080	Q-HPC/workloads/quantum_algorithms/qaoa/performance_metrics.py	Scripts for calculating QAOA performance metrics.
-QHPC-P-081	GQOIS-QHPC-DOC-081	Q-HPC/workloads/quantum_algorithms/qaoa/visualization.py	Scripts for visualizing QAOA results.
-QHPC-P-082	GQOIS-QHPC-DOC-082	Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/max_cut.py	QAOA benchmark for the Max-Cut problem.
-QHPC-P-083	GQOIS-QHPC-DOC-083	Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/tsp.py	QAOA benchmark for the Traveling Salesperson Problem (TSP).
-QHPC-P-084	GQOIS-QHPC-DOC-084	Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/portfolio_optimization.py	QAOA benchmark for portfolio optimization.
-QHPC-P-085	GQOIS-QHPC-DOC-085	Q-HPC/workloads/quantum_algorithms/qaoa/tests/test_qaoa.py	Unit tests for the QAOA implementation.
-QHPC-P-086	GQOIS-QHPC-DOC-086	Q-HPC/workloads/quantum_algorithms/qaoa/tests/test_circuits.py	Unit tests for the QAOA quantum circuits.
-QHPC-P-087	GQOIS-QHPC-DOC-087	Q-HPC/workloads/quantum_algorithms/qaoa/config/default_params.yaml	Default parameters for the QAOA algorithm.
-QHPC-P-088	GQOIS-QHPC-DOC-088	Q-HPC/workloads/quantum_algorithms/qaoa/utils/graph_utils.py	Utility functions for graph problems.
-QHPC-P-089	GQOIS-QHPC-DOC-089	Q-HPC/workloads/quantum_algorithms/qaoa/utils/quantum_utils.py	General utility functions for quantum algorithms.
-QHPC-P-090	GQOIS-QHPC-DOC-090	Q-HPC/workloads/quantum_algorithms/qaoa/notebooks/tutorial.ipynb	Jupyter notebook tutorial for using the QAOA module.
-QHPC-P-091	GQOIS-QHPC-DOC-091	Q-HPC/workloads/quantum_algorithms/vqe/README.md	README for the VQE algorithm implementation.
-QHPC-P-092	GQOIS-QHPC-DOC-092	Q-HPC/workloads/quantum_algorithms/vqe/molecular_simulation.py	VQE implementation for molecular ground state simulation.
-QHPC-P-093	GQOIS-QHPC-DOC-093	Q-HPC/workloads/quantum_algorithms/vqe/hamiltonian_prep.py	Script for preparing molecular Hamiltonians.
-QHPC-P-094	GQOIS-QHPC-DOC-094	Q-HPC/workloads/quantum_algorithms/vqe/ansatz_library.py	Library of VQE ansaetze (e.g., UCCSD, Hardware-efficient).
-QHPC-P-095	GQOIS-QHPC-DOC-095	Q-HPC/workloads/quantum_algorithms/vqe/optimizer_interface.py	Interface to classical optimizers for VQE.
-QHPC-P-096	GQOIS-QHPC-DOC-096	Q-HPC/workloads/quantum_algorithms/vqe/measurement_reduction.py	Techniques for reducing the number of measurements in VQE.
-QHPC-P-097	GQOIS-QHPC-DOC-097	Q-HPC/workloads/quantum_algorithms/vqe/error_mitigation.py	Error mitigation techniques for VQE.
-QHPC-P-098	GQOIS-QHPC-DOC-098	Q-HPC/workloads/quantum_algorithms/vqe/excited_states.py	VQE algorithms for finding excited states.
-QHPC-P-099	GQOIS-QHPC-DOC-099	Q-HPC/workloads/quantum_algorithms/vqe/natural_gradient.py	Implementation of the quantum natural gradient optimizer.
-QHPC-P-100	GQOIS-QHPC-DOC-100	Q-HPC/workloads/quantum_algorithms/vqe/adaptive_vqe.py	Implementation of adaptive VQE algorithms.
-QHPC-P-101	GQOIS-QHPC-DOC-101	Q-HPC/workloads/quantum_algorithms/quantum_ml/README.md	README for the Quantum Machine Learning (QML) module.
-QHPC-P-102	GQOIS-QHPC-DOC-102	Q-HPC/workloads/quantum_algorithms/quantum_ml/qnn_architecture.py	Architecture for Quantum Neural Networks (QNNs).
-QHPC-P-103	GQOIS-QHPC-DOC-103	Q-HPC/workloads/quantum_algorithms/quantum_ml/feature_mapping.py	Classical-to-quantum feature mapping techniques.
-QHPC-P-104	GQOIS-QHPC-DOC-104	Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_kernel.py	Implementation of quantum kernel methods.
-QHPC-P-105	GQOIS-QHPC-DOC-105	Q-HPC/workloads/quantum_algorithms/quantum_ml/variational_classifier.py	Implementation of a variational quantum classifier.
-QHPC-P-106	GQOIS-QHPC-DOC-106	Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_gan.py	Implementation of a Quantum Generative Adversarial Network (qGAN).
-QHPC-P-107	GQOIS-QHPC-DOC-107	Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_autoencoder.py	Implementation of a quantum autoencoder.
-QHPC-P-108	GQOIS-QHPC-DOC-108	Q-HPC/workloads/quantum_algorithms/quantum_ml/hybrid_models.py	Hybrid quantum-classical ML models.
-QHPC-P-109	GQOIS-QHPC-DOC-109	Q-HPC/workloads/quantum_algorithms/quantum_ml/data_encoding.py	Techniques for encoding classical data into quantum states.
-QHPC-P-110	GQOIS-QHPC-DOC-110	Q-HPC/workloads/quantum_algorithms/quantum_ml/gradient_computation.py	Methods for computing gradients of quantum circuits.
-QHPC-P-111	GQOIS-QHPC-DOC-111	Q-HPC/workloads/quantum_algorithms/quantum_ml/barren_plateau_detection.py	Tools for detecting and mitigating barren plateaus.
-QHPC-P-112	GQOIS-QHPC-DOC-112	Q-HPC/workloads/quantum_algorithms/quantum_ml/expressibility_analysis.py	Tools for analyzing the expressibility of quantum circuits.
-QHPC-P-113	GQOIS-QHPC-DOC-113	Q-HPC/workloads/quantum_algorithms/quantum_ml/entanglement_capability.py	Tools for analyzing the entanglement capability of circuits.
-QHPC-P-114	GQOIS-QHPC-DOC-114	Q-HPC/workloads/quantum_algorithms/quantum_ml/benchmarks/classification.py	QML benchmarks for classification tasks.
-QHPC-P-115	GQOIS-QHPC-DOC-115	Q-HPC/workloads/quantum_algorithms/quantum_ml/benchmarks/regression.py	QML benchmarks for regression tasks.
-QHPC-P-116	GQOIS-QHPC-DOC-116	Q-HPC/workloads/quantum_algorithms/quantum_ml/datasets/aerospace_data.py	Aerospace-specific datasets for QML.
-QHPC-P-117	GQOIS-QHPC-DOC-117	Q-HPC/workloads/quantum_algorithms/quantum_ml/utils/visualization.py	Visualization tools for QML.
-QHPC-P-118	GQOIS-QHPC-DOC-118	Q-HPC/workloads/quantum_algorithms/quantum_ml/tests/test_qnn.py	Unit tests for the QNN implementation.
-QHPC-P-119	GQOIS-QHPC-DOC-119	Q-HPC/workloads/quantum_algorithms/quantum_ml/config/hyperparameters.yaml	Hyperparameter configurations for QML models.
-QHPC-P-120	GQOIS-QHPC-DOC-120	Q-HPC/workloads/quantum_algorithms/quantum_ml/notebooks/demo.ipynb	Jupyter notebook demo for the QML module.
-QHPC-P-121	GQOIS-QHPC-DOC-121	Q-HPC/workloads/quantum_algorithms/error_correction/README.md	README for the Quantum Error Correction (QEC) module.
-QHPC-P-122	GQOIS-QHPC-DOC-122	Q-HPC/workloads/quantum_algorithms/error_correction/surface_code.py	Implementation of the surface code.
-QHPC-P-123	GQOIS-QHPC-DOC-123	Q-HPC/workloads/quantum_algorithms/error_correction/logical_qubit_encoding.py	Encoding of logical qubits from physical qubits.
-QHPC-P-124	GQOIS-QHPC-DOC-124	Q-HPC/workloads/quantum_algorithms/error_correction/stabilizer_codes.py	General framework for stabilizer codes.
-QHPC-P-125	GQOIS-QHPC-DOC-125	Q-HPC/workloads/quantum_algorithms/error_correction/syndrome_extraction.py	Circuits for syndrome extraction.
-QHPC-P-126	GQOIS-QHPC-DOC-126	Q-HPC/workloads/quantum_algorithms/error_correction/decoder_mwpm.py	Minimum Weight Perfect Matching (MWPM) decoder.
-QHPC-P-127	GQOIS-QHPC-DOC-127	Q-HPC/workloads/quantum_algorithms/error_correction/decoder_neural.py	Neural network-based decoder.
-QHPC-P-128	GQOIS-QHPC-DOC-128	Q-HPC/workloads/quantum_algorithms/error_correction/logical_gates.py	Implementation of logical gates on encoded qubits.
-QHPC-P-129	GQOIS-QHPC-DOC-129	Q-HPC/workloads/quantum_algorithms/error_correction/magic_state_distillation.py	Protocols for magic state distillation.
-QHPC-P-130	GQOIS-QHPC-DOC-130	Q-HPC/workloads/quantum_algorithms/error_correction/threshold_calculation.py	Scripts for calculating QEC thresholds.
-QHPC-P-131	GQOIS-QHPC-DOC-131	Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/depolarizing.py	Model for depolarizing noise.
-QHPC-P-132	GQOIS-QHPC-DOC-132	Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/amplitude_damping.py	Model for amplitude damping noise.
-QHPC-P-133	GQOIS-QHPC-DOC-133	Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/phase_damping.py	Model for phase damping noise.
-QHPC-P-134	GQOIS-QHPC-DOC-134	Q-HPC/workloads/quantum_algorithms/error_correction/benchmarks/code_comparison.py	Benchmarks for comparing different QEC codes.
-QHPC-P-135	GQOIS-QHPC-DOC-135	Q-HPC/workloads/quantum_algorithms/error_correction/visualization/syndrome_viewer.py	Tool for visualizing error syndromes.
-QHPC-P-136	GQOIS-QHPC-DOC-136	Q-HPC/workloads/quantum_algorithms/error_correction/tests/test_surface_code.py	Unit tests for the surface code implementation.
-QHPC-P-137	GQOIS-QHPC-DOC-137	Q-HPC/workloads/quantum_algorithms/error_correction/config/code_parameters.yaml	Configuration parameters for QEC codes.
-QHPC-P-138	GQOIS-QHPC-DOC-138	Q-HPC/workloads/quantum_algorithms/optimization/README.md	README for the quantum optimization module.
-QHPC-P-139	GQOIS-QHPC-DOC-139	Q-HPC/workloads/quantum_algorithms/optimization/quantum_annealing.py	Implementation of quantum annealing for optimization.
-QHPC-P-140	GQOIS-QHPC-DOC-140	Q-HPC/workloads/quantum_algorithms/optimization/grover_optimizer.py	Grover's algorithm-based optimizer.
-QHPC-P-141	GQOIS-QHPC-DOC-141	Q-HPC/workloads/quantum_algorithms/optimization/quantum_gradient_descent.py	Quantum gradient descent algorithm.
-QHPC-P-142	GQOIS-QHPC-DOC-142	Q-HPC/workloads/quantum_algorithms/optimization/quantum_natural_gradient.py	Quantum natural gradient descent algorithm.
-QHPC-P-143	GQOIS-QHPC-DOC-143	Q-HPC/workloads/quantum_algorithms/optimization/quantum_imaginary_time.py	Quantum imaginary time evolution algorithm.
-QHPC-P-144	GQOIS-QHPC-DOC-144	Q-HPC/workloads/quantum_algorithms/optimization/applications/flight_path.py	Application of quantum optimization to flight paths.
-QHPC-P-145	GQOIS-QHPC-DOC-145	Q-HPC/workloads/quantum_algorithms/optimization/applications/fuel_optimization.py	Application of quantum optimization to fuel consumption.
-QHPC-P-146	GQOIS-QHPC-DOC-146	Q-HPC/workloads/quantum_algorithms/optimization/applications/maintenance_scheduling.py	Application of quantum optimization to maintenance scheduling.
-QHPC-P-147	GQOIS-QHPC-DOC-147	Q-HPC/workloads/quantum_algorithms/optimization/constraints/linear_constraints.py	Handling of linear constraints in quantum optimization.
-QHPC-P-148	GQOIS-QHPC-DOC-148	Q-HPC/workloads/quantum_algorithms/optimization/constraints/quadratic_constraints.py	Handling of quadratic constraints in quantum optimization.
-QHPC-P-149	GQOIS-QHPC-DOC-149	Q-HPC/workloads/quantum_algorithms/optimization/penalty_methods.py	Penalty methods for constrained quantum optimization.
-QHPC-P-150	GQOIS-QHPC-DOC-150	Q-HPC/workloads/quantum_algorithms/optimization/tests/test_optimizers.py	Unit tests for the quantum optimizers.
-QHPC-P-151	GQOIS-QHPC-DOC-151	Q-HPC/workloads/cfd/README.md	README for the Computational Fluid Dynamics (CFD) module.
-QHPC-P-152	GQOIS-QHPC-DOC-152	Q-HPC/workloads/cfd/mesh_generation.py	Scripts for CFD mesh generation.
-QHPC-P-153	GQOIS-QHPC-DOC-153	Q-HPC/workloads/cfd/solver_config.foam	Configuration file for the CFD solver (e.g., OpenFOAM).
-QHPC-P-154	GQOIS-QHPC-DOC-154	Q-HPC/workloads/cfd/post_processing.py	Scripts for post-processing CFD results.
-QHPC-P-155	GQOIS-QHPC-DOC-155	Q-HPC/workloads/cfd/boundary_conditions.py	Scripts for setting CFD boundary conditions.
-QHPC-P-156	GQOIS-QHPC-DOC-156	Q-HPC/workloads/cfd/turbulence_models.py	Implementations of various turbulence models.
-QHPC-P-157	GQOIS-QHPC-DOC-157	Q-HPC/workloads/cfd/cases/cruise_condition/system/controlDict	controlDict for a cruise condition CFD case.
-QHPC-P-158	GQOIS-QHPC-DOC-158	Q-HPC/workloads/cfd/cases/cruise_condition/system/fvSchemes	fvSchemes for a cruise condition CFD case.
-QHPC-P-159	GQOIS-QHPC-DOC-159	Q-HPC/workloads/cfd/cases/cruise_condition/system/fvSolution	fvSolution for a cruise condition CFD case.
-QHPC-P-160	GQOIS-QHPC-DOC-160	Q-HPC/workloads/cfd/cases/cruise_condition/constant/turbulenceProperties	turbulenceProperties for a cruise condition CFD case.
-QHPC-P-161	GQOIS-QHPC-DOC-161	Q-HPC/workloads/cfd/cases/cruise_condition/0/U	Initial condition for velocity (U) in a CFD case.
-QHPC-P-162	GQOIS-QHPC-DOC-162	Q-HPC/workloads/cfd/cases/cruise_condition/0/p	Initial condition for pressure (p) in a CFD case.
-QHPC-P-163	GQOIS-QHPC-DOC-163	Q-HPC/workloads/cfd/cases/cruise_condition/0/T	Initial condition for temperature (T) in a CFD case.
-QHPC-P-164	GQOIS-QHPC-DOC-164	Q-HPC/workloads/cfd/cases/landing_config/system/controlDict	controlDict for a landing configuration CFD case.
-QHPC-P-165	GQOIS-QHPC-DOC-165	Q-HPC/workloads/cfd/parallel_decomposition.py	Scripts for parallel decomposition of CFD cases.
-QHPC-P-166	GQOIS-QHPC-DOC-166	Q-HPC/workloads/cfd/convergence_monitor.py	Script to monitor the convergence of CFD simulations.
-QHPC-P-167	GQOIS-QHPC-DOC-167	Q-HPC/workloads/cfd/force_coefficients.py	Script to calculate force coefficients (lift, drag).
-QHPC-P-168	GQOIS-QHPC-DOC-168	Q-HPC/workloads/cfd/flow_visualization.py	Scripts for visualizing flow fields (e.g., with ParaView).
-QHPC-P-169	GQOIS-QHPC-DOC-169	Q-HPC/workloads/cfd/validation/wind_tunnel_comparison.py	Scripts for comparing CFD results with wind tunnel data.
-QHPC-P-170	GQOIS-QHPC-DOC-170	Q-HPC/workloads/cfd/optimization/shape_optimization.py	Scripts for aerodynamic shape optimization using CFD.
-QHPC-P-171	GQOIS-QHPC-DOC-171	Q-HPC/workloads/fea/README.md	README for the Finite Element Analysis (FEA) module.
-QHPC-P-172	GQOIS-QHPC-DOC-172	Q-HPC/workloads/fea/preprocessing.py	Scripts for FEA preprocessing (meshing, BCs).
-QHPC-P-173	GQOIS-QHPC-DOC-173	Q-HPC/workloads/fea/solver_params.inp	Input parameter file for the FEA solver.
-QHPC-P-174	GQOIS-QHPC-DOC-174	Q-HPC/workloads/fea/results_extraction.py	Scripts for extracting results from FEA simulations.
-QHPC-P-175	GQOIS-QHPC-DOC-175	Q-HPC/workloads/fea/material_properties.py	Database of material properties for FEA.
-QHPC-P-176	GQOIS-QHPC-DOC-176	Q-HPC/workloads/fea/boundary_conditions.py	Scripts for setting FEA boundary conditions.
-QHPC-P-177	GQOIS-QHPC-DOC-177	Q-HPC/workloads/fea/load_cases.py	Definition of standard FEA load cases.
-QHPC-P-178	GQOIS-QHPC-DOC-178	Q-HPC/workloads/fea/mesh_quality_check.py	Scripts for checking the quality of FEA meshes.
-QHPC-P-179	GQOIS-QHPC-DOC-179	Q-HPC/workloads/fea/stress_analysis.py	Scripts for performing stress analysis.
-QHPC-P-180	GQOIS-QHPC-DOC-180	Q-HPC/workloads/fea/modal_analysis.py	Scripts for performing modal analysis.
-QHPC-P-181	GQOIS-QHPC-DOC-181	Q-HPC/workloads/fea/fatigue_analysis.py	Scripts for performing fatigue analysis.
-QHPC-P-182	GQOIS-QHPC-DOC-182	Q-HPC/workloads/fea/buckling_analysis.py	Scripts for performing buckling analysis.
-QHPC-P-183	GQOIS-QHPC-DOC-183	Q-HPC/workloads/fea/thermal_stress.py	Scripts for performing thermal stress analysis.
-QHPC-P-184	GQOIS-QHPC-DOC-184	Q-HPC/workloads/fea/composite_analysis.py	Scripts for analyzing composite materials.
-QHPC-P-185	GQOIS-QHPC-DOC-185	Q-HPC/workloads/fea/optimization/topology_optimization.py	Scripts for structural topology optimization.
-QHPC-P-186	GQOIS-QHPC-DOC-186	Q-HPC/workloads/fea/validation/test_correlation.py	Scripts for correlating FEA results with physical tests.
-QHPC-P-187	GQOIS-QHPC-DOC-187	Q-HPC/workloads/ml_training/README.md	README for the Machine Learning training module.
-QHPC-P-188	GQOIS-QHPC-DOC-188	Q-HPC/workloads/ml_training/model_architectures.py	Library of ML model architectures (e.g., LSTMs, Transformers).
-QHPC-P-189	GQOIS-QHPC-DOC-189	Q-HPC/workloads/ml_training/training_pipeline.py	The main ML model training pipeline.
-QHPC-P-190	GQOIS-QHPC-DOC-190	Q-HPC/workloads/ml_training/hyperparameter_search.py	Scripts for hyperparameter optimization.
-QHPC-P-191	GQOIS-QHPC-DOC-191	Q-HPC/workloads/ml_training/model_deployment.py	Scripts for deploying trained ML models.
-QHPC-P-192	GQOIS-QHPC-DOC-192	Q-HPC/workloads/ml_training/data_preprocessing.py	Scripts for data preprocessing and feature engineering.
-QHPC-P-193	GQOIS-QHPC-DOC-193	Q-HPC/workloads/ml_training/distributed_training.py	Scripts for distributed ML model training (e.g., Horovod).
-QHPC-P-194	GQOIS-QHPC-DOC-194	Q-HPC/workloads/ml_training/model_evaluation.py	Scripts for evaluating trained ML models.
-QHPC-P-195	GQOIS-QHPC-DOC-195	Q-HPC/workloads/ml_training/checkpointing.py	Logic for model checkpointing during training.
-QHPC-P-196	GQOIS-QHPC-DOC-196	Q-HPC/workloads/ml_training/tensorboard_integration.py	Integration with TensorBoard for monitoring training.
-QHPC-P-197	GQOIS-QHPC-DOC-197	Q-HPC/workloads/ml_training/models/anomaly_detection.py	ML model for anomaly detection.
-QHPC-P-198	GQOIS-QHPC-DOC-198	Q-HPC/workloads/ml_training/models/predictive_maintenance.py	ML model for predictive maintenance.
-QHPC-P-199	GQOIS-QHPC-DOC-199	Q-HPC/workloads/ml_training/models/trajectory_prediction.py	ML model for trajectory prediction.
-QHPC-P-200	GQOIS-QHPC-DOC-200	Q-HPC/workloads/ml_training/models/sensor_fusion.py	ML model for sensor fusion.
-QHPC-P-201	GQOIS-QHPC-DOC-201	Q-HPC/infrastructure/terraform/main.tf	Main Terraform file for infrastructure definition.
-QHPC-P-202	GQOIS-QHPC-DOC-202	Q-HPC/infrastructure/terraform/variables.tf	Terraform variables file.
-QHPC-P-203	GQOIS-QHPC-DOC-203	Q-HPC/infrastructure/terraform/outputs.tf	Terraform outputs file.
-QHPC-P-204	GQOIS-QHPC-DOC-204	Q-HPC/infrastructure/terraform/providers.tf	Terraform providers configuration.
-QHPC-P-205	GQOIS-QHPC-DOC-205	Q-HPC/infrastructure/terraform/modules/compute/main.tf	Terraform module for compute resources.
-QHPC-P-206	GQOIS-QHPC-DOC-206	Q-HPC/infrastructure/terraform/modules/network/main.tf	Terraform module for network resources.
-QHPC-P-207	GQOIS-QHPC-DOC-207	Q-HPC/infrastructure/terraform/modules/storage/main.tf	Terraform module for storage resources.
-QHPC-P-208	GQOIS-QHPC-DOC-208	Q-HPC/infrastructure/terraform/modules/quantum/main.tf	Terraform module for quantum resources.
-QHPC-P-209	GQOIS-QHPC-DOC-209	Q-HPC/infrastructure/terraform/environments/dev.tfvars	Terraform variable values for the development environment.
-QHPC-P-210	GQOIS-QHPC-DOC-210	Q-HPC/infrastructure/terraform/environments/prod.tfvars	Terraform variable values for the production environment.
-QHPC-P-211	GQOIS-QHPC-DOC-211	Q-HPC/infrastructure/network/infiniband_config.conf	Configuration file for the InfiniBand network.
-QHPC-P-212	GQOIS-QHPC-DOC-212	Q-HPC/infrastructure/network/rdma_tuning.sh	Script for tuning RDMA performance.
-QHPC-P-213	GQOIS-QHPC-DOC-213	Q-HPC/infrastructure/network/network_topology.yaml	YAML definition of the network topology.
-QHPC-P-214	GQOIS-QHPC-DOC-214	Q-HPC/infrastructure/network/firewall_rules.yaml	Firewall rules for the HPC network.
-QHPC-P-215	GQOIS-QHPC-DOC-215	Q-HPC/infrastructure/network/load_balancer.conf	Configuration for the network load balancer.
-QHPC-P-216	GQOIS-QHPC-DOC-216	Q-HPC/infrastructure/storage/lustre_config.xml	Configuration file for the Lustre parallel file system.
-QHPC-P-217	GQOIS-QHPC-DOC-217	Q-HPC/infrastructure/storage/backup_policy.yaml	Policy for backing up the storage system.
-QHPC-P-218	GQOIS-QHPC-DOC-218	Q-HPC/infrastructure/storage/quota_management.py	Script for managing storage quotas.
-QHPC-P-219	GQOIS-QHPC-DOC-219	Q-HPC/infrastructure/storage/data_lifecycle.yaml	Policy for data lifecycle management.
-QHPC-P-220	GQOIS-QHPC-DOC-220	Q-HPC/infrastructure/storage/replication_config.yaml	Configuration for data replication.
-QHPC-P-221	GQOIS-QHPC-DOC-221	Q-HPC/infrastructure/security/ssl_certificates.yaml	Management of SSL certificates.
-QHPC-P-222	GQOIS-QHPC-DOC-222	Q-HPC/infrastructure/security/auth_config.yaml	Authentication configuration (e.g., LDAP, Kerberos).
-QHPC-P-223	GQOIS-QHPC-DOC-223	Q-HPC/infrastructure/security/encryption_keys.yaml	Management of encryption keys.
-QHPC-P-224	GQOIS-QHPC-DOC-224	Q-HPC/infrastructure/security/audit_logging.yaml	Configuration for security audit logging.
-QHPC-P-225	GQOIS-QHPC-DOC-225	Q-HPC/infrastructure/security/compliance_checks.py	Scripts for automated security compliance checks.
-QHPC-P-226	GQOIS-QHPC-DOC-226	Q-HPC/infrastructure/monitoring/prometheus_config.yaml	Prometheus configuration for infrastructure monitoring.
-QHPC-P-227	GQOIS-QHPC-DOC-227	Q-HPC/infrastructure/monitoring/alertmanager.yaml	Alertmanager configuration for infrastructure alerts.
-QHPC-P-228	GQOIS-QHPC-DOC-228	Q-HPC/infrastructure/monitoring/grafana_datasources.yaml	Grafana datasource configuration.
-QHPC-P-229	GQOIS-QHPC-DOC-229	Q-HPC/infrastructure/monitoring/logging_pipeline.yaml	Configuration for the logging pipeline (e.g., ELK stack).
-QHPC-P-230	GQOIS-QHPC-DOC-230	Q-HPC/infrastructure/monitoring/metrics_retention.yaml	Policy for metrics retention.
-QHPC-P-231	GQOIS-QHPC-DOC-231	Q-HPC/infrastructure/ci_cd/gitlab-ci.yml	GitLab CI/CD pipeline configuration.
-QHPC-P-232	GQOIS-QHPC-DOC-232	Q-HPC/infrastructure/ci_cd/jenkins_pipeline.groovy	Jenkins pipeline configuration.
-QHPC-P-233	GQOIS-QHPC-DOC-233	Q-HPC/infrastructure/ci_cd/build_scripts.sh	Scripts for building software.
-QHPC-P-234	GQOIS-QHPC-DOC-234	Q-HPC/infrastructure/ci_cd/test_automation.py	Scripts for test automation in the CI/CD pipeline.
-QHPC-P-235	GQOIS-QHPC-DOC-235	Q-HPC/infrastructure/ci_cd/deployment_pipeline.yaml	Configuration for the deployment pipeline.
-QHPC-P-236	GQOIS-QHPC-DOC-236	Q-HPC/benchmarks/README.md	README for the benchmarks module.
-QHPC-P-237	GQOIS-QHPC-DOC-237	Q-HPC/benchmarks/linpack_results.txt	Results from the LINPACK benchmark.
-QHPC-P-238	GQOIS-QHPC-DOC-238	Q-HPC/benchmarks/quantum_supremacy_test.py	Test for demonstrating quantum supremacy on a specific problem.
-QHPC-P-239	GQOIS-QHPC-DOC-239	Q-HPC/benchmarks/io_benchmark.sh	Script for benchmarking I/O performance.
-QHPC-P-240	GQOIS-QHPC-DOC-240	Q-HPC/benchmarks/ml_inference_perf.py	Benchmark for ML model inference performance.
-QHPC-P-241	GQOIS-QHPC-DOC-241	Q-HPC/benchmarks/hpcg_benchmark.py	High Performance Conjugate Gradients (HPCG) benchmark.
-QHPC-P-242	GQOIS-QHPC-DOC-242	Q-HPC/benchmarks/stream_benchmark.c	STREAM memory bandwidth benchmark.
-QHPC-P-243	GQOIS-QHPC-DOC-243	Q-HPC/benchmarks/quantum_volume_test.py	Test for measuring the Quantum Volume of the QPU.
-QHPC-P-244	GQOIS-QHPC-DOC-244	Q-HPC/benchmarks/network_latency_test.py	Benchmark for network latency.
-QHPC-P-245	GQOIS-QHPC-DOC-245	Q-HPC/benchmarks/gpu_benchmark.cu	Benchmark for GPU performance.
-QHPC-P-246	GQOIS-QHPC-DOC-246	Q-HPC/benchmarks/scaling_analysis.py	Scripts for analyzing the scaling performance of applications.
-QHPC-P-247	GQOIS-QHPC-DOC-247	Q-HPC/benchmarks/energy_efficiency.py	Scripts for measuring energy efficiency (e.g., GFLOPS/Watt).
-QHPC-P-248	GQOIS-QHPC-DOC-248	Q-HPC/benchmarks/quantum_benchmarks/vqe_benchmark.py	Benchmark for the VQE algorithm.
-QHPC-P-249	GQOIS-QHPC-DOC-249	Q-HPC/benchmarks/quantum_benchmarks/qaoa_benchmark.py	Benchmark for the QAOA algorithm.
-QHPC-P-250	GQOIS-QHPC-DOC-250	Q-HPC/benchmarks/quantum_benchmarks/qml_benchmark.py	Benchmark for QML models.
-QHPC-P-251	GQOIS-QHPC-DOC-251	Q-HPC/benchmarks/classical_benchmarks/cfd_benchmark.py	Benchmark for CFD workloads.
-QHPC-P-252	GQOIS-QHPC-DOC-252	Q-HPC/benchmarks/classical_benchmarks/fea_benchmark.py	Benchmark for FEA workloads.
-QHPC-P-253	GQOIS-QHPC-DOC-253	Q-HPC/benchmarks/hybrid_benchmarks/quantum_classical.py	Benchmark for hybrid quantum-classical workloads.
-QHPC-P-254	GQOIS-QHPC-DOC-254	Q-HPC/benchmarks/reports/performance_report_template.md	Template for performance benchmark reports.
-QHPC-P-255	GQOIS-QHPC-DOC-255	Q-HPC/benchmarks/visualization/benchmark_plots.py	Scripts for plotting and visualizing benchmark results.
-QHPC-P-256	GQOIS-QHPC-DOC-256	Q-HPC/benchmarks/config/benchmark_config.yaml	Configuration file for benchmark runs.
-QHPC-P-257	GQOIS-QHPC-DOC-257	Q-HPC/benchmarks/scripts/run_all_benchmarks.sh	Script to run all standard benchmarks.
-QHPC-P-258	GQOIS-QHPC-DOC-258	Q-HPC/benchmarks/scripts/collect_metrics.py	Script to collect metrics from benchmark runs.
-QHPC-P-259	GQOIS-QHPC-DOC-259	Q-HPC/benchmarks/scripts/compare_results.py	Script to compare benchmark results over time.
-QHPC-P-260	GQOIS-QHPC-DOC-260	Q-HPC/benchmarks/validation/validate_results.py	Script to validate the correctness of benchmark results.
-QHPC-P-261	GQOIS-QHPC-DOC-261	Q-HPC/digital_twin/README.md	README for the Digital Twin integration module.
-QHPC-P-262	GQOIS-QHPC-DOC-262	Q-HPC/digital_twin/architecture.md	Architecture of the Digital Twin platform.
-QHPC-P-263	GQOIS-QHPC-DOC-263	Q-HPC/digital_twin/core/twin_manager.py	Core manager for the Digital Twin instances.
-QHPC-P-264	GQOIS-QHPC-DOC-264	Q-HPC/digital_twin/core/state_synchronizer.py	State synchronizer between physical asset and digital twin.
-QHPC-P-265	GQOIS-QHPC-DOC-265	Q-HPC/digital_twin/core/physics_engine.py	The underlying physics simulation engine.
-QHPC-P-266	GQOIS-QHPC-DOC-266	Q-HPC/digital_twin/core/sensor_fusion.py	Sensor fusion algorithms for the digital twin.
-QHPC-P-267	GQOIS-QHPC-DOC-267	Q-HPC/digital_twin/models/aircraft_model.py	Digital twin model of the complete aircraft.
-QHPC-P-268	GQOIS-QHPC-DOC-268	Q-HPC/digital_twin/models/propulsion_model.py	Digital twin model of the propulsion system.
-QHPC-P-269	GQOIS-QHPC-DOC-269	Q-HPC/digital_twin/models/structures_model.py	Digital twin model of the aircraft structures.
-QHPC-P-270	GQOIS-QHPC-DOC-270	Q-HPC/digital_twin/models/systems_model.py	Digital twin model of various mechanical/electrical systems.
-QHPC-P-271	GQOIS-QHPC-DOC-271	Q-HPC/digital_twin/models/environmental_model.py	Digital twin model of the operational environment.
-QHPC-P-272	GQOIS-QHPC-DOC-272	Q-HPC/digital_twin/simulation/real_time_sim.py	Real-time simulation capabilities of the digital twin.
-QHPC-P-273	GQOIS-QHPC-DOC-273	Q-HPC/digital_twin/simulation/predictive_sim.py	Predictive "what-if" simulation capabilities.
-QHPC-P-274	GQOIS-QHPC-DOC-274	Q-HPC/digital_twin/simulation/scenario_manager.py	Manager for simulation scenarios.
-QHPC-P-275	GQOIS-QHPC-DOC-275	Q-HPC/digital_twin/data/telemetry_processor.py	Processor for incoming telemetry data.
-QHPC-P-276	GQOIS-QHPC-DOC-276	Q-HPC/digital_twin/data/data_historian.py	Data historian for storing time-series data.
+  { promptId: "QHPC-P-001", docId: "GQOIS-QHPC-DOC-001", path: "Q-HPC/README.md", description: "Main README for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-002", docId: "GQOIS-QHPC-DOC-002", path: "Q-HPC/COMPUTE_RESOURCES.md", description: "Overview of available compute resources (CPU, GPU, QPU).", division: "Q-HPC" },
+  { promptId: "QHPC-P-003", docId: "GQOIS-QHPC-DOC-003", path: "Q-HPC/LICENSE", description: "Software license for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-004", docId: "GQOIS-QHPC-DOC-004", path: "Q-HPC/ARCHITECTURE.md", description: "Architecture of the HPC and quantum computing cluster.", division: "Q-HPC" },
+  { promptId: "QHPC-P-005", docId: "GQOIS-QHPC-DOC-005", path: "Q-HPC/QUANTUM_INTEGRATION.md", description: "Plan for integrating QPU hardware into the HPC infrastructure.", division: "Q-HPC" },
+  { promptId: "QHPC-P-006", docId: "GQOIS-QHPC-DOC-006", path: "Q-HPC/API_REFERENCE.md", description: "API reference for submitting jobs and querying the HPC cluster.", division: "Q-HPC" },
+  { promptId: "QHPC-P-007", docId: "GQOIS-QHPC-DOC-007", path: "Q-HPC/SECURITY_POLICY.md", description: "Security policy for the HPC environment.", division: "Q-HPC" },
+  { promptId: "QHPC-P-008", docId: "GQOIS-QHPC-DOC-008", path: "Q-HPC/PERFORMANCE_BENCHMARKS.md", description: "Document detailing performance benchmarks and results.", division: "Q-HPC" },
+  { promptId: "QHPC-P-009", docId: "GQOIS-QHPC-DOC-009", path: "Q-HPC/DEPLOYMENT_GUIDE.md", description: "Guide for deploying applications on the HPC cluster.", division: "Q-HPC" },
+  { promptId: "QHPC-P-010", docId: "GQOIS-QHPC-DOC-010", path: "Q-HPC/TROUBLESHOOTING.md", description: "Troubleshooting guide for common HPC issues.", division: "Q-HPC" },
+  { promptId: "QHPC-P-011", docId: "GQOIS-QHPC-DOC-011", path: "Q-HPC/.gitignore", description: "Git ignore file for the Q-HPC repository.", division: "Q-HPC" },
+  { promptId: "QHPC-P-012", docId: "GQOIS-QHPC-DOC-012", path: "Q-HPC/Makefile", description: "Makefile for managing the Q-HPC codebase.", division: "Q-HPC" },
+  { promptId: "QHPC-P-013", docId: "GQOIS-QHPC-DOC-013", path: "Q-HPC/requirements.txt", description: "Python package requirements for HPC tools.", division: "Q-HPC" },
+  { promptId: "QHPC-P-014", docId: "GQOIS-QHPC-DOC-014", path: "Q-HPC/environment.yml", description: "Conda environment configuration for HPC.", division: "Q-HPC" },
+  { promptId: "QHPC-P-015", docId: "GQOIS-QHPC-DOC-015", path: "Q-HPC/docker-compose.yml", description: "Docker Compose for deploying HPC services.", division: "Q-HPC" },
+  { promptId: "QHPC-P-016", docId: "GQOIS-QHPC-DOC-016", path: "Q-HPC/Dockerfile", description: "Dockerfile for containerizing HPC tools.", division: "Q-HPC" },
+  { promptId: "QHPC-P-017", docId: "GQOIS-QHPC-DOC-017", path: "Q-HPC/.dockerignore", description: "Docker ignore file for HPC containers.", division: "Q-HPC" },
+  { promptId: "QHPC-P-018", docId: "GQOIS-QHPC-DOC-018", path: "Q-HPC/setup.py", description: "Python package setup script for HPC tools.", division: "Q-HPC" },
+  { promptId: "QHPC-P-019", docId: "GQOIS-QHPC-DOC-019", path: "Q-HPC/pyproject.toml", description: "pyproject.toml configuration file.", division: "Q-HPC" },
+  { promptId: "QHPC-P-020", docId: "GQOIS-QHPC-DOC-020", path: "Q-HPC/CHANGELOG.md", description: "Changelog for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-021", docId: "GQOIS-QHPC-DOC-021", path: "Q-HPC/CONTRIBUTING.md", description: "Contribution guidelines for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-022", docId: "GQOIS-QHPC-DOC-022", path: "Q-HPC/CODE_OF_CONDUCT.md", description: "Code of conduct for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-023", docId: "GQOIS-QHPC-DOC-023", path: "Q-HPC/ROADMAP.md", description: "Development roadmap for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-024", docId: "GQOIS-QHPC-DOC-024", path: "Q-HPC/GLOSSARY.md", description: "Glossary of terms for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-025", docId: "GQOIS-QHPC-DOC-025", path: "Q-HPC/FAQ.md", description: "Frequently Asked Questions for the Q-HPC division.", division: "Q-HPC" },
+  { promptId: "QHPC-P-026", docId: "GQOIS-QHPC-DOC-026", path: "Q-HPC/cluster_management/README.md", description: "README for the cluster management sub-module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-027", docId: "GQOIS-QHPC-DOC-027", path: "Q-HPC/cluster_management/scheduler_configs/slurm.conf", description: "Main configuration file for the SLURM scheduler.", division: "Q-HPC" },
+  { promptId: "QHPC-P-028", docId: "GQOIS-QHPC-DOC-028", path: "Q-HPC/cluster_management/scheduler_configs/slurmdbd.conf", description: "Configuration file for the SLURM database daemon.", division: "Q-HPC" },
+  { promptId: "QHPC-P-029", docId: "GQOIS-QHPC-DOC-029", path: "Q-HPC/cluster_management/scheduler_configs/job_submit.lua", description: "LUA script for custom job submission logic in SLURM.", division: "Q-HPC" },
+  { promptId: "QHPC-P-030", docId: "GQOIS-QHPC-DOC-030", path: "Q-HPC/cluster_management/scheduler_configs/partition_config.yaml", description: "Configuration for compute partitions (e.g., CPU, GPU, quantum).", division: "Q-HPC" },
+  { promptId: "QHPC-P-031", docId: "GQOIS-QHPC-DOC-031", path: "Q-HPC/cluster_management/scheduler_configs/qos_config.conf", description: "Quality of Service (QoS) configuration for job prioritization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-032", docId: "GQOIS-QHPC-DOC-032", path: "Q-HPC/cluster_management/scheduler_configs/accounting.conf", description: "Configuration for job accounting and resource tracking.", division: "Q-HPC" },
+  { promptId: "QHPC-P-033", docId: "GQOIS-QHPC-DOC-033", path: "Q-HPC/cluster_management/scheduler_configs/topology.conf", description: "Network topology configuration for SLURM.", division: "Q-HPC" },
+  { promptId: "QHPC-P-034", docId: "GQOIS-QHPC-DOC-034", path: "Q-HPC/cluster_management/scheduler_configs/gres.conf", description: "Generic Resource (GRES) configuration for GPUs, etc.", division: "Q-HPC" },
+  { promptId: "QHPC-P-035", docId: "GQOIS-QHPC-DOC-035", path: "Q-HPC/cluster_management/scheduler_configs/burst_buffer.conf", description: "Burst buffer configuration for high-speed I/O.", division: "Q-HPC" },
+  { promptId: "QHPC-P-036", docId: "GQOIS-QHPC-DOC-036", path: "Q-HPC/cluster_management/environment_modules/openfoam-10.lua", description: "Environment module file for OpenFOAM 10.", division: "Q-HPC" },
+  { promptId: "QHPC-P-037", docId: "GQOIS-QHPC-DOC-037", path: "Q-HPC/cluster_management/environment_modules/ansys-2024r1.lua", description: "Environment module file for Ansys 2024R1.", division: "Q-HPC" },
+  { promptId: "QHPC-P-038", docId: "GQOIS-QHPC-DOC-038", path: "Q-HPC/cluster_management/environment_modules/quantum-sdk-2.0.lua", description: "Environment module file for the Quantum SDK v2.0.", division: "Q-HPC" },
+  { promptId: "QHPC-P-039", docId: "GQOIS-QHPC-DOC-039", path: "Q-HPC/cluster_management/environment_modules/python-ml-stack.lua", description: "Environment module for the standard Python ML stack.", division: "Q-HPC" },
+  { promptId: "QHPC-P-040", docId: "GQOIS-QHPC-DOC-040", path: "Q-HPC/cluster_management/environment_modules/cuda-12.2.lua", description: "Environment module for CUDA Toolkit 12.2.", division: "Q-HPC" },
+  { promptId: "QHPC-P-041", docId: "GQOIS-QHPC-DOC-041", path: "Q-HPC/cluster_management/environment_modules/mpi-4.1.lua", description: "Environment module for MPI v4.1.", division: "Q-HPC" },
+  { promptId: "QHPC-P-042", docId: "GQOIS-QHPC-DOC-042", path: "Q-HPC/cluster_management/environment_modules/tensorflow-2.13.lua", description: "Environment module for TensorFlow 2.13.", division: "Q-HPC" },
+  { promptId: "QHPC-P-043", docId: "GQOIS-QHPC-DOC-043", path: "Q-HPC/cluster_management/environment_modules/pytorch-2.0.lua", description: "Environment module for PyTorch 2.0.", division: "Q-HPC" },
+  { promptId: "QHPC-P-044", docId: "GQOIS-QHPC-DOC-044", path: "Q-HPC/cluster_management/environment_modules/qiskit-0.43.lua", description: "Environment module for Qiskit 0.43.", division: "Q-HPC" },
+  { promptId: "QHPC-P-045", docId: "GQOIS-QHPC-DOC-045", path: "Q-HPC/cluster_management/environment_modules/pennylane-0.31.lua", description: "Environment module for PennyLane 0.31.", division: "Q-HPC" },
+  { promptId: "QHPC-P-046", docId: "GQOIS-QHPC-DOC-046", path: "Q-HPC/cluster_management/monitoring/prometheus.yml", description: "Prometheus configuration for scraping metrics.", division: "Q-HPC" },
+  { promptId: "QHPC-P-047", docId: "GQOIS-QHPC-DOC-047", path: "Q-HPC/cluster_management/monitoring/grafana_dashboards/hpc_overview.json", description: "Grafana dashboard for HPC cluster overview.", division: "Q-HPC" },
+  { promptId: "QHPC-P-048", docId: "GQOIS-QHPC-DOC-048", path: "Q-HPC/cluster_management/monitoring/grafana_dashboards/job_metrics.json", description: "Grafana dashboard for job metrics and scheduling.", division: "Q-HPC" },
+  { promptId: "QHPC-P-049", docId: "GQOIS-QHPC-DOC-049", path: "Q-HPC/cluster_management/monitoring/grafana_dashboards/quantum_status.json", description: "Grafana dashboard for QPU status and health.", division: "Q-HPC" },
+  { promptId: "QHPC-P-050", docId: "GQOIS-QHPC-DOC-050", path: "Q-HPC/cluster_management/monitoring/grafana_dashboards/storage_metrics.json", description: "Grafana dashboard for storage system metrics.", division: "Q-HPC" },
+  { promptId: "QHPC-P-051", docId: "GQOIS-QHPC-DOC-051", path: "Q-HPC/cluster_management/monitoring/grafana_dashboards/network_performance.json", description: "Grafana dashboard for network performance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-052", docId: "GQOIS-QHPC-DOC-052", path: "Q-HPC/cluster_management/monitoring/alert_rules.yaml", description: "Alerting rules for Prometheus Alertmanager.", division: "Q-HPC" },
+  { promptId: "QHPC-P-053", docId: "GQOIS-QHPC-DOC-053", path: "Q-HPC/cluster_management/monitoring/metrics_exporter.py", description: "Custom metrics exporter for specific hardware/software.", division: "Q-HPC" },
+  { promptId: "QHPC-P-054", docId: "GQOIS-QHPC-DOC-054", path: "Q-HPC/cluster_management/monitoring/log_aggregator.py", description: "Script for aggregating logs from cluster nodes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-055", docId: "GQOIS-QHPC-DOC-055", path: "Q-HPC/cluster_management/monitoring/health_check.sh", description: "Script for performing routine cluster health checks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-056", docId: "GQOIS-QHPC-DOC-056", path: "Q-HPC/cluster_management/provisioning/ansible_playbook.yml", description: "Main Ansible playbook for node provisioning.", division: "Q-HPC" },
+  { promptId: "QHPC-P-057", docId: "GQOIS-QHPC-DOC-057", path: "Q-HPC/cluster_management/provisioning/node_configuration.yaml", description: "Node configuration variables for Ansible.", division: "Q-HPC" },
+  { promptId: "QHPC-P-058", docId: "GQOIS-QHPC-DOC-058", path: "Q-HPC/cluster_management/provisioning/inventory.ini", description: "Ansible inventory file for cluster hosts.", division: "Q-HPC" },
+  { promptId: "QHPC-P-059", docId: "GQOIS-QHPC-DOC-059", path: "Q-HPC/cluster_management/provisioning/roles/common/tasks/main.yml", description: "Ansible tasks for the 'common' node role.", division: "Q-HPC" },
+  { promptId: "QHPC-P-060", docId: "GQOIS-QHPC-DOC-060", path: "Q-HPC/cluster_management/provisioning/roles/compute/tasks/main.yml", description: "Ansible tasks for the 'compute' node role.", division: "Q-HPC" },
+  { promptId: "QHPC-P-061", docId: "GQOIS-QHPC-DOC-061", path: "Q-HPC/cluster_management/provisioning/roles/quantum/tasks/main.yml", description: "Ansible tasks for the 'quantum' node role.", division: "Q-HPC" },
+  { promptId: "QHPC-P-062", docId: "GQOIS-QHPC-DOC-062", path: "Q-HPC/cluster_management/provisioning/roles/storage/tasks/main.yml", description: "Ansible tasks for the 'storage' node role.", division: "Q-HPC" },
+  { promptId: "QHPC-P-063", docId: "GQOIS-QHPC-DOC-063", path: "Q-HPC/cluster_management/provisioning/group_vars/all.yml", description: "Global variables for all Ansible hosts.", division: "Q-HPC" },
+  { promptId: "QHPC-P-064", docId: "GQOIS-QHPC-DOC-064", path: "Q-HPC/cluster_management/provisioning/host_vars/quantum_node.yml", description: "Specific variables for a quantum node host.", division: "Q-HPC" },
+  { promptId: "QHPC-P-065", docId: "GQOIS-QHPC-DOC-065", path: "Q-HPC/cluster_management/scripts/node_health_check.sh", description: "Script to check the health of an individual node.", division: "Q-HPC" },
+  { promptId: "QHPC-P-066", docId: "GQOIS-QHPC-DOC-066", path: "Q-HPC/cluster_management/scripts/job_cleanup.sh", description: "Script to clean up failed or leftover jobs.", division: "Q-HPC" },
+  { promptId: "QHPC-P-067", docId: "GQOIS-QHPC-DOC-067", path: "Q-HPC/cluster_management/scripts/backup_config.sh", description: "Script to backup cluster configuration files.", division: "Q-HPC" },
+  { promptId: "QHPC-P-068", docId: "GQOIS-QHPC-DOC-068", path: "Q-HPC/cluster_management/scripts/update_modules.sh", description: "Script to update environment modules.", division: "Q-HPC" },
+  { promptId: "QHPC-P-069", docId: "GQOIS-QHPC-DOC-069", path: "Q-HPC/cluster_management/scripts/quota_management.py", description: "Script for managing user and group storage quotas.", division: "Q-HPC" },
+  { promptId: "QHPC-P-070", docId: "GQOIS-QHPC-DOC-070", path: "Q-HPC/cluster_management/scripts/performance_tuning.sh", description: "Script for applying performance tuning settings to nodes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-071", docId: "GQOIS-QHPC-DOC-071", path: "Q-HPC/workloads/quantum_algorithms/README.md", description: "README for the quantum algorithms sub-module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-072", docId: "GQOIS-QHPC-DOC-072", path: "Q-HPC/workloads/quantum_algorithms/qaoa/README.md", description: "README for the QAOA algorithm implementation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-073", docId: "GQOIS-QHPC-DOC-073", path: "Q-HPC/workloads/quantum_algorithms/qaoa/route_optimization.py", description: "QAOA implementation for route optimization problems.", division: "Q-HPC" },
+  { promptId: "QHPC-P-074", docId: "GQOIS-QHPC-DOC-074", path: "Q-HPC/workloads/quantum_algorithms/qaoa/circuit_design.qasm", description: "OpenQASM file defining the QAOA quantum circuit.", division: "Q-HPC" },
+  { promptId: "QHPC-P-075", docId: "GQOIS-QHPC-DOC-075", path: "Q-HPC/workloads/quantum_algorithms/qaoa/parameter_tuning.py", description: "Script for tuning QAOA parameters (p, angles).", division: "Q-HPC" },
+  { promptId: "QHPC-P-076", docId: "GQOIS-QHPC-DOC-076", path: "Q-HPC/workloads/quantum_algorithms/qaoa/cost_function.py", description: "Definition of the cost function for the optimization problem.", division: "Q-HPC" },
+  { promptId: "QHPC-P-077", docId: "GQOIS-QHPC-DOC-077", path: "Q-HPC/workloads/quantum_algorithms/qaoa/mixer_hamiltonian.py", description: "Definition of the mixer Hamiltonian for QAOA.", division: "Q-HPC" },
+  { promptId: "QHPC-P-078", docId: "GQOIS-QHPC-DOC-078", path: "Q-HPC/workloads/quantum_algorithms/qaoa/ansatz_builder.py", description: "Script to build the QAOA ansatz.", division: "Q-HPC" },
+  { promptId: "QHPC-P-079", docId: "GQOIS-QHPC-DOC-079", path: "Q-HPC/workloads/quantum_algorithms/qaoa/classical_optimizer.py", description: "Interface to classical optimizers (e.g., COBYLA, SPSA).", division: "Q-HPC" },
+  { promptId: "QHPC-P-080", docId: "GQOIS-QHPC-DOC-080", path: "Q-HPC/workloads/quantum_algorithms/qaoa/performance_metrics.py", description: "Scripts for calculating QAOA performance metrics.", division: "Q-HPC" },
+  { promptId: "QHPC-P-081", docId: "GQOIS-QHPC-DOC-081", path: "Q-HPC/workloads/quantum_algorithms/qaoa/visualization.py", description: "Scripts for visualizing QAOA results.", division: "Q-HPC" },
+  { promptId: "QHPC-P-082", docId: "GQOIS-QHPC-DOC-082", path: "Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/max_cut.py", description: "QAOA benchmark for the Max-Cut problem.", division: "Q-HPC" },
+  { promptId: "QHPC-P-083", docId: "GQOIS-QHPC-DOC-083", path: "Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/tsp.py", description: "QAOA benchmark for the Traveling Salesperson Problem (TSP).", division: "Q-HPC" },
+  { promptId: "QHPC-P-084", docId: "GQOIS-QHPC-DOC-084", path: "Q-HPC/workloads/quantum_algorithms/qaoa/benchmarks/portfolio_optimization.py", description: "QAOA benchmark for portfolio optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-085", docId: "GQOIS-QHPC-DOC-085", path: "Q-HPC/workloads/quantum_algorithms/qaoa/tests/test_qaoa.py", description: "Unit tests for the QAOA implementation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-086", docId: "GQOIS-QHPC-DOC-086", path: "Q-HPC/workloads/quantum_algorithms/qaoa/tests/test_circuits.py", description: "Unit tests for the QAOA quantum circuits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-087", docId: "GQOIS-QHPC-DOC-087", path: "Q-HPC/workloads/quantum_algorithms/qaoa/config/default_params.yaml", description: "Default parameters for the QAOA algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-088", docId: "GQOIS-QHPC-DOC-088", path: "Q-HPC/workloads/quantum_algorithms/qaoa/utils/graph_utils.py", description: "Utility functions for graph problems.", division: "Q-HPC" },
+  { promptId: "QHPC-P-089", docId: "GQOIS-QHPC-DOC-089", path: "Q-HPC/workloads/quantum_algorithms/qaoa/utils/quantum_utils.py", description: "General utility functions for quantum algorithms.", division: "Q-HPC" },
+  { promptId: "QHPC-P-090", docId: "GQOIS-QHPC-DOC-090", path: "Q-HPC/workloads/quantum_algorithms/qaoa/notebooks/tutorial.ipynb", description: "Jupyter notebook tutorial for using the QAOA module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-091", docId: "GQOIS-QHPC-DOC-091", path: "Q-HPC/workloads/quantum_algorithms/vqe/README.md", description: "README for the VQE algorithm implementation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-092", docId: "GQOIS-QHPC-DOC-092", path: "Q-HPC/workloads/quantum_algorithms/vqe/molecular_simulation.py", description: "VQE implementation for molecular ground state simulation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-093", docId: "GQOIS-QHPC-DOC-093", path: "Q-HPC/workloads/quantum_algorithms/vqe/hamiltonian_prep.py", description: "Script for preparing molecular Hamiltonians.", division: "Q-HPC" },
+  { promptId: "QHPC-P-094", docId: "GQOIS-QHPC-DOC-094", path: "Q-HPC/workloads/quantum_algorithms/vqe/ansatz_library.py", description: "Library of VQE ansaetze (e.g., UCCSD, Hardware-efficient).", division: "Q-HPC" },
+  { promptId: "QHPC-P-095", docId: "GQOIS-QHPC-DOC-095", path: "Q-HPC/workloads/quantum_algorithms/vqe/optimizer_interface.py", description: "Interface to classical optimizers for VQE.", division: "Q-HPC" },
+  { promptId: "QHPC-P-096", docId: "GQOIS-QHPC-DOC-096", path: "Q-HPC/workloads/quantum_algorithms/vqe/measurement_reduction.py", description: "Techniques for reducing the number of measurements in VQE.", division: "Q-HPC" },
+  { promptId: "QHPC-P-097", docId: "GQOIS-QHPC-DOC-097", path: "Q-HPC/workloads/quantum_algorithms/vqe/error_mitigation.py", description: "Error mitigation techniques for VQE.", division: "Q-HPC" },
+  { promptId: "QHPC-P-098", docId: "GQOIS-QHPC-DOC-098", path: "Q-HPC/workloads/quantum_algorithms/vqe/excited_states.py", description: "VQE algorithms for finding excited states.", division: "Q-HPC" },
+  { promptId: "QHPC-P-099", docId: "GQOIS-QHPC-DOC-099", path: "Q-HPC/workloads/quantum_algorithms/vqe/natural_gradient.py", description: "Implementation of the quantum natural gradient optimizer.", division: "Q-HPC" },
+  { promptId: "QHPC-P-100", docId: "GQOIS-QHPC-DOC-100", path: "Q-HPC/workloads/quantum_algorithms/vqe/adaptive_vqe.py", description: "Implementation of adaptive VQE algorithms.", division: "Q-HPC" },
+  { promptId: "QHPC-P-101", docId: "GQOIS-QHPC-DOC-101", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/README.md", description: "README for the Quantum Machine Learning (QML) module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-102", docId: "GQOIS-QHPC-DOC-102", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/qnn_architecture.py", description: "Architecture for Quantum Neural Networks (QNNs).", division: "Q-HPC" },
+  { promptId: "QHPC-P-103", docId: "GQOIS-QHPC-DOC-103", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/feature_mapping.py", description: "Classical-to-quantum feature mapping techniques.", division: "Q-HPC" },
+  { promptId: "QHPC-P-104", docId: "GQOIS-QHPC-DOC-104", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_kernel.py", description: "Implementation of quantum kernel methods.", division: "Q-HPC" },
+  { promptId: "QHPC-P-105", docId: "GQOIS-QHPC-DOC-105", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/variational_classifier.py", description: "Implementation of a variational quantum classifier.", division: "Q-HPC" },
+  { promptId: "QHPC-P-106", docId: "GQOIS-QHPC-DOC-106", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_gan.py", description: "Implementation of a Quantum Generative Adversarial Network (qGAN).", division: "Q-HPC" },
+  { promptId: "QHPC-P-107", docId: "GQOIS-QHPC-DOC-107", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/quantum_autoencoder.py", description: "Implementation of a quantum autoencoder.", division: "Q-HPC" },
+  { promptId: "QHPC-P-108", docId: "GQOIS-QHPC-DOC-108", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/hybrid_models.py", description: "Hybrid quantum-classical ML models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-109", docId: "GQOIS-QHPC-DOC-109", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/data_encoding.py", description: "Techniques for encoding classical data into quantum states.", division: "Q-HPC" },
+  { promptId: "QHPC-P-110", docId: "GQOIS-QHPC-DOC-110", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/gradient_computation.py", description: "Methods for computing gradients of quantum circuits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-111", docId: "GQOIS-QHPC-DOC-111", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/barren_plateau_detection.py", description: "Tools for detecting and mitigating barren plateaus.", division: "Q-HPC" },
+  { promptId: "QHPC-P-112", docId: "GQOIS-QHPC-DOC-112", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/expressibility_analysis.py", description: "Tools for analyzing the expressibility of quantum circuits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-113", docId: "GQOIS-QHPC-DOC-113", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/entanglement_capability.py", description: "Tools for analyzing the entanglement capability of circuits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-114", docId: "GQOIS-QHPC-DOC-114", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/benchmarks/classification.py", description: "QML benchmarks for classification tasks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-115", docId: "GQOIS-QHPC-DOC-115", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/benchmarks/regression.py", description: "QML benchmarks for regression tasks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-116", docId: "GQOIS-QHPC-DOC-116", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/datasets/aerospace_data.py", description: "Aerospace-specific datasets for QML.", division: "Q-HPC" },
+  { promptId: "QHPC-P-117", docId: "GQOIS-QHPC-DOC-117", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/utils/visualization.py", description: "Visualization tools for QML.", division: "Q-HPC" },
+  { promptId: "QHPC-P-118", docId: "GQOIS-QHPC-DOC-118", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/tests/test_qnn.py", description: "Unit tests for the QNN implementation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-119", docId: "GQOIS-QHPC-DOC-119", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/config/hyperparameters.yaml", description: "Hyperparameter configurations for QML models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-120", docId: "GQOIS-QHPC-DOC-120", path: "Q-HPC/workloads/quantum_algorithms/quantum_ml/notebooks/demo.ipynb", description: "Jupyter notebook demo for the QML module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-121", docId: "GQOIS-QHPC-DOC-121", path: "Q-HPC/workloads/quantum_algorithms/error_correction/README.md", description: "README for the Quantum Error Correction (QEC) module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-122", docId: "GQOIS-QHPC-DOC-122", path: "Q-HPC/workloads/quantum_algorithms/error_correction/surface_code.py", description: "Implementation of the surface code.", division: "Q-HPC" },
+  { promptId: "QHPC-P-123", docId: "GQOIS-QHPC-DOC-123", path: "Q-HPC/workloads/quantum_algorithms/error_correction/logical_qubit_encoding.py", description: "Encoding of logical qubits from physical qubits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-124", docId: "GQOIS-QHPC-DOC-124", path: "Q-HPC/workloads/quantum_algorithms/error_correction/stabilizer_codes.py", description: "General framework for stabilizer codes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-125", docId: "GQOIS-QHPC-DOC-125", path: "Q-HPC/workloads/quantum_algorithms/error_correction/syndrome_extraction.py", description: "Circuits for syndrome extraction.", division: "Q-HPC" },
+  { promptId: "QHPC-P-126", docId: "GQOIS-QHPC-DOC-126", path: "Q-HPC/workloads/quantum_algorithms/error_correction/decoder_mwpm.py", description: "Minimum Weight Perfect Matching (MWPM) decoder.", division: "Q-HPC" },
+  { promptId: "QHPC-P-127", docId: "GQOIS-QHPC-DOC-127", path: "Q-HPC/workloads/quantum_algorithms/error_correction/decoder_neural.py", description: "Neural network-based decoder.", division: "Q-HPC" },
+  { promptId: "QHPC-P-128", docId: "GQOIS-QHPC-DOC-128", path: "Q-HPC/workloads/quantum_algorithms/error_correction/logical_gates.py", description: "Implementation of logical gates on encoded qubits.", division: "Q-HPC" },
+  { promptId: "QHPC-P-129", docId: "GQOIS-QHPC-DOC-129", path: "Q-HPC/workloads/quantum_algorithms/error_correction/magic_state_distillation.py", description: "Protocols for magic state distillation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-130", docId: "GQOIS-QHPC-DOC-130", path: "Q-HPC/workloads/quantum_algorithms/error_correction/threshold_calculation.py", description: "Scripts for calculating QEC thresholds.", division: "Q-HPC" },
+  { promptId: "QHPC-P-131", docId: "GQOIS-QHPC-DOC-131", path: "Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/depolarizing.py", description: "Model for depolarizing noise.", division: "Q-HPC" },
+  { promptId: "QHPC-P-132", docId: "GQOIS-QHPC-DOC-132", path: "Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/amplitude_damping.py", description: "Model for amplitude damping noise.", division: "Q-HPC" },
+  { promptId: "QHPC-P-133", docId: "GQOIS-QHPC-DOC-133", path: "Q-HPC/workloads/quantum_algorithms/error_correction/noise_models/phase_damping.py", description: "Model for phase damping noise.", division: "Q-HPC" },
+  { promptId: "QHPC-P-134", docId: "GQOIS-QHPC-DOC-134", path: "Q-HPC/workloads/quantum_algorithms/error_correction/benchmarks/code_comparison.py", description: "Benchmarks for comparing different QEC codes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-135", docId: "GQOIS-QHPC-DOC-135", path: "Q-HPC/workloads/quantum_algorithms/error_correction/visualization/syndrome_viewer.py", description: "Tool for visualizing error syndromes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-136", docId: "GQOIS-QHPC-DOC-136", path: "Q-HPC/workloads/quantum_algorithms/error_correction/tests/test_surface_code.py", description: "Unit tests for the surface code implementation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-137", docId: "GQOIS-QHPC-DOC-137", path: "Q-HPC/workloads/quantum_algorithms/error_correction/config/code_parameters.yaml", description: "Configuration parameters for QEC codes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-138", docId: "GQOIS-QHPC-DOC-138", path: "Q-HPC/workloads/quantum_algorithms/optimization/README.md", description: "README for the quantum optimization module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-139", docId: "GQOIS-QHPC-DOC-139", path: "Q-HPC/workloads/quantum_algorithms/optimization/quantum_annealing.py", description: "Implementation of quantum annealing for optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-140", docId: "GQOIS-QHPC-DOC-140", path: "Q-HPC/workloads/quantum_algorithms/optimization/grover_optimizer.py", description: "Grover's algorithm-based optimizer.", division: "Q-HPC" },
+  { promptId: "QHPC-P-141", docId: "GQOIS-QHPC-DOC-141", path: "Q-HPC/workloads/quantum_algorithms/optimization/quantum_gradient_descent.py", description: "Quantum gradient descent algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-142", docId: "GQOIS-QHPC-DOC-142", path: "Q-HPC/workloads/quantum_algorithms/optimization/quantum_natural_gradient.py", description: "Quantum natural gradient descent algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-143", docId: "GQOIS-QHPC-DOC-143", path: "Q-HPC/workloads/quantum_algorithms/optimization/quantum_imaginary_time.py", description: "Quantum imaginary time evolution algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-144", docId: "GQOIS-QHPC-DOC-144", path: "Q-HPC/workloads/quantum_algorithms/optimization/applications/flight_path.py", description: "Application of quantum optimization to flight paths.", division: "Q-HPC" },
+  { promptId: "QHPC-P-145", docId: "GQOIS-QHPC-DOC-145", path: "Q-HPC/workloads/quantum_algorithms/optimization/applications/fuel_optimization.py", description: "Application of quantum optimization to fuel consumption.", division: "Q-HPC" },
+  { promptId: "QHPC-P-146", docId: "GQOIS-QHPC-DOC-146", path: "Q-HPC/workloads/quantum_algorithms/optimization/applications/maintenance_scheduling.py", description: "Application of quantum optimization to maintenance scheduling.", division: "Q-HPC" },
+  { promptId: "QHPC-P-147", docId: "GQOIS-QHPC-DOC-147", path: "Q-HPC/workloads/quantum_algorithms/optimization/constraints/linear_constraints.py", description: "Handling of linear constraints in quantum optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-148", docId: "GQOIS-QHPC-DOC-148", path: "Q-HPC/workloads/quantum_algorithms/optimization/constraints/quadratic_constraints.py", description: "Handling of quadratic constraints in quantum optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-149", docId: "GQOIS-QHPC-DOC-149", path: "Q-HPC/workloads/quantum_algorithms/optimization/penalty_methods.py", description: "Penalty methods for constrained quantum optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-150", docId: "GQOIS-QHPC-DOC-150", path: "Q-HPC/workloads/quantum_algorithms/optimization/tests/test_optimizers.py", description: "Unit tests for the quantum optimizers.", division: "Q-HPC" },
+  { promptId: "QHPC-P-151", docId: "GQOIS-QHPC-DOC-151", path: "Q-HPC/workloads/cfd/README.md", description: "README for the Computational Fluid Dynamics (CFD) module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-152", docId: "GQOIS-QHPC-DOC-152", path: "Q-HPC/workloads/cfd/mesh_generation.py", description: "Scripts for CFD mesh generation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-153", docId: "GQOIS-QHPC-DOC-153", path: "Q-HPC/workloads/cfd/solver_config.foam", description: "Configuration file for the CFD solver (e.g., OpenFOAM).", division: "Q-HPC" },
+  { promptId: "QHPC-P-154", docId: "GQOIS-QHPC-DOC-154", path: "Q-HPC/workloads/cfd/post_processing.py", description: "Scripts for post-processing CFD results.", division: "Q-HPC" },
+  { promptId: "QHPC-P-155", docId: "GQOIS-QHPC-DOC-155", path: "Q-HPC/workloads/cfd/boundary_conditions.py", description: "Scripts for setting CFD boundary conditions.", division: "Q-HPC" },
+  { promptId: "QHPC-P-156", docId: "GQOIS-QHPC-DOC-156", path: "Q-HPC/workloads/cfd/turbulence_models.py", description: "Implementations of various turbulence models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-157", docId: "GQOIS-QHPC-DOC-157", path: "Q-HPC/workloads/cfd/cases/cruise_condition/system/controlDict", description: "controlDict for a cruise condition CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-158", docId: "GQOIS-QHPC-DOC-158", path: "Q-HPC/workloads/cfd/cases/cruise_condition/system/fvSchemes", description: "fvSchemes for a cruise condition CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-159", docId: "GQOIS-QHPC-DOC-159", path: "Q-HPC/workloads/cfd/cases/cruise_condition/system/fvSolution", description: "fvSolution for a cruise condition CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-160", docId: "GQOIS-QHPC-DOC-160", path: "Q-HPC/workloads/cfd/cases/cruise_condition/constant/turbulenceProperties", description: "turbulenceProperties for a cruise condition CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-161", docId: "GQOIS-QHPC-DOC-161", path: "Q-HPC/workloads/cfd/cases/cruise_condition/0/U", description: "Initial condition for velocity (U) in a CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-162", docId: "GQOIS-QHPC-DOC-162", path: "Q-HPC/workloads/cfd/cases/cruise_condition/0/p", description: "Initial condition for pressure (p) in a CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-163", docId: "GQOIS-QHPC-DOC-163", path: "Q-HPC/workloads/cfd/cases/cruise_condition/0/T", description: "Initial condition for temperature (T) in a CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-164", docId: "GQOIS-QHPC-DOC-164", path: "Q-HPC/workloads/cfd/cases/landing_config/system/controlDict", description: "controlDict for a landing configuration CFD case.", division: "Q-HPC" },
+  { promptId: "QHPC-P-165", docId: "GQOIS-QHPC-DOC-165", path: "Q-HPC/workloads/cfd/parallel_decomposition.py", description: "Scripts for parallel decomposition of CFD cases.", division: "Q-HPC" },
+  { promptId: "QHPC-P-166", docId: "GQOIS-QHPC-DOC-166", path: "Q-HPC/workloads/cfd/convergence_monitor.py", description: "Script to monitor the convergence of CFD simulations.", division: "Q-HPC" },
+  { promptId: "QHPC-P-167", docId: "GQOIS-QHPC-DOC-167", path: "Q-HPC/workloads/cfd/force_coefficients.py", description: "Script to calculate force coefficients (lift, drag).", division: "Q-HPC" },
+  { promptId: "QHPC-P-168", docId: "GQOIS-QHPC-DOC-168", path: "Q-HPC/workloads/cfd/flow_visualization.py", description: "Scripts for visualizing flow fields (e.g., with ParaView).", division: "Q-HPC" },
+  { promptId: "QHPC-P-169", docId: "GQOIS-QHPC-DOC-169", path: "Q-HPC/workloads/cfd/validation/wind_tunnel_comparison.py", description: "Scripts for comparing CFD results with wind tunnel data.", division: "Q-HPC" },
+  { promptId: "QHPC-P-170", docId: "GQOIS-QHPC-DOC-170", path: "Q-HPC/workloads/cfd/optimization/shape_optimization.py", description: "Scripts for aerodynamic shape optimization using CFD.", division: "Q-HPC" },
+  { promptId: "QHPC-P-171", docId: "GQOIS-QHPC-DOC-171", path: "Q-HPC/workloads/fea/README.md", description: "README for the Finite Element Analysis (FEA) module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-172", docId: "GQOIS-QHPC-DOC-172", path: "Q-HPC/workloads/fea/preprocessing.py", description: "Scripts for FEA preprocessing (meshing, BCs).", division: "Q-HPC" },
+  { promptId: "QHPC-P-173", docId: "GQOIS-QHPC-DOC-173", path: "Q-HPC/workloads/fea/solver_params.inp", description: "Input parameter file for the FEA solver.", division: "Q-HPC" },
+  { promptId: "QHPC-P-174", docId: "GQOIS-QHPC-DOC-174", path: "Q-HPC/workloads/fea/results_extraction.py", description: "Scripts for extracting results from FEA simulations.", division: "Q-HPC" },
+  { promptId: "QHPC-P-175", docId: "GQOIS-QHPC-DOC-175", path: "Q-HPC/workloads/fea/material_properties.py", description: "Database of material properties for FEA.", division: "Q-HPC" },
+  { promptId: "QHPC-P-176", docId: "GQOIS-QHPC-DOC-176", path: "Q-HPC/workloads/fea/boundary_conditions.py", description: "Scripts for setting FEA boundary conditions.", division: "Q-HPC" },
+  { promptId: "QHPC-P-177", docId: "GQOIS-QHPC-DOC-177", path: "Q-HPC/workloads/fea/load_cases.py", description: "Definition of standard FEA load cases.", division: "Q-HPC" },
+  { promptId: "QHPC-P-178", docId: "GQOIS-QHPC-DOC-178", path: "Q-HPC/workloads/fea/mesh_quality_check.py", description: "Scripts for checking the quality of FEA meshes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-179", docId: "GQOIS-QHPC-DOC-179", path: "Q-HPC/workloads/fea/stress_analysis.py", description: "Scripts for performing stress analysis.", division: "Q-HPC" },
+  { promptId: "QHPC-P-180", docId: "GQOIS-QHPC-DOC-180", path: "Q-HPC/workloads/fea/modal_analysis.py", description: "Scripts for performing modal analysis.", division: "Q-HPC" },
+  { promptId: "QHPC-P-181", docId: "GQOIS-QHPC-DOC-181", path: "Q-HPC/workloads/fea/fatigue_analysis.py", description: "Scripts for performing fatigue analysis.", division: "Q-HPC" },
+  { promptId: "QHPC-P-182", docId: "GQOIS-QHPC-DOC-182", path: "Q-HPC/workloads/fea/buckling_analysis.py", description: "Scripts for performing buckling analysis.", division: "Q-HPC" },
+  { promptId: "QHPC-P-183", docId: "GQOIS-QHPC-DOC-183", path: "Q-HPC/workloads/fea/thermal_stress.py", description: "Scripts for performing thermal stress analysis.", division: "Q-HPC" },
+  { promptId: "QHPC-P-184", docId: "GQOIS-QHPC-DOC-184", path: "Q-HPC/workloads/fea/composite_analysis.py", description: "Scripts for analyzing composite materials.", division: "Q-HPC" },
+  { promptId: "QHPC-P-185", docId: "GQOIS-QHPC-DOC-185", path: "Q-HPC/workloads/fea/optimization/topology_optimization.py", description: "Scripts for structural topology optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-186", docId: "GQOIS-QHPC-DOC-186", path: "Q-HPC/workloads/fea/validation/test_correlation.py", description: "Scripts for correlating FEA results with physical tests.", division: "Q-HPC" },
+  { promptId: "QHPC-P-187", docId: "GQOIS-QHPC-DOC-187", path: "Q-HPC/workloads/ml_training/README.md", description: "README for the Machine Learning training module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-188", docId: "GQOIS-QHPC-DOC-188", path: "Q-HPC/workloads/ml_training/model_architectures.py", description: "Library of ML model architectures (e.g., LSTMs, Transformers).", division: "Q-HPC" },
+  { promptId: "QHPC-P-189", docId: "GQOIS-QHPC-DOC-189", path: "Q-HPC/workloads/ml_training/training_pipeline.py", description: "The main ML model training pipeline.", division: "Q-HPC" },
+  { promptId: "QHPC-P-190", docId: "GQOIS-QHPC-DOC-190", path: "Q-HPC/workloads/ml_training/hyperparameter_search.py", description: "Scripts for hyperparameter optimization.", division: "Q-HPC" },
+  { promptId: "QHPC-P-191", docId: "GQOIS-QHPC-DOC-191", path: "Q-HPC/workloads/ml_training/model_deployment.py", description: "Scripts for deploying trained ML models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-192", docId: "GQOIS-QHPC-DOC-192", path: "Q-HPC/workloads/ml_training/data_preprocessing.py", description: "Scripts for data preprocessing and feature engineering.", division: "Q-HPC" },
+  { promptId: "QHPC-P-193", docId: "GQOIS-QHPC-DOC-193", path: "Q-HPC/workloads/ml_training/distributed_training.py", description: "Scripts for distributed ML model training (e.g., Horovod).", division: "Q-HPC" },
+  { promptId: "QHPC-P-194", docId: "GQOIS-QHPC-DOC-194", path: "Q-HPC/workloads/ml_training/model_evaluation.py", description: "Scripts for evaluating trained ML models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-195", docId: "GQOIS-QHPC-DOC-195", path: "Q-HPC/workloads/ml_training/checkpointing.py", description: "Logic for model checkpointing during training.", division: "Q-HPC" },
+  { promptId: "QHPC-P-196", docId: "GQOIS-QHPC-DOC-196", path: "Q-HPC/workloads/ml_training/tensorboard_integration.py", description: "Integration with TensorBoard for monitoring training.", division: "Q-HPC" },
+  { promptId: "QHPC-P-197", docId: "GQOIS-QHPC-DOC-197", path: "Q-HPC/workloads/ml_training/models/anomaly_detection.py", description: "ML model for anomaly detection.", division: "Q-HPC" },
+  { promptId: "QHPC-P-198", docId: "GQOIS-QHPC-DOC-198", path: "Q-HPC/workloads/ml_training/models/predictive_maintenance.py", description: "ML model for predictive maintenance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-199", docId: "GQOIS-QHPC-DOC-199", path: "Q-HPC/workloads/ml_training/models/trajectory_prediction.py", description: "ML model for trajectory prediction.", division: "Q-HPC" },
+  { promptId: "QHPC-P-200", docId: "GQOIS-QHPC-DOC-200", path: "Q-HPC/workloads/ml_training/models/sensor_fusion.py", description: "ML model for sensor fusion.", division: "Q-HPC" },
+  { promptId: "QHPC-P-201", docId: "GQOIS-QHPC-DOC-201", path: "Q-HPC/infrastructure/terraform/main.tf", description: "Main Terraform file for infrastructure definition.", division: "Q-HPC" },
+  { promptId: "QHPC-P-202", docId: "GQOIS-QHPC-DOC-202", path: "Q-HPC/infrastructure/terraform/variables.tf", description: "Terraform variables file.", division: "Q-HPC" },
+  { promptId: "QHPC-P-203", docId: "GQOIS-QHPC-DOC-203", path: "Q-HPC/infrastructure/terraform/outputs.tf", description: "Terraform outputs file.", division: "Q-HPC" },
+  { promptId: "QHPC-P-204", docId: "GQOIS-QHPC-DOC-204", path: "Q-HPC/infrastructure/terraform/providers.tf", description: "Terraform providers configuration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-205", docId: "GQOIS-QHPC-DOC-205", path: "Q-HPC/infrastructure/terraform/modules/compute/main.tf", description: "Terraform module for compute resources.", division: "Q-HPC" },
+  { promptId: "QHPC-P-206", docId: "GQOIS-QHPC-DOC-206", path: "Q-HPC/infrastructure/terraform/modules/network/main.tf", description: "Terraform module for network resources.", division: "Q-HPC" },
+  { promptId: "QHPC-P-207", docId: "GQOIS-QHPC-DOC-207", path: "Q-HPC/infrastructure/terraform/modules/storage/main.tf", description: "Terraform module for storage resources.", division: "Q-HPC" },
+  { promptId: "QHPC-P-208", docId: "GQOIS-QHPC-DOC-208", path: "Q-HPC/infrastructure/terraform/modules/quantum/main.tf", description: "Terraform module for quantum resources.", division: "Q-HPC" },
+  { promptId: "QHPC-P-209", docId: "GQOIS-QHPC-DOC-209", path: "Q-HPC/infrastructure/terraform/environments/dev.tfvars", description: "Terraform variable values for the development environment.", division: "Q-HPC" },
+  { promptId: "QHPC-P-210", docId: "GQOIS-QHPC-DOC-210", path: "Q-HPC/infrastructure/terraform/environments/prod.tfvars", description: "Terraform variable values for the production environment.", division: "Q-HPC" },
+  { promptId: "QHPC-P-211", docId: "GQOIS-QHPC-DOC-211", path: "Q-HPC/infrastructure/network/infiniband_config.conf", description: "Configuration file for the InfiniBand network.", division: "Q-HPC" },
+  { promptId: "QHPC-P-212", docId: "GQOIS-QHPC-DOC-212", path: "Q-HPC/infrastructure/network/rdma_tuning.sh", description: "Script for tuning RDMA performance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-213", docId: "GQOIS-QHPC-DOC-213", path: "Q-HPC/infrastructure/network/network_topology.yaml", description: "YAML definition of the network topology.", division: "Q-HPC" },
+  { promptId: "QHPC-P-214", docId: "GQOIS-QHPC-DOC-214", path: "Q-HPC/infrastructure/network/firewall_rules.yaml", description: "Firewall rules for the HPC network.", division: "Q-HPC" },
+  { promptId: "QHPC-P-215", docId: "GQOIS-QHPC-DOC-215", path: "Q-HPC/infrastructure/network/load_balancer.conf", description: "Configuration for the network load balancer.", division: "Q-HPC" },
+  { promptId: "QHPC-P-216", docId: "GQOIS-QHPC-DOC-216", path: "Q-HPC/infrastructure/storage/lustre_config.xml", description: "Configuration file for the Lustre parallel file system.", division: "Q-HPC" },
+  { promptId: "QHPC-P-217", docId: "GQOIS-QHPC-DOC-217", path: "Q-HPC/infrastructure/storage/backup_policy.yaml", description: "Policy for backing up the storage system.", division: "Q-HPC" },
+  { promptId: "QHPC-P-218", docId: "GQOIS-QHPC-DOC-218", path: "Q-HPC/infrastructure/storage/quota_management.py", description: "Script for managing storage quotas.", division: "Q-HPC" },
+  { promptId: "QHPC-P-219", docId: "GQOIS-QHPC-DOC-219", path: "Q-HPC/infrastructure/storage/data_lifecycle.yaml", description: "Policy for data lifecycle management.", division: "Q-HPC" },
+  { promptId: "QHPC-P-220", docId: "GQOIS-QHPC-DOC-220", path: "Q-HPC/infrastructure/storage/replication_config.yaml", description: "Configuration for data replication.", division: "Q-HPC" },
+  { promptId: "QHPC-P-221", docId: "GQOIS-QHPC-DOC-221", path: "Q-HPC/infrastructure/security/ssl_certificates.yaml", description: "Management of SSL certificates.", division: "Q-HPC" },
+  { promptId: "QHPC-P-222", docId: "GQOIS-QHPC-DOC-222", path: "Q-HPC/infrastructure/security/auth_config.yaml", description: "Authentication configuration (e.g., LDAP, Kerberos).", division: "Q-HPC" },
+  { promptId: "QHPC-P-223", docId: "GQOIS-QHPC-DOC-223", path: "Q-HPC/infrastructure/security/encryption_keys.yaml", description: "Management of encryption keys.", division: "Q-HPC" },
+  { promptId: "QHPC-P-224", docId: "GQOIS-QHPC-DOC-224", path: "Q-HPC/infrastructure/security/audit_logging.yaml", description: "Configuration for security audit logging.", division: "Q-HPC" },
+  { promptId: "QHPC-P-225", docId: "GQOIS-QHPC-DOC-225", path: "Q-HPC/infrastructure/security/compliance_checks.py", description: "Scripts for automated security compliance checks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-226", docId: "GQOIS-QHPC-DOC-226", path: "Q-HPC/infrastructure/monitoring/prometheus_config.yaml", description: "Prometheus configuration for infrastructure monitoring.", division: "Q-HPC" },
+  { promptId: "QHPC-P-227", docId: "GQOIS-QHPC-DOC-227", path: "Q-HPC/infrastructure/monitoring/alertmanager.yaml", description: "Alertmanager configuration for infrastructure alerts.", division: "Q-HPC" },
+  { promptId: "QHPC-P-228", docId: "GQOIS-QHPC-DOC-228", path: "Q-HPC/infrastructure/monitoring/grafana_datasources.yaml", description: "Grafana datasource configuration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-229", docId: "GQOIS-QHPC-DOC-229", path: "Q-HPC/infrastructure/monitoring/logging_pipeline.yaml", description: "Configuration for the logging pipeline (e.g., ELK stack).", division: "Q-HPC" },
+  { promptId: "QHPC-P-230", docId: "GQOIS-QHPC-DOC-230", path: "Q-HPC/infrastructure/monitoring/metrics_retention.yaml", description: "Policy for metrics retention.", division: "Q-HPC" },
+  { promptId: "QHPC-P-231", docId: "GQOIS-QHPC-DOC-231", path: "Q-HPC/infrastructure/ci_cd/gitlab-ci.yml", description: "GitLab CI/CD pipeline configuration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-232", docId: "GQOIS-QHPC-DOC-232", path: "Q-HPC/infrastructure/ci_cd/jenkins_pipeline.groovy", description: "Jenkins pipeline configuration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-233", docId: "GQOIS-QHPC-DOC-233", path: "Q-HPC/infrastructure/ci_cd/build_scripts.sh", description: "Scripts for building software.", division: "Q-HPC" },
+  { promptId: "QHPC-P-234", docId: "GQOIS-QHPC-DOC-234", path: "Q-HPC/infrastructure/ci_cd/test_automation.py", description: "Scripts for test automation in the CI/CD pipeline.", division: "Q-HPC" },
+  { promptId: "QHPC-P-235", docId: "GQOIS-QHPC-DOC-235", path: "Q-HPC/infrastructure/ci_cd/deployment_pipeline.yaml", description: "Configuration for the deployment pipeline.", division: "Q-HPC" },
+  { promptId: "QHPC-P-236", docId: "GQOIS-QHPC-DOC-236", path: "Q-HPC/benchmarks/README.md", description: "README for the benchmarks module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-237", docId: "GQOIS-QHPC-DOC-237", path: "Q-HPC/benchmarks/linpack_results.txt", description: "Results from the LINPACK benchmark.", division: "Q-HPC" },
+  { promptId: "QHPC-P-238", docId: "GQOIS-QHPC-DOC-238", path: "Q-HPC/benchmarks/quantum_supremacy_test.py", description: "Test for demonstrating quantum supremacy on a specific problem.", division: "Q-HPC" },
+  { promptId: "QHPC-P-239", docId: "GQOIS-QHPC-DOC-239", path: "Q-HPC/benchmarks/io_benchmark.sh", description: "Script for benchmarking I/O performance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-240", docId: "GQOIS-QHPC-DOC-240", path: "Q-HPC/benchmarks/ml_inference_perf.py", description: "Benchmark for ML model inference performance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-241", docId: "GQOIS-QHPC-DOC-241", path: "Q-HPC/benchmarks/hpcg_benchmark.py", description: "High Performance Conjugate Gradients (HPCG) benchmark.", division: "Q-HPC" },
+  { promptId: "QHPC-P-242", docId: "GQOIS-QHPC-DOC-242", path: "Q-HPC/benchmarks/stream_benchmark.c", description: "STREAM memory bandwidth benchmark.", division: "Q-HPC" },
+  { promptId: "QHPC-P-243", docId: "GQOIS-QHPC-DOC-243", path: "Q-HPC/benchmarks/quantum_volume_test.py", description: "Test for measuring the Quantum Volume of the QPU.", division: "Q-HPC" },
+  { promptId: "QHPC-P-244", docId: "GQOIS-QHPC-DOC-244", path: "Q-HPC/benchmarks/network_latency_test.py", description: "Benchmark for network latency.", division: "Q-HPC" },
+  { promptId: "QHPC-P-245", docId: "GQOIS-QHPC-DOC-245", path: "Q-HPC/benchmarks/gpu_benchmark.cu", description: "Benchmark for GPU performance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-246", docId: "GQOIS-QHPC-DOC-246", path: "Q-HPC/benchmarks/scaling_analysis.py", description: "Scripts for analyzing the scaling performance of applications.", division: "Q-HPC" },
+  { promptId: "QHPC-P-247", docId: "GQOIS-QHPC-DOC-247", path: "Q-HPC/benchmarks/energy_efficiency.py", description: "Scripts for measuring energy efficiency (e.g., GFLOPS/Watt).", division: "Q-HPC" },
+  { promptId: "QHPC-P-248", docId: "GQOIS-QHPC-DOC-248", path: "Q-HPC/benchmarks/quantum_benchmarks/vqe_benchmark.py", description: "Benchmark for the VQE algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-249", docId: "GQOIS-QHPC-DOC-249", path: "Q-HPC/benchmarks/quantum_benchmarks/qaoa_benchmark.py", description: "Benchmark for the QAOA algorithm.", division: "Q-HPC" },
+  { promptId: "QHPC-P-250", docId: "GQOIS-QHPC-DOC-250", path: "Q-HPC/benchmarks/quantum_benchmarks/qml_benchmark.py", description: "Benchmark for QML models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-251", docId: "GQOIS-QHPC-DOC-251", path: "Q-HPC/benchmarks/classical_benchmarks/cfd_benchmark.py", description: "Benchmark for CFD workloads.", division: "Q-HPC" },
+  { promptId: "QHPC-P-252", docId: "GQOIS-QHPC-DOC-252", path: "Q-HPC/benchmarks/classical_benchmarks/fea_benchmark.py", description: "Benchmark for FEA workloads.", division: "Q-HPC" },
+  { promptId: "QHPC-P-253", docId: "GQOIS-QHPC-DOC-253", path: "Q-HPC/benchmarks/hybrid_benchmarks/quantum_classical.py", description: "Benchmark for hybrid quantum-classical workloads.", division: "Q-HPC" },
+  { promptId: "QHPC-P-254", docId: "GQOIS-QHPC-DOC-254", path: "Q-HPC/benchmarks/reports/performance_report_template.md", description: "Template for performance benchmark reports.", division: "Q-HPC" },
+  { promptId: "QHPC-P-255", docId: "GQOIS-QHPC-DOC-255", path: "Q-HPC/benchmarks/visualization/benchmark_plots.py", description: "Scripts for plotting and visualizing benchmark results.", division: "Q-HPC" },
+  { promptId: "QHPC-P-256", docId: "GQOIS-QHPC-DOC-256", path: "Q-HPC/benchmarks/config/benchmark_config.yaml", description: "Configuration file for benchmark runs.", division: "Q-HPC" },
+  { promptId: "QHPC-P-257", docId: "GQOIS-QHPC-DOC-257", path: "Q-HPC/benchmarks/scripts/run_all_benchmarks.sh", description: "Script to run all standard benchmarks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-258", docId: "GQOIS-QHPC-DOC-258", path: "Q-HPC/benchmarks/scripts/collect_metrics.py", description: "Script to collect metrics from benchmark runs.", division: "Q-HPC" },
+  { promptId: "QHPC-P-259", docId: "GQOIS-QHPC-DOC-259", path: "Q-HPC/benchmarks/scripts/compare_results.py", description: "Script to compare benchmark results over time.", division: "Q-HPC" },
+  { promptId: "QHPC-P-260", docId: "GQOIS-QHPC-DOC-260", path: "Q-HPC/benchmarks/validation/validate_results.py", description: "Script to validate the correctness of benchmark results.", division: "Q-HPC" },
+  { promptId: "QHPC-P-261", docId: "GQOIS-QHPC-DOC-261", path: "Q-HPC/digital_twin/README.md", description: "README for the Digital Twin integration module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-262", docId: "GQOIS-QHPC-DOC-262", path: "Q-HPC/digital_twin/architecture.md", description: "Architecture of the Digital Twin platform.", division: "Q-HPC" },
+  { promptId: "QHPC-P-263", docId: "GQOIS-QHPC-DOC-263", path: "Q-HPC/digital_twin/core/twin_manager.py", description: "Core manager for the Digital Twin instances.", division: "Q-HPC" },
+  { promptId: "QHPC-P-264", docId: "GQOIS-QHPC-DOC-264", path: "Q-HPC/digital_twin/core/state_synchronizer.py", description: "State synchronizer between physical asset and digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-265", docId: "GQOIS-QHPC-DOC-265", path: "Q-HPC/digital_twin/core/physics_engine.py", description: "The underlying physics simulation engine.", division: "Q-HPC" },
+  { promptId: "QHPC-P-266", docId: "GQOIS-QHPC-DOC-266", path: "Q-HPC/digital_twin/core/sensor_fusion.py", description: "Sensor fusion algorithms for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-267", docId: "GQOIS-QHPC-DOC-267", path: "Q-HPC/digital_twin/models/aircraft_model.py", description: "Digital twin model of the complete aircraft.", division: "Q-HPC" },
+  { promptId: "QHPC-P-268", docId: "GQOIS-QHPC-DOC-268", path: "Q-HPC/digital_twin/models/propulsion_model.py", description: "Digital twin model of the propulsion system.", division: "Q-HPC" },
+  { promptId: "QHPC-P-269", docId: "GQOIS-QHPC-DOC-269", path: "Q-HPC/digital_twin/models/structures_model.py", description: "Digital twin model of the aircraft structures.", division: "Q-HPC" },
+  { promptId: "QHPC-P-270", docId: "GQOIS-QHPC-DOC-270", path: "Q-HPC/digital_twin/models/systems_model.py", description: "Digital twin model of various mechanical/electrical systems.", division: "Q-HPC" },
+  { promptId: "QHPC-P-271", docId: "GQOIS-QHPC-DOC-271", path: "Q-HPC/digital_twin/models/environmental_model.py", description: "Digital twin model of the operational environment.", division: "Q-HPC" },
+  { promptId: "QHPC-P-272", docId: "GQOIS-QHPC-DOC-272", path: "Q-HPC/digital_twin/simulation/real_time_sim.py", description: "Real-time simulation capabilities of the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-273", docId: "GQOIS-QHPC-DOC-273", path: "Q-HPC/digital_twin/simulation/predictive_sim.py", description: "Predictive "what-if" simulation capabilities.", division: "Q-HPC" },
+  { promptId: "QHPC-P-274", docId: "GQOIS-QHPC-DOC-274", path: "Q-HPC/digital_twin/simulation/scenario_manager.py", description: "Manager for simulation scenarios.", division: "Q-HPC" },
+  { promptId: "QHPC-P-275", docId: "GQOIS-QHPC-DOC-275", path: "Q-HPC/digital_twin/data/telemetry_processor.py", description: "Processor for incoming telemetry data.", division: "Q-HPC" },
+  { promptId: "QHPC-P-276", docId: "GQOIS-QHPC-DOC-276", path: "Q-HPC/digital_twin/data/data_historian.py", description: "Data historian for storing time-series data.", division: "Q-HPC" },
 QHPC-P-277	`GQ		
-QHPC-P-277	GQOIS-QHPC-DOC-277	Q-HPC/digital_twin/data/anomaly_detection.py	Anomaly detection algorithms for digital twin data.
-QHPC-P-278	GQOIS-QHPC-DOC-278	Q-HPC/digital_twin/data/predictive_analytics.py	Predictive analytics engine for the digital twin.
-QHPC-P-279	GQOIS-QHPC-DOC-279	Q-HPC/digital_twin/visualization/3d_renderer.py	3D rendering engine for visualizing the digital twin.
-QHPC-P-280	GQOIS-QHPC-DOC-280	Q-HPC/digital_twin/visualization/dashboard.py	Dashboard for displaying digital twin data and analytics.
-QHPC-P-281	GQOIS-QHPC-DOC-281	Q-HPC/digital_twin/visualization/ar_interface.py	Augmented Reality (AR) interface for the digital twin.
-QHPC-P-282	GQOIS-QHPC-DOC-282	Q-HPC/digital_twin/api/rest_api.py	REST API for interacting with the digital twin.
-QHPC-P-283	GQOIS-QHPC-DOC-283	Q-HPC/digital_twin/api/graphql_api.py	GraphQL API for complex queries to the digital twin.
-QHPC-P-284	GQOIS-QHPC-DOC-284	Q-HPC/digital_twin/api/websocket_api.py	WebSocket API for real-time data streaming from the twin.
-QHPC-P-285	GQOIS-QHPC-DOC-285	Q-HPC/digital_twin/integration/kafka_connector.py	Kafka connector for data ingestion.
-QHPC-P-286	GQOIS-QHPC-DOC-286	Q-HPC/digital_twin/integration/mqtt_bridge.py	MQTT bridge for IoT sensor integration.
-QHPC-P-287	GQOIS-QHPC-DOC-287	Q-HPC/digital_twin/integration/opcua_client.py	OPC UA client for industrial systems integration.
-QHPC-P-288	GQOIS-QHPC-DOC-288	Q-HPC/digital_twin/quantum/quantum_optimizer.py	Quantum optimizer for digital twin simulations.
-QHPC-P-289	GQOIS-QHPC-DOC-289	Q-HPC/digital_twin/quantum/quantum_predictor.py	Quantum-enhanced predictive models for the twin.
-QHPC-P-290	GQOIS-QHPC-DOC-290	Q-HPC/digital_twin/ml/anomaly_models.py	ML models specifically for anomaly detection in the twin.
-QHPC-P-291	GQOIS-QHPC-DOC-291	Q-HPC/digital_twin/ml/predictive_models.py	Predictive ML models for the digital twin.
-QHPC-P-292	GQOIS-QHPC-DOC-292	Q-HPC/digital_twin/ml/optimization_models.py	ML models for optimization tasks within the twin.
-QHPC-P-293	GQOIS-QHPC-DOC-293	Q-HPC/digital_twin/config/twin_config.yaml	Configuration file for digital twin instances.
-QHPC-P-294	GQOIS-QHPC-DOC-294	Q-HPC/digital_twin/config/sensor_mapping.yaml	Mapping file for physical sensors to digital twin inputs.
-QHPC-P-295	GQOIS-QHPC-DOC-295	Q-HPC/digital_twin/tests/test_twin_manager.py	Unit tests for the digital twin manager.
-QHPC-P-296	GQOIS-QHPC-DOC-296	Q-HPC/digital_twin/tests/test_physics_engine.py	Unit tests for the physics engine.
-QHPC-P-297	GQOIS-QHPC-DOC-297	Q-HPC/digital_twin/tests/test_integration.py	Integration tests for the digital twin.
-QHPC-P-298	GQOIS-QHPC-DOC-298	Q-HPC/digital_twin/deployment/docker-compose.yml	Docker Compose file for deploying the digital twin services.
-QHPC-P-299	GQOIS-QHPC-DOC-299	Q-HPC/digital_twin/deployment/kubernetes.yaml	Kubernetes deployment configuration for the digital twin.
-QHPC-P-300	GQOIS-QHPC-DOC-300	Q-HPC/digital_twin/docs/user_guide.md	User guide for the digital twin platform.
-QHPC-P-301	GQOIS-QHPC-DOC-301	Q-HPC/ata_integration/README.md	README for the ATA system integration module.
-QHPC-P-302	GQOIS-QHPC-DOC-302	Q-HPC/ata_integration/ata_22_autoflight/README.md	README for ATA-22 Auto Flight integration.
-QHPC-P-303	GQOIS-QHPC-DOC-303	Q-HPC/ata_integration/ata_22_autoflight/flight_director.py	HPC module for flight director computations.
-QHPC-P-304	GQOIS-QHPC-DOC-304	Q-HPC/ata_integration/ata_22_autoflight/autopilot_modes.py	HPC computations for advanced autopilot modes.
-QHPC-P-305	GQOIS-QHPC-DOC-305	Q-HPC/ata_integration/ata_22_autoflight/quantum_trajectory_opt.py	Quantum trajectory optimization for ATA-22.
-QHPC-P-306	GQOIS-QHPC-DOC-306	Q-HPC/ata_integration/ata_22_autoflight/ai_copilot.py	AI co-pilot computational backend for ATA-22.
-QHPC-P-307	GQOIS-QHPC-DOC-307	Q-HPC/ata_integration/ata_31_indicating/README.md	README for ATA-31 Indicating Systems integration.
-QHPC-P-308	GQOIS-QHPC-DOC-308	Q-HPC/ata_integration/ata_31_indicating/digital_twin_sync.py	Synchronization logic between indicating systems and the twin.
-QHPC-P-309	GQOIS-QHPC-DOC-309	Q-HPC/ata_integration/ata_31_indicating/real_time_analytics.py	Real-time analytics backend for cockpit displays.
-QHPC-P-310	GQOIS-QHPC-DOC-310	Q-HPC/ata_integration/ata_31_indicating/predictive_display.py	Backend for predictive display information.
-QHPC-P-311	GQOIS-QHPC-DOC-311	Q-HPC/ata_integration/ata_34_navigation/README.md	README for ATA-34 Navigation integration.
-QHPC-P-312	GQOIS-QHPC-DOC-312	Q-HPC/ata_integration/ata_34_navigation/quantum_ins.py	Computational backend for the Quantum INS.
-QHPC-P-313	GQOIS-QHPC-DOC-313	Q-HPC/ata_integration/ata_34_navigation/atom_interferometry.py	Computational backend for atom interferometry navigation.
-QHPC-P-314	GQOIS-QHPC-DOC-314	Q-HPC/ata_integration/ata_34_navigation/quantum_clock.py	Backend for quantum clock synchronization and timing.
-QHPC-P-315	GQOIS-QHPC-DOC-315	Q-HPC/ata_integration/ata_34_navigation/gps_denied_nav.py	Computational backend for GPS-denied navigation.
-QHPC-P-316	GQOIS-QHPC-DOC-316	Q-HPC/ata_integration/ata_42_ima/README.md	README for ATA-42 IMA integration.
-QHPC-P-317	GQOIS-QHPC-DOC-317	Q-HPC/ata_integration/ata_42_ima/core_processing.py	HPC backend for IMA core processing tasks.
-QHPC-P-318	GQOIS-QHPC-DOC-318	Q-HPC/ata_integration/ata_42_ima/qpu_integration.py	Integration of QPU workloads into the IMA framework.
-QHPC-P-319	GQOIS-QHPC-DOC-319	Q-HPC/ata_integration/ata_42_ima/hybrid_computing.py	Hybrid classical-quantum computing module for IMA.
-QHPC-P-320	GQOIS-QHPC-DOC-320	Q-HPC/ata_integration/ata_42_ima/neural_processing.py	Neural processing workload management for IMA.
-QHPC-P-321	GQOIS-QHPC-DOC-321	Q-HPC/ata_integration/ata_44_cabin/README.md	README for ATA-44 Cabin Systems integration.
-QHPC-P-322	GQOIS-QHPC-DOC-322	Q-HPC/ata_integration/ata_44_cabin/smart_cabin_ai.py	AI backend for the smart cabin system.
-QHPC-P-323	GQOIS-QHPC-DOC-323	Q-HPC/ata_integration/ata_44_cabin/holographic_ife.py	Computational backend for holographic IFE.
-QHPC-P-324	GQOIS-QHPC-DOC-324	Q-HPC/ata_integration/ata_44_cabin/quantum_experience.py	Backend for quantum-enhanced passenger experiences.
-QHPC-P-325	GQOIS-QHPC-DOC-325	Q-HPC/ata_integration/ata_45_cms/README.md	README for ATA-45 Central Maintenance System integration.
-QHPC-P-326	GQOIS-QHPC-DOC-326	Q-HPC/ata_integration/ata_45_cms/predictive_maintenance.py	Predictive maintenance model backend for CMS.
-QHPC-P-327	GQOIS-QHPC-DOC-327	Q-HPC/ata_integration/ata_45_cms/fault_correlation.py	Fault correlation engine backend.
-QHPC-P-328	GQOIS-QHPC-DOC-328	Q-HPC/ata_integration/ata_45_cms/ai_diagnostics.py	AI diagnostics model backend.
-QHPC-P-329	GQOIS-QHPC-DOC-329	Q-HPC/ata_integration/ata_45_cms/pattern_recognition.py	Pattern recognition model for fault detection.
-QHPC-P-330	GQOIS-QHPC-DOC-330	Q-HPC/ata_integration/ata_46_info/README.md	README for ATA-46 Information Systems integration.
-QHPC-P-331	GQOIS-QHPC-DOC-331	Q-HPC/ata_integration/ata_46_info/quantum_computing_core.py	Quantum computing core module for information systems.
-QHPC-P-332	GQOIS-QHPC-DOC-332	Q-HPC/ata_integration/ata_46_info/quantum_security.py	Quantum security module backend.
-QHPC-P-333	GQOIS-QHPC-DOC-333	Q-HPC/ata_integration/ata_46_info/qkd_integration.py	QKD integration backend for information systems.
-QHPC-P-334	GQOIS-QHPC-DOC-334	Q-HPC/ata_integration/ata_46_info/data_optimization.py	Data optimization algorithms for on-board data.
-QHPC-P-335	GQOIS-QHPC-DOC-335	Q-HPC/ata_integration/ata_76_engine/README.md	README for ATA-76 Engine Controls integration.
-QHPC-P-336	GQOIS-QHPC-DOC-336	Q-HPC/ata_integration/ata_76_engine/quantum_fadec.py	Quantum FADEC computational backend.
-QHPC-P-337	GQOIS-QHPC-DOC-337	Q-HPC/ata_integration/ata_76_engine/performance_optimization.py	Engine performance optimization model backend.
-QHPC-P-338	GQOIS-QHPC-DOC-338	Q-HPC/ata_integration/ata_76_engine/ai_engine_control.py	AI engine control model backend.
-QHPC-P-339	GQOIS-QHPC-DOC-339	Q-HPC/ata_integration/ata_76_engine/adaptive_tuning.py	Adaptive tuning algorithm for engine controls.
-QHPC-P-340	GQOIS-QHPC-DOC-340	Q-HPC/ata_integration/ata_77_engine_ind/README.md	README for ATA-77 Engine Indicating integration.
-QHPC-P-341	GQOIS-QHPC-DOC-341	Q-HPC/ata_integration/ata_77_engine_ind/quantum_diagnostics.py	Quantum diagnostics backend for engine health.
-QHPC-P-342	GQOIS-QHPC-DOC-342	Q-HPC/ata_integration/ata_77_engine_ind/health_monitoring.py	Health monitoring model backend for engine indicating.
-QHPC-P-343	GQOIS-QHPC-DOC-343	Q-HPC/ata_integration/ata_77_engine_ind/predictive_analytics.py	Predictive analytics backend for engine indicating.
-QHPC-P-344	GQOIS-QHPC-DOC-344	Q-HPC/ata_integration/config/ata_mapping.yaml	Mapping file between ATA systems and HPC modules.
-QHPC-P-345	GQOIS-QHPC-DOC-345	Q-HPC/ata_integration/config/system_interfaces.yaml	Configuration for system interfaces.
-QHPC-P-346	GQOIS-QHPC-DOC-346	Q-HPC/ata_integration/tests/test_ata_22.py	Integration tests for ATA-22 modules.
-QHPC-P-347	GQOIS-QHPC-DOC-347	Q-HPC/ata_integration/tests/test_ata_34.py	Integration tests for ATA-34 modules.
-QHPC-P-348	GQOIS-QHPC-DOC-348	Q-HPC/ata_integration/tests/test_ata_42.py	Integration tests for ATA-42 modules.
-QHPC-P-349	GQOIS-QHPC-DOC-349	Q-HPC/ata_integration/tests/test_integration.py	Overall integration tests for the ATA module.
-QHPC-P-350	GQOIS-QHPC-DOC-350	Q-HPC/ata_integration/docs/integration_guide.md	Guide for integrating new ATA systems with HPC.
-QHPC-P-351	GQOIS-QHPC-DOC-351	Q-HPC/docs/README.md	Main README for the Q-HPC documentation.
-QHPC-P-352	GQOIS-QHPC-DOC-352	Q-HPC/docs/getting_started.md	Getting Started guide for using the HPC cluster.
-QHPC-P-353	GQOIS-QHPC-DOC-353	Q-HPC/docs/installation_guide.md	Installation guide for client tools.
-QHPC-P-354	GQOIS-QHPC-DOC-354	Q-HPC/docs/user_guide/README.md	Main README for the user guide.
-QHPC-P-355	GQOIS-QHPC-DOC-355	Q-HPC/docs/user_guide/quantum_workloads.md	User guide for running quantum workloads.
-QHPC-P-356	GQOIS-QHPC-DOC-356	Q-HPC/docs/user_guide/classical_workloads.md	User guide for running classical HPC workloads.
-QHPC-P-357	GQOIS-QHPC-DOC-357	Q-HPC/docs/user_guide/job_submission.md	User guide for submitting jobs to the scheduler.
-QHPC-P-358	GQOIS-QHPC-DOC-358	Q-HPC/docs/user_guide/monitoring.md	User guide for monitoring jobs and resources.
-QHPC-P-359	GQOIS-QHPC-DOC-359	Q-HPC/docs/admin_guide/README.md	Main README for the administrator guide.
-QHPC-P-360	GQOIS-QHPC-DOC-360	Q-HPC/docs/admin_guide/cluster_management.md	Admin guide for cluster management.
-QHPC-P-361	GQOIS-QHPC-DOC-361	Q-HPC/docs/admin_guide/user_management.md	Admin guide for user management.
-QHPC-P-362	GQOIS-QHPC-DOC-362	Q-HPC/docs/admin_guide/backup_restore.md	Admin guide for backup and restore procedures.
-QHPC-P-363	GQOIS-QHPC-DOC-363	Q-HPC/docs/admin_guide/security_hardening.md	Admin guide for security hardening.
-QHPC-P-364	GQOIS-QHPC-DOC-364	Q-HPC/docs/developer_guide/README.md	Main README for the developer guide.
-QHPC-P-365	GQOIS-QHPC-DOC-365	Q-HPC/docs/developer_guide/api_reference.md	Developer guide API reference.
-QHPC-P-366	GQOIS-QHPC-DOC-366	Q-HPC/docs/developer_guide/quantum_sdk.md	Developer guide for the Quantum SDK.
-QHPC-P-367	GQOIS-QHPC-DOC-367	Q-HPC/docs/developer_guide/best_practices.md	Developer best practices for HPC.
-QHPC-P-368	GQOIS-QHPC-DOC-368	Q-HPC/docs/developer_guide/code_examples.md	Code examples for developers.
-QHPC-P-369	GQOIS-QHPC-DOC-369	Q-HPC/docs/tutorials/README.md	Main README for tutorials.
-QHPC-P-370	GQOIS-QHPC-DOC-370	Q-HPC/docs/tutorials/quantum_basics.md	Tutorial on quantum computing basics.
-QHPC-P-371	GQOIS-QHPC-DOC-371	Q-HPC/docs/tutorials/qaoa_tutorial.md	Tutorial for the QAOA module.
-QHPC-P-372	GQOIS-QHPC-DOC-372	Q-HPC/docs/tutorials/vqe_tutorial.md	Tutorial for the VQE module.
-QHPC-P-373	GQOIS-QHPC-DOC-373	Q-HPC/docs/tutorials/ml_quantum_hybrid.md	Tutorial for hybrid ML-quantum models.
-QHPC-P-374	GQOIS-QHPC-DOC-374	Q-HPC/docs/tutorials/digital_twin_tutorial.md	Tutorial for using the Digital Twin platform.
-QHPC-P-375	GQOIS-QHPC-DOC-375	Q-HPC/docs/architecture/quantum_architecture.md	Detailed documentation on the quantum architecture.
-QHPC-P-376	GQOIS-QHPC-DOC-376	Q-HPC/docs/architecture/classical_architecture.md	Detailed documentation on the classical HPC architecture.
-QHPC-P-377	GQOIS-QHPC-DOC-377	Q-HPC/docs/architecture/hybrid_architecture.md	Detailed documentation on the hybrid architecture.
-QHPC-P-378	GQOIS-QHPC-DOC-378	Q-HPC/docs/architecture/network_architecture.md	Detailed documentation on the network architecture.
-QHPC-P-379	GQOIS-QHPC-DOC-379	Q-HPC/docs/architecture/storage_architecture.md	Detailed documentation on the storage architecture.
-QHPC-P-380	GQOIS-QHPC-DOC-380	Q-HPC/docs/architecture/security_architecture.md	Detailed documentation on the security architecture.
-QHPC-P-381	GQOIS-QHPC-DOC-381	Q-HPC/docs/compliance/do178c_compliance.md	Documentation on DO-178C compliance for HPC software.
-QHPC-P-382	GQOIS-QHPC-DOC-382	Q-HPC/docs/compliance/security_compliance.md	Documentation on security compliance (e.g., ISO 27001).
-QHPC-P-383	GQOIS-QHPC-DOC-383	Q-HPC/docs/compliance/data_governance.md	Documentation on data governance compliance.
-QHPC-P-384	GQOIS-QHPC-DOC-384	Q-HPC/docs/troubleshooting/common_issues.md	Guide to troubleshooting common HPC issues.
-QHPC-P-385	GQOIS-QHPC-DOC-385	Q-HPC/docs/troubleshooting/performance_tuning.md	Guide on performance tuning for HPC workloads.],
+  { promptId: "QHPC-P-277", docId: "GQOIS-QHPC-DOC-277", path: "Q-HPC/digital_twin/data/anomaly_detection.py", description: "Anomaly detection algorithms for digital twin data.", division: "Q-HPC" },
+  { promptId: "QHPC-P-278", docId: "GQOIS-QHPC-DOC-278", path: "Q-HPC/digital_twin/data/predictive_analytics.py", description: "Predictive analytics engine for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-279", docId: "GQOIS-QHPC-DOC-279", path: "Q-HPC/digital_twin/visualization/3d_renderer.py", description: "3D rendering engine for visualizing the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-280", docId: "GQOIS-QHPC-DOC-280", path: "Q-HPC/digital_twin/visualization/dashboard.py", description: "Dashboard for displaying digital twin data and analytics.", division: "Q-HPC" },
+  { promptId: "QHPC-P-281", docId: "GQOIS-QHPC-DOC-281", path: "Q-HPC/digital_twin/visualization/ar_interface.py", description: "Augmented Reality (AR) interface for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-282", docId: "GQOIS-QHPC-DOC-282", path: "Q-HPC/digital_twin/api/rest_api.py", description: "REST API for interacting with the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-283", docId: "GQOIS-QHPC-DOC-283", path: "Q-HPC/digital_twin/api/graphql_api.py", description: "GraphQL API for complex queries to the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-284", docId: "GQOIS-QHPC-DOC-284", path: "Q-HPC/digital_twin/api/websocket_api.py", description: "WebSocket API for real-time data streaming from the twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-285", docId: "GQOIS-QHPC-DOC-285", path: "Q-HPC/digital_twin/integration/kafka_connector.py", description: "Kafka connector for data ingestion.", division: "Q-HPC" },
+  { promptId: "QHPC-P-286", docId: "GQOIS-QHPC-DOC-286", path: "Q-HPC/digital_twin/integration/mqtt_bridge.py", description: "MQTT bridge for IoT sensor integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-287", docId: "GQOIS-QHPC-DOC-287", path: "Q-HPC/digital_twin/integration/opcua_client.py", description: "OPC UA client for industrial systems integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-288", docId: "GQOIS-QHPC-DOC-288", path: "Q-HPC/digital_twin/quantum/quantum_optimizer.py", description: "Quantum optimizer for digital twin simulations.", division: "Q-HPC" },
+  { promptId: "QHPC-P-289", docId: "GQOIS-QHPC-DOC-289", path: "Q-HPC/digital_twin/quantum/quantum_predictor.py", description: "Quantum-enhanced predictive models for the twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-290", docId: "GQOIS-QHPC-DOC-290", path: "Q-HPC/digital_twin/ml/anomaly_models.py", description: "ML models specifically for anomaly detection in the twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-291", docId: "GQOIS-QHPC-DOC-291", path: "Q-HPC/digital_twin/ml/predictive_models.py", description: "Predictive ML models for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-292", docId: "GQOIS-QHPC-DOC-292", path: "Q-HPC/digital_twin/ml/optimization_models.py", description: "ML models for optimization tasks within the twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-293", docId: "GQOIS-QHPC-DOC-293", path: "Q-HPC/digital_twin/config/twin_config.yaml", description: "Configuration file for digital twin instances.", division: "Q-HPC" },
+  { promptId: "QHPC-P-294", docId: "GQOIS-QHPC-DOC-294", path: "Q-HPC/digital_twin/config/sensor_mapping.yaml", description: "Mapping file for physical sensors to digital twin inputs.", division: "Q-HPC" },
+  { promptId: "QHPC-P-295", docId: "GQOIS-QHPC-DOC-295", path: "Q-HPC/digital_twin/tests/test_twin_manager.py", description: "Unit tests for the digital twin manager.", division: "Q-HPC" },
+  { promptId: "QHPC-P-296", docId: "GQOIS-QHPC-DOC-296", path: "Q-HPC/digital_twin/tests/test_physics_engine.py", description: "Unit tests for the physics engine.", division: "Q-HPC" },
+  { promptId: "QHPC-P-297", docId: "GQOIS-QHPC-DOC-297", path: "Q-HPC/digital_twin/tests/test_integration.py", description: "Integration tests for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-298", docId: "GQOIS-QHPC-DOC-298", path: "Q-HPC/digital_twin/deployment/docker-compose.yml", description: "Docker Compose file for deploying the digital twin services.", division: "Q-HPC" },
+  { promptId: "QHPC-P-299", docId: "GQOIS-QHPC-DOC-299", path: "Q-HPC/digital_twin/deployment/kubernetes.yaml", description: "Kubernetes deployment configuration for the digital twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-300", docId: "GQOIS-QHPC-DOC-300", path: "Q-HPC/digital_twin/docs/user_guide.md", description: "User guide for the digital twin platform.", division: "Q-HPC" },
+  { promptId: "QHPC-P-301", docId: "GQOIS-QHPC-DOC-301", path: "Q-HPC/ata_integration/README.md", description: "README for the ATA system integration module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-302", docId: "GQOIS-QHPC-DOC-302", path: "Q-HPC/ata_integration/ata_22_autoflight/README.md", description: "README for ATA-22 Auto Flight integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-303", docId: "GQOIS-QHPC-DOC-303", path: "Q-HPC/ata_integration/ata_22_autoflight/flight_director.py", description: "HPC module for flight director computations.", division: "Q-HPC" },
+  { promptId: "QHPC-P-304", docId: "GQOIS-QHPC-DOC-304", path: "Q-HPC/ata_integration/ata_22_autoflight/autopilot_modes.py", description: "HPC computations for advanced autopilot modes.", division: "Q-HPC" },
+  { promptId: "QHPC-P-305", docId: "GQOIS-QHPC-DOC-305", path: "Q-HPC/ata_integration/ata_22_autoflight/quantum_trajectory_opt.py", description: "Quantum trajectory optimization for ATA-22.", division: "Q-HPC" },
+  { promptId: "QHPC-P-306", docId: "GQOIS-QHPC-DOC-306", path: "Q-HPC/ata_integration/ata_22_autoflight/ai_copilot.py", description: "AI co-pilot computational backend for ATA-22.", division: "Q-HPC" },
+  { promptId: "QHPC-P-307", docId: "GQOIS-QHPC-DOC-307", path: "Q-HPC/ata_integration/ata_31_indicating/README.md", description: "README for ATA-31 Indicating Systems integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-308", docId: "GQOIS-QHPC-DOC-308", path: "Q-HPC/ata_integration/ata_31_indicating/digital_twin_sync.py", description: "Synchronization logic between indicating systems and the twin.", division: "Q-HPC" },
+  { promptId: "QHPC-P-309", docId: "GQOIS-QHPC-DOC-309", path: "Q-HPC/ata_integration/ata_31_indicating/real_time_analytics.py", description: "Real-time analytics backend for cockpit displays.", division: "Q-HPC" },
+  { promptId: "QHPC-P-310", docId: "GQOIS-QHPC-DOC-310", path: "Q-HPC/ata_integration/ata_31_indicating/predictive_display.py", description: "Backend for predictive display information.", division: "Q-HPC" },
+  { promptId: "QHPC-P-311", docId: "GQOIS-QHPC-DOC-311", path: "Q-HPC/ata_integration/ata_34_navigation/README.md", description: "README for ATA-34 Navigation integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-312", docId: "GQOIS-QHPC-DOC-312", path: "Q-HPC/ata_integration/ata_34_navigation/quantum_ins.py", description: "Computational backend for the Quantum INS.", division: "Q-HPC" },
+  { promptId: "QHPC-P-313", docId: "GQOIS-QHPC-DOC-313", path: "Q-HPC/ata_integration/ata_34_navigation/atom_interferometry.py", description: "Computational backend for atom interferometry navigation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-314", docId: "GQOIS-QHPC-DOC-314", path: "Q-HPC/ata_integration/ata_34_navigation/quantum_clock.py", description: "Backend for quantum clock synchronization and timing.", division: "Q-HPC" },
+  { promptId: "QHPC-P-315", docId: "GQOIS-QHPC-DOC-315", path: "Q-HPC/ata_integration/ata_34_navigation/gps_denied_nav.py", description: "Computational backend for GPS-denied navigation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-316", docId: "GQOIS-QHPC-DOC-316", path: "Q-HPC/ata_integration/ata_42_ima/README.md", description: "README for ATA-42 IMA integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-317", docId: "GQOIS-QHPC-DOC-317", path: "Q-HPC/ata_integration/ata_42_ima/core_processing.py", description: "HPC backend for IMA core processing tasks.", division: "Q-HPC" },
+  { promptId: "QHPC-P-318", docId: "GQOIS-QHPC-DOC-318", path: "Q-HPC/ata_integration/ata_42_ima/qpu_integration.py", description: "Integration of QPU workloads into the IMA framework.", division: "Q-HPC" },
+  { promptId: "QHPC-P-319", docId: "GQOIS-QHPC-DOC-319", path: "Q-HPC/ata_integration/ata_42_ima/hybrid_computing.py", description: "Hybrid classical-quantum computing module for IMA.", division: "Q-HPC" },
+  { promptId: "QHPC-P-320", docId: "GQOIS-QHPC-DOC-320", path: "Q-HPC/ata_integration/ata_42_ima/neural_processing.py", description: "Neural processing workload management for IMA.", division: "Q-HPC" },
+  { promptId: "QHPC-P-321", docId: "GQOIS-QHPC-DOC-321", path: "Q-HPC/ata_integration/ata_44_cabin/README.md", description: "README for ATA-44 Cabin Systems integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-322", docId: "GQOIS-QHPC-DOC-322", path: "Q-HPC/ata_integration/ata_44_cabin/smart_cabin_ai.py", description: "AI backend for the smart cabin system.", division: "Q-HPC" },
+  { promptId: "QHPC-P-323", docId: "GQOIS-QHPC-DOC-323", path: "Q-HPC/ata_integration/ata_44_cabin/holographic_ife.py", description: "Computational backend for holographic IFE.", division: "Q-HPC" },
+  { promptId: "QHPC-P-324", docId: "GQOIS-QHPC-DOC-324", path: "Q-HPC/ata_integration/ata_44_cabin/quantum_experience.py", description: "Backend for quantum-enhanced passenger experiences.", division: "Q-HPC" },
+  { promptId: "QHPC-P-325", docId: "GQOIS-QHPC-DOC-325", path: "Q-HPC/ata_integration/ata_45_cms/README.md", description: "README for ATA-45 Central Maintenance System integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-326", docId: "GQOIS-QHPC-DOC-326", path: "Q-HPC/ata_integration/ata_45_cms/predictive_maintenance.py", description: "Predictive maintenance model backend for CMS.", division: "Q-HPC" },
+  { promptId: "QHPC-P-327", docId: "GQOIS-QHPC-DOC-327", path: "Q-HPC/ata_integration/ata_45_cms/fault_correlation.py", description: "Fault correlation engine backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-328", docId: "GQOIS-QHPC-DOC-328", path: "Q-HPC/ata_integration/ata_45_cms/ai_diagnostics.py", description: "AI diagnostics model backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-329", docId: "GQOIS-QHPC-DOC-329", path: "Q-HPC/ata_integration/ata_45_cms/pattern_recognition.py", description: "Pattern recognition model for fault detection.", division: "Q-HPC" },
+  { promptId: "QHPC-P-330", docId: "GQOIS-QHPC-DOC-330", path: "Q-HPC/ata_integration/ata_46_info/README.md", description: "README for ATA-46 Information Systems integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-331", docId: "GQOIS-QHPC-DOC-331", path: "Q-HPC/ata_integration/ata_46_info/quantum_computing_core.py", description: "Quantum computing core module for information systems.", division: "Q-HPC" },
+  { promptId: "QHPC-P-332", docId: "GQOIS-QHPC-DOC-332", path: "Q-HPC/ata_integration/ata_46_info/quantum_security.py", description: "Quantum security module backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-333", docId: "GQOIS-QHPC-DOC-333", path: "Q-HPC/ata_integration/ata_46_info/qkd_integration.py", description: "QKD integration backend for information systems.", division: "Q-HPC" },
+  { promptId: "QHPC-P-334", docId: "GQOIS-QHPC-DOC-334", path: "Q-HPC/ata_integration/ata_46_info/data_optimization.py", description: "Data optimization algorithms for on-board data.", division: "Q-HPC" },
+  { promptId: "QHPC-P-335", docId: "GQOIS-QHPC-DOC-335", path: "Q-HPC/ata_integration/ata_76_engine/README.md", description: "README for ATA-76 Engine Controls integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-336", docId: "GQOIS-QHPC-DOC-336", path: "Q-HPC/ata_integration/ata_76_engine/quantum_fadec.py", description: "Quantum FADEC computational backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-337", docId: "GQOIS-QHPC-DOC-337", path: "Q-HPC/ata_integration/ata_76_engine/performance_optimization.py", description: "Engine performance optimization model backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-338", docId: "GQOIS-QHPC-DOC-338", path: "Q-HPC/ata_integration/ata_76_engine/ai_engine_control.py", description: "AI engine control model backend.", division: "Q-HPC" },
+  { promptId: "QHPC-P-339", docId: "GQOIS-QHPC-DOC-339", path: "Q-HPC/ata_integration/ata_76_engine/adaptive_tuning.py", description: "Adaptive tuning algorithm for engine controls.", division: "Q-HPC" },
+  { promptId: "QHPC-P-340", docId: "GQOIS-QHPC-DOC-340", path: "Q-HPC/ata_integration/ata_77_engine_ind/README.md", description: "README for ATA-77 Engine Indicating integration.", division: "Q-HPC" },
+  { promptId: "QHPC-P-341", docId: "GQOIS-QHPC-DOC-341", path: "Q-HPC/ata_integration/ata_77_engine_ind/quantum_diagnostics.py", description: "Quantum diagnostics backend for engine health.", division: "Q-HPC" },
+  { promptId: "QHPC-P-342", docId: "GQOIS-QHPC-DOC-342", path: "Q-HPC/ata_integration/ata_77_engine_ind/health_monitoring.py", description: "Health monitoring model backend for engine indicating.", division: "Q-HPC" },
+  { promptId: "QHPC-P-343", docId: "GQOIS-QHPC-DOC-343", path: "Q-HPC/ata_integration/ata_77_engine_ind/predictive_analytics.py", description: "Predictive analytics backend for engine indicating.", division: "Q-HPC" },
+  { promptId: "QHPC-P-344", docId: "GQOIS-QHPC-DOC-344", path: "Q-HPC/ata_integration/config/ata_mapping.yaml", description: "Mapping file between ATA systems and HPC modules.", division: "Q-HPC" },
+  { promptId: "QHPC-P-345", docId: "GQOIS-QHPC-DOC-345", path: "Q-HPC/ata_integration/config/system_interfaces.yaml", description: "Configuration for system interfaces.", division: "Q-HPC" },
+  { promptId: "QHPC-P-346", docId: "GQOIS-QHPC-DOC-346", path: "Q-HPC/ata_integration/tests/test_ata_22.py", description: "Integration tests for ATA-22 modules.", division: "Q-HPC" },
+  { promptId: "QHPC-P-347", docId: "GQOIS-QHPC-DOC-347", path: "Q-HPC/ata_integration/tests/test_ata_34.py", description: "Integration tests for ATA-34 modules.", division: "Q-HPC" },
+  { promptId: "QHPC-P-348", docId: "GQOIS-QHPC-DOC-348", path: "Q-HPC/ata_integration/tests/test_ata_42.py", description: "Integration tests for ATA-42 modules.", division: "Q-HPC" },
+  { promptId: "QHPC-P-349", docId: "GQOIS-QHPC-DOC-349", path: "Q-HPC/ata_integration/tests/test_integration.py", description: "Overall integration tests for the ATA module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-350", docId: "GQOIS-QHPC-DOC-350", path: "Q-HPC/ata_integration/docs/integration_guide.md", description: "Guide for integrating new ATA systems with HPC.", division: "Q-HPC" },
+  { promptId: "QHPC-P-351", docId: "GQOIS-QHPC-DOC-351", path: "Q-HPC/docs/README.md", description: "Main README for the Q-HPC documentation.", division: "Q-HPC" },
+  { promptId: "QHPC-P-352", docId: "GQOIS-QHPC-DOC-352", path: "Q-HPC/docs/getting_started.md", description: "Getting Started guide for using the HPC cluster.", division: "Q-HPC" },
+  { promptId: "QHPC-P-353", docId: "GQOIS-QHPC-DOC-353", path: "Q-HPC/docs/installation_guide.md", description: "Installation guide for client tools.", division: "Q-HPC" },
+  { promptId: "QHPC-P-354", docId: "GQOIS-QHPC-DOC-354", path: "Q-HPC/docs/user_guide/README.md", description: "Main README for the user guide.", division: "Q-HPC" },
+  { promptId: "QHPC-P-355", docId: "GQOIS-QHPC-DOC-355", path: "Q-HPC/docs/user_guide/quantum_workloads.md", description: "User guide for running quantum workloads.", division: "Q-HPC" },
+  { promptId: "QHPC-P-356", docId: "GQOIS-QHPC-DOC-356", path: "Q-HPC/docs/user_guide/classical_workloads.md", description: "User guide for running classical HPC workloads.", division: "Q-HPC" },
+  { promptId: "QHPC-P-357", docId: "GQOIS-QHPC-DOC-357", path: "Q-HPC/docs/user_guide/job_submission.md", description: "User guide for submitting jobs to the scheduler.", division: "Q-HPC" },
+  { promptId: "QHPC-P-358", docId: "GQOIS-QHPC-DOC-358", path: "Q-HPC/docs/user_guide/monitoring.md", description: "User guide for monitoring jobs and resources.", division: "Q-HPC" },
+  { promptId: "QHPC-P-359", docId: "GQOIS-QHPC-DOC-359", path: "Q-HPC/docs/admin_guide/README.md", description: "Main README for the administrator guide.", division: "Q-HPC" },
+  { promptId: "QHPC-P-360", docId: "GQOIS-QHPC-DOC-360", path: "Q-HPC/docs/admin_guide/cluster_management.md", description: "Admin guide for cluster management.", division: "Q-HPC" },
+  { promptId: "QHPC-P-361", docId: "GQOIS-QHPC-DOC-361", path: "Q-HPC/docs/admin_guide/user_management.md", description: "Admin guide for user management.", division: "Q-HPC" },
+  { promptId: "QHPC-P-362", docId: "GQOIS-QHPC-DOC-362", path: "Q-HPC/docs/admin_guide/backup_restore.md", description: "Admin guide for backup and restore procedures.", division: "Q-HPC" },
+  { promptId: "QHPC-P-363", docId: "GQOIS-QHPC-DOC-363", path: "Q-HPC/docs/admin_guide/security_hardening.md", description: "Admin guide for security hardening.", division: "Q-HPC" },
+  { promptId: "QHPC-P-364", docId: "GQOIS-QHPC-DOC-364", path: "Q-HPC/docs/developer_guide/README.md", description: "Main README for the developer guide.", division: "Q-HPC" },
+  { promptId: "QHPC-P-365", docId: "GQOIS-QHPC-DOC-365", path: "Q-HPC/docs/developer_guide/api_reference.md", description: "Developer guide API reference.", division: "Q-HPC" },
+  { promptId: "QHPC-P-366", docId: "GQOIS-QHPC-DOC-366", path: "Q-HPC/docs/developer_guide/quantum_sdk.md", description: "Developer guide for the Quantum SDK.", division: "Q-HPC" },
+  { promptId: "QHPC-P-367", docId: "GQOIS-QHPC-DOC-367", path: "Q-HPC/docs/developer_guide/best_practices.md", description: "Developer best practices for HPC.", division: "Q-HPC" },
+  { promptId: "QHPC-P-368", docId: "GQOIS-QHPC-DOC-368", path: "Q-HPC/docs/developer_guide/code_examples.md", description: "Code examples for developers.", division: "Q-HPC" },
+  { promptId: "QHPC-P-369", docId: "GQOIS-QHPC-DOC-369", path: "Q-HPC/docs/tutorials/README.md", description: "Main README for tutorials.", division: "Q-HPC" },
+  { promptId: "QHPC-P-370", docId: "GQOIS-QHPC-DOC-370", path: "Q-HPC/docs/tutorials/quantum_basics.md", description: "Tutorial on quantum computing basics.", division: "Q-HPC" },
+  { promptId: "QHPC-P-371", docId: "GQOIS-QHPC-DOC-371", path: "Q-HPC/docs/tutorials/qaoa_tutorial.md", description: "Tutorial for the QAOA module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-372", docId: "GQOIS-QHPC-DOC-372", path: "Q-HPC/docs/tutorials/vqe_tutorial.md", description: "Tutorial for the VQE module.", division: "Q-HPC" },
+  { promptId: "QHPC-P-373", docId: "GQOIS-QHPC-DOC-373", path: "Q-HPC/docs/tutorials/ml_quantum_hybrid.md", description: "Tutorial for hybrid ML-quantum models.", division: "Q-HPC" },
+  { promptId: "QHPC-P-374", docId: "GQOIS-QHPC-DOC-374", path: "Q-HPC/docs/tutorials/digital_twin_tutorial.md", description: "Tutorial for using the Digital Twin platform.", division: "Q-HPC" },
+  { promptId: "QHPC-P-375", docId: "GQOIS-QHPC-DOC-375", path: "Q-HPC/docs/architecture/quantum_architecture.md", description: "Detailed documentation on the quantum architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-376", docId: "GQOIS-QHPC-DOC-376", path: "Q-HPC/docs/architecture/classical_architecture.md", description: "Detailed documentation on the classical HPC architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-377", docId: "GQOIS-QHPC-DOC-377", path: "Q-HPC/docs/architecture/hybrid_architecture.md", description: "Detailed documentation on the hybrid architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-378", docId: "GQOIS-QHPC-DOC-378", path: "Q-HPC/docs/architecture/network_architecture.md", description: "Detailed documentation on the network architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-379", docId: "GQOIS-QHPC-DOC-379", path: "Q-HPC/docs/architecture/storage_architecture.md", description: "Detailed documentation on the storage architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-380", docId: "GQOIS-QHPC-DOC-380", path: "Q-HPC/docs/architecture/security_architecture.md", description: "Detailed documentation on the security architecture.", division: "Q-HPC" },
+  { promptId: "QHPC-P-381", docId: "GQOIS-QHPC-DOC-381", path: "Q-HPC/docs/compliance/do178c_compliance.md", description: "Documentation on DO-178C compliance for HPC software.", division: "Q-HPC" },
+  { promptId: "QHPC-P-382", docId: "GQOIS-QHPC-DOC-382", path: "Q-HPC/docs/compliance/security_compliance.md", description: "Documentation on security compliance (e.g., ISO 27001).", division: "Q-HPC" },
+  { promptId: "QHPC-P-383", docId: "GQOIS-QHPC-DOC-383", path: "Q-HPC/docs/compliance/data_governance.md", description: "Documentation on data governance compliance.", division: "Q-HPC" },
+  { promptId: "QHPC-P-384", docId: "GQOIS-QHPC-DOC-384", path: "Q-HPC/docs/troubleshooting/common_issues.md", description: "Guide to troubleshooting common HPC issues.", division: "Q-HPC" },
+  { promptId: "QHPC-P-385", docId: "GQOIS-QHPC-DOC-385", path: "Q-HPC/docs/troubleshooting/performance_tuning.md", description: "Guide on performance tuning for HPC workloads.],", division: "Q-HPC" },
   "Q-MECHANICS": [Prompt ID	Doc ID	Unified Project Tree Path	Brief Description
-QMECH-P-001	GQOIS-QMECH-DOC-001	Q-MECHANICS/README.md	Main README for the Q-MECHANICS division.
-QMECH-P-002	GQOIS-QMECH-DOC-002	Q-MECHANICS/SYSTEMS_OVERVIEW.md	Overview of all mechanical systems on the aircraft.
-QMECH-P-003	GQOIS-QMECH-DOC-003	Q-MECHANICS/LICENSE	Software license for the Q-MECHANICS division.
-QMECH-P-004	GQOIS-QMECH-DOC-004	Q-MECHANICS/ARCHITECTURE.md	High-level architecture of mechanical systems.
-QMECH-P-005	GQOIS-QMECH-DOC-005	Q-MECHANICS/QUANTUM_INTEGRATION.md	Plan for integrating quantum sensing into mechanical systems.
-QMECH-P-006	GQOIS-QMECH-DOC-006	Q-MECHANICS/API_REFERENCE.md	API reference for mechanical system simulation models.
-QMECH-P-007	GQOIS-QMECH-DOC-007	Q-MECHANICS/SAFETY_PHILOSOPHY.md	Safety philosophy for the design of mechanical systems.
-QMECH-P-008	GQOIS-QMECH-DOC-008	Q-MECHANICS/REDUNDANCY_DESIGN.md	Redundancy design philosophy for critical mechanical systems.
-QMECH-P-009	GQOIS-QMECH-DOC-009	Q-MECHANICS/CERTIFICATION_STRATEGY.md	Certification strategy for mechanical systems.
-QMECH-P-010	GQOIS-QMECH-DOC-010	Q-MECHANICS/TESTING_PROCEDURES.md	Standard testing procedures for mechanical systems.
-QMECH-P-011	GQOIS-QMECH-DOC-011	Q-MECHANICS/.gitignore	Git ignore file for the Q-MECHANICS repository.
-QMECH-P-012	GQOIS-QMECH-DOC-012	Q-MECHANICS/Makefile	Makefile for managing the Q-MECHANICS codebase.
-QMECH-P-013	GQOIS-QMECH-DOC-013	Q-MECHANICS/requirements.txt	Python package requirements for mechanical analysis tools.
-QMECH-P-014	GQOIS-QMECH-DOC-014	Q-MECHANICS/environment.yml	Conda environment configuration.
-QMECH-P-015	GQOIS-QMECH-DOC-015	Q-MECHANICS/docker-compose.yml	Docker Compose file for mechanical simulation services.
-QMECH-P-016	GQOIS-QMECH-DOC-016	Q-MECHANICS/Dockerfile	Dockerfile for containerizing mechanical tools.
-QMECH-P-017	GQOIS-QMECH-DOC-017	Q-MECHANICS/setup.py	Python package setup script.
-QMECH-P-018	GQOIS-QMECH-DOC-018	Q-MECHANICS/pyproject.toml	pyproject.toml configuration file.
-QMECH-P-019	GQOIS-QMECH-DOC-019	Q-MECHANICS/CHANGELOG.md	Changelog for the Q-MECHANICS division.
-QMECH-P-020	GQOIS-QMECH-DOC-020	Q-MECHANICS/CONTRIBUTING.md	Contribution guidelines for the Q-MECHANICS division.
-QMECH-P-021	GQOIS-QMECH-DOC-021	Q-MECHANICS/CODE_OF_CONDUCT.md	Code of conduct for the Q-MECHANICS division.
-QMECH-P-022	GQOIS-QMECH-DOC-022	Q-MECHANICS/ROADMAP.md	Development roadmap for the Q-MECHANICS division.
-QMECH-P-023	GQOIS-QMECH-DOC-023	Q-MECHANICS/GLOSSARY.md	Glossary of terms for the Q-MECHANICS division.
-QMECH-P-024	GQOIS-QMECH-DOC-024	Q-MECHANICS/FAQ.md	Frequently Asked Questions for the Q-MECHANICS division.
-QMECH-P-025	GQOIS-QMECH-DOC-025	Q-MECHANICS/SYSTEMS_INTEGRATION.md	Document on the integration of various mechanical systems.
-QMECH-P-026	GQOIS-QMECH-DOC-026	Q-MECHANICS/flight_controls/README.md	README for the flight control systems sub-module.
-QMECH-P-027	GQOIS-QMECH-DOC-027	Q-MECHANICS/flight_controls/architecture/system_architecture.py	Architecture of the flight control system.
-QMECH-P-028	GQOIS-QMECH-DOC-028	Q-MECHANICS/flight_controls/architecture/redundancy_scheme.py	Redundancy scheme for flight control actuators and computers.
-QMECH-P-029	GQOIS-QMECH-DOC-029	Q-MECHANICS/flight_controls/architecture/signal_routing.py	Signal routing for the flight control system.
-QMECH-P-030	GQOIS-QMECH-DOC-030	Q-MECHANICS/flight_controls/primary/elevator_control.py	Control logic for the elevator/elevon system.
-QMECH-P-031	GQOIS-QMECH-DOC-031	Q-MECHANICS/flight_controls/primary/aileron_control.py	Control logic for the aileron system.
-QMECH-P-032	GQOIS-QMECH-DOC-032	Q-MECHANICS/flight_controls/primary/rudder_control.py	Control logic for the rudder system.
-QMECH-P-033	GQOIS-QMECH-DOC-033	Q-MECHANICS/flight_controls/primary/elevon_control.py	Control logic for elevons in a BWB configuration.
-QMECH-P-034	GQOIS-QMECH-DOC-034	Q-MECHANICS/flight_controls/secondary/flap_system.py	Control logic for the flap system.
-QMECH-P-035	GQOIS-QMECH-DOC-035	Q-MECHANICS/flight_controls/secondary/slat_system.py	Control logic for the slat system.
-QMECH-P-036	GQOIS-QMECH-DOC-036	Q-MECHANICS/flight_controls/secondary/spoiler_system.py	Control logic for the spoiler system.
-QMECH-P-037	GQOIS-QMECH-DOC-037	Q-MECHANICS/flight_controls/secondary/trim_system.py	Control logic for the trim system.
-QMECH-P-038	GQOIS-QMECH-DOC-038	Q-MECHANICS/flight_controls/actuators/eha_design.py	Design of Electro-Hydrostatic Actuators (EHAs).
-QMECH-P-039	GQOIS-QMECH-DOC-039	Q-MECHANICS/flight_controls/actuators/ema_design.py	Design of Electro-Mechanical Actuators (EMAs).
-QMECH-P-040	GQOIS-QMECH-DOC-040	Q-MECHANICS/flight_controls/actuators/backup_actuator.py	Design of backup actuation systems.
-QMECH-P-041	GQOIS-QMECH-DOC-041	Q-MECHANICS/flight_controls/actuators/servo_control.py	Servo control logic for actuators.
-QMECH-P-042	GQOIS-QMECH-DOC-042	Q-MECHANICS/flight_controls/sensors/position_sensing.py	Position sensing for control surfaces.
-QMECH-P-043	GQOIS-QMECH-DOC-043	Q-MECHANICS/flight_controls/sensors/force_feedback.py	Force feedback system for pilot controls.
-QMECH-P-044	GQOIS-QMECH-DOC-044	Q-MECHANICS/flight_controls/sensors/quantum_position.py	Quantum-based position sensing for high precision.
-QMECH-P-045	GQOIS-QMECH-DOC-045	Q-MECHANICS/flight_controls/sensors/sensor_voting.py	Sensor voting logic for redundancy management.
-QMECH-P-046	GQOIS-QMECH-DOC-046	Q-MECHANICS/flight_controls/fbw/control_laws.py	The core control laws for the Fly-By-Wire (FBW) system.
-QMECH-P-047	GQOIS-QMECH-DOC-047	Q-MECHANICS/flight_controls/fbw/envelope_protection.py	Flight envelope protection logic.
-QMECH-P-048	GQOIS-QMECH-DOC-048	Q-MECHANICS/flight_controls/fbw/mode_logic.py	Mode logic for the FBW system (e.g., normal law, direct law).
-QMECH-P-049	GQOIS-QMECH-DOC-049	Q-MECHANICS/flight_controls/fbw/quantum_optimization.py	Quantum optimization of FBW control laws.
-QMECH-P-050	GQOIS-QMECH-DOC-050	Q-MECHANICS/flight_controls/fbw/ai_augmentation.py	AI augmentation for adaptive control laws.
-QMECH-P-051	GQOIS-QMECH-DOC-051	Q-MECHANICS/flight_controls/hydraulics/system_design.py	Design of the hydraulic system for flight controls.
-QMECH-P-052	GQOIS-QMECH-DOC-052	Q-MECHANICS/flight_controls/hydraulics/pump_design.py	Design of hydraulic pumps for flight controls.
-QMECH-P-053	GQOIS-QMECH-DOC-053	Q-MECHANICS/flight_controls/hydraulics/reservoir_design.py	Design of hydraulic reservoirs.
-QMECH-P-054	GQOIS-QMECH-DOC-054	Q-MECHANICS/flight_controls/hydraulics/filtration_system.py	Design of the hydraulic filtration system.
-QMECH-P-055	GQOIS-QMECH-DOC-055	Q-MECHANICS/flight_controls/hydraulics/pressure_control.py	Hydraulic pressure control logic.
-QMECH-P-056	GQOIS-QMECH-DOC-056	Q-MECHANICS/flight_controls/testing/iron_bird_setup.py	Setup for the "iron bird" ground test rig.
-QMECH-P-057	GQOIS-QMECH-DOC-057	Q-MECHANICS/flight_controls/testing/hil_testing.py	Hardware-in-the-Loop (HIL) testing procedures.
-QMECH-P-058	GQOIS-QMECH-DOC-058	Q-MECHANICS/flight_controls/testing/failure_modes.py	Testing procedures for failure modes and effects.
-QMECH-P-059	GQOIS-QMECH-DOC-059	Q-MECHANICS/flight_controls/testing/certification_tests.py	Test plans for certification of flight controls.
-QMECH-P-060	GQOIS-QMECH-DOC-060	Q-MECHANICS/flight_controls/maintenance/inspection_schedule.py	Inspection schedule for flight control systems.
-QMECH-P-061	GQOIS-QMECH-DOC-061	Q-MECHANICS/flight_controls/maintenance/troubleshooting.py	Troubleshooting guide for flight controls.
-QMECH-P-062	GQOIS-QMECH-DOC-062	Q-MECHANICS/flight_controls/maintenance/predictive_maint.py	Predictive maintenance models for flight controls.
-QMECH-P-063	GQOIS-QMECH-DOC-063	Q-MECHANICS/flight_controls/config/system_parameters.yaml	Configuration file for flight control system parameters.
-QMECH-P-064	GQOIS-QMECH-DOC-064	Q-MECHANICS/flight_controls/config/control_gains.yaml	Configuration file for control law gains.
-QMECH-P-065	GQOIS-QMECH-DOC-065	Q-MECHANICS/flight_controls/config/safety_limits.yaml	Configuration file for safety limits.
-QMECH-P-066	GQOIS-QMECH-DOC-066	Q-MECHANICS/flight_controls/simulation/dynamics_model.py	Simulation model of flight control dynamics.
-QMECH-P-067	GQOIS-QMECH-DOC-067	Q-MECHANICS/flight_controls/simulation/actuator_model.py	Simulation model of actuators.
-QMECH-P-068	GQOIS-QMECH-DOC-068	Q-MECHANICS/flight_controls/docs/design_manual.md	Design manual for the flight control system.
-QMECH-P-069	GQOIS-QMECH-DOC-069	Q-MECHANICS/flight_controls/docs/operation_manual.md	Operation manual for the flight control system.
-QMECH-P-070	GQOIS-QMECH-DOC-070	Q-MECHANICS/flight_controls/docs/maintenance_manual.md	Maintenance manual for the flight control system.
-QMECH-P-071	GQOIS-QMECH-DOC-071	Q-MECHANICS/landing_gear/README.md	README for the landing gear systems sub-module.
-QMECH-P-072	GQOIS-QMECH-DOC-072	Q-MECHANICS/landing_gear/design/main_gear_design.py	Design of the main landing gear.
-QMECH-P-073	GQOIS-QMECH-DOC-073	Q-MECHANICS/landing_gear/design/nose_gear_design.py	Design of the nose landing gear.
-QMECH-P-074	GQOIS-QMECH-DOC-074	Q-MECHANICS/landing_gear/design/shock_absorber.py	Design of the shock absorber system.
-QMECH-P-075	GQOIS-QMECH-DOC-075	Q-MECHANICS/landing_gear/design/wheel_brake_design.py	Design of the wheel and brake assembly.
-QMECH-P-076	GQOIS-QMECH-DOC-076	Q-MECHANICS/landing_gear/retraction/kinematics.py	Kinematic analysis of the retraction mechanism.
-QMECH-P-077	GQOIS-QMECH-DOC-077	Q-MECHANICS/landing_gear/retraction/actuator_system.py	Actuator system for landing gear retraction.
-QMECH-P-078	GQOIS-QMECH-DOC-078	Q-MECHANICS/landing_gear/retraction/door_mechanism.py	Mechanism for landing gear doors.
-QMECH-P-079	GQOIS-QMECH-DOC-079	Q-MECHANICS/landing_gear/retraction/sequence_control.py	Control logic for the retraction sequence.
-QMECH-P-080	GQOIS-QMECH-DOC-080	Q-MECHANICS/landing_gear/retraction/emergency_extension.py	Emergency gear extension system.
-QMECH-P-081	GQOIS-QMECH-DOC-081	Q-MECHANICS/landing_gear/steering/nose_wheel_steering.py	Nose wheel steering system design.
-QMECH-P-082	GQOIS-QMECH-DOC-082	Q-MECHANICS/landing_gear/steering/control_system.py	Control system for nose wheel steering.
-QMECH-P-083	GQOIS-QMECH-DOC-083	Q-MECHANICS/landing_gear/steering/shimmy_damper.py	Design of the shimmy damper.
-QMECH-P-084	GQOIS-QMECH-DOC-084	Q-MECHANICS/landing_gear/brakes/brake_system_design.py	Overall brake system design.
-QMECH-P-085	GQOIS-QMECH-DOC-085	Q-MECHANICS/landing_gear/brakes/anti_skid_system.py	Anti-skid system logic.
-QMECH-P-086	GQOIS-QMECH-DOC-086	Q-MECHANICS/landing_gear/brakes/autobrake_system.py	Autobrake system logic.
-QMECH-P-087	GQOIS-QMECH-DOC-087	Q-MECHANICS/landing_gear/brakes/brake_temperature.py	Brake temperature monitoring system.
-QMECH-P-088	GQOIS-QMECH-DOC-088	Q-MECHANICS/landing_gear/brakes/quantum_optimization.py	Quantum optimization of braking performance.
-QMECH-P-089	GQOIS-QMECH-DOC-089	Q-MECHANICS/landing_gear/monitoring/load_monitoring.py	System for monitoring loads on the landing gear.
-QMECH-P-090	GQOIS-QMECH-DOC-090	Q-MECHANICS/landing_gear/monitoring/wear_detection.py	System for detecting tire and brake wear.
-QMECH-P-091	GQOIS-QMECH-DOC-091	Q-MECHANICS/landing_gear/monitoring/quantum_sensors.py	Use of quantum sensors for landing gear monitoring.
-QMECH-P-092	GQOIS-QMECH-DOC-092	Q-MECHANICS/landing_gear/monitoring/health_assessment.py	Overall health assessment algorithm for landing gear.
-QMECH-P-093	GQOIS-QMECH-DOC-093	Q-MECHANICS/landing_gear/analysis/stress_analysis.py	Stress analysis of landing gear components.
-QMECH-P-094	GQOIS-QMECH-DOC-094	Q-MECHANICS/landing_gear/analysis/fatigue_analysis.py	Fatigue analysis of landing gear components.
-QMECH-P-095	GQOIS-QMECH-DOC-095	Q-MECHANICS/landing_gear/analysis/dynamics_simulation.py	Dynamic simulation of landing and taxiing.
-QMECH-P-096	GQOIS-QMECH-DOC-096	Q-MECHANICS/landing_gear/analysis/loads_calculation.py	Calculation of landing loads.
-QMECH-P-097	GQOIS-QMECH-DOC-097	Q-MECHANICS/landing_gear/testing/drop_test_setup.py	Setup for landing gear drop tests.
-QMECH-P-098	GQOIS-QMECH-DOC-098	Q-MECHANICS/landing_gear/testing/retraction_test.py	Test procedures for the retraction system.
-QMECH-P-099	GQOIS-QMECH-DOC-099	Q-MECHANICS/landing_gear/testing/brake_performance.py	Test procedures for brake performance.
-QMECH-P-100	GQOIS-QMECH-DOC-100	Q-MECHANICS/landing_gear/testing/endurance_testing.py	Endurance testing for landing gear components.
-QMECH-P-101	GQOIS-QMECH-DOC-101	Q-MECHANICS/landing_gear/maintenance/inspection_guide.py	Inspection guide for landing gear.
-QMECH-P-102	GQOIS-QMECH-DOC-102	Q-MECHANICS/landing_gear/maintenance/component_replacement.py	Procedures for component replacement.
-QMECH-P-103	GQOIS-QMECH-DOC-103	Q-MECHANICS/landing_gear/maintenance/overhaul_procedures.py	Procedures for landing gear overhaul.
-QMECH-P-104	GQOIS-QMECH-DOC-104	Q-MECHANICS/landing_gear/config/design_parameters.yaml	Configuration file for landing gear design parameters.
-QMECH-P-105	GQOIS-QMECH-DOC-105	Q-MECHANICS/landing_gear/config/control_settings.yaml	Configuration file for landing gear control settings.
-QMECH-P-106	GQOIS-QMECH-DOC-106	Q-MECHANICS/landing_gear/config/maintenance_schedule.yaml	Configuration file for the maintenance schedule.
-QMECH-P-107	GQOIS-QMECH-DOC-107	Q-MECHANICS/landing_gear/simulation/landing_dynamics.py	Simulation of landing dynamics.
-QMECH-P-108	GQOIS-QMECH-DOC-108	Q-MECHANICS/landing_gear/simulation/taxi_simulation.py	Simulation of taxiing dynamics.
-QMECH-P-109	GQOIS-QMECH-DOC-109	Q-MECHANICS/landing_gear/docs/design_manual.md	Design manual for the landing gear system.
-QMECH-P-110	GQOIS-QMECH-DOC-110	Q-MECHANICS/landing_gear/docs/maintenance_manual.md	Maintenance manual for the landing gear system.
-QMECH-P-111	GQOIS-QMECH-DOC-111	Q-MECHANICS/ecs/README.md	README for the Environmental Control Systems (ECS) module.
-QMECH-P-112	GQOIS-QMECH-DOC-112	Q-MECHANICS/ecs/air_conditioning/pack_design.py	Design of the air conditioning packs.
-QMECH-P-113	GQOIS-QMECH-DOC-113	Q-MECHANICS/ecs/air_conditioning/heat_exchanger.py	Design of the ECS heat exchangers.
-QMECH-P-114	GQOIS-QMECH-DOC-114	Q-MECHANICS/ecs/air_conditioning/air_cycle_machine.py	Design of the Air Cycle Machine (ACM).
-QMECH-P-115	GQOIS-QMECH-DOC-115	Q-MECHANICS/ecs/air_conditioning/temperature_control.py	Temperature control logic for the ECS.
-QMECH-P-116	GQOIS-QMECH-DOC-116	Q-MECHANICS/ecs/air_conditioning/quantum_optimization.py	Quantum optimization of ECS energy consumption.
-QMECH-P-117	GQOIS-QMECH-DOC-117	Q-MECHANICS/ecs/pressurization/pressure_control.py	Cabin pressurization control system logic.
-QMECH-P-118	GQOIS-QMECH-DOC-118	Q-MECHANICS/ecs/pressurization/outflow_valve.py	Control logic for the outflow valve.
-QMECH-P-119	GQOIS-QMECH-DOC-119	Q-MECHANICS/ecs/pressurization/safety_valve.py	Design and logic for safety/pressure relief valves.
-QMECH-P-120	GQOIS-QMECH-DOC-120	Q-MECHANICS/ecs/pressurization/controller_design.py	Design of the cabin pressure controller.
-QMECH-P-121	GQOIS-QMECH-DOC-121	Q-MECHANICS/ecs/ventilation/air_distribution.py	Air distribution and ventilation system design.
-QMECH-P-122	GQOIS-QMECH-DOC-122	Q-MECHANICS/ecs/ventilation/recirculation_system.py	Cabin air recirculation system.
-QMECH-P-123	GQOIS-QMECH-DOC-123	Q-MECHANICS/ecs/ventilation/filtration_system.py	High-efficiency particulate air (HEPA) filtration system.
-QMECH-P-124	GQOIS-QMECH-DOC-124	Q-MECHANICS/ecs/ventilation/uv_sterilization.py	UV sterilization system for cabin air.
-QMECH-P-125	GQOIS-QMECH-DOC-125	Q-MECHANICS/ecs/oxygen/oxygen_generation.py	On-Board Oxygen Generation System (OBOGS).
-QMECH-P-126	GQOIS-QMECH-DOC-126	Q-MECHANICS/ecs/oxygen/emergency_oxygen.py	Emergency oxygen system for crew and passengers.
-QMECH-P-127	GQOIS-QMECH-DOC-127	Q-MECHANICS/ecs/oxygen/mask_deployment.py	Logic for automatic oxygen mask deployment.
-QMECH-P-128	GQOIS-QMECH-DOC-128	Q-MECHANICS/ecs/thermal/thermal_management.py	Overall thermal management strategy for the cabin.
-QMECH-P-129	GQOIS-QMECH-DOC-129	Q-MECHANICS/ecs/thermal/zone_control.py	Individual temperature zone control logic.
-QMECH-P-130	GQOIS-QMECH-DOC-130	Q-MECHANICS/ecs/thermal/equipment_cooling.py	Cooling systems for cabin and galley equipment.
-QMECH-P-131	GQOIS-QMECH-DOC-131	Q-MECHANICS/ecs/monitoring/air_quality.py	Air quality monitoring system (CO2, VOCs).
-QMECH-P-132	GQOIS-QMECH-DOC-132	Q-MECHANICS/ecs/monitoring/temperature_sensors.py	Placement and logic for temperature sensors.
-QMECH-P-133	GQOIS-QMECH-DOC-133	Q-MECHANICS/ecs/monitoring/pressure_sensors.py	Placement and logic for pressure sensors.
-QMECH-P-134	GQOIS-QMECH-DOC-134	Q-MECHANICS/ecs/monitoring/quantum_sensors.py	Use of quantum sensors for high-precision environmental monitoring.
-QMECH-P-135	GQOIS-QMECH-DOC-135	Q-MECHANICS/ecs/control/integrated_control.py	Integrated control logic for the entire ECS.
-QMECH-P-136	GQOIS-QMECH-DOC-136	Q-MECHANICS/ecs/control/ai_optimization.py	AI optimization for ECS efficiency and comfort.
-QMECH-P-137	GQOIS-QMECH-DOC-137	Q-MECHANICS/ecs/control/predictive_control.py	Predictive control of ECS based on flight plan and passenger load.
-QMECH-P-138	GQOIS-QMECH-DOC-138	Q-MECHANICS/ecs/testing/performance_testing.py	Performance testing procedures for the ECS.
-QMECH-P-139	GQOIS-QMECH-DOC-139	Q-MECHANICS/ecs/testing/environmental_testing.py	Environmental chamber testing for the ECS.
-QMECH-P-140	GQOIS-QMECH-DOC-140	Q-MECHANICS/ecs/maintenance/inspection_procedures.py	Inspection procedures for the ECS.
-QMECH-P-141	GQOIS-QMECH-DOC-141	Q-MECHANICS/ecs/maintenance/filter_replacement.py	Filter replacement procedures.
-QMECH-P-142	GQOIS-QMECH-DOC-142	Q-MECHANICS/ecs/config/system_parameters.yaml	Configuration file for ECS parameters.
-QMECH-P-143	GQOIS-QMECH-DOC-143	Q-MECHANICS/ecs/config/control_settings.yaml	Configuration file for ECS control settings.
-QMECH-P-144	GQOIS-QMECH-DOC-144	Q-MECHANICS/ecs/docs/design_manual.md	Design manual for the ECS.
-QMECH-P-145	GQOIS-QMECH-DOC-145	Q-MECHANICS/ecs/docs/operation_manual.md	Operation manual for the ECS.
-QMECH-P-146	GQOIS-QMECH-DOC-146	Q-MECHANICS/fuel_system/README.md	README for the fuel systems sub-module.
-QMECH-P-147	GQOIS-QMECH-DOC-147	Q-MECHANICS/fuel_system/tanks/tank_design.py	Design of the fuel tanks.
-QMECH-P-148	GQOIS-QMECH-DOC-148	Q-MECHANICS/fuel_system/tanks/baffles_design.py	Design of anti-slosh baffles in fuel tanks.
-QMECH-P-149	GQOIS-QMECH-DOC-149	Q-MECHANICS/fuel_system/tanks/surge_tank.py	Design of the fuel surge tanks.
-QMECH-P-150	GQOIS-QMECH-DOC-150	Q-MECHANICS/fuel_system/tanks/vent_system.py	Design of the fuel tank venting system.
-QMECH-P-151	GQOIS-QMECH-DOC-151	Q-MECHANICS/fuel_system/pumps/boost_pump.py	Design of fuel boost pumps.
-QMECH-P-152	GQOIS-QMECH-DOC-152	Q-MECHANICS/fuel_system/pumps/transfer_pump.py	Design of fuel transfer pumps.
-QMECH-P-153	GQOIS-QMECH-DOC-153	Q-MECHANICS/fuel_system/pumps/ejector_pump.py	Design of fuel ejector pumps.
-QMECH-P-154	GQOIS-QMECH-DOC-154	Q-MECHANICS/fuel_system/pumps/pump_control.py	Control logic for all fuel pumps.
-QMECH-P-155	GQOIS-QMECH-DOC-155	Q-MECHANICS/fuel_system/distribution/fuel_lines.py	Design and layout of fuel lines.
-QMECH-P-156	GQOIS-QMECH-DOC-156	Q-MECHANICS/fuel_system/distribution/crossfeed_system.py	Crossfeed system for balancing fuel.
-QMECH-P-157	GQOIS-QMECH-DOC-157	Q-MECHANICS/fuel_system/distribution/refuel_defuel.py	Refuel/defuel system logic and panel interface.
-QMECH-P-158	GQOIS-QMECH-DOC-158	Q-MECHANICS/fuel_system/distribution/jettison_system.py	Fuel jettison system design and logic.
-QMECH-P-159	GQOIS-QMECH-DOC-159	Q-MECHANICS/fuel_system/quantity/capacitance_gauging.py	Capacitance-based fuel quantity gauging system.
-QMECH-P-160	GQOIS-QMECH-DOC-160	Q-MECHANICS/fuel_system/quantity/ultrasonic_gauging.py	Ultrasonic fuel quantity gauging system.
-QMECH-P-161	GQOIS-QMECH-DOC-161	Q-MECHANICS/fuel_system/quantity/quantum_sensing.py	Quantum sensing for high-precision fuel gauging.
-QMECH-P-162	GQOIS-QMECH-DOC-162	Q-MECHANICS/fuel_system/quantity/mass_calculation.py	Algorithm for calculating fuel mass from volume and density.
-QMECH-P-163	GQOIS-QMECH-DOC-163	Q-MECHANICS/fuel_system/management/fuel_computer.py	Fuel management computer logic.
-QMECH-P-164	GQOIS-QMECH-DOC-164	Q-MECHANICS/fuel_system/management/cg_management.py	Center of Gravity (CG) management through fuel transfer.
-QMECH-P-165	GQOIS-QMECH-DOC-165	Q-MECHANICS/fuel_system/management/optimization_algo.py	Fuel usage optimization algorithms.
-QMECH-P-166	GQOIS-QMECH-DOC-166	Q-MECHANICS/fuel_system/management/quantum_optimization.py	Quantum optimization of fuel management.
-QMECH-P-167	GQOIS-QMECH-DOC-167	Q-MECHANICS/fuel_system/safety/fire_protection.py	Fire protection systems for fuel tanks and lines.
-QMECH-P-168	GQOIS-QMECH-DOC-168	Q-MECHANICS/fuel_system/safety/inerting_system.py	Fuel tank inerting system (OBIGGS).
-QMECH-P-169	GQOIS-QMECH-DOC-169	Q-MECHANICS/fuel_system/safety/leak_detection.py	Fuel leak detection system.
-QMECH-P-170	GQOIS-QMECH-DOC-170	Q-MECHANICS/fuel_system/testing/tank_testing.py	Test procedures for fuel tanks.
-QMECH-P-171	GQOIS-QMECH-DOC-171	Q-MECHANICS/fuel_system/testing/flow_testing.py	Test procedures for fuel flow and pumps.
-QMECH-P-172	GQOIS-QMECH-DOC-172	Q-MECHANICS/fuel_system/testing/gauging_calibration.py	Calibration procedures for the fuel gauging system.
-QMECH-P-173	GQOIS-QMECH-DOC-173	Q-MECHANICS/fuel_system/maintenance/inspection_guide.py	Inspection guide for the fuel system.
-QMECH-P-174	GQOIS-QMECH-DOC-174	Q-MECHANICS/fuel_system/maintenance/tank_entry.py	Safety procedures for fuel tank entry.
-QMECH-P-175	GQOIS-QMECH-DOC-175	Q-MECHANICS/fuel_system/config/system_layout.yaml	Configuration file for the fuel system layout.
-QMECH-P-176	GQOIS-QMECH-DOC-176	Q-MECHANICS/fuel_system/config/pump_parameters.yaml	Configuration file for fuel pump parameters.
-QMECH-P-177	GQOIS-QMECH-DOC-177	Q-MECHANICS/fuel_system/simulation/fuel_dynamics.py	Simulation model of fuel dynamics in tanks.
-QMECH-P-178	GQOIS-QMECH-DOC-178	Q-MECHANICS/fuel_system/simulation/slosh_analysis.py	Fuel slosh analysis simulation.
-QMECH-P-179	GQOIS-QMECH-DOC-179	Q-MECHANICS/fuel_system/docs/design_manual.md	Design manual for the fuel system.
-QMECH-P-180	GQOIS-QMECH-DOC-180	Q-MECHANICS/fuel_system/docs/safety_manual.md	Safety manual for the fuel system.
-QMECH-P-181	GQOIS-QMECH-DOC-181	Q-MECHANICS/hydraulics/README.md	README for the hydraulic and pneumatic systems module.
-QMECH-P-182	GQOIS-QMECH-DOC-182	Q-MECHANICS/hydraulics/architecture/system_design.py	Overall design of the hydraulic systems.
-QMECH-P-183	GQOIS-QMECH-DOC-183	Q-MECHANICS/hydraulics/architecture/redundancy_design.py	Redundancy design for hydraulic systems.
-QMECH-P-184	GQOIS-QMECH-DOC-184	Q-MECHANICS/hydraulics/pumps/engine_driven_pump.py	Design of engine-driven hydraulic pumps (EDPs).
-QMECH-P-185	GQOIS-QMECH-DOC-185	Q-MECHANICS/hydraulics/pumps/electric_pump.py	Design of electric motor-driven hydraulic pumps (EMPs).
-QMECH-P-186	GQOIS-QMECH-DOC-186	Q-MECHANICS/hydraulics/pumps/rat_pump.py	Design of the Ram Air Turbine (RAT) hydraulic pump.
-QMECH-P-187	GQOIS-QMECH-DOC-187	Q-MECHANICS/hydraulics/reservoir/design_optimization.py	Optimization of hydraulic reservoir design.
-QMECH-P-188	GQOIS-QMECH-DOC-188	Q-MECHANICS/hydraulics/reservoir/level_monitoring.py	Hydraulic fluid level monitoring system.
-QMECH-P-189	GQOIS-QMECH-DOC-189	Q-MECHANICS/hydraulics/filtration/filter_design.py	Design of hydraulic filters.
-QMECH-P-190	GQOIS-QMECH-DOC-190	Q-MECHANICS/hydraulics/filtration/contamination_monitor.py	Hydraulic fluid contamination monitoring system.
-QMECH-P-191	GQOIS-QMECH-DOC-191	Q-MECHANICS/hydraulics/distribution/priority_valve.py	Design and logic of priority valves.
-QMECH-P-192	GQOIS-QMECH-DOC-192	Q-MECHANICS/hydraulics/distribution/pressure_reducing.py	Design of pressure reducing valves.
-QMECH-P-193	GQOIS-QMECH-DOC-193	Q-MECHANICS/hydraulics/monitoring/pressure_monitoring.py	Hydraulic pressure monitoring system.
-QMECH-P-194	GQOIS-QMECH-DOC-194	Q-MECHANICS/hydraulics/monitoring/temperature_monitoring.py	Hydraulic temperature monitoring system.
-QMECH-P-195	GQOIS-QMECH-DOC-195	Q-MECHANICS/hydraulics/monitoring/quantum_diagnostics.py	Quantum diagnostics for hydraulic system health.
-QMECH-P-196	GQOIS-QMECH-DOC-196	Q-MECHANICS/pneumatics/README.md	README for the pneumatic systems sub-module.
-QMECH-P-197	GQOIS-QMECH-DOC-197	Q-MECHANICS/pneumatics/bleed_air/engine_bleed.py	Engine bleed air system logic.
-QMECH-P-198	GQOIS-QMECH-DOC-198	Q-MECHANICS/pneumatics/bleed_air/apu_bleed.py	APU bleed air system logic.
-QMECH-P-199	GQOIS-QMECH-DOC-199	Q-MECHANICS/pneumatics/bleed_air/precooler_design.py	Design of the bleed air precooler.
-QMECH-P-200	GQOIS-QMECH-DOC-200	Q-MECHANICS/pneumatics/distribution/duct_design.py	Design of pneumatic ducts.
-QMECH-P-201	GQOIS-QMECH-DOC-201	Q-MECHANICS/pneumatics/distribution/isolation_valves.py	Design and logic of pneumatic isolation valves.
-QMECH-P-202	GQOIS-QMECH-DOC-202	Q-MECHANICS/pneumatics/applications/wing_anti_ice.py	Pneumatic supply for wing anti-ice.
-QMECH-P-203	GQOIS-QMECH-DOC-203	Q-MECHANICS/pneumatics/applications/engine_start.py	Pneumatic supply for engine starting.
-QMECH-P-204	GQOIS-QMECH-DOC-204	Q-MECHANICS/pneumatics/control/bleed_management.py	Bleed air management and control system.
-QMECH-P-205	GQOIS-QMECH-DOC-205	Q-MECHANICS/pneumatics/monitoring/leak_detection.py	Pneumatic leak detection system.
-QMECH-P-206	GQOIS-QMECH-DOC-206	Q-MECHANICS/systems_integration/hydraulic_pneumatic.py	Integration between hydraulic and pneumatic systems.
-QMECH-P-207	GQOIS-QMECH-DOC-207	Q-MECHANICS/systems_integration/power_management.py	Power management for hydraulic and pneumatic pumps.
-QMECH-P-208	GQOIS-QMECH-DOC-208	Q-MECHANICS/systems_integration/config/hydraulic_params.yaml	Configuration file for hydraulic parameters.
-QMECH-P-209	GQOIS-QMECH-DOC-209	Q-MECHANICS/systems_integration/config/pneumatic_params.yaml	Configuration file for pneumatic parameters.
-QMECH-P-210	GQOIS-QMECH-DOC-210	Q-MECHANICS/systems_integration/docs/integration_manual.md	Integration manual for hydraulic and pneumatic systems.
-QMECH-P-211	GQOIS-QMECH-DOC-211	Q-MECHANICS/ice_protection/README.md	README for the ice and fire protection module.
-QMECH-P-212	GQOIS-QMECH-DOC-212	Q-MECHANICS/ice_protection/detection/ice_detector.py	Design and logic of the ice detector system.
-QMECH-P-213	GQOIS-QMECH-DOC-213	Q-MECHANICS/ice_protection/detection/quantum_ice_sensor.py	Quantum ice sensor design and integration.
-QMECH-P-214	GQOIS-QMECH-DOC-214	Q-MECHANICS/ice_protection/wing/thermal_anti_ice.py	Thermal anti-ice system for wings.
-QMECH-P-215	GQOIS-QMECH-DOC-215	Q-MECHANICS/ice_protection/wing/electro_thermal.py	Electro-thermal anti-ice system for wings.
-QMECH-P-216	GQOIS-QMECH-DOC-216	Q-MECHANICS/ice_protection/wing/hybrid_system.py	Hybrid thermal/electro-thermal anti-ice system.
-QMECH-P-217	GQOIS-QMECH-DOC-217	Q-MECHANICS/ice_protection/engine/inlet_anti_ice.py	Engine inlet anti-ice system.
-QMECH-P-218	GQOIS-QMECH-DOC-218	Q-MECHANICS/ice_protection/probes/pitot_heating.py	Pitot and static probe heating system.
-QMECH-P-219	GQOIS-QMECH-DOC-219	Q-MECHANICS/ice_protection/control/ice_protection_ctrl.py	Main controller for the ice protection system.
-QMECH-P-220	GQOIS-QMECH-DOC-220	Q-MECHANICS/ice_protection/control/ai_prediction.py	AI model for predicting icing conditions.
-QMECH-P-221	GQOIS-QMECH-DOC-221	Q-MECHANICS/fire_protection/README.md	README for the fire protection sub-module.
-QMECH-P-222	GQOIS-QMECH-DOC-222	Q-MECHANICS/fire_protection/detection/smoke_detector.py	Smoke detector system design and placement.
-QMECH-P-223	GQOIS-QMECH-DOC-223	Q-MECHANICS/fire_protection/detection/overheat_detector.py	Overheat and fire loop detector system.
-QMECH-P-224	GQOIS-QMECH-DOC-224	Q-MECHANICS/fire_protection/detection/quantum_detection.py	Quantum-enhanced fire and smoke detection.
-QMECH-P-225	GQOIS-QMECH-DOC-225	Q-MECHANICS/fire_protection/suppression/engine_fire.py	Engine fire suppression system.
-QMECH-P-226	GQOIS-QMECH-DOC-226	Q-MECHANICS/fire_protection/suppression/cargo_fire.py	Cargo compartment fire suppression system.
-QMECH-P-227	GQOIS-QMECH-DOC-227	Q-MECHANICS/fire_protection/suppression/apu_fire.py	APU fire suppression system.
-QMECH-P-228	GQOIS-QMECH-DOC-228	Q-MECHANICS/fire_protection/agents/halon_replacement.py	Research and use of Halon replacement agents.
-QMECH-P-229	GQOIS-QMECH-DOC-229	Q-MECHANICS/fire_protection/agents/water_mist.py	Water mist fire suppression system design.
-QMECH-P-230	GQOIS-QMECH-DOC-230	Q-MECHANICS/fire_protection/control/fire_control_panel.py	Fire control panel interface and logic.
-QMECH-P-231	GQOIS-QMECH-DOC-231	Q-MECHANICS/fire_protection/testing/fire_test_setup.py	Setup for fire detection and suppression testing.
-QMECH-P-232	GQOIS-QMECH-DOC-232	Q-MECHANICS/fire_protection/testing/suppression_test.py	Test procedures for fire suppression systems.
-QMECH-P-233	GQOIS-QMECH-DOC-233	Q-MECHANICS/protection_systems/integration/system_integration.py	Integration of ice and fire protection systems.
-QMECH-P-234	GQOIS-QMECH-DOC-234	Q-MECHANICS/protection_systems/maintenance/inspection_guide.py	Inspection guide for protection systems.
-QMECH-P-235	GQOIS-QMECH-DOC-235	Q-MECHANICS/protection_systems/config/ice_parameters.yaml	Configuration file for ice protection parameters.
-QMECH-P-236	GQOIS-QMECH-DOC-236	Q-MECHANICS/protection_systems/config/fire_parameters.yaml	Configuration file for fire protection parameters.
-QMECH-P-237	GQOIS-QMECH-DOC-237	Q-MECHANICS/protection_systems/simulation/ice_accretion.py	Simulation of ice accretion.
-QMECH-P-238	GQOIS-QMECH-DOC-238	Q-MECHANICS/protection_systems/simulation/fire_dynamics.py	Simulation of fire dynamics and suppression.
-QMECH-P-239	GQOIS-QMECH-DOC-239	Q-MECHANICS/protection_systems/docs/safety_manual.md	Safety manual for protection systems.
-QMECH-P-240	GQOIS-QMECH-DOC-240	Q-MECHANICS/protection_systems/docs/operation_manual.md	Operation manual for protection systems.
-QMECH-P-241	GQOIS-QMECH-DOC-241	Q-MECHANICS/apu/README.md	README for the APU and power systems module.
-QMECH-P-242	GQOIS-QMECH-DOC-242	Q-MECHANICS/apu/design/turbine_design.py	Design of the APU gas turbine.
-QMECH-P-243	GQOIS-QMECH-DOC-243	Q-MECHANICS/apu/design/generator_design.py	Design of the APU electrical generator.
-QMECH-P-244	GQOIS-QMECH-DOC-244	Q-MECHANICS/apu/design/inlet_exhaust.py	Design of the APU inlet and exhaust.
-QMECH-P-245	GQOIS-QMECH-DOC-245	Q-MECHANICS/apu/control/startup_sequence.py	APU startup sequence logic.
-QMECH-P-246	GQOIS-QMECH-DOC-246	Q-MECHANICS/apu/control/governor_control.py	APU governor and speed control logic.
-QMECH-P-247	GQOIS-QMECH-DOC-247	Q-MECHANICS/apu/control/load_management.py	APU electrical and pneumatic load management.
-QMECH-P-248	GQOIS-QMECH-DOC-248	Q-MECHANICS/apu/monitoring/performance_monitor.py	APU performance monitoring system.
-QMECH-P-249	GQOIS-QMECH-DOC-249	Q-MECHANICS/apu/monitoring/health_diagnostics.py	Health diagnostics and prognostics for the APU.
-QMECH-P-250	GQOIS-QMECH-DOC-250	Q-MECHANICS/apu/integration/electrical_integration.py	Integration of the APU with the electrical system.
-QMECH-P-251	GQOIS-QMECH-DOC-251	Q-MECHANICS/apu/integration/pneumatic_integration.py	Integration of the APU with the pneumatic system.
-QMECH-P-252	GQOIS-QMECH-DOC-252	Q-MECHANICS/apu/maintenance/scheduled_maintenance.py	Scheduled maintenance tasks for the APU.
-QMECH-P-253	GQOIS-QMECH-DOC-253	Q-MECHANICS/apu/maintenance/condition_based.py	Condition-based maintenance for the APU.
-QMECH-P-254	GQOIS-QMECH-DOC-254	Q-MECHANICS/power_systems/electrical/ac_generation.py	Main AC electrical generation system.
-QMECH-P-255	GQOIS-QMECH-DOC-255	Q-MECHANICS/power_systems/electrical/dc_system.py	Main DC electrical system and TRUs.
-QMECH-P-256	GQOIS-QMECH-DOC-256	Q-MECHANICS/power_systems/electrical/battery_system.py	Main aircraft battery and charging system.
-QMECH-P-257	GQOIS-QMECH-DOC-257	Q-MECHANICS/power_systems/electrical/emergency_power.py	Emergency power generation (e.g., RAT).
-QMECH-P-258	GQOIS-QMECH-DOC-258	Q-MECHANICS/power_systems/distribution/bus_system.py	Electrical bus distribution system.
-QMECH-P-259	GQOIS-QMECH-DOC-259	Q-MECHANICS/power_systems/distribution/load_shedding.py	Electrical load shedding logic.
-QMECH-P-260	GQOIS-QMECH-DOC-260	Q-MECHANICS/power_systems/config/apu_parameters.yaml	Configuration file for APU parameters.
-QMECH-P-261	GQOIS-QMECH-DOC-261	Q-MECHANICS/power_systems/config/electrical_params.yaml	Configuration file for electrical system parameters.
-QMECH-P-262	GQOIS-QMECH-DOC-262	Q-MECHANICS/power_systems/testing/apu_testing.py	Test procedures for the APU.
-QMECH-P-263	GQOIS-QMECH-DOC-263	Q-MECHANICS/power_systems/testing/electrical_testing.py	Test procedures for the electrical system.
-QMECH-P-264	GQOIS-QMECH-DOC-264	Q-MECHANICS/power_systems/docs/apu_manual.md	Operation and maintenance manual for the APU.
-QMECH-P-265	GQOIS-QMECH-DOC-265	Q-MECHANICS/power_systems/docs/electrical_manual.md	Manual for the aircraft electrical system.
-QMECH-P-266	GQOIS-QMECH-DOC-266	Q-MECHANICS/digital_twin_mech/README.md	README for the mechanics Digital Twin module.
-QMECH-P-267	GQOIS-QMECH-DOC-267	Q-MECHANICS/digital_twin_mech/models/hydraulic_model.py	Digital twin model for the hydraulic system.
-QMECH-P-268	GQOIS-QMECH-DOC-268	Q-MECHANICS/digital_twin_mech/models/pneumatic_model.py	Digital twin model for the pneumatic system.
-QMECH-P-269	GQOIS-QMECH-DOC-269	Q-MECHANICS/digital_twin_mech/models/flight_control_model.py	Digital twin model for the flight control system.
-QMECH-P-270	GQOIS-QMECH-DOC-270	Q-MECHANICS/digital_twin_mech/models/fuel_system_model.py	Digital twin model for the fuel system.
-QMECH-P-271	GQOIS-QMECH-DOC-271	Q-MECHANICS/digital_twin_mech/sync/sensor_integration.py	Sensor integration for the mechanics digital twin.
-QMECH-P-272	GQOIS-QMECH-DOC-272	Q-MECHANICS/digital_twin_mech/sync/state_estimation.py	State estimation for the mechanics digital twin.
-QMECH-P-273	GQOIS-QMECH-DOC-273	Q-MECHANICS/digital_twin_mech/analytics/fault_detection.py	Fault detection analytics for the mechanics digital twin.
-QMECH-P-274	GQOIS-QMECH-DOC-274	Q-MECHANICS/digital_twin_mech/analytics/performance_prediction.py	Performance prediction for mechanical systems.
-QMECH-P-275	GQOIS-QMECH-DOC-275	Q-MECHANICS/digital_twin_mech/visualization/system_status.py	Visualization of system status for the mechanics twin.
-QMECH-P-276	GQOIS-QMECH-DOC-276	Q-MECHANICS/digital_twin_mech/api/mechanical_api.py	API for the mechanics digital twin.
-QMECH-P-277	GQOIS-QMECH-DOC-277	Q-MECHANICS/digital_twin_mech/config/model_params.yaml	Parameters for the mechanics digital twin models.
-QMECH-P-278	GQOIS-QMECH-DOC-278	Q-MECHANICS/digital_twin_mech/tests/test_models.py	Unit tests for the mechanics digital twin models.
-QMECH-P-279	GQOIS-QMECH-DOC-279	Q-MECHANICS/digital_twin_mech/docs/architecture.md	Architecture document for the mechanics digital twin.
-QMECH-P-280	GQOIS-QMECH-DOC-280	Q-MECHANICS/digital_twin_mech/docs/integration_guide.md	Integration guide for the mechanics digital twin.
-QMECH-P-281	GQOIS-QMECH-DOC-281	Q-MECHANICS/docs/README.md	Main README for the Q-MECHANICS documentation.
-QMECH-P-282	GQOIS-QMECH-DOC-282	Q-MECHANICS/docs/design_philosophy.md	Document on the overall mechanical design philosophy.
-QMECH-P-283	GQOIS-QMECH-DOC-283	Q-MECHANICS/docs/systems_integration.md	Master document on mechanical systems integration.
-QMECH-P-284	GQOIS-QMECH-DOC-284	Q-MECHANICS/docs/flight_controls_guide.md	Compiled guide to the flight control systems.
-QMECH-P-285	GQOIS-QMECH-DOC-285	Q-MECHANICS/docs/landing_gear_guide.md	Compiled guide to the landing gear system.
-QMECH-P-286	GQOIS-QMECH-DOC-286	Q-MECHANICS/docs/ecs_guide.md	Compiled guide to the Environmental Control System.
-QMECH-P-287	GQOIS-QMECH-DOC-287	Q-MECHANICS/docs/fuel_system_guide.md	Compiled guide to the fuel system.
-QMECH-P-288	GQOIS-QMECH-DOC-288	Q-MECHANICS/docs/certification/compliance_matrix.md	Compliance matrix for mechanical systems certification.
-QMECH-P-289	GQOIS-QMECH-DOC-289	Q-MECHANICS/docs/certification/test_reports.md	Compilation of test reports for certification.
-QMECH-P-290	GQOIS-QMECH-DOC-290	Q-MECHANICS/docs/training/mechanics_course.md	Training course materials for mechanics.
-QMECH-P-291	GQOIS-QMECH-DOC-291	Q-MECHANICS/docs/training/systems_course.md	Advanced systems course for mechanics.
-QMECH-P-292	GQOIS-QMECH-DOC-292	Q-MECHANICS/docs/api_reference/mechanics_api.md	API reference for all mechanical system modules.
-QMECH-P-293	GQOIS-QMECH-DOC-293	Q-MECHANICS/docs/troubleshooting/common_issues.md	Guide to troubleshooting common mechanical issues.
-QMECH-P-294	GQOIS-QMECH-DOC-294	Q-MECHANICS/docs/maintenance/best_practices.md	Best practices for mechanical systems maintenance.
-QMECH-P-295	GQOIS-QMECH-DOC-295	Q-MECHANICS/docs/release_notes/v1.0.0.md	Release notes for version 1.0.0 of the mechanical systems module.],
+  { promptId: "QMECH-P-001", docId: "GQOIS-QMECH-DOC-001", path: "Q-MECHANICS/README.md", description: "Main README for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-002", docId: "GQOIS-QMECH-DOC-002", path: "Q-MECHANICS/SYSTEMS_OVERVIEW.md", description: "Overview of all mechanical systems on the aircraft.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-003", docId: "GQOIS-QMECH-DOC-003", path: "Q-MECHANICS/LICENSE", description: "Software license for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-004", docId: "GQOIS-QMECH-DOC-004", path: "Q-MECHANICS/ARCHITECTURE.md", description: "High-level architecture of mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-005", docId: "GQOIS-QMECH-DOC-005", path: "Q-MECHANICS/QUANTUM_INTEGRATION.md", description: "Plan for integrating quantum sensing into mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-006", docId: "GQOIS-QMECH-DOC-006", path: "Q-MECHANICS/API_REFERENCE.md", description: "API reference for mechanical system simulation models.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-007", docId: "GQOIS-QMECH-DOC-007", path: "Q-MECHANICS/SAFETY_PHILOSOPHY.md", description: "Safety philosophy for the design of mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-008", docId: "GQOIS-QMECH-DOC-008", path: "Q-MECHANICS/REDUNDANCY_DESIGN.md", description: "Redundancy design philosophy for critical mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-009", docId: "GQOIS-QMECH-DOC-009", path: "Q-MECHANICS/CERTIFICATION_STRATEGY.md", description: "Certification strategy for mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-010", docId: "GQOIS-QMECH-DOC-010", path: "Q-MECHANICS/TESTING_PROCEDURES.md", description: "Standard testing procedures for mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-011", docId: "GQOIS-QMECH-DOC-011", path: "Q-MECHANICS/.gitignore", description: "Git ignore file for the Q-MECHANICS repository.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-012", docId: "GQOIS-QMECH-DOC-012", path: "Q-MECHANICS/Makefile", description: "Makefile for managing the Q-MECHANICS codebase.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-013", docId: "GQOIS-QMECH-DOC-013", path: "Q-MECHANICS/requirements.txt", description: "Python package requirements for mechanical analysis tools.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-014", docId: "GQOIS-QMECH-DOC-014", path: "Q-MECHANICS/environment.yml", description: "Conda environment configuration.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-015", docId: "GQOIS-QMECH-DOC-015", path: "Q-MECHANICS/docker-compose.yml", description: "Docker Compose file for mechanical simulation services.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-016", docId: "GQOIS-QMECH-DOC-016", path: "Q-MECHANICS/Dockerfile", description: "Dockerfile for containerizing mechanical tools.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-017", docId: "GQOIS-QMECH-DOC-017", path: "Q-MECHANICS/setup.py", description: "Python package setup script.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-018", docId: "GQOIS-QMECH-DOC-018", path: "Q-MECHANICS/pyproject.toml", description: "pyproject.toml configuration file.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-019", docId: "GQOIS-QMECH-DOC-019", path: "Q-MECHANICS/CHANGELOG.md", description: "Changelog for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-020", docId: "GQOIS-QMECH-DOC-020", path: "Q-MECHANICS/CONTRIBUTING.md", description: "Contribution guidelines for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-021", docId: "GQOIS-QMECH-DOC-021", path: "Q-MECHANICS/CODE_OF_CONDUCT.md", description: "Code of conduct for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-022", docId: "GQOIS-QMECH-DOC-022", path: "Q-MECHANICS/ROADMAP.md", description: "Development roadmap for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-023", docId: "GQOIS-QMECH-DOC-023", path: "Q-MECHANICS/GLOSSARY.md", description: "Glossary of terms for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-024", docId: "GQOIS-QMECH-DOC-024", path: "Q-MECHANICS/FAQ.md", description: "Frequently Asked Questions for the Q-MECHANICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-025", docId: "GQOIS-QMECH-DOC-025", path: "Q-MECHANICS/SYSTEMS_INTEGRATION.md", description: "Document on the integration of various mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-026", docId: "GQOIS-QMECH-DOC-026", path: "Q-MECHANICS/flight_controls/README.md", description: "README for the flight control systems sub-module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-027", docId: "GQOIS-QMECH-DOC-027", path: "Q-MECHANICS/flight_controls/architecture/system_architecture.py", description: "Architecture of the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-028", docId: "GQOIS-QMECH-DOC-028", path: "Q-MECHANICS/flight_controls/architecture/redundancy_scheme.py", description: "Redundancy scheme for flight control actuators and computers.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-029", docId: "GQOIS-QMECH-DOC-029", path: "Q-MECHANICS/flight_controls/architecture/signal_routing.py", description: "Signal routing for the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-030", docId: "GQOIS-QMECH-DOC-030", path: "Q-MECHANICS/flight_controls/primary/elevator_control.py", description: "Control logic for the elevator/elevon system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-031", docId: "GQOIS-QMECH-DOC-031", path: "Q-MECHANICS/flight_controls/primary/aileron_control.py", description: "Control logic for the aileron system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-032", docId: "GQOIS-QMECH-DOC-032", path: "Q-MECHANICS/flight_controls/primary/rudder_control.py", description: "Control logic for the rudder system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-033", docId: "GQOIS-QMECH-DOC-033", path: "Q-MECHANICS/flight_controls/primary/elevon_control.py", description: "Control logic for elevons in a BWB configuration.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-034", docId: "GQOIS-QMECH-DOC-034", path: "Q-MECHANICS/flight_controls/secondary/flap_system.py", description: "Control logic for the flap system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-035", docId: "GQOIS-QMECH-DOC-035", path: "Q-MECHANICS/flight_controls/secondary/slat_system.py", description: "Control logic for the slat system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-036", docId: "GQOIS-QMECH-DOC-036", path: "Q-MECHANICS/flight_controls/secondary/spoiler_system.py", description: "Control logic for the spoiler system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-037", docId: "GQOIS-QMECH-DOC-037", path: "Q-MECHANICS/flight_controls/secondary/trim_system.py", description: "Control logic for the trim system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-038", docId: "GQOIS-QMECH-DOC-038", path: "Q-MECHANICS/flight_controls/actuators/eha_design.py", description: "Design of Electro-Hydrostatic Actuators (EHAs).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-039", docId: "GQOIS-QMECH-DOC-039", path: "Q-MECHANICS/flight_controls/actuators/ema_design.py", description: "Design of Electro-Mechanical Actuators (EMAs).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-040", docId: "GQOIS-QMECH-DOC-040", path: "Q-MECHANICS/flight_controls/actuators/backup_actuator.py", description: "Design of backup actuation systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-041", docId: "GQOIS-QMECH-DOC-041", path: "Q-MECHANICS/flight_controls/actuators/servo_control.py", description: "Servo control logic for actuators.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-042", docId: "GQOIS-QMECH-DOC-042", path: "Q-MECHANICS/flight_controls/sensors/position_sensing.py", description: "Position sensing for control surfaces.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-043", docId: "GQOIS-QMECH-DOC-043", path: "Q-MECHANICS/flight_controls/sensors/force_feedback.py", description: "Force feedback system for pilot controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-044", docId: "GQOIS-QMECH-DOC-044", path: "Q-MECHANICS/flight_controls/sensors/quantum_position.py", description: "Quantum-based position sensing for high precision.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-045", docId: "GQOIS-QMECH-DOC-045", path: "Q-MECHANICS/flight_controls/sensors/sensor_voting.py", description: "Sensor voting logic for redundancy management.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-046", docId: "GQOIS-QMECH-DOC-046", path: "Q-MECHANICS/flight_controls/fbw/control_laws.py", description: "The core control laws for the Fly-By-Wire (FBW) system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-047", docId: "GQOIS-QMECH-DOC-047", path: "Q-MECHANICS/flight_controls/fbw/envelope_protection.py", description: "Flight envelope protection logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-048", docId: "GQOIS-QMECH-DOC-048", path: "Q-MECHANICS/flight_controls/fbw/mode_logic.py", description: "Mode logic for the FBW system (e.g., normal law, direct law).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-049", docId: "GQOIS-QMECH-DOC-049", path: "Q-MECHANICS/flight_controls/fbw/quantum_optimization.py", description: "Quantum optimization of FBW control laws.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-050", docId: "GQOIS-QMECH-DOC-050", path: "Q-MECHANICS/flight_controls/fbw/ai_augmentation.py", description: "AI augmentation for adaptive control laws.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-051", docId: "GQOIS-QMECH-DOC-051", path: "Q-MECHANICS/flight_controls/hydraulics/system_design.py", description: "Design of the hydraulic system for flight controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-052", docId: "GQOIS-QMECH-DOC-052", path: "Q-MECHANICS/flight_controls/hydraulics/pump_design.py", description: "Design of hydraulic pumps for flight controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-053", docId: "GQOIS-QMECH-DOC-053", path: "Q-MECHANICS/flight_controls/hydraulics/reservoir_design.py", description: "Design of hydraulic reservoirs.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-054", docId: "GQOIS-QMECH-DOC-054", path: "Q-MECHANICS/flight_controls/hydraulics/filtration_system.py", description: "Design of the hydraulic filtration system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-055", docId: "GQOIS-QMECH-DOC-055", path: "Q-MECHANICS/flight_controls/hydraulics/pressure_control.py", description: "Hydraulic pressure control logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-056", docId: "GQOIS-QMECH-DOC-056", path: "Q-MECHANICS/flight_controls/testing/iron_bird_setup.py", description: "Setup for the "iron bird" ground test rig.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-057", docId: "GQOIS-QMECH-DOC-057", path: "Q-MECHANICS/flight_controls/testing/hil_testing.py", description: "Hardware-in-the-Loop (HIL) testing procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-058", docId: "GQOIS-QMECH-DOC-058", path: "Q-MECHANICS/flight_controls/testing/failure_modes.py", description: "Testing procedures for failure modes and effects.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-059", docId: "GQOIS-QMECH-DOC-059", path: "Q-MECHANICS/flight_controls/testing/certification_tests.py", description: "Test plans for certification of flight controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-060", docId: "GQOIS-QMECH-DOC-060", path: "Q-MECHANICS/flight_controls/maintenance/inspection_schedule.py", description: "Inspection schedule for flight control systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-061", docId: "GQOIS-QMECH-DOC-061", path: "Q-MECHANICS/flight_controls/maintenance/troubleshooting.py", description: "Troubleshooting guide for flight controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-062", docId: "GQOIS-QMECH-DOC-062", path: "Q-MECHANICS/flight_controls/maintenance/predictive_maint.py", description: "Predictive maintenance models for flight controls.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-063", docId: "GQOIS-QMECH-DOC-063", path: "Q-MECHANICS/flight_controls/config/system_parameters.yaml", description: "Configuration file for flight control system parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-064", docId: "GQOIS-QMECH-DOC-064", path: "Q-MECHANICS/flight_controls/config/control_gains.yaml", description: "Configuration file for control law gains.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-065", docId: "GQOIS-QMECH-DOC-065", path: "Q-MECHANICS/flight_controls/config/safety_limits.yaml", description: "Configuration file for safety limits.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-066", docId: "GQOIS-QMECH-DOC-066", path: "Q-MECHANICS/flight_controls/simulation/dynamics_model.py", description: "Simulation model of flight control dynamics.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-067", docId: "GQOIS-QMECH-DOC-067", path: "Q-MECHANICS/flight_controls/simulation/actuator_model.py", description: "Simulation model of actuators.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-068", docId: "GQOIS-QMECH-DOC-068", path: "Q-MECHANICS/flight_controls/docs/design_manual.md", description: "Design manual for the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-069", docId: "GQOIS-QMECH-DOC-069", path: "Q-MECHANICS/flight_controls/docs/operation_manual.md", description: "Operation manual for the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-070", docId: "GQOIS-QMECH-DOC-070", path: "Q-MECHANICS/flight_controls/docs/maintenance_manual.md", description: "Maintenance manual for the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-071", docId: "GQOIS-QMECH-DOC-071", path: "Q-MECHANICS/landing_gear/README.md", description: "README for the landing gear systems sub-module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-072", docId: "GQOIS-QMECH-DOC-072", path: "Q-MECHANICS/landing_gear/design/main_gear_design.py", description: "Design of the main landing gear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-073", docId: "GQOIS-QMECH-DOC-073", path: "Q-MECHANICS/landing_gear/design/nose_gear_design.py", description: "Design of the nose landing gear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-074", docId: "GQOIS-QMECH-DOC-074", path: "Q-MECHANICS/landing_gear/design/shock_absorber.py", description: "Design of the shock absorber system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-075", docId: "GQOIS-QMECH-DOC-075", path: "Q-MECHANICS/landing_gear/design/wheel_brake_design.py", description: "Design of the wheel and brake assembly.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-076", docId: "GQOIS-QMECH-DOC-076", path: "Q-MECHANICS/landing_gear/retraction/kinematics.py", description: "Kinematic analysis of the retraction mechanism.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-077", docId: "GQOIS-QMECH-DOC-077", path: "Q-MECHANICS/landing_gear/retraction/actuator_system.py", description: "Actuator system for landing gear retraction.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-078", docId: "GQOIS-QMECH-DOC-078", path: "Q-MECHANICS/landing_gear/retraction/door_mechanism.py", description: "Mechanism for landing gear doors.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-079", docId: "GQOIS-QMECH-DOC-079", path: "Q-MECHANICS/landing_gear/retraction/sequence_control.py", description: "Control logic for the retraction sequence.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-080", docId: "GQOIS-QMECH-DOC-080", path: "Q-MECHANICS/landing_gear/retraction/emergency_extension.py", description: "Emergency gear extension system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-081", docId: "GQOIS-QMECH-DOC-081", path: "Q-MECHANICS/landing_gear/steering/nose_wheel_steering.py", description: "Nose wheel steering system design.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-082", docId: "GQOIS-QMECH-DOC-082", path: "Q-MECHANICS/landing_gear/steering/control_system.py", description: "Control system for nose wheel steering.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-083", docId: "GQOIS-QMECH-DOC-083", path: "Q-MECHANICS/landing_gear/steering/shimmy_damper.py", description: "Design of the shimmy damper.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-084", docId: "GQOIS-QMECH-DOC-084", path: "Q-MECHANICS/landing_gear/brakes/brake_system_design.py", description: "Overall brake system design.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-085", docId: "GQOIS-QMECH-DOC-085", path: "Q-MECHANICS/landing_gear/brakes/anti_skid_system.py", description: "Anti-skid system logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-086", docId: "GQOIS-QMECH-DOC-086", path: "Q-MECHANICS/landing_gear/brakes/autobrake_system.py", description: "Autobrake system logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-087", docId: "GQOIS-QMECH-DOC-087", path: "Q-MECHANICS/landing_gear/brakes/brake_temperature.py", description: "Brake temperature monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-088", docId: "GQOIS-QMECH-DOC-088", path: "Q-MECHANICS/landing_gear/brakes/quantum_optimization.py", description: "Quantum optimization of braking performance.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-089", docId: "GQOIS-QMECH-DOC-089", path: "Q-MECHANICS/landing_gear/monitoring/load_monitoring.py", description: "System for monitoring loads on the landing gear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-090", docId: "GQOIS-QMECH-DOC-090", path: "Q-MECHANICS/landing_gear/monitoring/wear_detection.py", description: "System for detecting tire and brake wear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-091", docId: "GQOIS-QMECH-DOC-091", path: "Q-MECHANICS/landing_gear/monitoring/quantum_sensors.py", description: "Use of quantum sensors for landing gear monitoring.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-092", docId: "GQOIS-QMECH-DOC-092", path: "Q-MECHANICS/landing_gear/monitoring/health_assessment.py", description: "Overall health assessment algorithm for landing gear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-093", docId: "GQOIS-QMECH-DOC-093", path: "Q-MECHANICS/landing_gear/analysis/stress_analysis.py", description: "Stress analysis of landing gear components.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-094", docId: "GQOIS-QMECH-DOC-094", path: "Q-MECHANICS/landing_gear/analysis/fatigue_analysis.py", description: "Fatigue analysis of landing gear components.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-095", docId: "GQOIS-QMECH-DOC-095", path: "Q-MECHANICS/landing_gear/analysis/dynamics_simulation.py", description: "Dynamic simulation of landing and taxiing.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-096", docId: "GQOIS-QMECH-DOC-096", path: "Q-MECHANICS/landing_gear/analysis/loads_calculation.py", description: "Calculation of landing loads.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-097", docId: "GQOIS-QMECH-DOC-097", path: "Q-MECHANICS/landing_gear/testing/drop_test_setup.py", description: "Setup for landing gear drop tests.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-098", docId: "GQOIS-QMECH-DOC-098", path: "Q-MECHANICS/landing_gear/testing/retraction_test.py", description: "Test procedures for the retraction system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-099", docId: "GQOIS-QMECH-DOC-099", path: "Q-MECHANICS/landing_gear/testing/brake_performance.py", description: "Test procedures for brake performance.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-100", docId: "GQOIS-QMECH-DOC-100", path: "Q-MECHANICS/landing_gear/testing/endurance_testing.py", description: "Endurance testing for landing gear components.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-101", docId: "GQOIS-QMECH-DOC-101", path: "Q-MECHANICS/landing_gear/maintenance/inspection_guide.py", description: "Inspection guide for landing gear.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-102", docId: "GQOIS-QMECH-DOC-102", path: "Q-MECHANICS/landing_gear/maintenance/component_replacement.py", description: "Procedures for component replacement.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-103", docId: "GQOIS-QMECH-DOC-103", path: "Q-MECHANICS/landing_gear/maintenance/overhaul_procedures.py", description: "Procedures for landing gear overhaul.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-104", docId: "GQOIS-QMECH-DOC-104", path: "Q-MECHANICS/landing_gear/config/design_parameters.yaml", description: "Configuration file for landing gear design parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-105", docId: "GQOIS-QMECH-DOC-105", path: "Q-MECHANICS/landing_gear/config/control_settings.yaml", description: "Configuration file for landing gear control settings.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-106", docId: "GQOIS-QMECH-DOC-106", path: "Q-MECHANICS/landing_gear/config/maintenance_schedule.yaml", description: "Configuration file for the maintenance schedule.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-107", docId: "GQOIS-QMECH-DOC-107", path: "Q-MECHANICS/landing_gear/simulation/landing_dynamics.py", description: "Simulation of landing dynamics.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-108", docId: "GQOIS-QMECH-DOC-108", path: "Q-MECHANICS/landing_gear/simulation/taxi_simulation.py", description: "Simulation of taxiing dynamics.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-109", docId: "GQOIS-QMECH-DOC-109", path: "Q-MECHANICS/landing_gear/docs/design_manual.md", description: "Design manual for the landing gear system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-110", docId: "GQOIS-QMECH-DOC-110", path: "Q-MECHANICS/landing_gear/docs/maintenance_manual.md", description: "Maintenance manual for the landing gear system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-111", docId: "GQOIS-QMECH-DOC-111", path: "Q-MECHANICS/ecs/README.md", description: "README for the Environmental Control Systems (ECS) module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-112", docId: "GQOIS-QMECH-DOC-112", path: "Q-MECHANICS/ecs/air_conditioning/pack_design.py", description: "Design of the air conditioning packs.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-113", docId: "GQOIS-QMECH-DOC-113", path: "Q-MECHANICS/ecs/air_conditioning/heat_exchanger.py", description: "Design of the ECS heat exchangers.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-114", docId: "GQOIS-QMECH-DOC-114", path: "Q-MECHANICS/ecs/air_conditioning/air_cycle_machine.py", description: "Design of the Air Cycle Machine (ACM).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-115", docId: "GQOIS-QMECH-DOC-115", path: "Q-MECHANICS/ecs/air_conditioning/temperature_control.py", description: "Temperature control logic for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-116", docId: "GQOIS-QMECH-DOC-116", path: "Q-MECHANICS/ecs/air_conditioning/quantum_optimization.py", description: "Quantum optimization of ECS energy consumption.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-117", docId: "GQOIS-QMECH-DOC-117", path: "Q-MECHANICS/ecs/pressurization/pressure_control.py", description: "Cabin pressurization control system logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-118", docId: "GQOIS-QMECH-DOC-118", path: "Q-MECHANICS/ecs/pressurization/outflow_valve.py", description: "Control logic for the outflow valve.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-119", docId: "GQOIS-QMECH-DOC-119", path: "Q-MECHANICS/ecs/pressurization/safety_valve.py", description: "Design and logic for safety/pressure relief valves.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-120", docId: "GQOIS-QMECH-DOC-120", path: "Q-MECHANICS/ecs/pressurization/controller_design.py", description: "Design of the cabin pressure controller.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-121", docId: "GQOIS-QMECH-DOC-121", path: "Q-MECHANICS/ecs/ventilation/air_distribution.py", description: "Air distribution and ventilation system design.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-122", docId: "GQOIS-QMECH-DOC-122", path: "Q-MECHANICS/ecs/ventilation/recirculation_system.py", description: "Cabin air recirculation system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-123", docId: "GQOIS-QMECH-DOC-123", path: "Q-MECHANICS/ecs/ventilation/filtration_system.py", description: "High-efficiency particulate air (HEPA) filtration system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-124", docId: "GQOIS-QMECH-DOC-124", path: "Q-MECHANICS/ecs/ventilation/uv_sterilization.py", description: "UV sterilization system for cabin air.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-125", docId: "GQOIS-QMECH-DOC-125", path: "Q-MECHANICS/ecs/oxygen/oxygen_generation.py", description: "On-Board Oxygen Generation System (OBOGS).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-126", docId: "GQOIS-QMECH-DOC-126", path: "Q-MECHANICS/ecs/oxygen/emergency_oxygen.py", description: "Emergency oxygen system for crew and passengers.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-127", docId: "GQOIS-QMECH-DOC-127", path: "Q-MECHANICS/ecs/oxygen/mask_deployment.py", description: "Logic for automatic oxygen mask deployment.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-128", docId: "GQOIS-QMECH-DOC-128", path: "Q-MECHANICS/ecs/thermal/thermal_management.py", description: "Overall thermal management strategy for the cabin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-129", docId: "GQOIS-QMECH-DOC-129", path: "Q-MECHANICS/ecs/thermal/zone_control.py", description: "Individual temperature zone control logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-130", docId: "GQOIS-QMECH-DOC-130", path: "Q-MECHANICS/ecs/thermal/equipment_cooling.py", description: "Cooling systems for cabin and galley equipment.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-131", docId: "GQOIS-QMECH-DOC-131", path: "Q-MECHANICS/ecs/monitoring/air_quality.py", description: "Air quality monitoring system (CO2, VOCs).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-132", docId: "GQOIS-QMECH-DOC-132", path: "Q-MECHANICS/ecs/monitoring/temperature_sensors.py", description: "Placement and logic for temperature sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-133", docId: "GQOIS-QMECH-DOC-133", path: "Q-MECHANICS/ecs/monitoring/pressure_sensors.py", description: "Placement and logic for pressure sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-134", docId: "GQOIS-QMECH-DOC-134", path: "Q-MECHANICS/ecs/monitoring/quantum_sensors.py", description: "Use of quantum sensors for high-precision environmental monitoring.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-135", docId: "GQOIS-QMECH-DOC-135", path: "Q-MECHANICS/ecs/control/integrated_control.py", description: "Integrated control logic for the entire ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-136", docId: "GQOIS-QMECH-DOC-136", path: "Q-MECHANICS/ecs/control/ai_optimization.py", description: "AI optimization for ECS efficiency and comfort.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-137", docId: "GQOIS-QMECH-DOC-137", path: "Q-MECHANICS/ecs/control/predictive_control.py", description: "Predictive control of ECS based on flight plan and passenger load.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-138", docId: "GQOIS-QMECH-DOC-138", path: "Q-MECHANICS/ecs/testing/performance_testing.py", description: "Performance testing procedures for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-139", docId: "GQOIS-QMECH-DOC-139", path: "Q-MECHANICS/ecs/testing/environmental_testing.py", description: "Environmental chamber testing for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-140", docId: "GQOIS-QMECH-DOC-140", path: "Q-MECHANICS/ecs/maintenance/inspection_procedures.py", description: "Inspection procedures for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-141", docId: "GQOIS-QMECH-DOC-141", path: "Q-MECHANICS/ecs/maintenance/filter_replacement.py", description: "Filter replacement procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-142", docId: "GQOIS-QMECH-DOC-142", path: "Q-MECHANICS/ecs/config/system_parameters.yaml", description: "Configuration file for ECS parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-143", docId: "GQOIS-QMECH-DOC-143", path: "Q-MECHANICS/ecs/config/control_settings.yaml", description: "Configuration file for ECS control settings.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-144", docId: "GQOIS-QMECH-DOC-144", path: "Q-MECHANICS/ecs/docs/design_manual.md", description: "Design manual for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-145", docId: "GQOIS-QMECH-DOC-145", path: "Q-MECHANICS/ecs/docs/operation_manual.md", description: "Operation manual for the ECS.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-146", docId: "GQOIS-QMECH-DOC-146", path: "Q-MECHANICS/fuel_system/README.md", description: "README for the fuel systems sub-module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-147", docId: "GQOIS-QMECH-DOC-147", path: "Q-MECHANICS/fuel_system/tanks/tank_design.py", description: "Design of the fuel tanks.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-148", docId: "GQOIS-QMECH-DOC-148", path: "Q-MECHANICS/fuel_system/tanks/baffles_design.py", description: "Design of anti-slosh baffles in fuel tanks.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-149", docId: "GQOIS-QMECH-DOC-149", path: "Q-MECHANICS/fuel_system/tanks/surge_tank.py", description: "Design of the fuel surge tanks.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-150", docId: "GQOIS-QMECH-DOC-150", path: "Q-MECHANICS/fuel_system/tanks/vent_system.py", description: "Design of the fuel tank venting system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-151", docId: "GQOIS-QMECH-DOC-151", path: "Q-MECHANICS/fuel_system/pumps/boost_pump.py", description: "Design of fuel boost pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-152", docId: "GQOIS-QMECH-DOC-152", path: "Q-MECHANICS/fuel_system/pumps/transfer_pump.py", description: "Design of fuel transfer pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-153", docId: "GQOIS-QMECH-DOC-153", path: "Q-MECHANICS/fuel_system/pumps/ejector_pump.py", description: "Design of fuel ejector pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-154", docId: "GQOIS-QMECH-DOC-154", path: "Q-MECHANICS/fuel_system/pumps/pump_control.py", description: "Control logic for all fuel pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-155", docId: "GQOIS-QMECH-DOC-155", path: "Q-MECHANICS/fuel_system/distribution/fuel_lines.py", description: "Design and layout of fuel lines.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-156", docId: "GQOIS-QMECH-DOC-156", path: "Q-MECHANICS/fuel_system/distribution/crossfeed_system.py", description: "Crossfeed system for balancing fuel.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-157", docId: "GQOIS-QMECH-DOC-157", path: "Q-MECHANICS/fuel_system/distribution/refuel_defuel.py", description: "Refuel/defuel system logic and panel interface.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-158", docId: "GQOIS-QMECH-DOC-158", path: "Q-MECHANICS/fuel_system/distribution/jettison_system.py", description: "Fuel jettison system design and logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-159", docId: "GQOIS-QMECH-DOC-159", path: "Q-MECHANICS/fuel_system/quantity/capacitance_gauging.py", description: "Capacitance-based fuel quantity gauging system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-160", docId: "GQOIS-QMECH-DOC-160", path: "Q-MECHANICS/fuel_system/quantity/ultrasonic_gauging.py", description: "Ultrasonic fuel quantity gauging system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-161", docId: "GQOIS-QMECH-DOC-161", path: "Q-MECHANICS/fuel_system/quantity/quantum_sensing.py", description: "Quantum sensing for high-precision fuel gauging.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-162", docId: "GQOIS-QMECH-DOC-162", path: "Q-MECHANICS/fuel_system/quantity/mass_calculation.py", description: "Algorithm for calculating fuel mass from volume and density.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-163", docId: "GQOIS-QMECH-DOC-163", path: "Q-MECHANICS/fuel_system/management/fuel_computer.py", description: "Fuel management computer logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-164", docId: "GQOIS-QMECH-DOC-164", path: "Q-MECHANICS/fuel_system/management/cg_management.py", description: "Center of Gravity (CG) management through fuel transfer.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-165", docId: "GQOIS-QMECH-DOC-165", path: "Q-MECHANICS/fuel_system/management/optimization_algo.py", description: "Fuel usage optimization algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-166", docId: "GQOIS-QMECH-DOC-166", path: "Q-MECHANICS/fuel_system/management/quantum_optimization.py", description: "Quantum optimization of fuel management.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-167", docId: "GQOIS-QMECH-DOC-167", path: "Q-MECHANICS/fuel_system/safety/fire_protection.py", description: "Fire protection systems for fuel tanks and lines.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-168", docId: "GQOIS-QMECH-DOC-168", path: "Q-MECHANICS/fuel_system/safety/inerting_system.py", description: "Fuel tank inerting system (OBIGGS).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-169", docId: "GQOIS-QMECH-DOC-169", path: "Q-MECHANICS/fuel_system/safety/leak_detection.py", description: "Fuel leak detection system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-170", docId: "GQOIS-QMECH-DOC-170", path: "Q-MECHANICS/fuel_system/testing/tank_testing.py", description: "Test procedures for fuel tanks.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-171", docId: "GQOIS-QMECH-DOC-171", path: "Q-MECHANICS/fuel_system/testing/flow_testing.py", description: "Test procedures for fuel flow and pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-172", docId: "GQOIS-QMECH-DOC-172", path: "Q-MECHANICS/fuel_system/testing/gauging_calibration.py", description: "Calibration procedures for the fuel gauging system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-173", docId: "GQOIS-QMECH-DOC-173", path: "Q-MECHANICS/fuel_system/maintenance/inspection_guide.py", description: "Inspection guide for the fuel system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-174", docId: "GQOIS-QMECH-DOC-174", path: "Q-MECHANICS/fuel_system/maintenance/tank_entry.py", description: "Safety procedures for fuel tank entry.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-175", docId: "GQOIS-QMECH-DOC-175", path: "Q-MECHANICS/fuel_system/config/system_layout.yaml", description: "Configuration file for the fuel system layout.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-176", docId: "GQOIS-QMECH-DOC-176", path: "Q-MECHANICS/fuel_system/config/pump_parameters.yaml", description: "Configuration file for fuel pump parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-177", docId: "GQOIS-QMECH-DOC-177", path: "Q-MECHANICS/fuel_system/simulation/fuel_dynamics.py", description: "Simulation model of fuel dynamics in tanks.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-178", docId: "GQOIS-QMECH-DOC-178", path: "Q-MECHANICS/fuel_system/simulation/slosh_analysis.py", description: "Fuel slosh analysis simulation.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-179", docId: "GQOIS-QMECH-DOC-179", path: "Q-MECHANICS/fuel_system/docs/design_manual.md", description: "Design manual for the fuel system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-180", docId: "GQOIS-QMECH-DOC-180", path: "Q-MECHANICS/fuel_system/docs/safety_manual.md", description: "Safety manual for the fuel system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-181", docId: "GQOIS-QMECH-DOC-181", path: "Q-MECHANICS/hydraulics/README.md", description: "README for the hydraulic and pneumatic systems module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-182", docId: "GQOIS-QMECH-DOC-182", path: "Q-MECHANICS/hydraulics/architecture/system_design.py", description: "Overall design of the hydraulic systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-183", docId: "GQOIS-QMECH-DOC-183", path: "Q-MECHANICS/hydraulics/architecture/redundancy_design.py", description: "Redundancy design for hydraulic systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-184", docId: "GQOIS-QMECH-DOC-184", path: "Q-MECHANICS/hydraulics/pumps/engine_driven_pump.py", description: "Design of engine-driven hydraulic pumps (EDPs).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-185", docId: "GQOIS-QMECH-DOC-185", path: "Q-MECHANICS/hydraulics/pumps/electric_pump.py", description: "Design of electric motor-driven hydraulic pumps (EMPs).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-186", docId: "GQOIS-QMECH-DOC-186", path: "Q-MECHANICS/hydraulics/pumps/rat_pump.py", description: "Design of the Ram Air Turbine (RAT) hydraulic pump.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-187", docId: "GQOIS-QMECH-DOC-187", path: "Q-MECHANICS/hydraulics/reservoir/design_optimization.py", description: "Optimization of hydraulic reservoir design.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-188", docId: "GQOIS-QMECH-DOC-188", path: "Q-MECHANICS/hydraulics/reservoir/level_monitoring.py", description: "Hydraulic fluid level monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-189", docId: "GQOIS-QMECH-DOC-189", path: "Q-MECHANICS/hydraulics/filtration/filter_design.py", description: "Design of hydraulic filters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-190", docId: "GQOIS-QMECH-DOC-190", path: "Q-MECHANICS/hydraulics/filtration/contamination_monitor.py", description: "Hydraulic fluid contamination monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-191", docId: "GQOIS-QMECH-DOC-191", path: "Q-MECHANICS/hydraulics/distribution/priority_valve.py", description: "Design and logic of priority valves.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-192", docId: "GQOIS-QMECH-DOC-192", path: "Q-MECHANICS/hydraulics/distribution/pressure_reducing.py", description: "Design of pressure reducing valves.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-193", docId: "GQOIS-QMECH-DOC-193", path: "Q-MECHANICS/hydraulics/monitoring/pressure_monitoring.py", description: "Hydraulic pressure monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-194", docId: "GQOIS-QMECH-DOC-194", path: "Q-MECHANICS/hydraulics/monitoring/temperature_monitoring.py", description: "Hydraulic temperature monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-195", docId: "GQOIS-QMECH-DOC-195", path: "Q-MECHANICS/hydraulics/monitoring/quantum_diagnostics.py", description: "Quantum diagnostics for hydraulic system health.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-196", docId: "GQOIS-QMECH-DOC-196", path: "Q-MECHANICS/pneumatics/README.md", description: "README for the pneumatic systems sub-module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-197", docId: "GQOIS-QMECH-DOC-197", path: "Q-MECHANICS/pneumatics/bleed_air/engine_bleed.py", description: "Engine bleed air system logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-198", docId: "GQOIS-QMECH-DOC-198", path: "Q-MECHANICS/pneumatics/bleed_air/apu_bleed.py", description: "APU bleed air system logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-199", docId: "GQOIS-QMECH-DOC-199", path: "Q-MECHANICS/pneumatics/bleed_air/precooler_design.py", description: "Design of the bleed air precooler.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-200", docId: "GQOIS-QMECH-DOC-200", path: "Q-MECHANICS/pneumatics/distribution/duct_design.py", description: "Design of pneumatic ducts.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-201", docId: "GQOIS-QMECH-DOC-201", path: "Q-MECHANICS/pneumatics/distribution/isolation_valves.py", description: "Design and logic of pneumatic isolation valves.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-202", docId: "GQOIS-QMECH-DOC-202", path: "Q-MECHANICS/pneumatics/applications/wing_anti_ice.py", description: "Pneumatic supply for wing anti-ice.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-203", docId: "GQOIS-QMECH-DOC-203", path: "Q-MECHANICS/pneumatics/applications/engine_start.py", description: "Pneumatic supply for engine starting.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-204", docId: "GQOIS-QMECH-DOC-204", path: "Q-MECHANICS/pneumatics/control/bleed_management.py", description: "Bleed air management and control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-205", docId: "GQOIS-QMECH-DOC-205", path: "Q-MECHANICS/pneumatics/monitoring/leak_detection.py", description: "Pneumatic leak detection system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-206", docId: "GQOIS-QMECH-DOC-206", path: "Q-MECHANICS/systems_integration/hydraulic_pneumatic.py", description: "Integration between hydraulic and pneumatic systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-207", docId: "GQOIS-QMECH-DOC-207", path: "Q-MECHANICS/systems_integration/power_management.py", description: "Power management for hydraulic and pneumatic pumps.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-208", docId: "GQOIS-QMECH-DOC-208", path: "Q-MECHANICS/systems_integration/config/hydraulic_params.yaml", description: "Configuration file for hydraulic parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-209", docId: "GQOIS-QMECH-DOC-209", path: "Q-MECHANICS/systems_integration/config/pneumatic_params.yaml", description: "Configuration file for pneumatic parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-210", docId: "GQOIS-QMECH-DOC-210", path: "Q-MECHANICS/systems_integration/docs/integration_manual.md", description: "Integration manual for hydraulic and pneumatic systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-211", docId: "GQOIS-QMECH-DOC-211", path: "Q-MECHANICS/ice_protection/README.md", description: "README for the ice and fire protection module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-212", docId: "GQOIS-QMECH-DOC-212", path: "Q-MECHANICS/ice_protection/detection/ice_detector.py", description: "Design and logic of the ice detector system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-213", docId: "GQOIS-QMECH-DOC-213", path: "Q-MECHANICS/ice_protection/detection/quantum_ice_sensor.py", description: "Quantum ice sensor design and integration.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-214", docId: "GQOIS-QMECH-DOC-214", path: "Q-MECHANICS/ice_protection/wing/thermal_anti_ice.py", description: "Thermal anti-ice system for wings.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-215", docId: "GQOIS-QMECH-DOC-215", path: "Q-MECHANICS/ice_protection/wing/electro_thermal.py", description: "Electro-thermal anti-ice system for wings.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-216", docId: "GQOIS-QMECH-DOC-216", path: "Q-MECHANICS/ice_protection/wing/hybrid_system.py", description: "Hybrid thermal/electro-thermal anti-ice system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-217", docId: "GQOIS-QMECH-DOC-217", path: "Q-MECHANICS/ice_protection/engine/inlet_anti_ice.py", description: "Engine inlet anti-ice system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-218", docId: "GQOIS-QMECH-DOC-218", path: "Q-MECHANICS/ice_protection/probes/pitot_heating.py", description: "Pitot and static probe heating system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-219", docId: "GQOIS-QMECH-DOC-219", path: "Q-MECHANICS/ice_protection/control/ice_protection_ctrl.py", description: "Main controller for the ice protection system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-220", docId: "GQOIS-QMECH-DOC-220", path: "Q-MECHANICS/ice_protection/control/ai_prediction.py", description: "AI model for predicting icing conditions.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-221", docId: "GQOIS-QMECH-DOC-221", path: "Q-MECHANICS/fire_protection/README.md", description: "README for the fire protection sub-module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-222", docId: "GQOIS-QMECH-DOC-222", path: "Q-MECHANICS/fire_protection/detection/smoke_detector.py", description: "Smoke detector system design and placement.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-223", docId: "GQOIS-QMECH-DOC-223", path: "Q-MECHANICS/fire_protection/detection/overheat_detector.py", description: "Overheat and fire loop detector system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-224", docId: "GQOIS-QMECH-DOC-224", path: "Q-MECHANICS/fire_protection/detection/quantum_detection.py", description: "Quantum-enhanced fire and smoke detection.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-225", docId: "GQOIS-QMECH-DOC-225", path: "Q-MECHANICS/fire_protection/suppression/engine_fire.py", description: "Engine fire suppression system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-226", docId: "GQOIS-QMECH-DOC-226", path: "Q-MECHANICS/fire_protection/suppression/cargo_fire.py", description: "Cargo compartment fire suppression system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-227", docId: "GQOIS-QMECH-DOC-227", path: "Q-MECHANICS/fire_protection/suppression/apu_fire.py", description: "APU fire suppression system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-228", docId: "GQOIS-QMECH-DOC-228", path: "Q-MECHANICS/fire_protection/agents/halon_replacement.py", description: "Research and use of Halon replacement agents.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-229", docId: "GQOIS-QMECH-DOC-229", path: "Q-MECHANICS/fire_protection/agents/water_mist.py", description: "Water mist fire suppression system design.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-230", docId: "GQOIS-QMECH-DOC-230", path: "Q-MECHANICS/fire_protection/control/fire_control_panel.py", description: "Fire control panel interface and logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-231", docId: "GQOIS-QMECH-DOC-231", path: "Q-MECHANICS/fire_protection/testing/fire_test_setup.py", description: "Setup for fire detection and suppression testing.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-232", docId: "GQOIS-QMECH-DOC-232", path: "Q-MECHANICS/fire_protection/testing/suppression_test.py", description: "Test procedures for fire suppression systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-233", docId: "GQOIS-QMECH-DOC-233", path: "Q-MECHANICS/protection_systems/integration/system_integration.py", description: "Integration of ice and fire protection systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-234", docId: "GQOIS-QMECH-DOC-234", path: "Q-MECHANICS/protection_systems/maintenance/inspection_guide.py", description: "Inspection guide for protection systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-235", docId: "GQOIS-QMECH-DOC-235", path: "Q-MECHANICS/protection_systems/config/ice_parameters.yaml", description: "Configuration file for ice protection parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-236", docId: "GQOIS-QMECH-DOC-236", path: "Q-MECHANICS/protection_systems/config/fire_parameters.yaml", description: "Configuration file for fire protection parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-237", docId: "GQOIS-QMECH-DOC-237", path: "Q-MECHANICS/protection_systems/simulation/ice_accretion.py", description: "Simulation of ice accretion.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-238", docId: "GQOIS-QMECH-DOC-238", path: "Q-MECHANICS/protection_systems/simulation/fire_dynamics.py", description: "Simulation of fire dynamics and suppression.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-239", docId: "GQOIS-QMECH-DOC-239", path: "Q-MECHANICS/protection_systems/docs/safety_manual.md", description: "Safety manual for protection systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-240", docId: "GQOIS-QMECH-DOC-240", path: "Q-MECHANICS/protection_systems/docs/operation_manual.md", description: "Operation manual for protection systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-241", docId: "GQOIS-QMECH-DOC-241", path: "Q-MECHANICS/apu/README.md", description: "README for the APU and power systems module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-242", docId: "GQOIS-QMECH-DOC-242", path: "Q-MECHANICS/apu/design/turbine_design.py", description: "Design of the APU gas turbine.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-243", docId: "GQOIS-QMECH-DOC-243", path: "Q-MECHANICS/apu/design/generator_design.py", description: "Design of the APU electrical generator.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-244", docId: "GQOIS-QMECH-DOC-244", path: "Q-MECHANICS/apu/design/inlet_exhaust.py", description: "Design of the APU inlet and exhaust.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-245", docId: "GQOIS-QMECH-DOC-245", path: "Q-MECHANICS/apu/control/startup_sequence.py", description: "APU startup sequence logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-246", docId: "GQOIS-QMECH-DOC-246", path: "Q-MECHANICS/apu/control/governor_control.py", description: "APU governor and speed control logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-247", docId: "GQOIS-QMECH-DOC-247", path: "Q-MECHANICS/apu/control/load_management.py", description: "APU electrical and pneumatic load management.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-248", docId: "GQOIS-QMECH-DOC-248", path: "Q-MECHANICS/apu/monitoring/performance_monitor.py", description: "APU performance monitoring system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-249", docId: "GQOIS-QMECH-DOC-249", path: "Q-MECHANICS/apu/monitoring/health_diagnostics.py", description: "Health diagnostics and prognostics for the APU.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-250", docId: "GQOIS-QMECH-DOC-250", path: "Q-MECHANICS/apu/integration/electrical_integration.py", description: "Integration of the APU with the electrical system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-251", docId: "GQOIS-QMECH-DOC-251", path: "Q-MECHANICS/apu/integration/pneumatic_integration.py", description: "Integration of the APU with the pneumatic system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-252", docId: "GQOIS-QMECH-DOC-252", path: "Q-MECHANICS/apu/maintenance/scheduled_maintenance.py", description: "Scheduled maintenance tasks for the APU.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-253", docId: "GQOIS-QMECH-DOC-253", path: "Q-MECHANICS/apu/maintenance/condition_based.py", description: "Condition-based maintenance for the APU.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-254", docId: "GQOIS-QMECH-DOC-254", path: "Q-MECHANICS/power_systems/electrical/ac_generation.py", description: "Main AC electrical generation system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-255", docId: "GQOIS-QMECH-DOC-255", path: "Q-MECHANICS/power_systems/electrical/dc_system.py", description: "Main DC electrical system and TRUs.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-256", docId: "GQOIS-QMECH-DOC-256", path: "Q-MECHANICS/power_systems/electrical/battery_system.py", description: "Main aircraft battery and charging system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-257", docId: "GQOIS-QMECH-DOC-257", path: "Q-MECHANICS/power_systems/electrical/emergency_power.py", description: "Emergency power generation (e.g., RAT).", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-258", docId: "GQOIS-QMECH-DOC-258", path: "Q-MECHANICS/power_systems/distribution/bus_system.py", description: "Electrical bus distribution system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-259", docId: "GQOIS-QMECH-DOC-259", path: "Q-MECHANICS/power_systems/distribution/load_shedding.py", description: "Electrical load shedding logic.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-260", docId: "GQOIS-QMECH-DOC-260", path: "Q-MECHANICS/power_systems/config/apu_parameters.yaml", description: "Configuration file for APU parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-261", docId: "GQOIS-QMECH-DOC-261", path: "Q-MECHANICS/power_systems/config/electrical_params.yaml", description: "Configuration file for electrical system parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-262", docId: "GQOIS-QMECH-DOC-262", path: "Q-MECHANICS/power_systems/testing/apu_testing.py", description: "Test procedures for the APU.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-263", docId: "GQOIS-QMECH-DOC-263", path: "Q-MECHANICS/power_systems/testing/electrical_testing.py", description: "Test procedures for the electrical system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-264", docId: "GQOIS-QMECH-DOC-264", path: "Q-MECHANICS/power_systems/docs/apu_manual.md", description: "Operation and maintenance manual for the APU.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-265", docId: "GQOIS-QMECH-DOC-265", path: "Q-MECHANICS/power_systems/docs/electrical_manual.md", description: "Manual for the aircraft electrical system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-266", docId: "GQOIS-QMECH-DOC-266", path: "Q-MECHANICS/digital_twin_mech/README.md", description: "README for the mechanics Digital Twin module.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-267", docId: "GQOIS-QMECH-DOC-267", path: "Q-MECHANICS/digital_twin_mech/models/hydraulic_model.py", description: "Digital twin model for the hydraulic system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-268", docId: "GQOIS-QMECH-DOC-268", path: "Q-MECHANICS/digital_twin_mech/models/pneumatic_model.py", description: "Digital twin model for the pneumatic system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-269", docId: "GQOIS-QMECH-DOC-269", path: "Q-MECHANICS/digital_twin_mech/models/flight_control_model.py", description: "Digital twin model for the flight control system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-270", docId: "GQOIS-QMECH-DOC-270", path: "Q-MECHANICS/digital_twin_mech/models/fuel_system_model.py", description: "Digital twin model for the fuel system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-271", docId: "GQOIS-QMECH-DOC-271", path: "Q-MECHANICS/digital_twin_mech/sync/sensor_integration.py", description: "Sensor integration for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-272", docId: "GQOIS-QMECH-DOC-272", path: "Q-MECHANICS/digital_twin_mech/sync/state_estimation.py", description: "State estimation for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-273", docId: "GQOIS-QMECH-DOC-273", path: "Q-MECHANICS/digital_twin_mech/analytics/fault_detection.py", description: "Fault detection analytics for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-274", docId: "GQOIS-QMECH-DOC-274", path: "Q-MECHANICS/digital_twin_mech/analytics/performance_prediction.py", description: "Performance prediction for mechanical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-275", docId: "GQOIS-QMECH-DOC-275", path: "Q-MECHANICS/digital_twin_mech/visualization/system_status.py", description: "Visualization of system status for the mechanics twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-276", docId: "GQOIS-QMECH-DOC-276", path: "Q-MECHANICS/digital_twin_mech/api/mechanical_api.py", description: "API for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-277", docId: "GQOIS-QMECH-DOC-277", path: "Q-MECHANICS/digital_twin_mech/config/model_params.yaml", description: "Parameters for the mechanics digital twin models.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-278", docId: "GQOIS-QMECH-DOC-278", path: "Q-MECHANICS/digital_twin_mech/tests/test_models.py", description: "Unit tests for the mechanics digital twin models.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-279", docId: "GQOIS-QMECH-DOC-279", path: "Q-MECHANICS/digital_twin_mech/docs/architecture.md", description: "Architecture document for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-280", docId: "GQOIS-QMECH-DOC-280", path: "Q-MECHANICS/digital_twin_mech/docs/integration_guide.md", description: "Integration guide for the mechanics digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-281", docId: "GQOIS-QMECH-DOC-281", path: "Q-MECHANICS/docs/README.md", description: "Main README for the Q-MECHANICS documentation.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-282", docId: "GQOIS-QMECH-DOC-282", path: "Q-MECHANICS/docs/design_philosophy.md", description: "Document on the overall mechanical design philosophy.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-283", docId: "GQOIS-QMECH-DOC-283", path: "Q-MECHANICS/docs/systems_integration.md", description: "Master document on mechanical systems integration.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-284", docId: "GQOIS-QMECH-DOC-284", path: "Q-MECHANICS/docs/flight_controls_guide.md", description: "Compiled guide to the flight control systems.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-285", docId: "GQOIS-QMECH-DOC-285", path: "Q-MECHANICS/docs/landing_gear_guide.md", description: "Compiled guide to the landing gear system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-286", docId: "GQOIS-QMECH-DOC-286", path: "Q-MECHANICS/docs/ecs_guide.md", description: "Compiled guide to the Environmental Control System.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-287", docId: "GQOIS-QMECH-DOC-287", path: "Q-MECHANICS/docs/fuel_system_guide.md", description: "Compiled guide to the fuel system.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-288", docId: "GQOIS-QMECH-DOC-288", path: "Q-MECHANICS/docs/certification/compliance_matrix.md", description: "Compliance matrix for mechanical systems certification.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-289", docId: "GQOIS-QMECH-DOC-289", path: "Q-MECHANICS/docs/certification/test_reports.md", description: "Compilation of test reports for certification.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-290", docId: "GQOIS-QMECH-DOC-290", path: "Q-MECHANICS/docs/training/mechanics_course.md", description: "Training course materials for mechanics.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-291", docId: "GQOIS-QMECH-DOC-291", path: "Q-MECHANICS/docs/training/systems_course.md", description: "Advanced systems course for mechanics.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-292", docId: "GQOIS-QMECH-DOC-292", path: "Q-MECHANICS/docs/api_reference/mechanics_api.md", description: "API reference for all mechanical system modules.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-293", docId: "GQOIS-QMECH-DOC-293", path: "Q-MECHANICS/docs/troubleshooting/common_issues.md", description: "Guide to troubleshooting common mechanical issues.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-294", docId: "GQOIS-QMECH-DOC-294", path: "Q-MECHANICS/docs/maintenance/best_practices.md", description: "Best practices for mechanical systems maintenance.", division: "Q-UNKNOWN" },
+  { promptId: "QMECH-P-295", docId: "GQOIS-QMECH-DOC-295", path: "Q-MECHANICS/docs/release_notes/v1.0.0.md", description: "Release notes for version 1.0.0 of the mechanical systems module.],", division: "Q-UNKNOWN" },
   "Q-ROBOTICS": [Prompt ID	Doc ID	Unified Project Tree Path	Brief Description
-QROBO-P-001	GQOIS-QROBO-DOC-001	Q-ROBOTICS/README.md	Main README for the Q-ROBOTICS division.
-QROBO-P-002	GQOIS-QROBO-DOC-002	Q-ROBOTICS/ROBOTICS_OVERVIEW.md	Overview of all robotics and automation systems.
-QROBO-P-003	GQOIS-QROBO-DOC-003	Q-ROBOTICS/LICENSE	Software license for the Q-ROBOTICS division.
-QROBO-P-004	GQOIS-QROBO-DOC-004	Q-ROBOTICS/SYSTEM_ARCHITECTURE.md	Architecture of the integrated robotics system.
-QROBO-P-005	GQOIS-QROBO-DOC-005	Q-ROBOTICS/AI_INTEGRATION.md	Plan for integrating AI into robotics systems.
-QROBO-P-006	GQOIS-QROBO-DOC-006	Q-ROBOTICS/QUANTUM_INTEGRATION.md	Plan for integrating quantum algorithms into robotics.
-QROBO-P-007	GQOIS-QROBO-DOC-007	Q-ROBOTICS/API_REFERENCE.md	API reference for the robotics control software.
-QROBO-P-008	GQOIS-QROBO-DOC-008	Q-ROBOTICS/SAFETY_STANDARDS.md	Safety standards for human-robot interaction.
-QROBO-P-009	GQOIS-QROBO-DOC-009	Q-ROBOTICS/CERTIFICATION_REQUIREMENTS.md	Certification requirements for autonomous systems.
-QROBO-P-010	GQOIS-QROBO-DOC-010	Q-ROBOTICS/TESTING_FRAMEWORK.md	Framework for testing and validating robotic systems.
-QROBO-P-011	GQOIS-QROBO-DOC-011	Q-ROBOTICS/.gitignore	Git ignore file for the Q-ROBOTICS repository.
-QROBO-P-012	GQOIS-QROBO-DOC-012	Q-ROBOTICS/Makefile	Makefile for managing the Q-ROBOTICS codebase.
-QROBO-P-013	GQOIS-QROBO-DOC-013	Q-ROBOTICS/requirements.txt	Python package requirements for robotics software.
-QROBO-P-014	GQOIS-QROBO-DOC-014	Q-ROBOTICS/environment.yml	Conda environment configuration.
-QROBO-P-015	GQOIS-QROBO-DOC-015	Q-ROBOTICS/docker-compose.yml	Docker Compose for deploying robotics simulation services.
-QROBO-P-016	GQOIS-QROBO-DOC-016	Q-ROBOTICS/setup.py	Python package setup script.
-QROBO-P-017	GQOIS-QROBO-DOC-017	Q-ROBOTICS/CHANGELOG.md	Changelog for the Q-ROBOTICS division.
-QROBO-P-018	GQOIS-QROBO-DOC-018	Q-ROBOTICS/ROADMAP.md	Development roadmap for the Q-ROBOTICS division.
-QROBO-P-019	GQOIS-QROBO-DOC-019	Q-ROBOTICS/GLOSSARY.md	Glossary of terms for the Q-ROBOTICS division.
-QROBO-P-020	GQOIS-QROBO-DOC-020	Q-ROBOTICS/FAQ.md	Frequently Asked Questions for the Q-ROBOTICS division.
-QROBO-P-021	GQOIS-QROBO-DOC-021	Q-ROBOTICS/autonomous_systems/README.md	README for the autonomous systems core module.
-QROBO-P-022	GQOIS-QROBO-DOC-022	Q-ROBOTICS/autonomous_systems/core/decision_engine.py	The core decision-making engine for autonomous behavior.
-QROBO-P-023	GQOIS-QROBO-DOC-023	Q-ROBOTICS/autonomous_systems/core/behavior_tree.py	Implementation of behavior trees for task execution.
-QROBO-P-024	GQOIS-QROBO-DOC-024	Q-ROBOTICS/autonomous_systems/core/state_machine.py	Implementation of finite state machines for control.
-QROBO-P-025	GQOIS-QROBO-DOC-025	Q-ROBOTICS/autonomous_systems/core/task_planner.py	High-level task planner for robotic agents.
-QROBO-P-026	GQOIS-QROBO-DOC-026	Q-ROBOTICS/autonomous_systems/perception/sensor_fusion.py	Multi-sensor fusion algorithms (e.g., Kalman filters).
-QROBO-P-027	GQOIS-QROBO-DOC-027	Q-ROBOTICS/autonomous_systems/perception/object_detection.py	Object detection algorithms using vision and LiDAR.
-QROBO-P-028	GQOIS-QROBO-DOC-028	Q-ROBOTICS/autonomous_systems/perception/scene_understanding.py	Algorithms for 3D scene understanding.
-QROBO-P-029	GQOIS-QROBO-DOC-029	Q-ROBOTICS/autonomous_systems/perception/depth_estimation.py	Depth estimation from stereo cameras or other sensors.
-QROBO-P-030	GQOIS-QROBO-DOC-030	Q-ROBOTICS/autonomous_systems/perception/semantic_segmentation.py	Semantic segmentation of sensor data.
-QROBO-P-031	GQOIS-QROBO-DOC-031	Q-ROBOTICS/autonomous_systems/control/motion_planning.py	Motion planning algorithms for robot manipulators and vehicles.
-QROBO-P-032	GQOIS-QROBO-DOC-032	Q-ROBOTICS/autonomous_systems/control/trajectory_optimization.py	Trajectory optimization for smooth and efficient motion.
-QROBO-P-033	GQOIS-QROBO-DOC-033	Q-ROBOTICS/autonomous_systems/control/impedance_control.py	Impedance control for physical interaction tasks.
-QROBO-P-034	GQOIS-QROBO-DOC-034	Q-ROBOTICS/autonomous_systems/control/force_control.py	Force control for delicate assembly and interaction tasks.
-QROBO-P-035	GQOIS-QROBO-DOC-035	Q-ROBOTICS/autonomous_systems/control/adaptive_control.py	Adaptive control algorithms for changing dynamics.
-QROBO-P-036	GQOIS-QROBO-DOC-036	Q-ROBOTICS/autonomous_systems/safety/collision_avoidance.py	Real-time collision avoidance system.
-QROBO-P-037	GQOIS-QROBO-DOC-037	Q-ROBOTICS/autonomous_systems/safety/emergency_stop.py	Emergency stop (e-stop) logic and protocols.
-QROBO-P-038	GQOIS-QROBO-DOC-038	Q-ROBOTICS/autonomous_systems/safety/human_detection.py	System for detecting humans in the robot's workspace.
-QROBO-P-039	GQOIS-QROBO-DOC-039	Q-ROBOTICS/autonomous_systems/safety/safe_zones.py	Definition and enforcement of safe operational zones.
-QROBO-P-040	GQOIS-QROBO-DOC-040	Q-ROBOTICS/autonomous_systems/safety/risk_assessment.py	Automated risk assessment algorithms.
-QROBO-P-041	GQOIS-QROBO-DOC-041	Q-ROBOTICS/autonomous_systems/communication/robot_coordination.py	Protocols for multi-robot coordination.
-QROBO-P-042	GQOIS-QROBO-DOC-042	Q-ROBOTICS/autonomous_systems/communication/swarm_protocol.py	Communication protocols for robot swarms.
-QROBO-P-043	GQOIS-QROBO-DOC-043	Q-ROBOTICS/autonomous_systems/communication/fleet_management.py	Fleet management system for a group of robots.
-QROBO-P-044	GQOIS-QROBO-DOC-044	Q-ROBOTICS/autonomous_systems/learning/reinforcement_learning.py	Reinforcement Learning (RL) framework for robot skills.
-QROBO-P-045	GQOIS-QROBO-DOC-045	Q-ROBOTICS/autonomous_systems/learning/imitation_learning.py	Imitation Learning framework (learning from demonstration).
-QROBO-P-046	GQOIS-QROBO-DOC-046	Q-ROBOTICS/autonomous_systems/learning/transfer_learning.py	Transfer learning framework for robotics.
-QROBO-P-047	GQOIS-QROBO-DOC-047	Q-ROBOTICS/autonomous_systems/testing/simulation_env.py	The main robotics simulation environment (e.g., Gazebo, Isaac Sim).
-QROBO-P-048	GQOIS-QROBO-DOC-048	Q-ROBOTICS/autonomous_systems/testing/hardware_in_loop.py	Hardware-in-the-Loop (HIL) testing setup.
-QROBO-P-049	GQOIS-QROBO-DOC-049	Q-ROBOTICS/autonomous_systems/testing/validation_suite.py	Validation test suite for autonomous systems.
-QROBO-P-050	GQOIS-QROBO-DOC-050	Q-ROBOTICS/autonomous_systems/config/system_parameters.yaml	Configuration file for autonomous system parameters.
-QROBO-P-051	GQOIS-QROBO-DOC-051	Q-ROBOTICS/autonomous_systems/config/safety_settings.yaml	Configuration file for safety system settings.
-QROBO-P-052	GQOIS-QROBO-DOC-052	Q-ROBOTICS/autonomous_systems/docs/architecture_guide.md	Architecture guide for autonomous systems.
-QROBO-P-053	GQOIS-QROBO-DOC-053	Q-ROBOTICS/autonomous_systems/docs/safety_manual.md	Safety manual for autonomous systems.
-QROBO-P-054	GQOIS-QROBO-DOC-054	Q-ROBOTICS/autonomous_systems/docs/programming_guide.md	Programming guide for developing autonomous behaviors.
-QROBO-P-055	GQOIS-QROBO-DOC-055	Q-ROBOTICS/autonomous_systems/docs/deployment_manual.md	Manual for deploying autonomous systems.
-QROBO-P-056	GQOIS-QROBO-DOC-056	Q-ROBOTICS/ai_robotics/README.md	README for the AI and ML for robotics module.
-QROBO-P-057	GQOIS-QROBO-DOC-057	Q-ROBOTICS/ai_robotics/vision/deep_learning_models.py	Library of deep learning models for computer vision.
-QROBO-P-058	GQOIS-QROBO-DOC-058	Q-ROBOTICS/ai_robotics/vision/real_time_detection.py	Real-time object detection implementation.
-QROBO-P-059	GQOIS-QROBO-DOC-059	Q-ROBOTICS/ai_robotics/vision/pose_estimation.py	6D pose estimation of objects.
-QROBO-P-060	GQOIS-QROBO-DOC-060	Q-ROBOTICS/ai_robotics/vision/visual_servoing.py	Visual servoing control logic.
-QROBO-P-061	GQOIS-QROBO-DOC-061	Q-ROBOTICS/ai_robotics/nlp/voice_commands.py	Voice command recognition system.
-QROBO-P-062	GQOIS-QROBO-DOC-062	Q-ROBOTICS/ai_robotics/nlp/intent_recognition.py	Natural language intent recognition module.
-QROBO-P-063	GQOIS-QROBO-DOC-063	Q-ROBOTICS/ai_robotics/nlp/dialogue_system.py	Dialogue management system for human-robot interaction.
-QROBO-P-064	GQOIS-QROBO-DOC-064	Q-ROBOTICS/ai_robotics/planning/ai_task_planner.py	AI-based task planner (e.g., PDDL solver).
-QROBO-P-065	GQOIS-QROBO-DOC-065	Q-ROBOTICS/ai_robotics/planning/constraint_solver.py	Constraint solver for complex planning problems.
-QROBO-P-066	GQOIS-QROBO-DOC-066	Q-ROBOTICS/ai_robotics/planning/hierarchical_planning.py	Hierarchical task network (HTN) planner.
-QROBO-P-067	GQOIS-QROBO-DOC-067	Q-ROBOTICS/ai_robotics/learning/deep_rl.py	Deep Reinforcement Learning algorithms.
-QROBO-P-068	GQOIS-QROBO-DOC-068	Q-ROBOTICS/ai_robotics/learning/meta_learning.py	Meta-learning algorithms for rapid skill acquisition.
-QROBO-P-069	GQOIS-QROBO-DOC-069	Q-ROBOTICS/ai_robotics/learning/continual_learning.py	Continual learning algorithms to prevent catastrophic forgetting.
-QROBO-P-070	GQOIS-QROBO-DOC-070	Q-ROBOTICS/ai_robotics/prediction/motion_prediction.py	Prediction of human and object motion.
-QROBO-P-071	GQOIS-QROBO-DOC-071	Q-ROBOTICS/ai_robotics/prediction/failure_prediction.py	Prediction of robot component failures.
-QROBO-P-072	GQOIS-QROBO-DOC-072	Q-ROBOTICS/ai_robotics/prediction/maintenance_prediction.py	Predictive scheduling of robot maintenance.
-QROBO-P-073	GQOIS-QROBO-DOC-073	Q-ROBOTICS/ai_robotics/optimization/neural_optimizer.py	Neural network-based optimizers.
-QROBO-P-074	GQOIS-QROBO-DOC-074	Q-ROBOTICS/ai_robotics/optimization/quantum_ai_hybrid.py	Hybrid quantum-AI optimization algorithms.
-QROBO-P-075	GQOIS-QROBO-DOC-075	Q-ROBOTICS/ai_robotics/edge_computing/model_compression.py	Techniques for AI model compression (pruning, quantization).
-QROBO-P-076	GQOIS-QROBO-DOC-076	Q-ROBOTICS/ai_robotics/edge_computing/inference_engine.py	Optimized inference engine for edge devices.
-QROBO-P-077	GQOIS-QROBO-DOC-077	Q-ROBOTICS/ai_robotics/edge_computing/distributed_ai.py	Framework for distributed AI across multiple robots.
-QROBO-P-078	GQOIS-QROBO-DOC-078	Q-ROBOTICS/ai_robotics/datasets/robotic_datasets.py	Curated datasets for training robotic AI models.
-QROBO-P-079	GQOIS-QROBO-DOC-079	Q-ROBOTICS/ai_robotics/datasets/synthetic_generation.py	Tools for generating synthetic training data.
-QROBO-P-080	GQOIS-QROBO-DOC-080	Q-ROBOTICS/ai_robotics/testing/ai_validation.py	Validation suite for AI models in robotics.
-QROBO-P-081	GQOIS-QROBO-DOC-081	Q-ROBOTICS/ai_robotics/config/model_parameters.yaml	Configuration file for AI model parameters.
-QROBO-P-082	GQOIS-QROBO-DOC-082	Q-ROBOTICS/ai_robotics/config/training_config.yaml	Configuration file for AI model training.
-QROBO-P-083	GQOIS-QROBO-DOC-083	Q-ROBOTICS/ai_robotics/docs/ai_architecture.md	Architecture document for AI systems in robotics.
-QROBO-P-084	GQOIS-QROBO-DOC-084	Q-ROBOTICS/ai_robotics/docs/model_deployment.md	Guide for deploying AI models to robots.
-QROBO-P-085	GQOIS-QROBO-DOC-085	Q-ROBOTICS/ai_robotics/docs/training_guide.md	Guide for training new AI models.
-QROBO-P-086	GQOIS-QROBO-DOC-086	Q-ROBOTICS/slam_navigation/README.md	README for the SLAM and Navigation module.
-QROBO-P-087	GQOIS-QROBO-DOC-087	Q-ROBOTICS/slam_navigation/slam/visual_slam.py	Visual SLAM (vSLAM) implementation.
-QROBO-P-088	GQOIS-QROBO-DOC-088	Q-ROBOTICS/slam_navigation/slam/lidar_slam.py	LiDAR-based SLAM implementation.
-QROBO-P-089	GQOIS-QROBO-DOC-089	Q-ROBOTICS/slam_navigation/slam/visual_inertial_slam.py	Visual-Inertial SLAM (VI-SLAM) implementation.
-QROBO-P-090	GQOIS-QROBO-DOC-090	Q-ROBOTICS/slam_navigation/slam/multi_sensor_fusion.py	SLAM based on fusion of multiple sensor types.
-QROBO-P-091	GQOIS-QROBO-DOC-091	Q-ROBOTICS/slam_navigation/slam/graph_optimization.py	Graph-based optimization for SLAM (e.g., pose graph).
-QROBO-P-092	GQOIS-QROBO-DOC-092	Q-ROBOTICS/slam_navigation/slam/loop_closure.py	Loop closure detection and correction.
-QROBO-P-093	GQOIS-QROBO-DOC-093	Q-ROBOTICS/slam_navigation/slam/dense_reconstruction.py	Dense 3D reconstruction from SLAM output.
-QROBO-P-094	GQOIS-QROBO-DOC-094	Q-ROBOTICS/slam_navigation/mapping/occupancy_grid.py	2D occupancy grid mapping.
-QROBO-P-095	GQOIS-QROBO-DOC-095	Q-ROBOTICS/slam_navigation/mapping/3d_mapping.py	3D mapping (e.g., point clouds, voxels).
-QROBO-P-096	GQOIS-QROBO-DOC-096	Q-ROBOTICS/slam_navigation/mapping/semantic_mapping.py	Semantic mapping (labeling objects in the map).
-QROBO-P-097	GQOIS-QROBO-DOC-097	Q-ROBOTICS/slam_navigation/mapping/dynamic_mapping.py	Mapping in dynamic environments with moving objects.
-QROBO-P-098	GQOIS-QROBO-DOC-098	Q-ROBOTICS/slam_navigation/localization/particle_filter.py	Particle filter localization (MCL).
-QROBO-P-099	GQOIS-QROBO-DOC-099	Q-ROBOTICS/slam_navigation/localization/ekf_localization.py	Extended Kalman Filter (EKF) localization.
-QROBO-P-100	GQOIS-QROBO-DOC-100	Q-ROBOTICS/slam_navigation/localization/monte_carlo.py	Monte Carlo localization framework.
-QROBO-P-101	GQOIS-QROBO-DOC-101	Q-ROBOTICS/slam_navigation/localization/quantum_enhanced.py	Quantum-enhanced localization algorithms.
-QROBO-P-102	GQOIS-QROBO-DOC-102	Q-ROBOTICS/slam_navigation/path_planning/a_star.py	A* path planning algorithm.
-QROBO-P-103	GQOIS-QROBO-DOC-103	Q-ROBOTICS/slam_navigation/path_planning/rrt_star.py	RRT* path planning algorithm.
-QROBO-P-104	GQOIS-QROBO-DOC-104	Q-ROBOTICS/slam_navigation/path_planning/dynamic_window.py	Dynamic Window Approach (DWA) for local planning.
-QROBO-P-105	GQOIS-QROBO-DOC-105	Q-ROBOTICS/slam_navigation/path_planning/potential_field.py	Potential field method for path planning.
-QROBO-P-106	GQOIS-QROBO-DOC-106	Q-ROBOTICS/slam_navigation/navigation/autonomous_nav.py	The main autonomous navigation stack.
-QROBO-P-107	GQOIS-QROBO-DOC-107	Q-ROBOTICS/slam_navigation/navigation/obstacle_avoidance.py	Local obstacle avoidance logic.
-QROBO-P-108	GQOIS-QROBO-DOC-108	Q-ROBOTICS/slam_navigation/navigation/terrain_analysis.py	Terrain analysis for navigation.
-QROBO-P-109	GQOIS-QROBO-DOC-109	Q-ROBOTICS/slam_navigation/navigation/multi_robot_nav.py	Multi-robot navigation and coordination.
-QROBO-P-110	GQOIS-QROBO-DOC-110	Q-ROBOTICS/slam_navigation/calibration/sensor_calibration.py	Intrinsic sensor calibration tools.
-QROBO-P-111	GQOIS-QROBO-DOC-111	Q-ROBOTICS/slam_navigation/calibration/extrinsic_calibration.py	Extrinsic sensor calibration tools (e.g., camera-LIDAR).
-QROBO-P-112	GQOIS-QROBO-DOC-112	Q-ROBOTICS/slam_navigation/visualization/map_visualization.py	Tools for visualizing maps (2D/3D).
-QROBO-P-113	GQOIS-QROBO-DOC-113	Q-ROBOTICS/slam_navigation/visualization/trajectory_viz.py	Tools for visualizing robot trajectories.
-QROBO-P-114	GQOIS-QROBO-DOC-114	Q-ROBOTICS/slam_navigation/testing/slam_benchmarks.py	Benchmarks for evaluating SLAM performance.
-QROBO-P-115	GQOIS-QROBO-DOC-115	Q-ROBOTICS/slam_navigation/testing/navigation_tests.py	Test suite for the navigation stack.
-QROBO-P-116	GQOIS-QROBO-DOC-116	Q-ROBOTICS/slam_navigation/config/slam_parameters.yaml	Configuration file for SLAM parameters.
-QROBO-P-117	GQOIS-QROBO-DOC-117	Q-ROBOTICS/slam_navigation/config/nav_settings.yaml	Configuration file for navigation settings.
-QROBO-P-118	GQOIS-QROBO-DOC-118	Q-ROBOTICS/slam_navigation/docs/slam_theory.md	Document explaining the theory behind the SLAM implementation.
-QROBO-P-119	GQOIS-QROBO-DOC-119	Q-ROBOTICS/slam_navigation/docs/navigation_guide.md	User guide for the navigation stack.
-QROBO-P-120	GQOIS-QROBO-DOC-120	Q-ROBOTICS/slam_navigation/docs/calibration_manual.md	Manual for sensor calibration procedures.
-QROBO-P-121	GQOIS-QROBO-DOC-121	Q-ROBOTICS/exploration/README.md	README for the exploration and inspection robotics module.
-QROBO-P-122	GQOIS-QROBO-DOC-122	Q-ROBOTICS/exploration/autonomous/exploration_strategy.py	High-level strategy for autonomous exploration.
-QROBO-P-123	GQOIS-QROBO-DOC-123	Q-ROBOTICS/exploration/autonomous/frontier_exploration.py	Frontier-based exploration algorithm.
-QROBO-P-124	GQOIS-QROBO-DOC-124	Q-ROBOTICS/exploration/autonomous/information_gain.py	Information-gain-based exploration algorithm.
-QROBO-P-125	GQOIS-QROBO-DOC-125	Q-ROBOTICS/exploration/autonomous/coverage_planning.py	Coverage path planning algorithms.
-QROBO-P-126	GQOIS-QROBO-DOC-126	Q-ROBOTICS/exploration/inspection/visual_inspection.py	Automated visual inspection logic.
-QROBO-P-127	GQOIS-QROBO-DOC-127	Q-ROBOTICS/exploration/inspection/defect_detection.py	AI models for automated defect detection.
-QROBO-P-128	GQOIS-QROBO-DOC-128	Q-ROBOTICS/exploration/inspection/thermal_inspection.py	Automated thermal inspection logic.
-QROBO-P-129	GQOIS-QROBO-DOC-129	Q-ROBOTICS/exploration/inspection/ultrasonic_testing.py	Robotic ultrasonic testing procedures.
-QROBO-P-130	GQOIS-QROBO-DOC-130	Q-ROBOTICS/exploration/inspection/ndt_integration.py	Integration with Non-Destructive Testing (NDT) tools.
-QROBO-P-131	GQOIS-QROBO-DOC-131	Q-ROBOTICS/exploration/mapping/exploration_mapping.py	Mapping specifically for exploration tasks.
-QROBO-P-132	GQOIS-QROBO-DOC-132	Q-ROBOTICS/exploration/mapping/hazard_mapping.py	Mapping of potential hazards in an environment.
-QROBO-P-133	GQOIS-QROBO-DOC-133	Q-ROBOTICS/exploration/platforms/uav_exploration.py	Software stack for UAV-based exploration.
-QROBO-P-134	GQOIS-QROBO-DOC-134	Q-ROBOTICS/exploration/platforms/ugv_exploration.py	Software stack for UGV-based exploration.
-QROBO-P-135	GQOIS-QROBO-DOC-135	Q-ROBOTICS/exploration/platforms/crawler_robots.py	Software stack for crawler robots.
-QROBO-P-136	GQOIS-QROBO-DOC-136	Q-ROBOTICS/exploration/data/inspection_database.py	Database schema for storing inspection data.
-QROBO-P-137	GQOIS-QROBO-DOC-137	Q-ROBOTICS/exploration/data/anomaly_tracking.py	System for tracking and managing detected anomalies.
-QROBO-P-138	GQOIS-QROBO-DOC-138	Q-ROBOTICS/exploration/reporting/inspection_reports.py	Automated generation of inspection reports.
-QROBO-P-139	GQOIS-QROBO-DOC-139	Q-ROBOTICS/exploration/reporting/3d_reconstruction.py	3D reconstruction of inspected areas.
-QROBO-P-140	GQOIS-QROBO-DOC-140	Q-ROBOTICS/exploration/config/exploration_params.yaml	Configuration file for exploration parameters.
-QROBO-P-141	GQOIS-QROBO-DOC-141	Q-ROBOTICS/exploration/config/inspection_settings.yaml	Configuration file for inspection settings.
-QROBO-P-142	GQOIS-QROBO-DOC-142	Q-ROBOTICS/exploration/docs/exploration_guide.md	User guide for autonomous exploration systems.
-QROBO-P-143	GQOIS-QROBO-DOC-143	Q-ROBOTICS/exploration/docs/inspection_manual.md	Manual for performing robotic inspections.
-QROBO-P-144	GQOIS-QROBO-DOC-144	Q-ROBOTICS/exploration/docs/platform_specs.md	Specifications for different robotic platforms.
-QROBO-P-145	GQOIS-QROBO-DOC-145	Q-ROBOTICS/exploration/docs/safety_procedures.md	Safety procedures for exploration robotics.
-QROBO-P-146	GQOIS-QROBO-DOC-146	Q-ROBOTICS/assembly_fal/README.md	README for the Final Assembly Line (FAL) robotics module.
-QROBO-P-147	GQOIS-QROBO-DOC-147	Q-ROBOTICS/assembly_fal/robots/articulated_robot.py	Control software for articulated robot arms.
-QROBO-P-148	GQOIS-QROBO-DOC-148	Q-ROBOTICS/assembly_fal/robots/collaborative_robot.py	Control software for collaborative robots (cobots).
-QROBO-P-149	GQOIS-QROBO-DOC-149	Q-ROBOTICS/assembly_fal/robots/mobile_manipulator.py	Control software for mobile manipulators.
-QROBO-P-150	GQOIS-QROBO-DOC-150	Q-ROBOTICS/assembly_fal/robots/parallel_robot.py	Control software for parallel robots (e.g., delta robots).
-QROBO-P-151	GQOIS-QROBO-DOC-151	Q-ROBOTICS/assembly_fal/end_effectors/gripper_control.py	Control logic for various gripper end-effectors.
-QROBO-P-152	GQOIS-QROBO-DOC-152	Q-ROBOTICS/assembly_fal/end_effectors/tool_changer.py	Logic for automated tool changers.
-QROBO-P-153	GQOIS-QROBO-DOC-153	Q-ROBOTICS/assembly_fal/end_effectors/force_torque_sensor.py	Integration of force-torque sensors on end-effectors.
-QROBO-P-154	GQOIS-QROBO-DOC-154	Q-ROBOTICS/assembly_fal/assembly/precision_assembly.py	Algorithms for high-precision assembly tasks.
-QROBO-P-155	GQOIS-QROBO-DOC-155	Q-ROBOTICS/assembly_fal/assembly/fastening_operations.py	Logic for robotic fastening (drilling, riveting).
-QROBO-P-156	GQOIS-QROBO-DOC-156	Q-ROBOTICS/assembly_fal/assembly/adhesive_application.py	Logic for robotic adhesive and sealant application.
-QROBO-P-157	GQOIS-QROBO-DOC-157	Q-ROBOTICS/assembly_fal/assembly/welding_operations.py	Logic for robotic welding operations.
-QROBO-P-158	GQOIS-QROBO-DOC-158	Q-ROBOTICS/assembly_fal/assembly/composite_layup.py	Automated composite layup procedures.
-QROBO-P-159	GQOIS-QROBO-DOC-159	Q-ROBOTICS/assembly_fal/quality/inline_inspection.py	In-line quality inspection system.
-QROBO-P-160	GQOIS-QROBO-DOC-160	Q-ROBOTICS/assembly_fal/quality/dimensional_verification.py	Robotic dimensional verification (e.g., with laser scanners).
-QROBO-P-161	GQOIS-QROBO-DOC-161	Q-ROBOTICS/assembly_fal/quality/vision_inspection.py	Vision-based quality inspection.
-QROBO-P-162	GQOIS-QROBO-DOC-162	Q-ROBOTICS/assembly_fal/quality/force_monitoring.py	Monitoring of forces during assembly.
-QROBO-P-163	GQOIS-QROBO-DOC-163	Q-ROBOTICS/assembly_fal/coordination/multi_robot_coord.py	Coordination system for multiple robots on the assembly line.
-QROBO-P-164	GQOIS-QROBO-DOC-164	Q-ROBOTICS/assembly_fal/coordination/task_allocation.py	Dynamic task allocation for assembly robots.
-QROBO-P-165	GQOIS-QROBO-DOC-165	Q-ROBOTICS/assembly_fal/coordination/collision_free_planning.py	Collision-free path planning for multiple robots.
-QROBO-P-166	GQOIS-QROBO-DOC-166	Q-ROBOTICS/assembly_fal/optimization/cycle_time_opt.py	Optimization of assembly cycle time.
-QROBO-P-167	GQOIS-QROBO-DOC-167	Q-ROBOTICS/assembly_fal/optimization/energy_optimization.py	Optimization of energy consumption on the assembly line.
-QROBO-P-168	GQOIS-QROBO-DOC-168	Q-ROBOTICS/assembly_fal/optimization/layout_optimization.py	Optimization of the assembly line layout.
-QROBO-P-169	GQOIS-QROBO-DOC-169	Q-ROBOTICS/assembly_fal/human_robot/safety_zones.py	Dynamic safety zones for human-robot collaboration.
-QROBO-P-170	GQOIS-QROBO-DOC-170	Q-ROBOTICS/assembly_fal/human_robot/collaborative_tasks.py	Definition of collaborative assembly tasks.
-QROBO-P-171	GQOIS-QROBO-DOC-171	Q-ROBOTICS/assembly_fal/human_robot/gesture_recognition.py	Gesture recognition for human-robot interaction.
-QROBO-P-172	GQOIS-QROBO-DOC-172	Q-ROBOTICS/assembly_fal/integration/mes_integration.py	Integration with the Manufacturing Execution System (MES).
-QROBO-P-173	GQOIS-QROBO-DOC-173	Q-ROBOTICS/assembly_fal/integration/plc_interface.py	Interface with Programmable Logic Controllers (PLCs).
-QROBO-P-174	GQOIS-QROBO-DOC-174	Q-ROBOTICS/assembly_fal/config/robot_parameters.yaml	Configuration file for robot parameters (kinematics, limits).
-QROBO-P-175	GQOIS-QROBO-DOC-175	Q-ROBOTICS/assembly_fal/config/assembly_sequences.yaml	Configuration file for assembly sequences.
-QROBO-P-176	GQOIS-QROBO-DOC-176	Q-ROBOTICS/assembly_fal/docs/fal_architecture.md	Architecture document for the FAL robotics system.
-QROBO-P-177	GQOIS-QROBO-DOC-177	Q-ROBOTICS/assembly_fal/docs/robot_programming.md	Guide for programming assembly robots.
-QROBO-P-178	GQOIS-QROBO-DOC-178	Q-ROBOTICS/assembly_fal/docs/quality_procedures.md	Manual of quality control procedures for the FAL.
-QROBO-P-179	GQOIS-QROBO-DOC-179	Q-ROBOTICS/assembly_fal/docs/safety_standards.md	Safety standards for the automated assembly line.
-QROBO-P-180	GQOIS-QROBO-DOC-180	Q-ROBOTICS/assembly_fal/docs/maintenance_guide.md	Maintenance guide for assembly line robots.
-QROBO-P-181	GQOIS-QROBO-DOC-181	Q-ROBOTICS/maintenance_robotics/README.md	README for the maintenance robotics module.
-QROBO-P-182	GQOIS-QROBO-DOC-182	Q-ROBOTICS/maintenance_robotics/inspection/automated_inspection.py	System for automated aircraft maintenance inspection.
-QROBO-P-183	GQOIS-QROBO-DOC-183	Q-ROBOTICS/maintenance_robotics/inspection/predictive_inspection.py	Predictive scheduling of robotic inspections.
-QROBO-P-184	GQOIS-QROBO-DOC-184	Q-ROBOTICS/maintenance_robotics/inspection/corrosion_detection.py	Robotic system for corrosion detection.
-QROBO-P-185	GQOIS-QROBO-DOC-185	Q-ROBOTICS/maintenance_robotics/inspection/crack_detection.py	Robotic system for crack detection.
-QROBO-P-186	GQOIS-QROBO-DOC-186	Q-ROBOTICS/maintenance_robotics/cleaning/surface_cleaning.py	Robotic surface cleaning and preparation.
-QROBO-P-187	GQOIS-QROBO-DOC-187	Q-ROBOTICS/maintenance_robotics/cleaning/decontamination.py	Robotic decontamination procedures.
-QROBO-P-188	GQOIS-QROBO-DOC-188	Q-ROBOTICS/maintenance_robotics/cleaning/automated_washing.py	Automated aircraft washing system.
-QROBO-P-189	GQOIS-QROBO-DOC-189	Q-ROBOTICS/maintenance_robotics/repair/automated_repair.py	Framework for automated repair tasks.
-QROBO-P-190	GQOIS-QROBO-DOC-190	Q-ROBOTICS/maintenance_robotics/repair/sealant_application.py	Robotic sealant re-application.
-QROBO-P-191	GQOIS-QROBO-DOC-191	Q-ROBOTICS/maintenance_robotics/repair/patch_repair.py	Robotic application of repair patches.
-QROBO-P-192	GQOIS-QROBO-DOC-192	Q-ROBOTICS/maintenance_robotics/repair/component_replacement.py	Robotic assistance for component replacement.
-QROBO-P-193	GQOIS-QROBO-DOC-193	Q-ROBOTICS/maintenance_robotics/lubrication/auto_lubrication.py	Automated lubrication system.
-QROBO-P-194	GQOIS-QROBO-DOC-194	Q-ROBOTICS/maintenance_robotics/lubrication/grease_application.py	Robotic application of grease to mechanical joints.
-QROBO-P-195	GQOIS-QROBO-DOC-195	Q-ROBOTICS/maintenance_robotics/platforms/maintenance_uav.py	Software for maintenance UAVs (drones).
-QROBO-P-196	GQOIS-QROBO-DOC-196	Q-ROBOTICS/maintenance_robotics/platforms/rail_mounted.py	Software for rail-mounted maintenance robots.
-QROBO-P-197	GQOIS-QROBO-DOC-197	Q-ROBOTICS/maintenance_robotics/platforms/mobile_platform.py	Software for mobile maintenance platforms.
-QROBO-P-198	GQOIS-QROBO-DOC-198	Q-ROBOTICS/maintenance_robotics/scheduling/maintenance_scheduler.py	Scheduler for robotic maintenance tasks.
-QROBO-P-199	GQOIS-QROBO-DOC-199	Q-ROBOTICS/maintenance_robotics/scheduling/predictive_scheduling.py	Predictive scheduling based on aircraft health data.
-QROBO-P-200	GQOIS-QROBO-DOC-200	Q-ROBOTICS/maintenance_robotics/scheduling/resource_allocation.py	Allocation of robotic resources for maintenance.
-QROBO-P-201	GQOIS-QROBO-DOC-201	Q-ROBOTICS/maintenance_robotics/data/maintenance_history.py	Database for storing robotic maintenance history.
-QROBO-P-202	GQOIS-QROBO-DOC-202	Q-ROBOTICS/maintenance_robotics/data/failure_database.py	Database of failures to inform predictive models.
-QROBO-P-203	GQOIS-QROBO-DOC-203	Q-ROBOTICS/maintenance_robotics/integration/cmms_integration.py	Integration with Computerized Maintenance Management Systems (CMMS).
-QROBO-P-204	GQOIS-QROBO-DOC-204	Q-ROBOTICS/maintenance_robotics/config/maintenance_params.yaml	Configuration file for maintenance parameters.
-QROBO-P-205	GQOIS-QROBO-DOC-205	Q-ROBOTICS/maintenance_robotics/config/platform_specs.yaml	Configuration file for maintenance platform specifications.
-QROBO-P-206	GQOIS-QROBO-DOC-206	Q-ROBOTICS/maintenance_robotics/docs/maintenance_procedures.md	Manual of robotic maintenance procedures.
-QROBO-P-207	GQOIS-QROBO-DOC-207	Q-ROBOTICS/maintenance_robotics/docs/platform_operation.md	Operation manual for maintenance platforms.
-QROBO-P-208	GQOIS-QROBO-DOC-208	Q-ROBOTICS/maintenance_robotics/docs/safety_protocols.md	Safety protocols for maintenance robotics.
-QROBO-P-209	GQOIS-QROBO-DOC-209	Q-ROBOTICS/maintenance_robotics/docs/training_manual.md	Training manual for maintenance robotics operators.
-QROBO-P-210	GQOIS-QROBO-DOC-210	Q-ROBOTICS/maintenance_robotics/docs/certification_guide.md	Certification guide for automated maintenance.
-QROBO-P-211	GQOIS-QROBO-DOC-211	Q-ROBOTICS/supply_chain/README.md	README for the supply chain automation module.
-QROBO-P-212	GQOIS-QROBO-DOC-212	Q-ROBOTICS/supply_chain/warehouse/agv_system.py	Control system for Automated Guided Vehicles (AGVs) in the warehouse.
-QROBO-P-213	GQOIS-QROBO-DOC-213	Q-ROBOTICS/supply_chain/warehouse/asrs_integration.py	Integration with Automated Storage and Retrieval Systems (AS/RS).
-QROBO-P-214	GQOIS-QROBO-DOC-214	Q-ROBOTICS/supply_chain/warehouse/picking_robots.py	Control software for robotic picking systems.
-QROBO-P-215	GQOIS-QROBO-DOC-215	Q-ROBOTICS/supply_chain/warehouse/packing_automation.py	Automated packing systems.
-QROBO-P-216	GQOIS-QROBO-DOC-216	Q-ROBOTICS/supply_chain/inventory/automated_counting.py	Automated inventory counting using drones or mobile robots.
-QROBO-P-217	GQOIS-QROBO-DOC-217	Q-ROBOTICS/supply_chain/inventory/rfid_tracking.py	RFID-based inventory tracking system.
-QROBO-P-218	GQOIS-QROBO-DOC-218	Q-ROBOTICS/supply_chain/inventory/predictive_stocking.py	Predictive models for inventory stocking levels.
-QROBO-P-219	GQOIS-QROBO-DOC-219	Q-ROBOTICS/supply_chain/transport/loading_automation.py	Automated loading and unloading of transport vehicles.
-QROBO-P-220	GQOIS-QROBO-DOC-220	Q-ROBOTICS/supply_chain/transport/autonomous_transport.py	Autonomous transport vehicles for parts delivery.
-QROBO-P-221	GQOIS-QROBO-DOC-221	Q-ROBOTICS/supply_chain/transport/route_optimization.py	Route optimization for transport vehicles.
-QROBO-P-222	GQOIS-QROBO-DOC-222	Q-ROBOTICS/supply_chain/quality/incoming_inspection.py	Automated quality inspection of incoming parts.
-QROBO-P-223	GQOIS-QROBO-DOC-223	Q-ROBOTICS/supply_chain/quality/batch_verification.py	Automated verification of part batches.
-QROBO-P-224	GQOIS-QROBO-DOC-224	Q-ROBOTICS/supply_chain/optimization/warehouse_layout.py	Optimization of warehouse layout for robotic efficiency.
-QROBO-P-225	GQOIS-QROBO-DOC-225	Q-ROBOTICS/supply_chain/optimization/flow_optimization.py	Optimization of material flow through the supply chain.
-QROBO-P-226	GQOIS-QROBO-DOC-226	Q-ROBOTICS/supply_chain/integration/erp_integration.py	Integration with the Enterprise Resource Planning (ERP) system.
-QROBO-P-227	GQOIS-QROBO-DOC-227	Q-ROBOTICS/supply_chain/integration/wms_interface.py	Interface with the Warehouse Management System (WMS).
-QROBO-P-228	GQOIS-QROBO-DOC-228	Q-ROBOTICS/supply_chain/tracking/real_time_tracking.py	Real-time tracking of parts and materials.
-QROBO-P-229	GQOIS-QROBO-DOC-229	Q-ROBOTICS/supply_chain/config/warehouse_layout.yaml	Configuration file for the warehouse layout.
-QROBO-P-230	GQOIS-QROBO-DOC-230	Q-ROBOTICS/supply_chain/config/automation_params.yaml	Configuration file for supply chain automation parameters.
-QROBO-P-231	GQOIS-QROBO-DOC-231	Q-ROBOTICS/supply_chain/docs/automation_guide.md	Guide to supply chain automation.
-QROBO-P-232	GQOIS-QROBO-DOC-232	Q-ROBOTICS/supply_chain/docs/integration_manual.md	Manual for integrating with supply chain systems.
-QROBO-P-233	GQOIS-QROBO-DOC-233	Q-ROBOTICS/supply_chain/docs/safety_procedures.md	Safety procedures for automated supply chain.
-QROBO-P-234	GQOIS-QROBO-DOC-234	Q-ROBOTICS/supply_chain/docs/optimization_report.md	Report on supply chain optimization results.
-QROBO-P-235	GQOIS-QROBO-DOC-235	Q-ROBOTICS/supply_chain/docs/roi_analysis.md	Return on Investment (ROI) analysis for automation.
-QROBO-P-236	GQOIS-QROBO-DOC-236	Q-ROBOTICS/digital_twin_robotics/README.md	README for the robotics digital twin module.
-QROBO-P-237	GQOIS-QROBO-DOC-237	Q-ROBOTICS/digital_twin_robotics/models/robot_model.py	Digital twin model of a generic robot.
-QROBO-P-238	GQOIS-QROBO-DOC-238	Q-ROBOTICS/digital_twin_robotics/simulation/robot_simulation.py	Simulation of robot behavior in the digital twin.
-QROBO-P-239	GQOIS-QROBO-DOC-239	Q-ROBOTICS/digital_twin_robotics/analytics/performance_analytics.py	Performance analytics for robots using the digital twin.
-QROBO-P-240	GQOIS-QROBO-DOC-240	Q-ROBOTICS/docs/robotics_overview.md	Compiled overview document for the Q-ROBOTICS division.
-QROBO-P-241	GQOIS-QROBO-DOC-241	Q-ROBOTICS/docs/autonomous_systems_manual.md	Compiled manual for autonomous systems.
-QROBO-P-242	GQOIS-QROBO-DOC-242	Q-ROBOTICS/docs/slam_navigation_guide.md	Compiled guide to SLAM and navigation.
-QROBO-P-243	GQOIS-QROBO-DOC-243	Q-ROBOTICS/docs/assembly_robotics_handbook.md	Compiled handbook for assembly robotics.
-QROBO-P-244	GQOIS-QROBO-DOC-244	Q-ROBOTICS/docs/maintenance_robotics_manual.md	Compiled manual for maintenance robotics.
-QROBO-P-245	GQOIS-QROBO-DOC-245	Q-ROBOTICS/docs/release_notes_v1.0.md	Release notes for version 1.0 of the robotics module.],
+  { promptId: "QROBO-P-001", docId: "GQOIS-QROBO-DOC-001", path: "Q-ROBOTICS/README.md", description: "Main README for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-002", docId: "GQOIS-QROBO-DOC-002", path: "Q-ROBOTICS/ROBOTICS_OVERVIEW.md", description: "Overview of all robotics and automation systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-003", docId: "GQOIS-QROBO-DOC-003", path: "Q-ROBOTICS/LICENSE", description: "Software license for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-004", docId: "GQOIS-QROBO-DOC-004", path: "Q-ROBOTICS/SYSTEM_ARCHITECTURE.md", description: "Architecture of the integrated robotics system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-005", docId: "GQOIS-QROBO-DOC-005", path: "Q-ROBOTICS/AI_INTEGRATION.md", description: "Plan for integrating AI into robotics systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-006", docId: "GQOIS-QROBO-DOC-006", path: "Q-ROBOTICS/QUANTUM_INTEGRATION.md", description: "Plan for integrating quantum algorithms into robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-007", docId: "GQOIS-QROBO-DOC-007", path: "Q-ROBOTICS/API_REFERENCE.md", description: "API reference for the robotics control software.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-008", docId: "GQOIS-QROBO-DOC-008", path: "Q-ROBOTICS/SAFETY_STANDARDS.md", description: "Safety standards for human-robot interaction.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-009", docId: "GQOIS-QROBO-DOC-009", path: "Q-ROBOTICS/CERTIFICATION_REQUIREMENTS.md", description: "Certification requirements for autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-010", docId: "GQOIS-QROBO-DOC-010", path: "Q-ROBOTICS/TESTING_FRAMEWORK.md", description: "Framework for testing and validating robotic systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-011", docId: "GQOIS-QROBO-DOC-011", path: "Q-ROBOTICS/.gitignore", description: "Git ignore file for the Q-ROBOTICS repository.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-012", docId: "GQOIS-QROBO-DOC-012", path: "Q-ROBOTICS/Makefile", description: "Makefile for managing the Q-ROBOTICS codebase.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-013", docId: "GQOIS-QROBO-DOC-013", path: "Q-ROBOTICS/requirements.txt", description: "Python package requirements for robotics software.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-014", docId: "GQOIS-QROBO-DOC-014", path: "Q-ROBOTICS/environment.yml", description: "Conda environment configuration.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-015", docId: "GQOIS-QROBO-DOC-015", path: "Q-ROBOTICS/docker-compose.yml", description: "Docker Compose for deploying robotics simulation services.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-016", docId: "GQOIS-QROBO-DOC-016", path: "Q-ROBOTICS/setup.py", description: "Python package setup script.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-017", docId: "GQOIS-QROBO-DOC-017", path: "Q-ROBOTICS/CHANGELOG.md", description: "Changelog for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-018", docId: "GQOIS-QROBO-DOC-018", path: "Q-ROBOTICS/ROADMAP.md", description: "Development roadmap for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-019", docId: "GQOIS-QROBO-DOC-019", path: "Q-ROBOTICS/GLOSSARY.md", description: "Glossary of terms for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-020", docId: "GQOIS-QROBO-DOC-020", path: "Q-ROBOTICS/FAQ.md", description: "Frequently Asked Questions for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-021", docId: "GQOIS-QROBO-DOC-021", path: "Q-ROBOTICS/autonomous_systems/README.md", description: "README for the autonomous systems core module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-022", docId: "GQOIS-QROBO-DOC-022", path: "Q-ROBOTICS/autonomous_systems/core/decision_engine.py", description: "The core decision-making engine for autonomous behavior.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-023", docId: "GQOIS-QROBO-DOC-023", path: "Q-ROBOTICS/autonomous_systems/core/behavior_tree.py", description: "Implementation of behavior trees for task execution.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-024", docId: "GQOIS-QROBO-DOC-024", path: "Q-ROBOTICS/autonomous_systems/core/state_machine.py", description: "Implementation of finite state machines for control.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-025", docId: "GQOIS-QROBO-DOC-025", path: "Q-ROBOTICS/autonomous_systems/core/task_planner.py", description: "High-level task planner for robotic agents.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-026", docId: "GQOIS-QROBO-DOC-026", path: "Q-ROBOTICS/autonomous_systems/perception/sensor_fusion.py", description: "Multi-sensor fusion algorithms (e.g., Kalman filters).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-027", docId: "GQOIS-QROBO-DOC-027", path: "Q-ROBOTICS/autonomous_systems/perception/object_detection.py", description: "Object detection algorithms using vision and LiDAR.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-028", docId: "GQOIS-QROBO-DOC-028", path: "Q-ROBOTICS/autonomous_systems/perception/scene_understanding.py", description: "Algorithms for 3D scene understanding.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-029", docId: "GQOIS-QROBO-DOC-029", path: "Q-ROBOTICS/autonomous_systems/perception/depth_estimation.py", description: "Depth estimation from stereo cameras or other sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-030", docId: "GQOIS-QROBO-DOC-030", path: "Q-ROBOTICS/autonomous_systems/perception/semantic_segmentation.py", description: "Semantic segmentation of sensor data.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-031", docId: "GQOIS-QROBO-DOC-031", path: "Q-ROBOTICS/autonomous_systems/control/motion_planning.py", description: "Motion planning algorithms for robot manipulators and vehicles.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-032", docId: "GQOIS-QROBO-DOC-032", path: "Q-ROBOTICS/autonomous_systems/control/trajectory_optimization.py", description: "Trajectory optimization for smooth and efficient motion.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-033", docId: "GQOIS-QROBO-DOC-033", path: "Q-ROBOTICS/autonomous_systems/control/impedance_control.py", description: "Impedance control for physical interaction tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-034", docId: "GQOIS-QROBO-DOC-034", path: "Q-ROBOTICS/autonomous_systems/control/force_control.py", description: "Force control for delicate assembly and interaction tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-035", docId: "GQOIS-QROBO-DOC-035", path: "Q-ROBOTICS/autonomous_systems/control/adaptive_control.py", description: "Adaptive control algorithms for changing dynamics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-036", docId: "GQOIS-QROBO-DOC-036", path: "Q-ROBOTICS/autonomous_systems/safety/collision_avoidance.py", description: "Real-time collision avoidance system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-037", docId: "GQOIS-QROBO-DOC-037", path: "Q-ROBOTICS/autonomous_systems/safety/emergency_stop.py", description: "Emergency stop (e-stop) logic and protocols.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-038", docId: "GQOIS-QROBO-DOC-038", path: "Q-ROBOTICS/autonomous_systems/safety/human_detection.py", description: "System for detecting humans in the robot's workspace.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-039", docId: "GQOIS-QROBO-DOC-039", path: "Q-ROBOTICS/autonomous_systems/safety/safe_zones.py", description: "Definition and enforcement of safe operational zones.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-040", docId: "GQOIS-QROBO-DOC-040", path: "Q-ROBOTICS/autonomous_systems/safety/risk_assessment.py", description: "Automated risk assessment algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-041", docId: "GQOIS-QROBO-DOC-041", path: "Q-ROBOTICS/autonomous_systems/communication/robot_coordination.py", description: "Protocols for multi-robot coordination.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-042", docId: "GQOIS-QROBO-DOC-042", path: "Q-ROBOTICS/autonomous_systems/communication/swarm_protocol.py", description: "Communication protocols for robot swarms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-043", docId: "GQOIS-QROBO-DOC-043", path: "Q-ROBOTICS/autonomous_systems/communication/fleet_management.py", description: "Fleet management system for a group of robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-044", docId: "GQOIS-QROBO-DOC-044", path: "Q-ROBOTICS/autonomous_systems/learning/reinforcement_learning.py", description: "Reinforcement Learning (RL) framework for robot skills.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-045", docId: "GQOIS-QROBO-DOC-045", path: "Q-ROBOTICS/autonomous_systems/learning/imitation_learning.py", description: "Imitation Learning framework (learning from demonstration).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-046", docId: "GQOIS-QROBO-DOC-046", path: "Q-ROBOTICS/autonomous_systems/learning/transfer_learning.py", description: "Transfer learning framework for robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-047", docId: "GQOIS-QROBO-DOC-047", path: "Q-ROBOTICS/autonomous_systems/testing/simulation_env.py", description: "The main robotics simulation environment (e.g., Gazebo, Isaac Sim).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-048", docId: "GQOIS-QROBO-DOC-048", path: "Q-ROBOTICS/autonomous_systems/testing/hardware_in_loop.py", description: "Hardware-in-the-Loop (HIL) testing setup.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-049", docId: "GQOIS-QROBO-DOC-049", path: "Q-ROBOTICS/autonomous_systems/testing/validation_suite.py", description: "Validation test suite for autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-050", docId: "GQOIS-QROBO-DOC-050", path: "Q-ROBOTICS/autonomous_systems/config/system_parameters.yaml", description: "Configuration file for autonomous system parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-051", docId: "GQOIS-QROBO-DOC-051", path: "Q-ROBOTICS/autonomous_systems/config/safety_settings.yaml", description: "Configuration file for safety system settings.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-052", docId: "GQOIS-QROBO-DOC-052", path: "Q-ROBOTICS/autonomous_systems/docs/architecture_guide.md", description: "Architecture guide for autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-053", docId: "GQOIS-QROBO-DOC-053", path: "Q-ROBOTICS/autonomous_systems/docs/safety_manual.md", description: "Safety manual for autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-054", docId: "GQOIS-QROBO-DOC-054", path: "Q-ROBOTICS/autonomous_systems/docs/programming_guide.md", description: "Programming guide for developing autonomous behaviors.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-055", docId: "GQOIS-QROBO-DOC-055", path: "Q-ROBOTICS/autonomous_systems/docs/deployment_manual.md", description: "Manual for deploying autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-056", docId: "GQOIS-QROBO-DOC-056", path: "Q-ROBOTICS/ai_robotics/README.md", description: "README for the AI and ML for robotics module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-057", docId: "GQOIS-QROBO-DOC-057", path: "Q-ROBOTICS/ai_robotics/vision/deep_learning_models.py", description: "Library of deep learning models for computer vision.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-058", docId: "GQOIS-QROBO-DOC-058", path: "Q-ROBOTICS/ai_robotics/vision/real_time_detection.py", description: "Real-time object detection implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-059", docId: "GQOIS-QROBO-DOC-059", path: "Q-ROBOTICS/ai_robotics/vision/pose_estimation.py", description: "6D pose estimation of objects.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-060", docId: "GQOIS-QROBO-DOC-060", path: "Q-ROBOTICS/ai_robotics/vision/visual_servoing.py", description: "Visual servoing control logic.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-061", docId: "GQOIS-QROBO-DOC-061", path: "Q-ROBOTICS/ai_robotics/nlp/voice_commands.py", description: "Voice command recognition system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-062", docId: "GQOIS-QROBO-DOC-062", path: "Q-ROBOTICS/ai_robotics/nlp/intent_recognition.py", description: "Natural language intent recognition module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-063", docId: "GQOIS-QROBO-DOC-063", path: "Q-ROBOTICS/ai_robotics/nlp/dialogue_system.py", description: "Dialogue management system for human-robot interaction.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-064", docId: "GQOIS-QROBO-DOC-064", path: "Q-ROBOTICS/ai_robotics/planning/ai_task_planner.py", description: "AI-based task planner (e.g., PDDL solver).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-065", docId: "GQOIS-QROBO-DOC-065", path: "Q-ROBOTICS/ai_robotics/planning/constraint_solver.py", description: "Constraint solver for complex planning problems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-066", docId: "GQOIS-QROBO-DOC-066", path: "Q-ROBOTICS/ai_robotics/planning/hierarchical_planning.py", description: "Hierarchical task network (HTN) planner.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-067", docId: "GQOIS-QROBO-DOC-067", path: "Q-ROBOTICS/ai_robotics/learning/deep_rl.py", description: "Deep Reinforcement Learning algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-068", docId: "GQOIS-QROBO-DOC-068", path: "Q-ROBOTICS/ai_robotics/learning/meta_learning.py", description: "Meta-learning algorithms for rapid skill acquisition.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-069", docId: "GQOIS-QROBO-DOC-069", path: "Q-ROBOTICS/ai_robotics/learning/continual_learning.py", description: "Continual learning algorithms to prevent catastrophic forgetting.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-070", docId: "GQOIS-QROBO-DOC-070", path: "Q-ROBOTICS/ai_robotics/prediction/motion_prediction.py", description: "Prediction of human and object motion.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-071", docId: "GQOIS-QROBO-DOC-071", path: "Q-ROBOTICS/ai_robotics/prediction/failure_prediction.py", description: "Prediction of robot component failures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-072", docId: "GQOIS-QROBO-DOC-072", path: "Q-ROBOTICS/ai_robotics/prediction/maintenance_prediction.py", description: "Predictive scheduling of robot maintenance.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-073", docId: "GQOIS-QROBO-DOC-073", path: "Q-ROBOTICS/ai_robotics/optimization/neural_optimizer.py", description: "Neural network-based optimizers.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-074", docId: "GQOIS-QROBO-DOC-074", path: "Q-ROBOTICS/ai_robotics/optimization/quantum_ai_hybrid.py", description: "Hybrid quantum-AI optimization algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-075", docId: "GQOIS-QROBO-DOC-075", path: "Q-ROBOTICS/ai_robotics/edge_computing/model_compression.py", description: "Techniques for AI model compression (pruning, quantization).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-076", docId: "GQOIS-QROBO-DOC-076", path: "Q-ROBOTICS/ai_robotics/edge_computing/inference_engine.py", description: "Optimized inference engine for edge devices.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-077", docId: "GQOIS-QROBO-DOC-077", path: "Q-ROBOTICS/ai_robotics/edge_computing/distributed_ai.py", description: "Framework for distributed AI across multiple robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-078", docId: "GQOIS-QROBO-DOC-078", path: "Q-ROBOTICS/ai_robotics/datasets/robotic_datasets.py", description: "Curated datasets for training robotic AI models.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-079", docId: "GQOIS-QROBO-DOC-079", path: "Q-ROBOTICS/ai_robotics/datasets/synthetic_generation.py", description: "Tools for generating synthetic training data.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-080", docId: "GQOIS-QROBO-DOC-080", path: "Q-ROBOTICS/ai_robotics/testing/ai_validation.py", description: "Validation suite for AI models in robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-081", docId: "GQOIS-QROBO-DOC-081", path: "Q-ROBOTICS/ai_robotics/config/model_parameters.yaml", description: "Configuration file for AI model parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-082", docId: "GQOIS-QROBO-DOC-082", path: "Q-ROBOTICS/ai_robotics/config/training_config.yaml", description: "Configuration file for AI model training.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-083", docId: "GQOIS-QROBO-DOC-083", path: "Q-ROBOTICS/ai_robotics/docs/ai_architecture.md", description: "Architecture document for AI systems in robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-084", docId: "GQOIS-QROBO-DOC-084", path: "Q-ROBOTICS/ai_robotics/docs/model_deployment.md", description: "Guide for deploying AI models to robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-085", docId: "GQOIS-QROBO-DOC-085", path: "Q-ROBOTICS/ai_robotics/docs/training_guide.md", description: "Guide for training new AI models.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-086", docId: "GQOIS-QROBO-DOC-086", path: "Q-ROBOTICS/slam_navigation/README.md", description: "README for the SLAM and Navigation module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-087", docId: "GQOIS-QROBO-DOC-087", path: "Q-ROBOTICS/slam_navigation/slam/visual_slam.py", description: "Visual SLAM (vSLAM) implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-088", docId: "GQOIS-QROBO-DOC-088", path: "Q-ROBOTICS/slam_navigation/slam/lidar_slam.py", description: "LiDAR-based SLAM implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-089", docId: "GQOIS-QROBO-DOC-089", path: "Q-ROBOTICS/slam_navigation/slam/visual_inertial_slam.py", description: "Visual-Inertial SLAM (VI-SLAM) implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-090", docId: "GQOIS-QROBO-DOC-090", path: "Q-ROBOTICS/slam_navigation/slam/multi_sensor_fusion.py", description: "SLAM based on fusion of multiple sensor types.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-091", docId: "GQOIS-QROBO-DOC-091", path: "Q-ROBOTICS/slam_navigation/slam/graph_optimization.py", description: "Graph-based optimization for SLAM (e.g., pose graph).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-092", docId: "GQOIS-QROBO-DOC-092", path: "Q-ROBOTICS/slam_navigation/slam/loop_closure.py", description: "Loop closure detection and correction.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-093", docId: "GQOIS-QROBO-DOC-093", path: "Q-ROBOTICS/slam_navigation/slam/dense_reconstruction.py", description: "Dense 3D reconstruction from SLAM output.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-094", docId: "GQOIS-QROBO-DOC-094", path: "Q-ROBOTICS/slam_navigation/mapping/occupancy_grid.py", description: "2D occupancy grid mapping.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-095", docId: "GQOIS-QROBO-DOC-095", path: "Q-ROBOTICS/slam_navigation/mapping/3d_mapping.py", description: "3D mapping (e.g., point clouds, voxels).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-096", docId: "GQOIS-QROBO-DOC-096", path: "Q-ROBOTICS/slam_navigation/mapping/semantic_mapping.py", description: "Semantic mapping (labeling objects in the map).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-097", docId: "GQOIS-QROBO-DOC-097", path: "Q-ROBOTICS/slam_navigation/mapping/dynamic_mapping.py", description: "Mapping in dynamic environments with moving objects.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-098", docId: "GQOIS-QROBO-DOC-098", path: "Q-ROBOTICS/slam_navigation/localization/particle_filter.py", description: "Particle filter localization (MCL).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-099", docId: "GQOIS-QROBO-DOC-099", path: "Q-ROBOTICS/slam_navigation/localization/ekf_localization.py", description: "Extended Kalman Filter (EKF) localization.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-100", docId: "GQOIS-QROBO-DOC-100", path: "Q-ROBOTICS/slam_navigation/localization/monte_carlo.py", description: "Monte Carlo localization framework.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-101", docId: "GQOIS-QROBO-DOC-101", path: "Q-ROBOTICS/slam_navigation/localization/quantum_enhanced.py", description: "Quantum-enhanced localization algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-102", docId: "GQOIS-QROBO-DOC-102", path: "Q-ROBOTICS/slam_navigation/path_planning/a_star.py", description: "A* path planning algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-103", docId: "GQOIS-QROBO-DOC-103", path: "Q-ROBOTICS/slam_navigation/path_planning/rrt_star.py", description: "RRT* path planning algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-104", docId: "GQOIS-QROBO-DOC-104", path: "Q-ROBOTICS/slam_navigation/path_planning/dynamic_window.py", description: "Dynamic Window Approach (DWA) for local planning.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-105", docId: "GQOIS-QROBO-DOC-105", path: "Q-ROBOTICS/slam_navigation/path_planning/potential_field.py", description: "Potential field method for path planning.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-106", docId: "GQOIS-QROBO-DOC-106", path: "Q-ROBOTICS/slam_navigation/navigation/autonomous_nav.py", description: "The main autonomous navigation stack.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-107", docId: "GQOIS-QROBO-DOC-107", path: "Q-ROBOTICS/slam_navigation/navigation/obstacle_avoidance.py", description: "Local obstacle avoidance logic.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-108", docId: "GQOIS-QROBO-DOC-108", path: "Q-ROBOTICS/slam_navigation/navigation/terrain_analysis.py", description: "Terrain analysis for navigation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-109", docId: "GQOIS-QROBO-DOC-109", path: "Q-ROBOTICS/slam_navigation/navigation/multi_robot_nav.py", description: "Multi-robot navigation and coordination.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-110", docId: "GQOIS-QROBO-DOC-110", path: "Q-ROBOTICS/slam_navigation/calibration/sensor_calibration.py", description: "Intrinsic sensor calibration tools.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-111", docId: "GQOIS-QROBO-DOC-111", path: "Q-ROBOTICS/slam_navigation/calibration/extrinsic_calibration.py", description: "Extrinsic sensor calibration tools (e.g., camera-LIDAR).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-112", docId: "GQOIS-QROBO-DOC-112", path: "Q-ROBOTICS/slam_navigation/visualization/map_visualization.py", description: "Tools for visualizing maps (2D/3D).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-113", docId: "GQOIS-QROBO-DOC-113", path: "Q-ROBOTICS/slam_navigation/visualization/trajectory_viz.py", description: "Tools for visualizing robot trajectories.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-114", docId: "GQOIS-QROBO-DOC-114", path: "Q-ROBOTICS/slam_navigation/testing/slam_benchmarks.py", description: "Benchmarks for evaluating SLAM performance.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-115", docId: "GQOIS-QROBO-DOC-115", path: "Q-ROBOTICS/slam_navigation/testing/navigation_tests.py", description: "Test suite for the navigation stack.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-116", docId: "GQOIS-QROBO-DOC-116", path: "Q-ROBOTICS/slam_navigation/config/slam_parameters.yaml", description: "Configuration file for SLAM parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-117", docId: "GQOIS-QROBO-DOC-117", path: "Q-ROBOTICS/slam_navigation/config/nav_settings.yaml", description: "Configuration file for navigation settings.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-118", docId: "GQOIS-QROBO-DOC-118", path: "Q-ROBOTICS/slam_navigation/docs/slam_theory.md", description: "Document explaining the theory behind the SLAM implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-119", docId: "GQOIS-QROBO-DOC-119", path: "Q-ROBOTICS/slam_navigation/docs/navigation_guide.md", description: "User guide for the navigation stack.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-120", docId: "GQOIS-QROBO-DOC-120", path: "Q-ROBOTICS/slam_navigation/docs/calibration_manual.md", description: "Manual for sensor calibration procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-121", docId: "GQOIS-QROBO-DOC-121", path: "Q-ROBOTICS/exploration/README.md", description: "README for the exploration and inspection robotics module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-122", docId: "GQOIS-QROBO-DOC-122", path: "Q-ROBOTICS/exploration/autonomous/exploration_strategy.py", description: "High-level strategy for autonomous exploration.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-123", docId: "GQOIS-QROBO-DOC-123", path: "Q-ROBOTICS/exploration/autonomous/frontier_exploration.py", description: "Frontier-based exploration algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-124", docId: "GQOIS-QROBO-DOC-124", path: "Q-ROBOTICS/exploration/autonomous/information_gain.py", description: "Information-gain-based exploration algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-125", docId: "GQOIS-QROBO-DOC-125", path: "Q-ROBOTICS/exploration/autonomous/coverage_planning.py", description: "Coverage path planning algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-126", docId: "GQOIS-QROBO-DOC-126", path: "Q-ROBOTICS/exploration/inspection/visual_inspection.py", description: "Automated visual inspection logic.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-127", docId: "GQOIS-QROBO-DOC-127", path: "Q-ROBOTICS/exploration/inspection/defect_detection.py", description: "AI models for automated defect detection.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-128", docId: "GQOIS-QROBO-DOC-128", path: "Q-ROBOTICS/exploration/inspection/thermal_inspection.py", description: "Automated thermal inspection logic.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-129", docId: "GQOIS-QROBO-DOC-129", path: "Q-ROBOTICS/exploration/inspection/ultrasonic_testing.py", description: "Robotic ultrasonic testing procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-130", docId: "GQOIS-QROBO-DOC-130", path: "Q-ROBOTICS/exploration/inspection/ndt_integration.py", description: "Integration with Non-Destructive Testing (NDT) tools.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-131", docId: "GQOIS-QROBO-DOC-131", path: "Q-ROBOTICS/exploration/mapping/exploration_mapping.py", description: "Mapping specifically for exploration tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-132", docId: "GQOIS-QROBO-DOC-132", path: "Q-ROBOTICS/exploration/mapping/hazard_mapping.py", description: "Mapping of potential hazards in an environment.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-133", docId: "GQOIS-QROBO-DOC-133", path: "Q-ROBOTICS/exploration/platforms/uav_exploration.py", description: "Software stack for UAV-based exploration.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-134", docId: "GQOIS-QROBO-DOC-134", path: "Q-ROBOTICS/exploration/platforms/ugv_exploration.py", description: "Software stack for UGV-based exploration.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-135", docId: "GQOIS-QROBO-DOC-135", path: "Q-ROBOTICS/exploration/platforms/crawler_robots.py", description: "Software stack for crawler robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-136", docId: "GQOIS-QROBO-DOC-136", path: "Q-ROBOTICS/exploration/data/inspection_database.py", description: "Database schema for storing inspection data.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-137", docId: "GQOIS-QROBO-DOC-137", path: "Q-ROBOTICS/exploration/data/anomaly_tracking.py", description: "System for tracking and managing detected anomalies.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-138", docId: "GQOIS-QROBO-DOC-138", path: "Q-ROBOTICS/exploration/reporting/inspection_reports.py", description: "Automated generation of inspection reports.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-139", docId: "GQOIS-QROBO-DOC-139", path: "Q-ROBOTICS/exploration/reporting/3d_reconstruction.py", description: "3D reconstruction of inspected areas.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-140", docId: "GQOIS-QROBO-DOC-140", path: "Q-ROBOTICS/exploration/config/exploration_params.yaml", description: "Configuration file for exploration parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-141", docId: "GQOIS-QROBO-DOC-141", path: "Q-ROBOTICS/exploration/config/inspection_settings.yaml", description: "Configuration file for inspection settings.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-142", docId: "GQOIS-QROBO-DOC-142", path: "Q-ROBOTICS/exploration/docs/exploration_guide.md", description: "User guide for autonomous exploration systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-143", docId: "GQOIS-QROBO-DOC-143", path: "Q-ROBOTICS/exploration/docs/inspection_manual.md", description: "Manual for performing robotic inspections.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-144", docId: "GQOIS-QROBO-DOC-144", path: "Q-ROBOTICS/exploration/docs/platform_specs.md", description: "Specifications for different robotic platforms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-145", docId: "GQOIS-QROBO-DOC-145", path: "Q-ROBOTICS/exploration/docs/safety_procedures.md", description: "Safety procedures for exploration robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-146", docId: "GQOIS-QROBO-DOC-146", path: "Q-ROBOTICS/assembly_fal/README.md", description: "README for the Final Assembly Line (FAL) robotics module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-147", docId: "GQOIS-QROBO-DOC-147", path: "Q-ROBOTICS/assembly_fal/robots/articulated_robot.py", description: "Control software for articulated robot arms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-148", docId: "GQOIS-QROBO-DOC-148", path: "Q-ROBOTICS/assembly_fal/robots/collaborative_robot.py", description: "Control software for collaborative robots (cobots).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-149", docId: "GQOIS-QROBO-DOC-149", path: "Q-ROBOTICS/assembly_fal/robots/mobile_manipulator.py", description: "Control software for mobile manipulators.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-150", docId: "GQOIS-QROBO-DOC-150", path: "Q-ROBOTICS/assembly_fal/robots/parallel_robot.py", description: "Control software for parallel robots (e.g., delta robots).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-151", docId: "GQOIS-QROBO-DOC-151", path: "Q-ROBOTICS/assembly_fal/end_effectors/gripper_control.py", description: "Control logic for various gripper end-effectors.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-152", docId: "GQOIS-QROBO-DOC-152", path: "Q-ROBOTICS/assembly_fal/end_effectors/tool_changer.py", description: "Logic for automated tool changers.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-153", docId: "GQOIS-QROBO-DOC-153", path: "Q-ROBOTICS/assembly_fal/end_effectors/force_torque_sensor.py", description: "Integration of force-torque sensors on end-effectors.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-154", docId: "GQOIS-QROBO-DOC-154", path: "Q-ROBOTICS/assembly_fal/assembly/precision_assembly.py", description: "Algorithms for high-precision assembly tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-155", docId: "GQOIS-QROBO-DOC-155", path: "Q-ROBOTICS/assembly_fal/assembly/fastening_operations.py", description: "Logic for robotic fastening (drilling, riveting).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-156", docId: "GQOIS-QROBO-DOC-156", path: "Q-ROBOTICS/assembly_fal/assembly/adhesive_application.py", description: "Logic for robotic adhesive and sealant application.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-157", docId: "GQOIS-QROBO-DOC-157", path: "Q-ROBOTICS/assembly_fal/assembly/welding_operations.py", description: "Logic for robotic welding operations.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-158", docId: "GQOIS-QROBO-DOC-158", path: "Q-ROBOTICS/assembly_fal/assembly/composite_layup.py", description: "Automated composite layup procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-159", docId: "GQOIS-QROBO-DOC-159", path: "Q-ROBOTICS/assembly_fal/quality/inline_inspection.py", description: "In-line quality inspection system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-160", docId: "GQOIS-QROBO-DOC-160", path: "Q-ROBOTICS/assembly_fal/quality/dimensional_verification.py", description: "Robotic dimensional verification (e.g., with laser scanners).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-161", docId: "GQOIS-QROBO-DOC-161", path: "Q-ROBOTICS/assembly_fal/quality/vision_inspection.py", description: "Vision-based quality inspection.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-162", docId: "GQOIS-QROBO-DOC-162", path: "Q-ROBOTICS/assembly_fal/quality/force_monitoring.py", description: "Monitoring of forces during assembly.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-163", docId: "GQOIS-QROBO-DOC-163", path: "Q-ROBOTICS/assembly_fal/coordination/multi_robot_coord.py", description: "Coordination system for multiple robots on the assembly line.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-164", docId: "GQOIS-QROBO-DOC-164", path: "Q-ROBOTICS/assembly_fal/coordination/task_allocation.py", description: "Dynamic task allocation for assembly robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-165", docId: "GQOIS-QROBO-DOC-165", path: "Q-ROBOTICS/assembly_fal/coordination/collision_free_planning.py", description: "Collision-free path planning for multiple robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-166", docId: "GQOIS-QROBO-DOC-166", path: "Q-ROBOTICS/assembly_fal/optimization/cycle_time_opt.py", description: "Optimization of assembly cycle time.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-167", docId: "GQOIS-QROBO-DOC-167", path: "Q-ROBOTICS/assembly_fal/optimization/energy_optimization.py", description: "Optimization of energy consumption on the assembly line.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-168", docId: "GQOIS-QROBO-DOC-168", path: "Q-ROBOTICS/assembly_fal/optimization/layout_optimization.py", description: "Optimization of the assembly line layout.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-169", docId: "GQOIS-QROBO-DOC-169", path: "Q-ROBOTICS/assembly_fal/human_robot/safety_zones.py", description: "Dynamic safety zones for human-robot collaboration.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-170", docId: "GQOIS-QROBO-DOC-170", path: "Q-ROBOTICS/assembly_fal/human_robot/collaborative_tasks.py", description: "Definition of collaborative assembly tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-171", docId: "GQOIS-QROBO-DOC-171", path: "Q-ROBOTICS/assembly_fal/human_robot/gesture_recognition.py", description: "Gesture recognition for human-robot interaction.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-172", docId: "GQOIS-QROBO-DOC-172", path: "Q-ROBOTICS/assembly_fal/integration/mes_integration.py", description: "Integration with the Manufacturing Execution System (MES).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-173", docId: "GQOIS-QROBO-DOC-173", path: "Q-ROBOTICS/assembly_fal/integration/plc_interface.py", description: "Interface with Programmable Logic Controllers (PLCs).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-174", docId: "GQOIS-QROBO-DOC-174", path: "Q-ROBOTICS/assembly_fal/config/robot_parameters.yaml", description: "Configuration file for robot parameters (kinematics, limits).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-175", docId: "GQOIS-QROBO-DOC-175", path: "Q-ROBOTICS/assembly_fal/config/assembly_sequences.yaml", description: "Configuration file for assembly sequences.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-176", docId: "GQOIS-QROBO-DOC-176", path: "Q-ROBOTICS/assembly_fal/docs/fal_architecture.md", description: "Architecture document for the FAL robotics system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-177", docId: "GQOIS-QROBO-DOC-177", path: "Q-ROBOTICS/assembly_fal/docs/robot_programming.md", description: "Guide for programming assembly robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-178", docId: "GQOIS-QROBO-DOC-178", path: "Q-ROBOTICS/assembly_fal/docs/quality_procedures.md", description: "Manual of quality control procedures for the FAL.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-179", docId: "GQOIS-QROBO-DOC-179", path: "Q-ROBOTICS/assembly_fal/docs/safety_standards.md", description: "Safety standards for the automated assembly line.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-180", docId: "GQOIS-QROBO-DOC-180", path: "Q-ROBOTICS/assembly_fal/docs/maintenance_guide.md", description: "Maintenance guide for assembly line robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-181", docId: "GQOIS-QROBO-DOC-181", path: "Q-ROBOTICS/maintenance_robotics/README.md", description: "README for the maintenance robotics module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-182", docId: "GQOIS-QROBO-DOC-182", path: "Q-ROBOTICS/maintenance_robotics/inspection/automated_inspection.py", description: "System for automated aircraft maintenance inspection.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-183", docId: "GQOIS-QROBO-DOC-183", path: "Q-ROBOTICS/maintenance_robotics/inspection/predictive_inspection.py", description: "Predictive scheduling of robotic inspections.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-184", docId: "GQOIS-QROBO-DOC-184", path: "Q-ROBOTICS/maintenance_robotics/inspection/corrosion_detection.py", description: "Robotic system for corrosion detection.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-185", docId: "GQOIS-QROBO-DOC-185", path: "Q-ROBOTICS/maintenance_robotics/inspection/crack_detection.py", description: "Robotic system for crack detection.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-186", docId: "GQOIS-QROBO-DOC-186", path: "Q-ROBOTICS/maintenance_robotics/cleaning/surface_cleaning.py", description: "Robotic surface cleaning and preparation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-187", docId: "GQOIS-QROBO-DOC-187", path: "Q-ROBOTICS/maintenance_robotics/cleaning/decontamination.py", description: "Robotic decontamination procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-188", docId: "GQOIS-QROBO-DOC-188", path: "Q-ROBOTICS/maintenance_robotics/cleaning/automated_washing.py", description: "Automated aircraft washing system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-189", docId: "GQOIS-QROBO-DOC-189", path: "Q-ROBOTICS/maintenance_robotics/repair/automated_repair.py", description: "Framework for automated repair tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-190", docId: "GQOIS-QROBO-DOC-190", path: "Q-ROBOTICS/maintenance_robotics/repair/sealant_application.py", description: "Robotic sealant re-application.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-191", docId: "GQOIS-QROBO-DOC-191", path: "Q-ROBOTICS/maintenance_robotics/repair/patch_repair.py", description: "Robotic application of repair patches.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-192", docId: "GQOIS-QROBO-DOC-192", path: "Q-ROBOTICS/maintenance_robotics/repair/component_replacement.py", description: "Robotic assistance for component replacement.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-193", docId: "GQOIS-QROBO-DOC-193", path: "Q-ROBOTICS/maintenance_robotics/lubrication/auto_lubrication.py", description: "Automated lubrication system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-194", docId: "GQOIS-QROBO-DOC-194", path: "Q-ROBOTICS/maintenance_robotics/lubrication/grease_application.py", description: "Robotic application of grease to mechanical joints.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-195", docId: "GQOIS-QROBO-DOC-195", path: "Q-ROBOTICS/maintenance_robotics/platforms/maintenance_uav.py", description: "Software for maintenance UAVs (drones).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-196", docId: "GQOIS-QROBO-DOC-196", path: "Q-ROBOTICS/maintenance_robotics/platforms/rail_mounted.py", description: "Software for rail-mounted maintenance robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-197", docId: "GQOIS-QROBO-DOC-197", path: "Q-ROBOTICS/maintenance_robotics/platforms/mobile_platform.py", description: "Software for mobile maintenance platforms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-198", docId: "GQOIS-QROBO-DOC-198", path: "Q-ROBOTICS/maintenance_robotics/scheduling/maintenance_scheduler.py", description: "Scheduler for robotic maintenance tasks.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-199", docId: "GQOIS-QROBO-DOC-199", path: "Q-ROBOTICS/maintenance_robotics/scheduling/predictive_scheduling.py", description: "Predictive scheduling based on aircraft health data.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-200", docId: "GQOIS-QROBO-DOC-200", path: "Q-ROBOTICS/maintenance_robotics/scheduling/resource_allocation.py", description: "Allocation of robotic resources for maintenance.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-201", docId: "GQOIS-QROBO-DOC-201", path: "Q-ROBOTICS/maintenance_robotics/data/maintenance_history.py", description: "Database for storing robotic maintenance history.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-202", docId: "GQOIS-QROBO-DOC-202", path: "Q-ROBOTICS/maintenance_robotics/data/failure_database.py", description: "Database of failures to inform predictive models.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-203", docId: "GQOIS-QROBO-DOC-203", path: "Q-ROBOTICS/maintenance_robotics/integration/cmms_integration.py", description: "Integration with Computerized Maintenance Management Systems (CMMS).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-204", docId: "GQOIS-QROBO-DOC-204", path: "Q-ROBOTICS/maintenance_robotics/config/maintenance_params.yaml", description: "Configuration file for maintenance parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-205", docId: "GQOIS-QROBO-DOC-205", path: "Q-ROBOTICS/maintenance_robotics/config/platform_specs.yaml", description: "Configuration file for maintenance platform specifications.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-206", docId: "GQOIS-QROBO-DOC-206", path: "Q-ROBOTICS/maintenance_robotics/docs/maintenance_procedures.md", description: "Manual of robotic maintenance procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-207", docId: "GQOIS-QROBO-DOC-207", path: "Q-ROBOTICS/maintenance_robotics/docs/platform_operation.md", description: "Operation manual for maintenance platforms.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-208", docId: "GQOIS-QROBO-DOC-208", path: "Q-ROBOTICS/maintenance_robotics/docs/safety_protocols.md", description: "Safety protocols for maintenance robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-209", docId: "GQOIS-QROBO-DOC-209", path: "Q-ROBOTICS/maintenance_robotics/docs/training_manual.md", description: "Training manual for maintenance robotics operators.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-210", docId: "GQOIS-QROBO-DOC-210", path: "Q-ROBOTICS/maintenance_robotics/docs/certification_guide.md", description: "Certification guide for automated maintenance.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-211", docId: "GQOIS-QROBO-DOC-211", path: "Q-ROBOTICS/supply_chain/README.md", description: "README for the supply chain automation module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-212", docId: "GQOIS-QROBO-DOC-212", path: "Q-ROBOTICS/supply_chain/warehouse/agv_system.py", description: "Control system for Automated Guided Vehicles (AGVs) in the warehouse.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-213", docId: "GQOIS-QROBO-DOC-213", path: "Q-ROBOTICS/supply_chain/warehouse/asrs_integration.py", description: "Integration with Automated Storage and Retrieval Systems (AS/RS).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-214", docId: "GQOIS-QROBO-DOC-214", path: "Q-ROBOTICS/supply_chain/warehouse/picking_robots.py", description: "Control software for robotic picking systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-215", docId: "GQOIS-QROBO-DOC-215", path: "Q-ROBOTICS/supply_chain/warehouse/packing_automation.py", description: "Automated packing systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-216", docId: "GQOIS-QROBO-DOC-216", path: "Q-ROBOTICS/supply_chain/inventory/automated_counting.py", description: "Automated inventory counting using drones or mobile robots.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-217", docId: "GQOIS-QROBO-DOC-217", path: "Q-ROBOTICS/supply_chain/inventory/rfid_tracking.py", description: "RFID-based inventory tracking system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-218", docId: "GQOIS-QROBO-DOC-218", path: "Q-ROBOTICS/supply_chain/inventory/predictive_stocking.py", description: "Predictive models for inventory stocking levels.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-219", docId: "GQOIS-QROBO-DOC-219", path: "Q-ROBOTICS/supply_chain/transport/loading_automation.py", description: "Automated loading and unloading of transport vehicles.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-220", docId: "GQOIS-QROBO-DOC-220", path: "Q-ROBOTICS/supply_chain/transport/autonomous_transport.py", description: "Autonomous transport vehicles for parts delivery.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-221", docId: "GQOIS-QROBO-DOC-221", path: "Q-ROBOTICS/supply_chain/transport/route_optimization.py", description: "Route optimization for transport vehicles.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-222", docId: "GQOIS-QROBO-DOC-222", path: "Q-ROBOTICS/supply_chain/quality/incoming_inspection.py", description: "Automated quality inspection of incoming parts.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-223", docId: "GQOIS-QROBO-DOC-223", path: "Q-ROBOTICS/supply_chain/quality/batch_verification.py", description: "Automated verification of part batches.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-224", docId: "GQOIS-QROBO-DOC-224", path: "Q-ROBOTICS/supply_chain/optimization/warehouse_layout.py", description: "Optimization of warehouse layout for robotic efficiency.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-225", docId: "GQOIS-QROBO-DOC-225", path: "Q-ROBOTICS/supply_chain/optimization/flow_optimization.py", description: "Optimization of material flow through the supply chain.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-226", docId: "GQOIS-QROBO-DOC-226", path: "Q-ROBOTICS/supply_chain/integration/erp_integration.py", description: "Integration with the Enterprise Resource Planning (ERP) system.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-227", docId: "GQOIS-QROBO-DOC-227", path: "Q-ROBOTICS/supply_chain/integration/wms_interface.py", description: "Interface with the Warehouse Management System (WMS).", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-228", docId: "GQOIS-QROBO-DOC-228", path: "Q-ROBOTICS/supply_chain/tracking/real_time_tracking.py", description: "Real-time tracking of parts and materials.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-229", docId: "GQOIS-QROBO-DOC-229", path: "Q-ROBOTICS/supply_chain/config/warehouse_layout.yaml", description: "Configuration file for the warehouse layout.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-230", docId: "GQOIS-QROBO-DOC-230", path: "Q-ROBOTICS/supply_chain/config/automation_params.yaml", description: "Configuration file for supply chain automation parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-231", docId: "GQOIS-QROBO-DOC-231", path: "Q-ROBOTICS/supply_chain/docs/automation_guide.md", description: "Guide to supply chain automation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-232", docId: "GQOIS-QROBO-DOC-232", path: "Q-ROBOTICS/supply_chain/docs/integration_manual.md", description: "Manual for integrating with supply chain systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-233", docId: "GQOIS-QROBO-DOC-233", path: "Q-ROBOTICS/supply_chain/docs/safety_procedures.md", description: "Safety procedures for automated supply chain.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-234", docId: "GQOIS-QROBO-DOC-234", path: "Q-ROBOTICS/supply_chain/docs/optimization_report.md", description: "Report on supply chain optimization results.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-235", docId: "GQOIS-QROBO-DOC-235", path: "Q-ROBOTICS/supply_chain/docs/roi_analysis.md", description: "Return on Investment (ROI) analysis for automation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-236", docId: "GQOIS-QROBO-DOC-236", path: "Q-ROBOTICS/digital_twin_robotics/README.md", description: "README for the robotics digital twin module.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-237", docId: "GQOIS-QROBO-DOC-237", path: "Q-ROBOTICS/digital_twin_robotics/models/robot_model.py", description: "Digital twin model of a generic robot.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-238", docId: "GQOIS-QROBO-DOC-238", path: "Q-ROBOTICS/digital_twin_robotics/simulation/robot_simulation.py", description: "Simulation of robot behavior in the digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-239", docId: "GQOIS-QROBO-DOC-239", path: "Q-ROBOTICS/digital_twin_robotics/analytics/performance_analytics.py", description: "Performance analytics for robots using the digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-240", docId: "GQOIS-QROBO-DOC-240", path: "Q-ROBOTICS/docs/robotics_overview.md", description: "Compiled overview document for the Q-ROBOTICS division.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-241", docId: "GQOIS-QROBO-DOC-241", path: "Q-ROBOTICS/docs/autonomous_systems_manual.md", description: "Compiled manual for autonomous systems.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-242", docId: "GQOIS-QROBO-DOC-242", path: "Q-ROBOTICS/docs/slam_navigation_guide.md", description: "Compiled guide to SLAM and navigation.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-243", docId: "GQOIS-QROBO-DOC-243", path: "Q-ROBOTICS/docs/assembly_robotics_handbook.md", description: "Compiled handbook for assembly robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-244", docId: "GQOIS-QROBO-DOC-244", path: "Q-ROBOTICS/docs/maintenance_robotics_manual.md", description: "Compiled manual for maintenance robotics.", division: "Q-UNKNOWN" },
+  { promptId: "QROBO-P-245", docId: "GQOIS-QROBO-DOC-245", path: "Q-ROBOTICS/docs/release_notes_v1.0.md", description: "Release notes for version 1.0 of the robotics module.],", division: "Q-UNKNOWN" },
   "Q-SCIRES": [Prompt ID	Doc ID	Unified Project Tree Path	Brief Description
-QSCI-P-001	GQOIS-QSCI-DOC-001	Q-SCIRES/README.md	Main README for the Q-SCIRES division.
-QSCI-P-002	GQOIS-QSCI-DOC-002	Q-SCIRES/QUANTUM_RESEARCH_OVERVIEW.md	Overview of the quantum science research objectives.
-QSCI-P-003	GQOIS-QSCI-DOC-003	Q-SCIRES/LICENSE	License for the Q-SCIRES research code.
-QSCI-P-004	GQOIS-QSCI-DOC-004	Q-SCIRES/RESEARCH_ARCHITECTURE.md	Architecture for the research and simulation environment.
-QSCI-P-005	GQOIS-QSCI-DOC-005	Q-SCIRES/LABORATORY_STANDARDS.md	Standards and protocols for laboratory work.
-QSCI-P-006	GQOIS-QSCI-DOC-006	Q-SCIRES/API_REFERENCE.md	API reference for scientific libraries.
-QSCI-P-007	GQOIS-QSCI-DOC-007	Q-SCIRES/SAFETY_PROTOCOLS.md	Safety protocols for quantum laboratories.
-QSCI-P-008	GQOIS-QSCI-DOC-008	Q-SCIRES/ETHICS_GUIDELINES.md	Ethical guidelines for quantum research.
-QSCI-P-009	GQOIS-QSCI-DOC-009	Q-SCIRES/COLLABORATION_FRAMEWORK.md	Framework for collaboration with academic and industry partners.
-QSCI-P-010	GQOIS-QSCI-DOC-010	Q-SCIRES/PUBLICATION_STANDARDS.md	Standards for publishing research findings.
-QSCI-P-011	GQOIS-QSCI-DOC-011	Q-SCIRES/.gitignore	Git ignore file for the Q-SCIRES repository.
-QSCI-P-012	GQOIS-QSCI-DOC-012	Q-SCIRES/Makefile	Makefile for managing the Q-SCIRES codebase.
-QSCI-P-013	GQOIS-QSCI-DOC-013	Q-SCIRES/requirements.txt	Python package requirements for scientific computing.
-QSCI-P-014	GQOIS-QSCI-DOC-014	Q-SCIRES/environment.yml	Conda environment configuration.
-QSCI-P-015	GQOIS-QSCI-DOC-015	Q-SCIRES/docker-compose.yml	Docker Compose for deploying scientific services.
-QSCI-P-016	GQOIS-QSCI-DOC-016	Q-SCIRES/setup.py	Python package setup script.
-QSCI-P-017	GQOIS-QSCI-DOC-017	Q-SCIRES/CHANGELOG.md	Changelog for the Q-SCIRES division.
-QSCI-P-018	GQOIS-QSCI-DOC-018	Q-SCIRES/ROADMAP.md	Research roadmap for the Q-SCIRES division.
-QSCI-P-019	GQOIS-QSCI-DOC-019	Q-SCIRES/GLOSSARY.md	Glossary of terms for the Q-SCIRES division.
-QSCI-P-020	GQOIS-QSCI-DOC-020	Q-SCIRES/FAQ.md	Frequently Asked Questions for the Q-SCIRES division.
-QSCI-P-021	GQOIS-QSCI-DOC-021	Q-SCIRES/quantum_sensors/README.md	README for the quantum sensors research module.
-QSCI-P-022	GQOIS-QSCI-DOC-022	Q-SCIRES/quantum_sensors/magnetometry/nv_centers.py	Research on magnetometry using NV-centers in diamond.
-QSCI-P-023	GQOIS-QSCI-DOC-023	Q-SCIRES/quantum_sensors/magnetometry/squid_sensors.py	Research on SQUID magnetometers.
-QSCI-P-024	GQOIS-QSCI-DOC-024	Q-SCIRES/quantum_sensors/magnetometry/atomic_magnetometer.py	Research on SERF and atomic magnetometers.
-QSCI-P-025	GQOIS-QSCI-DOC-025	Q-SCIRES/quantum_sensors/magnetometry/quantum_compass.py	Research on a quantum compass for navigation.
-QSCI-P-026	GQOIS-QSCI-DOC-026	Q-SCIRES/quantum_sensors/gravimetry/atom_interferometry.py	Research on gravimetry using atom interferometry.
-QSCI-P-027	GQOIS-QSCI-DOC-027	Q-SCIRES/quantum_sensors/gravimetry/quantum_gravimeter.py	Design of a quantum gravimeter.
-QSCI-P-028	GQOIS-QSCI-DOC-028	Q-SCIRES/quantum_sensors/gravimetry/gravity_gradiometer.py	Design of a quantum gravity gradiometer.
-QSCI-P-029	GQOIS-QSCI-DOC-029	Q-SCIRES/quantum_sensors/timing/optical_clock.py	Research on optical atomic clocks.
-QSCI-P-030	GQOIS-QSCI-DOC-030	Q-SCIRES/quantum_sensors/timing/atomic_clock.py	Research on microwave atomic clocks.
-QSCI-P-031	GQOIS-QSCI-DOC-031	Q-SCIRES/quantum_sensors/timing/quantum_synchronization.py	Protocols for quantum clock synchronization.
-QSCI-P-032	GQOIS-QSCI-DOC-032	Q-SCIRES/quantum_sensors/timing/time_transfer.py	Protocols for quantum time transfer.
-QSCI-P-033	GQOIS-QSCI-DOC-033	Q-SCIRES/quantum_sensors/imaging/quantum_imaging.py	General research on quantum imaging techniques.
-QSCI-P-034	GQOIS-QSCI-DOC-034	Q-SCIRES/quantum_sensors/imaging/ghost_imaging.py	Research on ghost imaging.
-QSCI-P-035	GQOIS-QSCI-DOC-035	Q-SCIRES/quantum_sensors/imaging/quantum_illumination.py	Research on quantum illumination (quantum radar).
-QSCI-P-036	GQOIS-QSCI-DOC-036	Q-SCIRES/quantum_sensors/imaging/sub_wavelength.py	Research on sub-wavelength imaging.
-QSCI-P-037	GQOIS-QSCI-DOC-037	Q-SCIRES/quantum_sensors/photonics/single_photon_detector.py	Research on single-photon detectors.
-QSCI-P-038	GQOIS-QSCI-DOC-038	Q-SCIRES/quantum_sensors/photonics/entangled_photons.py	Research on entangled photon sources.
-QSCI-P-039	GQOIS-QSCI-DOC-039	Q-SCIRES/quantum_sensors/photonics/squeezed_light.py	Research on squeezed light sources.
-QSCI-P-040	GQOIS-QSCI-DOC-040	Q-SCIRES/quantum_sensors/photonics/quantum_lidar.py	Research and design of a quantum LiDAR system.
-QSCI-P-041	GQOIS-QSCI-DOC-041	Q-SCIRES/quantum_sensors/electric/quantum_voltage.py	Research on quantum voltage standards.
-QSCI-P-042	GQOIS-QSCI-DOC-042	Q-SCIRES/quantum_sensors/electric/josephson_junction.py	Research on Josephson junction devices.
-QSCI-P-043	GQOIS-QSCI-DOC-043	Q-SCIRES/quantum_sensors/electric/quantum_hall.py	Research on the quantum Hall effect for metrology.
-QSCI-P-044	GQOIS-QSCI-DOC-044	Q-SCIRES/quantum_sensors/rotation/quantum_gyroscope.py	Research on quantum gyroscopes.
-QSCI-P-045	GQOIS-QSCI-DOC-045	Q-SCIRES/quantum_sensors/rotation/sagnac_interferometer.py	Research on Sagnac interferometers for rotation sensing.
-QSCI-P-046	GQOIS-QSCI-DOC-046	Q-SCIRES/quantum_sensors/calibration/sensor_calibration.py	Calibration procedures for quantum sensors.
-QSCI-P-047	GQOIS-QSCI-DOC-047	Q-SCIRES/quantum_sensors/calibration/quantum_standards.py	Use of quantum phenomena as measurement standards.
-QSCI-P-048	GQOIS-QSCI-DOC-048	Q-SCIRES/quantum_sensors/calibration/drift_compensation.py	Algorithms for compensating sensor drift.
-QSCI-P-049	GQOIS-QSCI-DOC-049	Q-SCIRES/quantum_sensors/integration/sensor_fusion.py	Fusion of classical and quantum sensor data.
-QSCI-P-050	GQOIS-QSCI-DOC-050	Q-SCIRES/quantum_sensors/integration/data_processing.py	Data processing pipelines for quantum sensors.
-QSCI-P-051	GQOIS-QSCI-DOC-051	Q-SCIRES/quantum_sensors/integration/real_time_analysis.py	Real-time analysis of quantum sensor data.
-QSCI-P-052	GQOIS-QSCI-DOC-052	Q-SCIRES/quantum_sensors/applications/aerospace_sensing.py	Overview of aerospace applications for quantum sensors.
-QSCI-P-053	GQOIS-QSCI-DOC-053	Q-SCIRES/quantum_sensors/applications/navigation_systems.py	Application of quantum sensors in navigation systems.
-QSCI-P-054	GQOIS-QSCI-DOC-054	Q-SCIRES/quantum_sensors/applications/structural_monitoring.py	Application of quantum sensors for structural monitoring.
-QSCI-P-055	GQOIS-QSCI-DOC-055	Q-SCIRES/quantum_sensors/testing/lab_protocols.py	Laboratory testing protocols for quantum sensors.
-QSCI-P-056	GQOIS-QSCI-DOC-056	Q-SCIRES/quantum_sensors/testing/field_testing.py	Field testing protocols for quantum sensors.
-QSCI-P-057	GQOIS-QSCI-DOC-057	Q-SCIRES/quantum_sensors/config/sensor_parameters.yaml	Configuration file for quantum sensor parameters.
-QSCI-P-058	GQOIS-QSCI-DOC-058	Q-SCIRES/quantum_sensors/docs/sensor_theory.md	Document on the theory behind various quantum sensors.
-QSCI-P-059	GQOIS-QSCI-DOC-059	Q-SCIRES/quantum_sensors/docs/implementation_guide.md	Guide for implementing quantum sensors.
-QSCI-P-060	GQOIS-QSCI-DOC-060	Q-SCIRES/quantum_sensors/docs/calibration_manual.md	Manual for calibrating quantum sensors.
-QSCI-P-061	GQOIS-QSCI-DOC-061	Q-SCIRES/quantum_computing/README.md	README for the quantum computing research module.
-QSCI-P-062	GQOIS-QSCI-DOC-062	Q-SCIRES/quantum_computing/hardware/superconducting_qubits.py	Research on superconducting qubit hardware.
-QSCI-P-063	GQOIS-QSCI-DOC-063	Q-SCIRES/quantum_computing/hardware/trapped_ions.py	Research on trapped-ion qubit hardware.
-QSCI-P-064	GQOIS-QSCI-DOC-064	Q-SCIRES/quantum_computing/hardware/topological_qubits.py	Research on topological qubit hardware.
-QSCI-P-065	GQOIS-QSCI-DOC-065	Q-SCIRES/quantum_computing/hardware/photonic_qubits.py	Research on photonic qubit hardware.
-QSCI-P-066	GQOIS-QSCI-DOC-066	Q-SCIRES/quantum_computing/architecture/processor_design.py	Design of the quantum processor architecture.
-QSCI-P-067	GQOIS-QSCI-DOC-067	Q-SCIRES/quantum_computing/architecture/connectivity_graph.py	Analysis of qubit connectivity graphs.
-QSCI-P-068	GQOIS-QSCI-DOC-068	Q-SCIRES/quantum_computing/architecture/quantum_memory.py	Research on quantum memory (QuRAM).
-QSCI-P-069	GQOIS-QSCI-DOC-069	Q-SCIRES/quantum_computing/control/pulse_sequences.py	Design of microwave pulse sequences for qubit control.
-QSCI-P-070	GQOIS-QSCI-DOC-070	Q-SCIRES/quantum_computing/control/gate_optimization.py	Optimization of quantum gate fidelity.
-QSCI-P-071	GQOIS-QSCI-DOC-071	Q-SCIRES/quantum_computing/control/noise_mitigation.py	Research on quantum noise mitigation techniques.
-QSCI-P-072	GQOIS-QSCI-DOC-072	Q-SCIRES/quantum_computing/error_correction/surface_codes.py	Research on surface codes for QEC.
-QSCI-P-073	GQOIS-QSCI-DOC-073	Q-SCIRES/quantum_computing/error_correction/color_codes.py	Research on color codes for QEC.
-QSCI-P-074	GQOIS-QSCI-DOC-074	Q-SCIRES/quantum_computing/error_correction/topological_codes.py	Research on general topological codes for QEC.
-QSCI-P-075	GQOIS-QSCI-DOC-075	Q-SCIRES/quantum_computing/algorithms/grover_search.py	Research on applications of Grover's search algorithm.
-QSCI-P-076	GQOIS-QSCI-DOC-076	Q-SCIRES/quantum_computing/algorithms/shor_factoring.py	Research on applications of Shor's factoring algorithm.
-QSCI-P-077	GQOIS-QSCI-DOC-077	Q-SCIRES/quantum_computing/algorithms/quantum_simulation.py	Framework for quantum simulation algorithms.
-QSCI-P-078	GQOIS-QSCI-DOC-078	Q-SCIRES/quantum_computing/algorithms/aerospace_optimization.py	Application of quantum algorithms to aerospace optimization.
-QSCI-P-079	GQOIS-QSCI-DOC-079	Q-SCIRES/quantum_computing/benchmarking/quantum_volume.py	Scripts for benchmarking Quantum Volume.
-QSCI-P-080	GQOIS-QSCI-DOC-080	Q-SCIRES/quantum_computing/benchmarking/randomized_benchmarking.py	Scripts for randomized benchmarking (RB).
-QSCI-P-081	GQOIS-QSCI-DOC-081	Q-SCIRES/quantum_computing/benchmarking/process_tomography.py	Scripts for quantum process tomography.
-QSCI-P-082	GQOIS-QSCI-DOC-082	Q-SCIRES/quantum_computing/software/compiler_design.py	Design of a quantum compiler (transpiler).
-QSCI-P-083	GQOIS-QSCI-DOC-083	Q-SCIRES/quantum_computing/software/circuit_optimization.py	Algorithms for quantum circuit optimization.
-QSCI-P-084	GQOIS-QSCI-DOC-084	Q-SCIRES/quantum_computing/software/quantum_sdk.py	Development of an in-house Quantum SDK.
-QSCI-P-085	GQOIS-QSCI-DOC-085	Q-SCIRES/quantum_computing/interfaces/classical_quantum.py	Interface design between classical and quantum hardware.
-QSCI-P-086	GQOIS-QSCI-DOC-086	Q-SCIRES/quantum_computing/interfaces/quantum_network.py	Research on quantum networking interfaces.
-QSCI-P-087	GQOIS-QSCI-DOC-087	Q-SCIRES/quantum_computing/cryogenics/dilution_refrigerator.py	Control and monitoring of dilution refrigerators.
-QSCI-P-088	GQOIS-QSCI-DOC-088	Q-SCIRES/quantum_computing/cryogenics/thermal_management.py	Thermal management and heat load analysis for cryogenics.
-QSCI-P-089	GQOIS-QSCI-DOC-089	Q-SCIRES/quantum_computing/testing/qubit_characterization.py	Protocols for characterizing qubit performance.
-QSCI-P-090	GQOIS-QSCI-DOC-090	Q-SCIRES/quantum_computing/testing/system_validation.py	Validation procedures for the entire quantum computing system.
-QSCI-P-091	GQOIS-QSCI-DOC-091	Q-SCIRES/quantum_computing/config/processor_specs.yaml	Specification file for quantum processors.
-QSCI-P-092	GQOIS-QSCI-DOC-092	Q-SCIRES/quantum_computing/config/control_parameters.yaml	Configuration file for quantum control parameters.
-QSCI-P-093	GQOIS-QSCI-DOC-093	Q-SCIRES/quantum_computing/docs/architecture_guide.md	Guide to the quantum computing architecture.
-QSCI-P-094	GQOIS-QSCI-DOC-094	Q-SCIRES/quantum_computing/docs/programming_manual.md	Programming manual for the in-house Quantum SDK.
-QSCI-P-095	GQOIS-QSCI-DOC-095	Q-SCIRES/quantum_computing/docs/operations_guide.md	Operations guide for the quantum computing labs.
-QSCI-P-096	GQOIS-QSCI-DOC-096	Q-SCIRES/quantum_comm/README.md	README for the quantum communications research module.
-QSCI-P-097	GQOIS-QSCI-DOC-097	Q-SCIRES/quantum_comm/qkd/bb84_protocol.py	Implementation of the BB84 QKD protocol.
-QSCI-P-098	GQOIS-QSCI-DOC-098	Q-SCIRES/quantum_comm/qkd/e91_protocol.py	Implementation of the E91 QKD protocol.
-QSCI-P-099	GQOIS-QSCI-DOC-099	Q-SCIRES/quantum_comm/qkd/continuous_variable.py	Research on Continuous-Variable (CV) QKD.
-QSCI-P-100	GQOIS-QSCI-DOC-100	Q-SCIRES/quantum_comm/qkd/device_independent.py	Research on Device-Independent (DI) QKD.
-QSCI-P-101	GQOIS-QSCI-DOC-101	Q-SCIRES/quantum_comm/network/quantum_repeater.py	Research and design of quantum repeaters.
-QSCI-P-102	GQOIS-QSCI-DOC-102	Q-SCIRES/quantum_comm/network/entanglement_distribution.py	Protocols for entanglement distribution.
-QSCI-P-103	GQOIS-QSCI-DOC-103	Q-SCIRES/quantum_comm/network/quantum_router.py	Design of a quantum router.
-QSCI-P-104	GQOIS-QSCI-DOC-104	Q-SCIRES/quantum_comm/network/quantum_internet.py	Architectural design for a quantum internet.
-QSCI-P-105	GQOIS-QSCI-DOC-105	Q-SCIRES/quantum_comm/satellite/space_qkd.py	Research on satellite-based QKD.
-QSCI-P-106	GQOIS-QSCI-DOC-106	Q-SCIRES/quantum_comm/satellite/ground_station.py	Design of optical ground stations for space QKD.
-QSCI-P-107	GQOIS-QSCI-DOC-107	Q-SCIRES/quantum_comm/satellite/atmospheric_effects.py	Modeling of atmospheric effects on space QKD.
-QSCI-P-108	GQOIS-QSCI-DOC-108	Q-SCIRES/quantum_comm/fiber/quantum_fiber.py	Research on quantum communication over optical fiber.
-QSCI-P-109	GQOIS-QSCI-DOC-109	Q-SCIRES/quantum_comm/fiber/loss_compensation.py	Techniques for loss compensation in fiber.
-QSCI-P-110	GQOIS-QSCI-DOC-110	Q-SCIRES/quantum_comm/sources/entangled_photons.py	Development of entangled photon sources.
-QSCI-P-111	GQOIS-QSCI-DOC-111	Q-SCIRES/quantum_comm/sources/single_photon_source.py	Development of single-photon sources.
-QSCI-P-112	GQOIS-QSCI-DOC-112	Q-SCIRES/quantum_comm/detectors/superconducting_detector.py	Research on superconducting nanowire single-photon detectors (SNSPDs).
-QSCI-P-113	GQOIS-QSCI-DOC-113	Q-SCIRES/quantum_comm/detectors/avalanche_photodiode.py	Research on avalanche photodiodes (APDs).
-QSCI-P-114	GQOIS-QSCI-DOC-114	Q-SCIRES/quantum_comm/security/authentication.py	Authentication protocols for QKD.
-QSCI-P-115	GQOIS-QSCI-DOC-115	Q-SCIRES/quantum_comm/security/privacy_amplification.py	Privacy amplification protocols for QKD.
-QSCI-P-116	GQOIS-QSCI-DOC-116	Q-SCIRES/quantum_comm/applications/secure_aerospace.py	Application of QKD for secure aerospace communications.
-QSCI-P-117	GQOIS-QSCI-DOC-117	Q-SCIRES/quantum_comm/applications/distributed_computing.py	Application of quantum networks for distributed quantum computing.
-QSCI-P-118	GQOIS-QSCI-DOC-118	Q-SCIRES/quantum_comm/testing/channel_characterization.py	Characterization of quantum communication channels.
-QSCI-P-119	GQOIS-QSCI-DOC-119	Q-SCIRES/quantum_comm/testing/security_validation.py	Validation of QKD security against eavesdropping attacks.
-QSCI-P-120	GQOIS-QSCI-DOC-120	Q-SCIRES/quantum_comm/config/network_topology.yaml	Configuration file for the quantum network topology.
-QSCI-P-121	GQOIS-QSCI-DOC-121	Q-SCIRES/quantum_comm/config/qkd_parameters.yaml	Configuration file for QKD system parameters.
-QSCI-P-122	GQOIS-QSCI-DOC-122	Q-SCIRES/quantum_comm/docs/protocols_guide.md	Guide to QKD protocols.
-QSCI-P-123	GQOIS-QSCI-DOC-123	Q-SCIRES/quantum_comm/docs/implementation_manual.md	Implementation manual for quantum communication systems.
-QSCI-P-124	GQOIS-QSCI-DOC-124	Q-SCIRES/quantum_comm/docs/security_analysis.md	Security analysis of the QKD implementation.
-QSCI-P-125	GQOIS-QSCI-DOC-125	Q-SCIRES/quantum_comm/docs/deployment_guide.md	Deployment guide for quantum communication networks.
-QSCI-P-126	GQOIS-QSCI-DOC-126	Q-SCIRES/quantum_materials/README.md	README for the quantum materials research module.
-QSCI-P-127	GQOIS-QSCI-DOC-127	Q-SCIRES/quantum_materials/superconductors/high_tc.py	Research on high-temperature superconductors.
-QSCI-P-128	GQOIS-QSCI-DOC-128	Q-SCIRES/quantum_materials/superconductors/iron_based.py	Research on iron-based superconductors.
-QSCI-P-129	GQOIS-QSCI-DOC-129	Q-SCIRES/quantum_materials/superconductors/josephson_materials.py	Research on materials for Josephson junctions.
-QSCI-P-130	GQOIS-QSCI-DOC-130	Q-SCIRES/quantum_materials/topological/insulators.py	Research on topological insulators.
-QSCI-P-131	GQOIS-QSCI-DOC-131	Q-SCIRES/quantum_materials/topological/semimetals.py	Research on topological semi-metals (e.g., Weyl, Dirac).
-QSCI-P-132	GQOIS-QSCI-DOC-132	Q-SCIRES/quantum_materials/topological/superconductors.py	Research on topological superconductors.
-QSCI-P-133	GQOIS-QSCI-DOC-133	Q-SCIRES/quantum_materials/2d_materials/graphene.py	Research on graphene and its properties.
-QSCI-P-134	GQOIS-QSCI-DOC-134	Q-SCIRES/quantum_materials/2d_materials/transition_metal.py	Research on transition metal dichalcogenides (TMDs).
-QSCI-P-135	GQOIS-QSCI-DOC-135	Q-SCIRES/quantum_materials/2d_materials/heterostructures.py	Research on van der Waals heterostructures.
-QSCI-P-136	GQOIS-QSCI-DOC-136	Q-SCIRES/quantum_materials/quantum_dots/colloidal.py	Research on colloidal quantum dots.
-QSCI-P-137	GQOIS-QSCI-DOC-137	Q-SCIRES/quantum_materials/quantum_dots/self_assembled.py	Research on self-assembled quantum dots.
-QSCI-P-138	GQOIS-QSCI-DOC-138	Q-SCIRES/quantum_materials/defects/nv_centers.py	Research on creating and controlling NV-centers in diamond.
-QSCI-P-139	GQOIS-QSCI-DOC-139	Q-SCIRES/quantum_materials/defects/silicon_vacancy.py	Research on silicon-vacancy (SiV) centers.
-QSCI-P-140	GQOIS-QSCI-DOC-140	Q-SCIRES/quantum_materials/characterization/spectroscopy.py	Spectroscopic characterization of quantum materials.
-QSCI-P-141	GQOIS-QSCI-DOC-141	Q-SCIRES/quantum_materials/characterization/microscopy.py	Microscopic characterization of quantum materials (e.g., STM, AFM).
-QSCI-P-142	GQOIS-QSCI-DOC-142	Q-SCIRES/quantum_materials/fabrication/epitaxy.py	Fabrication of quantum materials using molecular beam epitaxy (MBE).
-QSCI-P-143	GQOIS-QSCI-DOC-143	Q-SCIRES/quantum_materials/fabrication/lithography.py	Nanofabrication using electron-beam lithography.
-QSCI-P-144	GQOIS-QSCI-DOC-144	Q-SCIRES/quantum_materials/applications/aerospace_materials.py	Applications of quantum materials in aerospace.
-QSCI-P-145	GQOIS-QSCI-DOC-145	Q-SCIRES/quantum_materials/testing/material_testing.py	Protocols for testing quantum materials.
-QSCI-P-146	GQOIS-QSCI-DOC-146	Q-SCIRES/quantum_materials/config/material_database.yaml	Database of quantum material properties.
-QSCI-P-147	GQOIS-QSCI-DOC-147	Q-SCIRES/quantum_materials/docs/materials_guide.md	Guide to quantum materials.
-QSCI-P-148	GQOIS-QSCI-DOC-148	Q-SCIRES/quantum_materials/docs/fabrication_manual.md	Manual for quantum material fabrication.
-QSCI-P-149	GQOIS-QSCI-DOC-149	Q-SCIRES/quantum_materials/docs/characterization_guide.md	Guide to material characterization techniques.
-QSCI-P-150	GQOIS-QSCI-DOC-150	Q-SCIRES/quantum_materials/docs/applications_overview.md	Overview of applications for quantum materials.
-QSCI-P-151	GQOIS-QSCI-DOC-151	Q-SCIRES/quantum_testing/README.md	README for the quantum testing infrastructure module.
-QSCI-P-152	GQOIS-QSCI-DOC-152	Q-SCIRES/quantum_testing/laboratories/clean_room.py	Protocols for clean room operation.
-QSCI-P-153	GQOIS-QSCI-DOC-153	Q-SCIRES/quantum_testing/laboratories/cryogenic_lab.py	Protocols for the cryogenic laboratory.
-QSCI-P-154	GQOIS-QSCI-DOC-154	Q-SCIRES/quantum_testing/laboratories/optics_lab.py	Protocols for the quantum optics laboratory.
-QSCI-P-155	GQOIS-QSCI-DOC-155	Q-SCIRES/quantum_testing/equipment/measurement_systems.py	Software for controlling measurement systems.
-QSCI-P-156	GQOIS-QSCI-DOC-156	Q-SCIRES/quantum_testing/equipment/control_electronics.py	Software for controlling custom electronics.
-QSCI-P-157	GQOIS-QSCI-DOC-157	Q-SCIRES/quantum_testing/equipment/rf_systems.py	Software for controlling RF systems.
-QSCI-P-158	GQOIS-QSCI-DOC-158	Q-SCIRES/quantum_testing/protocols/sensor_testing.py	Standard protocols for testing quantum sensors.
-QSCI-P-159	GQOIS-QSCI-DOC-159	Q-SCIRES/quantum_testing/protocols/qubit_testing.py	Standard protocols for testing qubits.
-QSCI-P-160	GQOIS-QSCI-DOC-160	Q-SCIRES/quantum_testing/protocols/system_integration.py	Protocols for integrated system testing.
-QSCI-P-161	GQOIS-QSCI-DOC-161	Q-SCIRES/quantum_testing/calibration/standard_references.py	Use of standard references for calibration.
-QSCI-P-162	GQOIS-QSCI-DOC-162	Q-SCIRES/quantum_testing/calibration/traceability.py	Procedures for ensuring measurement traceability.
-QSCI-P-163	GQOIS-QSCI-DOC-163	Q-SCIRES/quantum_testing/environmental/vibration_isolation.py	Vibration isolation systems and protocols.
-QSCI-P-164	GQOIS-QSCI-DOC-164	Q-SCIRES/quantum_testing/environmental/magnetic_shielding.py	Magnetic shielding systems and protocols.
-QSCI-P-165	GQOIS-QSCI-DOC-165	Q-SCIRES/quantum_testing/environmental/thermal_control.py	High-precision thermal control systems.
-QSCI-P-166	GQOIS-QSCI-DOC-166	Q-SCIRES/quantum_testing/data/acquisition_systems.py	Data acquisition (DAQ) systems for testing.
-QSCI-P-167	GQOIS-QSCI-DOC-167	Q-SCIRES/quantum_testing/data/real_time_processing.py	Real-time processing of test data.
-QSCI-P-168	GQOIS-QSCI-DOC-168	Q-SCIRES/quantum_testing/data/analysis_pipeline.py	Data analysis pipeline for test results.
-QSCI-P-169	GQOIS-QSCI-DOC-169	Q-SCIRES/quantum_testing/automation/test_automation.py	Framework for automating quantum tests.
-QSCI-P-170	GQOIS-QSCI-DOC-170	Q-SCIRES/quantum_testing/automation/scheduling_system.py	System for scheduling automated tests.
-QSCI-P-171	GQOIS-QSCI-DOC-171	Q-SCIRES/quantum_testing/validation/certification_tests.py	Test plans for certification of quantum components.
-QSCI-P-172	GQOIS-QSCI-DOC-172	Q-SCIRES/quantum_testing/validation/aerospace_standards.py	Adherence to aerospace standards in testing.
-QSCI-P-173	GQOIS-QSCI-DOC-173	Q-SCIRES/quantum_testing/safety/laser_safety.py	Laser safety protocols for labs.
-QSCI-P-174	GQOIS-QSCI-DOC-174	Q-SCIRES/quantum_testing/safety/cryogenic_safety.py	Cryogenic safety protocols for labs.
-QSCI-P-175	GQOIS-QSCI-DOC-175	Q-SCIRES/quantum_testing/config/lab_configuration.yaml	Configuration file for laboratory setups.
-QSCI-P-176	GQOIS-QSCI-DOC-176	Q-SCIRES/quantum_testing/config/equipment_specs.yaml	Specification file for lab equipment.
-QSCI-P-177	GQOIS-QSCI-DOC-177	Q-SCIRES/quantum_testing/docs/lab_manual.md	The master laboratory manual.
-QSCI-P-178	GQOIS-QSCI-DOC-178	Q-SCIRES/quantum_testing/docs/safety_procedures.md	Compiled safety procedures for all labs.
-QSCI-P-179	GQOIS-QSCI-DOC-179	Q-SCIRES/quantum_testing/docs/test_protocols.md	Compiled manual of all test protocols.
-QSCI-P-180	GQOIS-QSCI-DOC-180	Q-SCIRES/quantum_testing/docs/certification_guide.md	Guide to certifying quantum components.
-QSCI-P-181	GQOIS-QSCI-DOC-181	Q-SCIRES/quantum_algorithms/README.md	README for the quantum algorithms and applications module.
-QSCI-P-182	GQOIS-QSCI-DOC-182	Q-SCIRES/quantum_algorithms/optimization/vqe_aerospace.py	Application of VQE to aerospace problems.
-QSCI-P-183	GQOIS-QSCI-DOC-183	Q-SCIRES/quantum_algorithms/optimization/qaoa_routing.py	Application of QAOA to aerospace routing problems.
-QSCI-P-184	GQOIS-QSCI-DOC-184	Q-SCIRES/quantum_algorithms/optimization/quantum_annealing.py	Application of quantum annealing to aerospace problems.
-QSCI-P-185	GQOIS-QSCI-DOC-185	Q-SCIRES/quantum_algorithms/machine_learning/qnn_design.py	Design of Quantum Neural Networks for aerospace data.
-QSCI-P-186	GQOIS-QSCI-DOC-186	Q-SCIRES/quantum_algorithms/machine_learning/quantum_kernel.py	Application of quantum kernel methods to aerospace data.
-QSCI-P-187	GQOIS-QSCI-DOC-187	Q-SCIRES/quantum_algorithms/machine_learning/variational_classifier.py	Application of variational classifiers to aerospace data.
-QSCI-P-188	GQOIS-QSCI-DOC-188	Q-SCIRES/quantum_algorithms/simulation/material_simulation.py	Quantum simulation of new aerospace materials.
-QSCI-P-189	GQOIS-QSCI-DOC-189	Q-SCIRES/quantum_algorithms/simulation/chemistry_simulation.py	Quantum simulation of combustion and fuel chemistry.
-QSCI-P-190	GQOIS-QSCI-DOC-190	Q-SCIRES/quantum_algorithms/simulation/aerospace_dynamics.py	Quantum simulation of complex aerospace dynamics.
-QSCI-P-191	GQOIS-QSCI-DOC-191	Q-SCIRES/quantum_algorithms/cryptography/post_quantum.py	Research on post-quantum cryptographic algorithms.
-QSCI-P-192	GQOIS-QSCI-DOC-192	Q-SCIRES/quantum_algorithms/cryptography/lattice_based.py	Research on lattice-based cryptography.
-QSCI-P-193	GQOIS-QSCI-DOC-193	Q-SCIRES/quantum_algorithms/error_mitigation/zero_noise_extrapolation.py	Zero-noise extrapolation error mitigation technique.
-QSCI-P-194	GQOIS-QSCI-DOC-194	Q-SCIRES/quantum_algorithms/error_mitigation/probabilistic_cancellation.py	Probabilistic error cancellation mitigation technique.
-QSCI-P-195	GQOIS-QSCI-DOC-195	Q-SCIRES/quantum_algorithms/hybrid/variational_quantum.py	General framework for variational quantum algorithms.
-QSCI-P-196	GQOIS-QSCI-DOC-196	Q-SCIRES/quantum_algorithms/hybrid/quantum_classical_hybrid.py	Framework for hybrid quantum-classical algorithms.
-QSCI-P-197	GQOIS-QSCI-DOC-197	Q-SCIRES/quantum_algorithms/applications/flight_optimization.py	Application of quantum algorithms to flight optimization.
-QSCI-P-198	GQOIS-QSCI-DOC-198	Q-SCIRES/quantum_algorithms/applications/structural_analysis.py	Application of quantum algorithms to structural analysis.
-QSCI-P-199	GQOIS-QSCI-DOC-199	Q-SCIRES/quantum_algorithms/benchmarking/algorithm_benchmarks.py	Benchmarks for comparing quantum algorithm performance.
-QSCI-P-200	GQOIS-QSCI-DOC-200	Q-SCIRES/quantum_algorithms/config/algorithm_params.yaml	Configuration file for quantum algorithm parameters.
-QSCI-P-201	GQOIS-QSCI-DOC-201	Q-SCIRES/quantum_algorithms/docs/algorithm_guide.md	Guide to the implemented quantum algorithms.
-QSCI-P-202	GQOIS-QSCI-DOC-202	Q-SCIRES/quantum_algorithms/docs/implementation_examples.md	Examples of how to implement the quantum algorithms.
-QSCI-P-203	GQOIS-QSCI-DOC-203	Q-SCIRES/quantum_algorithms/docs/performance_analysis.md	Performance analysis of the quantum algorithms.
-QSCI-P-204	GQOIS-QSCI-DOC-204	Q-SCIRES/quantum_algorithms/docs/aerospace_applications.md	Document on aerospace applications of quantum algorithms.
-QSCI-P-205	GQOIS-QSCI-DOC-205	Q-SCIRES/quantum_algorithms/docs/future_directions.md	Document on future research directions.
-QSCI-P-206	GQOIS-QSCI-DOC-206	Q-SCIRES/integration/README.md	README for the system integration module.
-QSCI-P-207	GQOIS-QSCI-DOC-207	Q-SCIRES/integration/aerospace_integration.py	Master script for integrating quantum research into aerospace systems.
-QSCI-P-208	GQOIS-QSCI-DOC-208	Q-SCIRES/integration/system_interfaces.py	Definition of interfaces between quantum and classical systems.
-QSCI-P-209	GQOIS-QSCI-DOC-209	Q-SCIRES/integration/data_pipelines.py	Data pipelines for quantum research data.
-QSCI-P-210	GQOIS-QSCI-DOC-210	Q-SCIRES/integration/quantum_classical_bridge.py	The software bridge between quantum and classical computers.
-QSCI-P-211	GQOIS-QSCI-DOC-211	Q-SCIRES/digital_twin_quantum/README.md	README for the quantum digital twin module.
-QSCI-P-212	GQOIS-QSCI-DOC-212	Q-SCIRES/digital_twin_quantum/models/quantum_system_model.py	Digital twin model of a quantum system.
-QSCI-P-213	GQOIS-QSCI-DOC-213	Q-SCIRES/digital_twin_quantum/simulation/quantum_simulation.py	Simulation of quantum systems within the digital twin.
-QSCI-P-214	GQOIS-QSCI-DOC-214	Q-SCIRES/digital_twin_quantum/optimization/quantum_optimization.py	Optimization of a quantum system using its digital twin.
-QSCI-P-215	GQOIS-QSCI-DOC-215	Q-SCIRES/digital_twin_quantum/analytics/quantum_analytics.py	Analytics for quantum system performance.
-QSCI-P-216	GQOIS-QSCI-DOC-216	Q-SCIRES/docs/quantum_research_overview.md	Compiled overview of quantum research.
-QSCI-P-217	GQOIS-QSCI-DOC-217	Q-SCIRES/docs/sensor_technology_guide.md	Compiled guide to quantum sensor technology.
-QSCI-P-218	GQOIS-QSCI-DOC-218	Q-SCIRES/docs/quantum_computing_manual.md	Compiled manual for quantum computing.
-QSCI-P-219	GQOIS-QSCI-DOC-219	Q-SCIRES/docs/quantum_comm_handbook.md	Compiled handbook for quantum communications.
-QSCI-P-220	GQOIS-QSCI-DOC-220	Q-SCIRES/docs/materials_research_report.md	Compiled report on quantum materials research.
-QSCI-P-221	GQOIS-QSCI-DOC-221	Q-SCIRES/docs/testing_infrastructure_guide.md	Compiled guide to the quantum testing infrastructure.
-QSCI-P-222	GQOIS-QSCI-DOC-222	Q-SCIRES/docs/algorithm_applications_manual.md	Compiled manual on quantum algorithm applications.
-QSCI-P-223	GQOIS-QSCI-DOC-223	Q-SCIRES/docs/integration_handbook.md	Compiled handbook for systems integration.
-QSCI-P-224	GQOIS-QSCI-DOC-224	Q-SCIRES/docs/research_publications.md	List of research publications from the division.
-QSCI-P-225	GQOIS-QSCI-DOC-225	Q-SCIRES/docs/release_notes_v1.0.md	Release notes for version 1.0 of the Q-SCIRES module.],
+  { promptId: "QSCI-P-001", docId: "GQOIS-QSCI-DOC-001", path: "Q-SCIRES/README.md", description: "Main README for the Q-SCIRES division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-002", docId: "GQOIS-QSCI-DOC-002", path: "Q-SCIRES/QUANTUM_RESEARCH_OVERVIEW.md", description: "Overview of the quantum science research objectives.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-003", docId: "GQOIS-QSCI-DOC-003", path: "Q-SCIRES/LICENSE", description: "License for the Q-SCIRES research code.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-004", docId: "GQOIS-QSCI-DOC-004", path: "Q-SCIRES/RESEARCH_ARCHITECTURE.md", description: "Architecture for the research and simulation environment.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-005", docId: "GQOIS-QSCI-DOC-005", path: "Q-SCIRES/LABORATORY_STANDARDS.md", description: "Standards and protocols for laboratory work.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-006", docId: "GQOIS-QSCI-DOC-006", path: "Q-SCIRES/API_REFERENCE.md", description: "API reference for scientific libraries.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-007", docId: "GQOIS-QSCI-DOC-007", path: "Q-SCIRES/SAFETY_PROTOCOLS.md", description: "Safety protocols for quantum laboratories.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-008", docId: "GQOIS-QSCI-DOC-008", path: "Q-SCIRES/ETHICS_GUIDELINES.md", description: "Ethical guidelines for quantum research.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-009", docId: "GQOIS-QSCI-DOC-009", path: "Q-SCIRES/COLLABORATION_FRAMEWORK.md", description: "Framework for collaboration with academic and industry partners.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-010", docId: "GQOIS-QSCI-DOC-010", path: "Q-SCIRES/PUBLICATION_STANDARDS.md", description: "Standards for publishing research findings.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-011", docId: "GQOIS-QSCI-DOC-011", path: "Q-SCIRES/.gitignore", description: "Git ignore file for the Q-SCIRES repository.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-012", docId: "GQOIS-QSCI-DOC-012", path: "Q-SCIRES/Makefile", description: "Makefile for managing the Q-SCIRES codebase.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-013", docId: "GQOIS-QSCI-DOC-013", path: "Q-SCIRES/requirements.txt", description: "Python package requirements for scientific computing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-014", docId: "GQOIS-QSCI-DOC-014", path: "Q-SCIRES/environment.yml", description: "Conda environment configuration.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-015", docId: "GQOIS-QSCI-DOC-015", path: "Q-SCIRES/docker-compose.yml", description: "Docker Compose for deploying scientific services.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-016", docId: "GQOIS-QSCI-DOC-016", path: "Q-SCIRES/setup.py", description: "Python package setup script.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-017", docId: "GQOIS-QSCI-DOC-017", path: "Q-SCIRES/CHANGELOG.md", description: "Changelog for the Q-SCIRES division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-018", docId: "GQOIS-QSCI-DOC-018", path: "Q-SCIRES/ROADMAP.md", description: "Research roadmap for the Q-SCIRES division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-019", docId: "GQOIS-QSCI-DOC-019", path: "Q-SCIRES/GLOSSARY.md", description: "Glossary of terms for the Q-SCIRES division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-020", docId: "GQOIS-QSCI-DOC-020", path: "Q-SCIRES/FAQ.md", description: "Frequently Asked Questions for the Q-SCIRES division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-021", docId: "GQOIS-QSCI-DOC-021", path: "Q-SCIRES/quantum_sensors/README.md", description: "README for the quantum sensors research module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-022", docId: "GQOIS-QSCI-DOC-022", path: "Q-SCIRES/quantum_sensors/magnetometry/nv_centers.py", description: "Research on magnetometry using NV-centers in diamond.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-023", docId: "GQOIS-QSCI-DOC-023", path: "Q-SCIRES/quantum_sensors/magnetometry/squid_sensors.py", description: "Research on SQUID magnetometers.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-024", docId: "GQOIS-QSCI-DOC-024", path: "Q-SCIRES/quantum_sensors/magnetometry/atomic_magnetometer.py", description: "Research on SERF and atomic magnetometers.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-025", docId: "GQOIS-QSCI-DOC-025", path: "Q-SCIRES/quantum_sensors/magnetometry/quantum_compass.py", description: "Research on a quantum compass for navigation.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-026", docId: "GQOIS-QSCI-DOC-026", path: "Q-SCIRES/quantum_sensors/gravimetry/atom_interferometry.py", description: "Research on gravimetry using atom interferometry.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-027", docId: "GQOIS-QSCI-DOC-027", path: "Q-SCIRES/quantum_sensors/gravimetry/quantum_gravimeter.py", description: "Design of a quantum gravimeter.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-028", docId: "GQOIS-QSCI-DOC-028", path: "Q-SCIRES/quantum_sensors/gravimetry/gravity_gradiometer.py", description: "Design of a quantum gravity gradiometer.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-029", docId: "GQOIS-QSCI-DOC-029", path: "Q-SCIRES/quantum_sensors/timing/optical_clock.py", description: "Research on optical atomic clocks.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-030", docId: "GQOIS-QSCI-DOC-030", path: "Q-SCIRES/quantum_sensors/timing/atomic_clock.py", description: "Research on microwave atomic clocks.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-031", docId: "GQOIS-QSCI-DOC-031", path: "Q-SCIRES/quantum_sensors/timing/quantum_synchronization.py", description: "Protocols for quantum clock synchronization.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-032", docId: "GQOIS-QSCI-DOC-032", path: "Q-SCIRES/quantum_sensors/timing/time_transfer.py", description: "Protocols for quantum time transfer.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-033", docId: "GQOIS-QSCI-DOC-033", path: "Q-SCIRES/quantum_sensors/imaging/quantum_imaging.py", description: "General research on quantum imaging techniques.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-034", docId: "GQOIS-QSCI-DOC-034", path: "Q-SCIRES/quantum_sensors/imaging/ghost_imaging.py", description: "Research on ghost imaging.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-035", docId: "GQOIS-QSCI-DOC-035", path: "Q-SCIRES/quantum_sensors/imaging/quantum_illumination.py", description: "Research on quantum illumination (quantum radar).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-036", docId: "GQOIS-QSCI-DOC-036", path: "Q-SCIRES/quantum_sensors/imaging/sub_wavelength.py", description: "Research on sub-wavelength imaging.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-037", docId: "GQOIS-QSCI-DOC-037", path: "Q-SCIRES/quantum_sensors/photonics/single_photon_detector.py", description: "Research on single-photon detectors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-038", docId: "GQOIS-QSCI-DOC-038", path: "Q-SCIRES/quantum_sensors/photonics/entangled_photons.py", description: "Research on entangled photon sources.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-039", docId: "GQOIS-QSCI-DOC-039", path: "Q-SCIRES/quantum_sensors/photonics/squeezed_light.py", description: "Research on squeezed light sources.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-040", docId: "GQOIS-QSCI-DOC-040", path: "Q-SCIRES/quantum_sensors/photonics/quantum_lidar.py", description: "Research and design of a quantum LiDAR system.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-041", docId: "GQOIS-QSCI-DOC-041", path: "Q-SCIRES/quantum_sensors/electric/quantum_voltage.py", description: "Research on quantum voltage standards.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-042", docId: "GQOIS-QSCI-DOC-042", path: "Q-SCIRES/quantum_sensors/electric/josephson_junction.py", description: "Research on Josephson junction devices.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-043", docId: "GQOIS-QSCI-DOC-043", path: "Q-SCIRES/quantum_sensors/electric/quantum_hall.py", description: "Research on the quantum Hall effect for metrology.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-044", docId: "GQOIS-QSCI-DOC-044", path: "Q-SCIRES/quantum_sensors/rotation/quantum_gyroscope.py", description: "Research on quantum gyroscopes.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-045", docId: "GQOIS-QSCI-DOC-045", path: "Q-SCIRES/quantum_sensors/rotation/sagnac_interferometer.py", description: "Research on Sagnac interferometers for rotation sensing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-046", docId: "GQOIS-QSCI-DOC-046", path: "Q-SCIRES/quantum_sensors/calibration/sensor_calibration.py", description: "Calibration procedures for quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-047", docId: "GQOIS-QSCI-DOC-047", path: "Q-SCIRES/quantum_sensors/calibration/quantum_standards.py", description: "Use of quantum phenomena as measurement standards.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-048", docId: "GQOIS-QSCI-DOC-048", path: "Q-SCIRES/quantum_sensors/calibration/drift_compensation.py", description: "Algorithms for compensating sensor drift.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-049", docId: "GQOIS-QSCI-DOC-049", path: "Q-SCIRES/quantum_sensors/integration/sensor_fusion.py", description: "Fusion of classical and quantum sensor data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-050", docId: "GQOIS-QSCI-DOC-050", path: "Q-SCIRES/quantum_sensors/integration/data_processing.py", description: "Data processing pipelines for quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-051", docId: "GQOIS-QSCI-DOC-051", path: "Q-SCIRES/quantum_sensors/integration/real_time_analysis.py", description: "Real-time analysis of quantum sensor data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-052", docId: "GQOIS-QSCI-DOC-052", path: "Q-SCIRES/quantum_sensors/applications/aerospace_sensing.py", description: "Overview of aerospace applications for quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-053", docId: "GQOIS-QSCI-DOC-053", path: "Q-SCIRES/quantum_sensors/applications/navigation_systems.py", description: "Application of quantum sensors in navigation systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-054", docId: "GQOIS-QSCI-DOC-054", path: "Q-SCIRES/quantum_sensors/applications/structural_monitoring.py", description: "Application of quantum sensors for structural monitoring.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-055", docId: "GQOIS-QSCI-DOC-055", path: "Q-SCIRES/quantum_sensors/testing/lab_protocols.py", description: "Laboratory testing protocols for quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-056", docId: "GQOIS-QSCI-DOC-056", path: "Q-SCIRES/quantum_sensors/testing/field_testing.py", description: "Field testing protocols for quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-057", docId: "GQOIS-QSCI-DOC-057", path: "Q-SCIRES/quantum_sensors/config/sensor_parameters.yaml", description: "Configuration file for quantum sensor parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-058", docId: "GQOIS-QSCI-DOC-058", path: "Q-SCIRES/quantum_sensors/docs/sensor_theory.md", description: "Document on the theory behind various quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-059", docId: "GQOIS-QSCI-DOC-059", path: "Q-SCIRES/quantum_sensors/docs/implementation_guide.md", description: "Guide for implementing quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-060", docId: "GQOIS-QSCI-DOC-060", path: "Q-SCIRES/quantum_sensors/docs/calibration_manual.md", description: "Manual for calibrating quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-061", docId: "GQOIS-QSCI-DOC-061", path: "Q-SCIRES/quantum_computing/README.md", description: "README for the quantum computing research module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-062", docId: "GQOIS-QSCI-DOC-062", path: "Q-SCIRES/quantum_computing/hardware/superconducting_qubits.py", description: "Research on superconducting qubit hardware.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-063", docId: "GQOIS-QSCI-DOC-063", path: "Q-SCIRES/quantum_computing/hardware/trapped_ions.py", description: "Research on trapped-ion qubit hardware.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-064", docId: "GQOIS-QSCI-DOC-064", path: "Q-SCIRES/quantum_computing/hardware/topological_qubits.py", description: "Research on topological qubit hardware.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-065", docId: "GQOIS-QSCI-DOC-065", path: "Q-SCIRES/quantum_computing/hardware/photonic_qubits.py", description: "Research on photonic qubit hardware.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-066", docId: "GQOIS-QSCI-DOC-066", path: "Q-SCIRES/quantum_computing/architecture/processor_design.py", description: "Design of the quantum processor architecture.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-067", docId: "GQOIS-QSCI-DOC-067", path: "Q-SCIRES/quantum_computing/architecture/connectivity_graph.py", description: "Analysis of qubit connectivity graphs.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-068", docId: "GQOIS-QSCI-DOC-068", path: "Q-SCIRES/quantum_computing/architecture/quantum_memory.py", description: "Research on quantum memory (QuRAM).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-069", docId: "GQOIS-QSCI-DOC-069", path: "Q-SCIRES/quantum_computing/control/pulse_sequences.py", description: "Design of microwave pulse sequences for qubit control.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-070", docId: "GQOIS-QSCI-DOC-070", path: "Q-SCIRES/quantum_computing/control/gate_optimization.py", description: "Optimization of quantum gate fidelity.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-071", docId: "GQOIS-QSCI-DOC-071", path: "Q-SCIRES/quantum_computing/control/noise_mitigation.py", description: "Research on quantum noise mitigation techniques.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-072", docId: "GQOIS-QSCI-DOC-072", path: "Q-SCIRES/quantum_computing/error_correction/surface_codes.py", description: "Research on surface codes for QEC.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-073", docId: "GQOIS-QSCI-DOC-073", path: "Q-SCIRES/quantum_computing/error_correction/color_codes.py", description: "Research on color codes for QEC.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-074", docId: "GQOIS-QSCI-DOC-074", path: "Q-SCIRES/quantum_computing/error_correction/topological_codes.py", description: "Research on general topological codes for QEC.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-075", docId: "GQOIS-QSCI-DOC-075", path: "Q-SCIRES/quantum_computing/algorithms/grover_search.py", description: "Research on applications of Grover's search algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-076", docId: "GQOIS-QSCI-DOC-076", path: "Q-SCIRES/quantum_computing/algorithms/shor_factoring.py", description: "Research on applications of Shor's factoring algorithm.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-077", docId: "GQOIS-QSCI-DOC-077", path: "Q-SCIRES/quantum_computing/algorithms/quantum_simulation.py", description: "Framework for quantum simulation algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-078", docId: "GQOIS-QSCI-DOC-078", path: "Q-SCIRES/quantum_computing/algorithms/aerospace_optimization.py", description: "Application of quantum algorithms to aerospace optimization.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-079", docId: "GQOIS-QSCI-DOC-079", path: "Q-SCIRES/quantum_computing/benchmarking/quantum_volume.py", description: "Scripts for benchmarking Quantum Volume.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-080", docId: "GQOIS-QSCI-DOC-080", path: "Q-SCIRES/quantum_computing/benchmarking/randomized_benchmarking.py", description: "Scripts for randomized benchmarking (RB).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-081", docId: "GQOIS-QSCI-DOC-081", path: "Q-SCIRES/quantum_computing/benchmarking/process_tomography.py", description: "Scripts for quantum process tomography.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-082", docId: "GQOIS-QSCI-DOC-082", path: "Q-SCIRES/quantum_computing/software/compiler_design.py", description: "Design of a quantum compiler (transpiler).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-083", docId: "GQOIS-QSCI-DOC-083", path: "Q-SCIRES/quantum_computing/software/circuit_optimization.py", description: "Algorithms for quantum circuit optimization.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-084", docId: "GQOIS-QSCI-DOC-084", path: "Q-SCIRES/quantum_computing/software/quantum_sdk.py", description: "Development of an in-house Quantum SDK.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-085", docId: "GQOIS-QSCI-DOC-085", path: "Q-SCIRES/quantum_computing/interfaces/classical_quantum.py", description: "Interface design between classical and quantum hardware.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-086", docId: "GQOIS-QSCI-DOC-086", path: "Q-SCIRES/quantum_computing/interfaces/quantum_network.py", description: "Research on quantum networking interfaces.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-087", docId: "GQOIS-QSCI-DOC-087", path: "Q-SCIRES/quantum_computing/cryogenics/dilution_refrigerator.py", description: "Control and monitoring of dilution refrigerators.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-088", docId: "GQOIS-QSCI-DOC-088", path: "Q-SCIRES/quantum_computing/cryogenics/thermal_management.py", description: "Thermal management and heat load analysis for cryogenics.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-089", docId: "GQOIS-QSCI-DOC-089", path: "Q-SCIRES/quantum_computing/testing/qubit_characterization.py", description: "Protocols for characterizing qubit performance.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-090", docId: "GQOIS-QSCI-DOC-090", path: "Q-SCIRES/quantum_computing/testing/system_validation.py", description: "Validation procedures for the entire quantum computing system.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-091", docId: "GQOIS-QSCI-DOC-091", path: "Q-SCIRES/quantum_computing/config/processor_specs.yaml", description: "Specification file for quantum processors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-092", docId: "GQOIS-QSCI-DOC-092", path: "Q-SCIRES/quantum_computing/config/control_parameters.yaml", description: "Configuration file for quantum control parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-093", docId: "GQOIS-QSCI-DOC-093", path: "Q-SCIRES/quantum_computing/docs/architecture_guide.md", description: "Guide to the quantum computing architecture.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-094", docId: "GQOIS-QSCI-DOC-094", path: "Q-SCIRES/quantum_computing/docs/programming_manual.md", description: "Programming manual for the in-house Quantum SDK.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-095", docId: "GQOIS-QSCI-DOC-095", path: "Q-SCIRES/quantum_computing/docs/operations_guide.md", description: "Operations guide for the quantum computing labs.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-096", docId: "GQOIS-QSCI-DOC-096", path: "Q-SCIRES/quantum_comm/README.md", description: "README for the quantum communications research module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-097", docId: "GQOIS-QSCI-DOC-097", path: "Q-SCIRES/quantum_comm/qkd/bb84_protocol.py", description: "Implementation of the BB84 QKD protocol.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-098", docId: "GQOIS-QSCI-DOC-098", path: "Q-SCIRES/quantum_comm/qkd/e91_protocol.py", description: "Implementation of the E91 QKD protocol.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-099", docId: "GQOIS-QSCI-DOC-099", path: "Q-SCIRES/quantum_comm/qkd/continuous_variable.py", description: "Research on Continuous-Variable (CV) QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-100", docId: "GQOIS-QSCI-DOC-100", path: "Q-SCIRES/quantum_comm/qkd/device_independent.py", description: "Research on Device-Independent (DI) QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-101", docId: "GQOIS-QSCI-DOC-101", path: "Q-SCIRES/quantum_comm/network/quantum_repeater.py", description: "Research and design of quantum repeaters.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-102", docId: "GQOIS-QSCI-DOC-102", path: "Q-SCIRES/quantum_comm/network/entanglement_distribution.py", description: "Protocols for entanglement distribution.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-103", docId: "GQOIS-QSCI-DOC-103", path: "Q-SCIRES/quantum_comm/network/quantum_router.py", description: "Design of a quantum router.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-104", docId: "GQOIS-QSCI-DOC-104", path: "Q-SCIRES/quantum_comm/network/quantum_internet.py", description: "Architectural design for a quantum internet.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-105", docId: "GQOIS-QSCI-DOC-105", path: "Q-SCIRES/quantum_comm/satellite/space_qkd.py", description: "Research on satellite-based QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-106", docId: "GQOIS-QSCI-DOC-106", path: "Q-SCIRES/quantum_comm/satellite/ground_station.py", description: "Design of optical ground stations for space QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-107", docId: "GQOIS-QSCI-DOC-107", path: "Q-SCIRES/quantum_comm/satellite/atmospheric_effects.py", description: "Modeling of atmospheric effects on space QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-108", docId: "GQOIS-QSCI-DOC-108", path: "Q-SCIRES/quantum_comm/fiber/quantum_fiber.py", description: "Research on quantum communication over optical fiber.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-109", docId: "GQOIS-QSCI-DOC-109", path: "Q-SCIRES/quantum_comm/fiber/loss_compensation.py", description: "Techniques for loss compensation in fiber.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-110", docId: "GQOIS-QSCI-DOC-110", path: "Q-SCIRES/quantum_comm/sources/entangled_photons.py", description: "Development of entangled photon sources.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-111", docId: "GQOIS-QSCI-DOC-111", path: "Q-SCIRES/quantum_comm/sources/single_photon_source.py", description: "Development of single-photon sources.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-112", docId: "GQOIS-QSCI-DOC-112", path: "Q-SCIRES/quantum_comm/detectors/superconducting_detector.py", description: "Research on superconducting nanowire single-photon detectors (SNSPDs).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-113", docId: "GQOIS-QSCI-DOC-113", path: "Q-SCIRES/quantum_comm/detectors/avalanche_photodiode.py", description: "Research on avalanche photodiodes (APDs).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-114", docId: "GQOIS-QSCI-DOC-114", path: "Q-SCIRES/quantum_comm/security/authentication.py", description: "Authentication protocols for QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-115", docId: "GQOIS-QSCI-DOC-115", path: "Q-SCIRES/quantum_comm/security/privacy_amplification.py", description: "Privacy amplification protocols for QKD.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-116", docId: "GQOIS-QSCI-DOC-116", path: "Q-SCIRES/quantum_comm/applications/secure_aerospace.py", description: "Application of QKD for secure aerospace communications.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-117", docId: "GQOIS-QSCI-DOC-117", path: "Q-SCIRES/quantum_comm/applications/distributed_computing.py", description: "Application of quantum networks for distributed quantum computing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-118", docId: "GQOIS-QSCI-DOC-118", path: "Q-SCIRES/quantum_comm/testing/channel_characterization.py", description: "Characterization of quantum communication channels.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-119", docId: "GQOIS-QSCI-DOC-119", path: "Q-SCIRES/quantum_comm/testing/security_validation.py", description: "Validation of QKD security against eavesdropping attacks.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-120", docId: "GQOIS-QSCI-DOC-120", path: "Q-SCIRES/quantum_comm/config/network_topology.yaml", description: "Configuration file for the quantum network topology.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-121", docId: "GQOIS-QSCI-DOC-121", path: "Q-SCIRES/quantum_comm/config/qkd_parameters.yaml", description: "Configuration file for QKD system parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-122", docId: "GQOIS-QSCI-DOC-122", path: "Q-SCIRES/quantum_comm/docs/protocols_guide.md", description: "Guide to QKD protocols.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-123", docId: "GQOIS-QSCI-DOC-123", path: "Q-SCIRES/quantum_comm/docs/implementation_manual.md", description: "Implementation manual for quantum communication systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-124", docId: "GQOIS-QSCI-DOC-124", path: "Q-SCIRES/quantum_comm/docs/security_analysis.md", description: "Security analysis of the QKD implementation.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-125", docId: "GQOIS-QSCI-DOC-125", path: "Q-SCIRES/quantum_comm/docs/deployment_guide.md", description: "Deployment guide for quantum communication networks.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-126", docId: "GQOIS-QSCI-DOC-126", path: "Q-SCIRES/quantum_materials/README.md", description: "README for the quantum materials research module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-127", docId: "GQOIS-QSCI-DOC-127", path: "Q-SCIRES/quantum_materials/superconductors/high_tc.py", description: "Research on high-temperature superconductors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-128", docId: "GQOIS-QSCI-DOC-128", path: "Q-SCIRES/quantum_materials/superconductors/iron_based.py", description: "Research on iron-based superconductors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-129", docId: "GQOIS-QSCI-DOC-129", path: "Q-SCIRES/quantum_materials/superconductors/josephson_materials.py", description: "Research on materials for Josephson junctions.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-130", docId: "GQOIS-QSCI-DOC-130", path: "Q-SCIRES/quantum_materials/topological/insulators.py", description: "Research on topological insulators.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-131", docId: "GQOIS-QSCI-DOC-131", path: "Q-SCIRES/quantum_materials/topological/semimetals.py", description: "Research on topological semi-metals (e.g., Weyl, Dirac).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-132", docId: "GQOIS-QSCI-DOC-132", path: "Q-SCIRES/quantum_materials/topological/superconductors.py", description: "Research on topological superconductors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-133", docId: "GQOIS-QSCI-DOC-133", path: "Q-SCIRES/quantum_materials/2d_materials/graphene.py", description: "Research on graphene and its properties.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-134", docId: "GQOIS-QSCI-DOC-134", path: "Q-SCIRES/quantum_materials/2d_materials/transition_metal.py", description: "Research on transition metal dichalcogenides (TMDs).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-135", docId: "GQOIS-QSCI-DOC-135", path: "Q-SCIRES/quantum_materials/2d_materials/heterostructures.py", description: "Research on van der Waals heterostructures.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-136", docId: "GQOIS-QSCI-DOC-136", path: "Q-SCIRES/quantum_materials/quantum_dots/colloidal.py", description: "Research on colloidal quantum dots.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-137", docId: "GQOIS-QSCI-DOC-137", path: "Q-SCIRES/quantum_materials/quantum_dots/self_assembled.py", description: "Research on self-assembled quantum dots.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-138", docId: "GQOIS-QSCI-DOC-138", path: "Q-SCIRES/quantum_materials/defects/nv_centers.py", description: "Research on creating and controlling NV-centers in diamond.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-139", docId: "GQOIS-QSCI-DOC-139", path: "Q-SCIRES/quantum_materials/defects/silicon_vacancy.py", description: "Research on silicon-vacancy (SiV) centers.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-140", docId: "GQOIS-QSCI-DOC-140", path: "Q-SCIRES/quantum_materials/characterization/spectroscopy.py", description: "Spectroscopic characterization of quantum materials.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-141", docId: "GQOIS-QSCI-DOC-141", path: "Q-SCIRES/quantum_materials/characterization/microscopy.py", description: "Microscopic characterization of quantum materials (e.g., STM, AFM).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-142", docId: "GQOIS-QSCI-DOC-142", path: "Q-SCIRES/quantum_materials/fabrication/epitaxy.py", description: "Fabrication of quantum materials using molecular beam epitaxy (MBE).", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-143", docId: "GQOIS-QSCI-DOC-143", path: "Q-SCIRES/quantum_materials/fabrication/lithography.py", description: "Nanofabrication using electron-beam lithography.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-144", docId: "GQOIS-QSCI-DOC-144", path: "Q-SCIRES/quantum_materials/applications/aerospace_materials.py", description: "Applications of quantum materials in aerospace.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-145", docId: "GQOIS-QSCI-DOC-145", path: "Q-SCIRES/quantum_materials/testing/material_testing.py", description: "Protocols for testing quantum materials.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-146", docId: "GQOIS-QSCI-DOC-146", path: "Q-SCIRES/quantum_materials/config/material_database.yaml", description: "Database of quantum material properties.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-147", docId: "GQOIS-QSCI-DOC-147", path: "Q-SCIRES/quantum_materials/docs/materials_guide.md", description: "Guide to quantum materials.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-148", docId: "GQOIS-QSCI-DOC-148", path: "Q-SCIRES/quantum_materials/docs/fabrication_manual.md", description: "Manual for quantum material fabrication.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-149", docId: "GQOIS-QSCI-DOC-149", path: "Q-SCIRES/quantum_materials/docs/characterization_guide.md", description: "Guide to material characterization techniques.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-150", docId: "GQOIS-QSCI-DOC-150", path: "Q-SCIRES/quantum_materials/docs/applications_overview.md", description: "Overview of applications for quantum materials.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-151", docId: "GQOIS-QSCI-DOC-151", path: "Q-SCIRES/quantum_testing/README.md", description: "README for the quantum testing infrastructure module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-152", docId: "GQOIS-QSCI-DOC-152", path: "Q-SCIRES/quantum_testing/laboratories/clean_room.py", description: "Protocols for clean room operation.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-153", docId: "GQOIS-QSCI-DOC-153", path: "Q-SCIRES/quantum_testing/laboratories/cryogenic_lab.py", description: "Protocols for the cryogenic laboratory.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-154", docId: "GQOIS-QSCI-DOC-154", path: "Q-SCIRES/quantum_testing/laboratories/optics_lab.py", description: "Protocols for the quantum optics laboratory.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-155", docId: "GQOIS-QSCI-DOC-155", path: "Q-SCIRES/quantum_testing/equipment/measurement_systems.py", description: "Software for controlling measurement systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-156", docId: "GQOIS-QSCI-DOC-156", path: "Q-SCIRES/quantum_testing/equipment/control_electronics.py", description: "Software for controlling custom electronics.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-157", docId: "GQOIS-QSCI-DOC-157", path: "Q-SCIRES/quantum_testing/equipment/rf_systems.py", description: "Software for controlling RF systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-158", docId: "GQOIS-QSCI-DOC-158", path: "Q-SCIRES/quantum_testing/protocols/sensor_testing.py", description: "Standard protocols for testing quantum sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-159", docId: "GQOIS-QSCI-DOC-159", path: "Q-SCIRES/quantum_testing/protocols/qubit_testing.py", description: "Standard protocols for testing qubits.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-160", docId: "GQOIS-QSCI-DOC-160", path: "Q-SCIRES/quantum_testing/protocols/system_integration.py", description: "Protocols for integrated system testing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-161", docId: "GQOIS-QSCI-DOC-161", path: "Q-SCIRES/quantum_testing/calibration/standard_references.py", description: "Use of standard references for calibration.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-162", docId: "GQOIS-QSCI-DOC-162", path: "Q-SCIRES/quantum_testing/calibration/traceability.py", description: "Procedures for ensuring measurement traceability.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-163", docId: "GQOIS-QSCI-DOC-163", path: "Q-SCIRES/quantum_testing/environmental/vibration_isolation.py", description: "Vibration isolation systems and protocols.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-164", docId: "GQOIS-QSCI-DOC-164", path: "Q-SCIRES/quantum_testing/environmental/magnetic_shielding.py", description: "Magnetic shielding systems and protocols.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-165", docId: "GQOIS-QSCI-DOC-165", path: "Q-SCIRES/quantum_testing/environmental/thermal_control.py", description: "High-precision thermal control systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-166", docId: "GQOIS-QSCI-DOC-166", path: "Q-SCIRES/quantum_testing/data/acquisition_systems.py", description: "Data acquisition (DAQ) systems for testing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-167", docId: "GQOIS-QSCI-DOC-167", path: "Q-SCIRES/quantum_testing/data/real_time_processing.py", description: "Real-time processing of test data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-168", docId: "GQOIS-QSCI-DOC-168", path: "Q-SCIRES/quantum_testing/data/analysis_pipeline.py", description: "Data analysis pipeline for test results.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-169", docId: "GQOIS-QSCI-DOC-169", path: "Q-SCIRES/quantum_testing/automation/test_automation.py", description: "Framework for automating quantum tests.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-170", docId: "GQOIS-QSCI-DOC-170", path: "Q-SCIRES/quantum_testing/automation/scheduling_system.py", description: "System for scheduling automated tests.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-171", docId: "GQOIS-QSCI-DOC-171", path: "Q-SCIRES/quantum_testing/validation/certification_tests.py", description: "Test plans for certification of quantum components.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-172", docId: "GQOIS-QSCI-DOC-172", path: "Q-SCIRES/quantum_testing/validation/aerospace_standards.py", description: "Adherence to aerospace standards in testing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-173", docId: "GQOIS-QSCI-DOC-173", path: "Q-SCIRES/quantum_testing/safety/laser_safety.py", description: "Laser safety protocols for labs.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-174", docId: "GQOIS-QSCI-DOC-174", path: "Q-SCIRES/quantum_testing/safety/cryogenic_safety.py", description: "Cryogenic safety protocols for labs.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-175", docId: "GQOIS-QSCI-DOC-175", path: "Q-SCIRES/quantum_testing/config/lab_configuration.yaml", description: "Configuration file for laboratory setups.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-176", docId: "GQOIS-QSCI-DOC-176", path: "Q-SCIRES/quantum_testing/config/equipment_specs.yaml", description: "Specification file for lab equipment.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-177", docId: "GQOIS-QSCI-DOC-177", path: "Q-SCIRES/quantum_testing/docs/lab_manual.md", description: "The master laboratory manual.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-178", docId: "GQOIS-QSCI-DOC-178", path: "Q-SCIRES/quantum_testing/docs/safety_procedures.md", description: "Compiled safety procedures for all labs.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-179", docId: "GQOIS-QSCI-DOC-179", path: "Q-SCIRES/quantum_testing/docs/test_protocols.md", description: "Compiled manual of all test protocols.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-180", docId: "GQOIS-QSCI-DOC-180", path: "Q-SCIRES/quantum_testing/docs/certification_guide.md", description: "Guide to certifying quantum components.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-181", docId: "GQOIS-QSCI-DOC-181", path: "Q-SCIRES/quantum_algorithms/README.md", description: "README for the quantum algorithms and applications module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-182", docId: "GQOIS-QSCI-DOC-182", path: "Q-SCIRES/quantum_algorithms/optimization/vqe_aerospace.py", description: "Application of VQE to aerospace problems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-183", docId: "GQOIS-QSCI-DOC-183", path: "Q-SCIRES/quantum_algorithms/optimization/qaoa_routing.py", description: "Application of QAOA to aerospace routing problems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-184", docId: "GQOIS-QSCI-DOC-184", path: "Q-SCIRES/quantum_algorithms/optimization/quantum_annealing.py", description: "Application of quantum annealing to aerospace problems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-185", docId: "GQOIS-QSCI-DOC-185", path: "Q-SCIRES/quantum_algorithms/machine_learning/qnn_design.py", description: "Design of Quantum Neural Networks for aerospace data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-186", docId: "GQOIS-QSCI-DOC-186", path: "Q-SCIRES/quantum_algorithms/machine_learning/quantum_kernel.py", description: "Application of quantum kernel methods to aerospace data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-187", docId: "GQOIS-QSCI-DOC-187", path: "Q-SCIRES/quantum_algorithms/machine_learning/variational_classifier.py", description: "Application of variational classifiers to aerospace data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-188", docId: "GQOIS-QSCI-DOC-188", path: "Q-SCIRES/quantum_algorithms/simulation/material_simulation.py", description: "Quantum simulation of new aerospace materials.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-189", docId: "GQOIS-QSCI-DOC-189", path: "Q-SCIRES/quantum_algorithms/simulation/chemistry_simulation.py", description: "Quantum simulation of combustion and fuel chemistry.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-190", docId: "GQOIS-QSCI-DOC-190", path: "Q-SCIRES/quantum_algorithms/simulation/aerospace_dynamics.py", description: "Quantum simulation of complex aerospace dynamics.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-191", docId: "GQOIS-QSCI-DOC-191", path: "Q-SCIRES/quantum_algorithms/cryptography/post_quantum.py", description: "Research on post-quantum cryptographic algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-192", docId: "GQOIS-QSCI-DOC-192", path: "Q-SCIRES/quantum_algorithms/cryptography/lattice_based.py", description: "Research on lattice-based cryptography.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-193", docId: "GQOIS-QSCI-DOC-193", path: "Q-SCIRES/quantum_algorithms/error_mitigation/zero_noise_extrapolation.py", description: "Zero-noise extrapolation error mitigation technique.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-194", docId: "GQOIS-QSCI-DOC-194", path: "Q-SCIRES/quantum_algorithms/error_mitigation/probabilistic_cancellation.py", description: "Probabilistic error cancellation mitigation technique.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-195", docId: "GQOIS-QSCI-DOC-195", path: "Q-SCIRES/quantum_algorithms/hybrid/variational_quantum.py", description: "General framework for variational quantum algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-196", docId: "GQOIS-QSCI-DOC-196", path: "Q-SCIRES/quantum_algorithms/hybrid/quantum_classical_hybrid.py", description: "Framework for hybrid quantum-classical algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-197", docId: "GQOIS-QSCI-DOC-197", path: "Q-SCIRES/quantum_algorithms/applications/flight_optimization.py", description: "Application of quantum algorithms to flight optimization.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-198", docId: "GQOIS-QSCI-DOC-198", path: "Q-SCIRES/quantum_algorithms/applications/structural_analysis.py", description: "Application of quantum algorithms to structural analysis.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-199", docId: "GQOIS-QSCI-DOC-199", path: "Q-SCIRES/quantum_algorithms/benchmarking/algorithm_benchmarks.py", description: "Benchmarks for comparing quantum algorithm performance.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-200", docId: "GQOIS-QSCI-DOC-200", path: "Q-SCIRES/quantum_algorithms/config/algorithm_params.yaml", description: "Configuration file for quantum algorithm parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-201", docId: "GQOIS-QSCI-DOC-201", path: "Q-SCIRES/quantum_algorithms/docs/algorithm_guide.md", description: "Guide to the implemented quantum algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-202", docId: "GQOIS-QSCI-DOC-202", path: "Q-SCIRES/quantum_algorithms/docs/implementation_examples.md", description: "Examples of how to implement the quantum algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-203", docId: "GQOIS-QSCI-DOC-203", path: "Q-SCIRES/quantum_algorithms/docs/performance_analysis.md", description: "Performance analysis of the quantum algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-204", docId: "GQOIS-QSCI-DOC-204", path: "Q-SCIRES/quantum_algorithms/docs/aerospace_applications.md", description: "Document on aerospace applications of quantum algorithms.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-205", docId: "GQOIS-QSCI-DOC-205", path: "Q-SCIRES/quantum_algorithms/docs/future_directions.md", description: "Document on future research directions.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-206", docId: "GQOIS-QSCI-DOC-206", path: "Q-SCIRES/integration/README.md", description: "README for the system integration module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-207", docId: "GQOIS-QSCI-DOC-207", path: "Q-SCIRES/integration/aerospace_integration.py", description: "Master script for integrating quantum research into aerospace systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-208", docId: "GQOIS-QSCI-DOC-208", path: "Q-SCIRES/integration/system_interfaces.py", description: "Definition of interfaces between quantum and classical systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-209", docId: "GQOIS-QSCI-DOC-209", path: "Q-SCIRES/integration/data_pipelines.py", description: "Data pipelines for quantum research data.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-210", docId: "GQOIS-QSCI-DOC-210", path: "Q-SCIRES/integration/quantum_classical_bridge.py", description: "The software bridge between quantum and classical computers.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-211", docId: "GQOIS-QSCI-DOC-211", path: "Q-SCIRES/digital_twin_quantum/README.md", description: "README for the quantum digital twin module.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-212", docId: "GQOIS-QSCI-DOC-212", path: "Q-SCIRES/digital_twin_quantum/models/quantum_system_model.py", description: "Digital twin model of a quantum system.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-213", docId: "GQOIS-QSCI-DOC-213", path: "Q-SCIRES/digital_twin_quantum/simulation/quantum_simulation.py", description: "Simulation of quantum systems within the digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-214", docId: "GQOIS-QSCI-DOC-214", path: "Q-SCIRES/digital_twin_quantum/optimization/quantum_optimization.py", description: "Optimization of a quantum system using its digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-215", docId: "GQOIS-QSCI-DOC-215", path: "Q-SCIRES/digital_twin_quantum/analytics/quantum_analytics.py", description: "Analytics for quantum system performance.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-216", docId: "GQOIS-QSCI-DOC-216", path: "Q-SCIRES/docs/quantum_research_overview.md", description: "Compiled overview of quantum research.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-217", docId: "GQOIS-QSCI-DOC-217", path: "Q-SCIRES/docs/sensor_technology_guide.md", description: "Compiled guide to quantum sensor technology.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-218", docId: "GQOIS-QSCI-DOC-218", path: "Q-SCIRES/docs/quantum_computing_manual.md", description: "Compiled manual for quantum computing.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-219", docId: "GQOIS-QSCI-DOC-219", path: "Q-SCIRES/docs/quantum_comm_handbook.md", description: "Compiled handbook for quantum communications.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-220", docId: "GQOIS-QSCI-DOC-220", path: "Q-SCIRES/docs/materials_research_report.md", description: "Compiled report on quantum materials research.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-221", docId: "GQOIS-QSCI-DOC-221", path: "Q-SCIRES/docs/testing_infrastructure_guide.md", description: "Compiled guide to the quantum testing infrastructure.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-222", docId: "GQOIS-QSCI-DOC-222", path: "Q-SCIRES/docs/algorithm_applications_manual.md", description: "Compiled manual on quantum algorithm applications.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-223", docId: "GQOIS-QSCI-DOC-223", path: "Q-SCIRES/docs/integration_handbook.md", description: "Compiled handbook for systems integration.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-224", docId: "GQOIS-QSCI-DOC-224", path: "Q-SCIRES/docs/research_publications.md", description: "List of research publications from the division.", division: "Q-UNKNOWN" },
+  { promptId: "QSCI-P-225", docId: "GQOIS-QSCI-DOC-225", path: "Q-SCIRES/docs/release_notes_v1.0.md", description: "Release notes for version 1.0 of the Q-SCIRES module.],", division: "Q-UNKNOWN" },
   "Q-SPACE": [Prompt ID	Doc ID	Unified Project Tree Path	Brief Description
-QSPACE-P-001	GQOIS-QSPACE-DOC-001	Q-SPACE/README.md	Main README for the Q-SPACE division.
-QSPACE-P-002	GQOIS-QSPACE-DOC-002	Q-SPACE/ORBITAL_SYSTEMS_OVERVIEW.md	Overview of orbital and suborbital systems.
-QSPACE-P-003	GQOIS-QSPACE-DOC-003	Q-SPACE/LICENSE	Software license for the Q-SPACE division.
-QSPACE-P-004	GQOIS-QSPACE-DOC-004	Q-SPACE/ARCHITECTURE.md	High-level architecture of space systems.
-QSPACE-P-005	GQOIS-QSPACE-DOC-005	Q-SPACE/QUANTUM_INTEGRATION.md	Plan for integrating quantum technologies into space systems.
-QSPACE-P-006	GQOIS-QSPACE-DOC-006	Q-SPACE/API_REFERENCE.md	API reference for space systems software.
-QSPACE-P-007	GQOIS-QSPACE-DOC-007	Q-SPACE/SAFETY_STANDARDS.md	Safety standards for space operations.
-QSPACE-P-008	GQOIS-QSPACE-DOC-008	Q-SPACE/INTERNATIONAL_COMPLIANCE.md	Compliance with international space treaties and regulations.
-QSPACE-P-009	GQOIS-QSPACE-DOC-009	Q-SPACE/.gitignore	Git ignore file for the Q-SPACE repository.
-QSPACE-P-010	GQOIS-QSPACE-DOC-010	Q-SPACE/requirements.txt	Python package requirements for space systems software.
-QSPACE-P-011	GQOIS-QSPACE-DOC-011	Q-SPACE/environment.yml	Conda environment configuration.
-QSPACE-P-012	GQOIS-QSPACE-DOC-012	Q-SPACE/docker-compose.yml	Docker Compose for deploying space operation services.
-QSPACE-P-013	GQOIS-QSPACE-DOC-013	Q-SPACE/ROADMAP.md	Development roadmap for the Q-SPACE division.
-QSPACE-P-014	GQOIS-QSPACE-DOC-014	Q-SPACE/GLOSSARY.md	Glossary of terms for the Q-SPACE division.
-QSPACE-P-015	GQOIS-QSPACE-DOC-015	Q-SPACE/FAQ.md	Frequently Asked Questions for the Q-SPACE division.
-QSPACE-P-016	GQOIS-QSPACE-DOC-016	Q-SPACE/ssa/README.md	README for the Space Situational Awareness (SSA) module.
-QSPACE-P-017	GQOIS-QSPACE-DOC-017	Q-SPACE/ssa/tracking/radar_systems.py	Software for controlling ground-based radar systems.
-QSPACE-P-018	GQOIS-QSPACE-DOC-018	Q-SPACE/ssa/tracking/optical_tracking.py	Software for controlling optical tracking telescopes.
-QSPACE-P-019	GQOIS-QSPACE-DOC-019	Q-SPACE/ssa/tracking/quantum_radar.py	Software and algorithms for the quantum radar system.
-QSPACE-P-020	GQOIS-QSPACE-DOC-020	Q-SPACE/ssa/tracking/sensor_fusion.py	Sensor fusion algorithms for combining tracking data.
-QSPACE-P-021	GQOIS-QSPACE-DOC-021	Q-SPACE/ssa/catalog/object_database.py	Database management for the space object catalog.
-QSPACE-P-022	GQOIS-QSPACE-DOC-022	Q-SPACE/ssa/catalog/orbit_determination.py	Algorithms for orbit determination.
-QSPACE-P-023	GQOIS-QSPACE-DOC-023	Q-SPACE/ssa/catalog/uncertainty_propagation.py	Algorithms for orbit uncertainty propagation.
-QSPACE-P-024	GQOIS-QSPACE-DOC-024	Q-SPACE/ssa/debris/debris_tracking.py	Algorithms specifically for tracking space debris.
-QSPACE-P-025	GQOIS-QSPACE-DOC-025	Q-SPACE/ssa/debris/fragmentation_model.py	Model for simulating debris fragmentation events.
-QSPACE-P-026	GQOIS-QSPACE-DOC-026	Q-SPACE/ssa/debris/mitigation_strategies.py	Strategies for space debris mitigation.
-QSPACE-P-027	GQOIS-QSPACE-DOC-027	Q-SPACE/ssa/collision/conjunction_analysis.py	Conjunction analysis for collision probability assessment.
-QSPACE-P-028	GQOIS-QSPACE-DOC-028	Q-SPACE/ssa/collision/probability_calc.py	Calculation of collision probabilities.
-QSPACE-P-029	GQOIS-QSPACE-DOC-029	Q-SPACE/ssa/collision/avoidance_maneuver.py	Planning of collision avoidance maneuvers.
-QSPACE-P-030	GQOIS-QSPACE-DOC-030	Q-SPACE/ssa/collision/quantum_optimization.py	Quantum optimization of avoidance maneuvers.
-QSPACE-P-031	GQOIS-QSPACE-DOC-031	Q-SPACE/ssa/weather/space_weather_monitor.py	System for monitoring space weather.
-QSPACE-P-032	GQOIS-QSPACE-DOC-032	Q-SPACE/ssa/weather/solar_activity.py	Monitoring and prediction of solar activity.
-QSPACE-P-033	GQOIS-QSPACE-DOC-033	Q-SPACE/ssa/weather/radiation_environment.py	Modeling the space radiation environment.
-QSPACE-P-034	GQOIS-QSPACE-DOC-034	Q-SPACE/ssa/data/data_processing.py	Data processing pipeline for SSA data.
-QSPACE-P-035	GQOIS-QSPACE-DOC-035	Q-SPACE/ssa/data/real_time_fusion.py	Real-time fusion of SSA data from multiple sources.
-QSPACE-P-036	GQOIS-QSPACE-DOC-036	Q-SPACE/ssa/data/ml_classification.py	ML models for classifying space objects.
-QSPACE-P-037	GQOIS-QSPACE-DOC-037	Q-SPACE/ssa/visualization/3d_visualization.py	3D visualization tool for the orbital environment.
-QSPACE-P-038	GQOIS-QSPACE-DOC-038	Q-SPACE/ssa/visualization/threat_assessment.py	Visualization of collision threats.
-QSPACE-P-039	GQOIS-QSPACE-DOC-039	Q-SPACE/ssa/visualization/real_time_display.py	Real-time display for SSA operations.
-QSPACE-P-040	GQOIS-QSPACE-DOC-040	Q-SPACE/ssa/integration/ground_network.py	Integration with the ground station network.
-QSPACE-P-041	GQOIS-QSPACE-DOC-041	Q-SPACE/ssa/integration/satellite_sensors.py	Integration with on-orbit satellite sensors.
-QSPACE-P-042	GQOIS-QSPACE-DOC-042	Q-SPACE/ssa/config/sensor_network.yaml	Configuration file for the SSA sensor network.
-QSPACE-P-043	GQOIS-QSPACE-DOC-043	Q-SPACE/ssa/config/tracking_params.yaml	Configuration file for object tracking parameters.
-QSPACE-P-044	GQOIS-QSPACE-DOC-044	Q-SPACE/ssa/docs/operations_manual.md	Operations manual for the SSA system.
-QSPACE-P-045	GQOIS-QSPACE-DOC-045	Q-SPACE/ssa/docs/data_sharing_protocol.md	Protocol for sharing SSA data with partners.
-QSPACE-P-046	GQOIS-QSPACE-DOC-046	Q-SPACE/sts/README.md	README for the Space Transportation Systems (STS) module.
-QSPACE-P-047	GQOIS-QSPACE-DOC-047	Q-SPACE/sts/launch/trajectory_design.py	Design of launch trajectories.
-QSPACE-P-048	GQOIS-QSPACE-DOC-048	Q-SPACE/sts/launch/launch_window.py	Calculation of launch windows.
-QSPACE-P-049	GQOIS-QSPACE-DOC-049	Q-SPACE/sts/launch/range_safety.py	Range safety analysis tools.
-QSPACE-P-050	GQOIS-QSPACE-DOC-050	Q-SPACE/sts/launch/weather_constraints.py	Analysis of weather constraints for launch.
-QSPACE-P-051	GQOIS-QSPACE-DOC-051	Q-SPACE/sts/propulsion/electric_propulsion.py	General framework for electric propulsion systems.
-QSPACE-P-052	GQOIS-QSPACE-DOC-052	Q-SPACE/sts/propulsion/ion_thruster.py	Model and control for ion thrusters.
-QSPACE-P-053	GQOIS-QSPACE-DOC-053	Q-SPACE/sts/propulsion/hall_effect.py	Model and control for Hall effect thrusters.
-QSPACE-P-054	GQOIS-QSPACE-DOC-054	Q-SPACE/sts/propulsion/quantum_drive.py	Research and simulation of a conceptual quantum drive.
-QSPACE-P-055	GQOIS-QSPACE-DOC-055	Q-SPACE/sts/navigation/orbital_mechanics.py	Core library for orbital mechanics calculations.
-QSPACE-P-056	GQOIS-QSPACE-DOC-056	Q-SPACE/sts/navigation/deep_space_nav.py	Navigation algorithms for deep space missions.
-QSPACE-P-057	GQOIS-QSPACE-DOC-057	Q-SPACE/sts/navigation/quantum_navigation.py	Quantum-enhanced navigation for space vehicles.
-QSPACE-P-058	GQOIS-QSPACE-DOC-058	Q-SPACE/sts/rendezvous/proximity_ops.py	Algorithms for proximity operations.
-QSPACE-P-059	GQOIS-QSPACE-DOC-059	Q-SPACE/sts/rendezvous/docking_system.py	Software for the automated docking system.
-QSPACE-P-060	GQOIS-QSPACE-DOC-060	Q-SPACE/sts/rendezvous/autonomous_docking.py	Autonomous docking control logic.
-QSPACE-P-061	GQOIS-QSPACE-DOC-061	Q-SPACE/sts/reentry/trajectory_planning.py	Re-entry trajectory planning and optimization.
-QSPACE-P-062	GQOIS-QSPACE-DOC-062	Q-SPACE/sts/reentry/thermal_protection.py	Analysis of the Thermal Protection System (TPS) during re-entry.
-QSPACE-P-063	GQOIS-QSPACE-DOC-063	Q-SPACE/sts/reentry/guidance_control.py	Guidance and control logic for re-entry.
-QSPACE-P-064	GQOIS-QSPACE-DOC-064	Q-SPACE/sts/ground/mission_control.py	Mission control center software.
-QSPACE-P-065	GQOIS-QSPACE-DOC-065	Q-SPACE/sts/ground/telemetry_processing.py	Ground-based telemetry processing.
-QSPACE-P-066	GQOIS-QSPACE-DOC-066	Q-SPACE/sts/ground/command_uplink.py	Ground-based command uplink system.
-QSPACE-P-067	GQOIS-QSPACE-DOC-067	Q-SPACE/sts/config/vehicle_params.yaml	Configuration file for space vehicle parameters.
-QSPACE-P-068	GQOIS-QSPACE-DOC-068	Q-SPACE/sts/config/mission_profile.yaml	Configuration file for mission profiles.
-QSPACE-P-069	GQOIS-QSPACE-DOC-069	Q-SPACE/sts/docs/flight_manual.md	Flight manual for a space transportation system.
-QSPACE-P-070	GQOIS-QSPACE-DOC-070	Q-SPACE/sts/docs/safety_procedures.md	Safety procedures for space transportation.
-QSPACE-P-071	GQOIS-QSPACE-DOC-071	Q-SPACE/autonomy/README.md	README for the satellite autonomy module.
-QSPACE-P-072	GQOIS-QSPACE-DOC-072	Q-SPACE/autonomy/ai/decision_engine.py	AI decision engine for satellite autonomy.
-QSPACE-P-073	GQOIS-QSPACE-DOC-073	Q-SPACE/autonomy/ai/mission_planner.py	Onboard autonomous mission planner.
-QSPACE-P-074	GQOIS-QSPACE-DOC-074	Q-SPACE/autonomy/ai/anomaly_detection.py	Onboard AI for anomaly detection.
-QSPACE-P-075	GQOIS-QSPACE-DOC-075	Q-SPACE/autonomy/ai/resource_optimization.py	Onboard AI for resource optimization (power, data).
-QSPACE-P-076	GQOIS-QSPACE-DOC-076	Q-SPACE/autonomy/ai/quantum_ml.py	Quantum ML models for onboard decision-making.
-QSPACE-P-077	GQOIS-QSPACE-DOC-077	Q-SPACE/autonomy/control/attitude_control.py	Autonomous attitude control system.
-QSPACE-P-078	GQOIS-QSPACE-DOC-078	Q-SPACE/autonomy/control/orbit_maintenance.py	Autonomous orbit maintenance (station-keeping).
-QSPACE-P-079	GQOIS-QSPACE-DOC-079	Q-SPACE/autonomy/control/formation_flying.py	Algorithms for autonomous formation flying.
-QSPACE-P-080	GQOIS-QSPACE-DOC-080	Q-SPACE/autonomy/control/swarm_coordination.py	Coordination algorithms for satellite swarms.
-QSPACE-P-081	GQOIS-QSPACE-DOC-081	Q-SPACE/autonomy/health/fault_detection.py	Onboard fault detection (FDIR).
-QSPACE-P-082	GQOIS-QSPACE-DOC-082	Q-SPACE/autonomy/health/self_repair.py	Onboard self-repair and reconfiguration logic.
-QSPACE-P-083	GQOIS-QSPACE-DOC-083	Q-SPACE/autonomy/health/predictive_maintenance.py	Predictive maintenance for satellite components.
-QSPACE-P-084	GQOIS-QSPACE-DOC-084	Q-SPACE/autonomy/health/quantum_diagnostics.py	Quantum diagnostics for satellite health.
-QSPACE-P-085	GQOIS-QSPACE-DOC-085	Q-SPACE/autonomy/communication/inter_satellite.py	Autonomous inter-satellite communication links.
-QSPACE-P-086	GQOIS-QSPACE-DOC-086	Q-SPACE/autonomy/communication/laser_comm.py	Autonomous laser communication pointing and tracking.
-QSPACE-P-087	GQOIS-QSPACE-DOC-087	Q-SPACE/autonomy/communication/quantum_comm.py	Autonomous quantum communication system.
-QSPACE-P-088	GQOIS-QSPACE-DOC-088	Q-SPACE/autonomy/communication/mesh_network.py	Autonomous mesh networking for satellite constellations.
-QSPACE-P-089	GQOIS-QSPACE-DOC-089	Q-SPACE/autonomy/payload/adaptive_ops.py	Adaptive payload operations based on data.
-QSPACE-P-090	GQOIS-QSPACE-DOC-090	Q-SPACE/autonomy/payload/data_prioritization.py	Onboard data prioritization for downlink.
-QSPACE-P-091	GQOIS-QSPACE-DOC-091	Q-SPACE/autonomy/payload/onboard_processing.py	Onboard data processing and compression.
-QSPACE-P-092	GQOIS-QSPACE-DOC-092	Q-SPACE/autonomy/security/cyber_defense.py	Autonomous cyber defense for satellites.
-QSPACE-P-093	GQOIS-QSPACE-DOC-093	Q-SPACE/autonomy/security/quantum_encryption.py	Autonomous management of quantum encryption keys.
-QSPACE-P-094	GQOIS-QSPACE-DOC-094	Q-SPACE/autonomy/security/intrusion_detection.py	Onboard intrusion detection system.
-QSPACE-P-095	GQOIS-QSPACE-DOC-095	Q-SPACE/autonomy/testing/simulation_env.py	Simulation environment for testing satellite autonomy.
-QSPACE-P-096	GQOIS-QSPACE-DOC-096	Q-SPACE/autonomy/testing/hardware_in_loop.py	HIL testing for satellite autonomy software.
-QSPACE-P-097	GQOIS-QSPACE-DOC-097	Q-SPACE/autonomy/config/ai_parameters.yaml	Configuration file for autonomy AI parameters.
-QSPACE-P-098	GQOIS-QSPACE-DOC-098	Q-SPACE/autonomy/config/control_settings.yaml	Configuration file for autonomous control settings.
-QSPACE-P-099	GQOIS-QSPACE-DOC-099	Q-SPACE/autonomy/docs/autonomy_guide.md	Guide to the satellite autonomy framework.
-QSPACE-P-100	GQOIS-QSPACE-DOC-100	Q-SPACE/autonomy/docs/security_manual.md	Security manual for autonomous satellite operations.
-QSPACE-P-101	GQOIS-QSPACE-DOC-101	Q-SPACE/orbital/README.md	README for the orbital mechanics and mission design module.
-QSPACE-P-102	GQOIS-QSPACE-DOC-102	Q-SPACE/orbital/mechanics/propagator.py	High-precision orbit propagator.
-QSPACE-P-103	GQOIS-QSPACE-DOC-103	Q-SPACE/orbital/mechanics/perturbations.py	Models for orbital perturbations (J2, drag, SRP).
-QSPACE-P-104	GQOIS-QSPACE-DOC-104	Q-SPACE/orbital/mechanics/n_body_problem.py	Solver for the n-body problem.
-QSPACE-P-105	GQOIS-QSPACE-DOC-105	Q-SPACE/orbital/mechanics/quantum_solver.py	Quantum solver for the n-body problem.
-QSPACE-P-106	GQOIS-QSPACE-DOC-106	Q-SPACE/orbital/transfers/hohmann_transfer.py	Calculator for Hohmann transfers.
-QSPACE-P-107	GQOIS-QSPACE-DOC-107	Q-SPACE/orbital/transfers/bi_elliptic.py	Calculator for bi-elliptic transfers.
-QSPACE-P-108	GQOIS-QSPACE-DOC-108	Q-SPACE/orbital/transfers/low_thrust.py	Planner for low-thrust transfers.
-QSPACE-P-109	GQOIS-QSPACE-DOC-109	Q-SPACE/orbital/transfers/gravity_assist.py	Planner for gravity assist maneuvers.
-QSPACE-P-110	GQOIS-QSPACE-DOC-110	Q-SPACE/orbital/optimization/trajectory_opt.py	Trajectory optimization tools.
-QSPACE-P-111	GQOIS-QSPACE-DOC-111	Q-SPACE/orbital/optimization/fuel_optimization.py	Fuel optimization for orbital maneuvers.
-QSPACE-P-112	GQOIS-QSPACE-DOC-112	Q-SPACE/orbital/optimization/quantum_optimizer.py	Quantum optimizer for trajectory design.
-QSPACE-P-113	GQOIS-QSPACE-DOC-113	Q-SPACE/orbital/mission/design_tools.py	General tools for mission design.
-QSPACE-P-114	GQOIS-QSPACE-DOC-114	Q-SPACE/orbital/mission/constellation_design.py	Tools for designing satellite constellations.
-QSPACE-P-115	GQOIS-QSPACE-DOC-115	Q-SPACE/orbital/mission/coverage_analysis.py	Tools for constellation coverage analysis.
-QSPACE-P-116	GQOIS-QSPACE-DOC-116	Q-SPACE/orbital/mission/station_keeping.py	Algorithms for station-keeping maneuvers.
-QSPACE-P-117	GQOIS-QSPACE-DOC-117	Q-SPACE/orbital/config/constants.yaml	Configuration file for physical and astronomical constants.
-QSPACE-P-118	GQOIS-QSPACE-DOC-118	Q-SPACE/orbital/config/mission_params.yaml	Configuration file for mission design parameters.
-QSPACE-P-119	GQOIS-QSPACE-DOC-119	Q-SPACE/orbital/docs/mechanics_guide.md	Guide to the orbital mechanics library.
-QSPACE-P-120	GQOIS-QSPACE-DOC-120	Q-SPACE/orbital/docs/mission_design.md	Guide to the mission design tools.
-QSPACE-P-121	GQOIS-QSPACE-DOC-121	Q-SPACE/environment/README.md	README for the space environment and effects module.
-QSPACE-P-122	GQOIS-QSPACE-DOC-122	Q-SPACE/environment/radiation/models.py	Models of the space radiation environment (e.g., AP8/AE8).
-QSPACE-P-123	GQOIS-QSPACE-DOC-123	Q-SPACE/environment/radiation/shielding_design.py	Tools for designing radiation shielding.
-QSPACE-P-124	GQOIS-QSPACE-DOC-124	Q-SPACE/environment/radiation/effects_analysis.py	Analysis of radiation effects on electronics.
-QSPACE-P-125	GQOIS-QSPACE-DOC-125	Q-SPACE/environment/thermal/thermal_model.py	Model of the space thermal environment.
-QSPACE-P-126	GQOIS-QSPACE-DOC-126	Q-SPACE/environment/thermal/radiator_design.py	Tools for designing spacecraft radiators.
-QSPACE-P-127	GQOIS-QSPACE-DOC-127	Q-SPACE/environment/thermal/mlr_insulation.py	Design tools for Multi-Layer Insulation (MLI).
-QSPACE-P-128	GQOIS-QSPACE-DOC-128	Q-SPACE/environment/atmosphere/drag_model.py	Model for atmospheric drag in LEO.
-QSPACE-P-129	GQOIS-QSPACE-DOC-129	Q-SPACE/environment/atmosphere/density_variation.py	Model for atmospheric density variations.
-QSPACE-P-130	GQOIS-QSPACE-DOC-130	Q-SPACE/environment/micrometeoroid/flux_model.py	Model for micrometeoroid and orbital debris (MMOD) flux.
-QSPACE-P-131	GQOIS-QSPACE-DOC-131	Q-SPACE/environment/micrometeoroid/protection.py	Design tools for MMOD protection.
-QSPACE-P-132	GQOIS-QSPACE-DOC-132	Q-SPACE/environment/magnetic/field_model.py	Model of Earth's magnetic field (e.g., IGRF).
-QSPACE-P-133	GQOIS-QSPACE-DOC-133	Q-SPACE/environment/config/environment_params.yaml	Configuration file for space environment models.
-QSPACE-P-134	GQOIS-QSPACE-DOC-134	Q-SPACE/environment/docs/effects_manual.md	Manual on space environment effects.
-QSPACE-P-135	GQOIS-QSPACE-DOC-135	Q-SPACE/environment/docs/protection_guide.md	Guide to designing protection against space environment effects.
-QSPACE-P-136	GQOIS-QSPACE-DOC-136	Q-SPACE/testing/README.md	README for the testing and ground support module.
-QSPACE-P-137	GQOIS-QSPACE-DOC-137	Q-SPACE/testing/vacuum/chamber_ops.py	Software for operating thermal vacuum (TVAC) chambers.
-QSPACE-P-138	GQOIS-QSPACE-DOC-138	Q-SPACE/testing/vibration/test_profiles.py	Vibration test profiles for launch.
-QSPACE-P-139	GQOIS-QSPACE-DOC-139	Q-SPACE/testing/thermal/cycling_tests.py	Thermal cycling test procedures.
-QSPACE-P-140	GQOIS-QSPACE-DOC-140	Q-SPACE/testing/radiation/test_facility.py	Procedures for using radiation test facilities.
-QSPACE-P-141	GQOIS-QSPACE-DOC-141	Q-SPACE/testing/integration/system_tests.py	Integrated system test ("day in the life") procedures.
-QSPACE-P-142	GQOIS-QSPACE-DOC-142	Q-SPACE/ground_support/tracking_station.py	Software for the ground tracking station.
-QSPACE-P-143	GQOIS-QSPACE-DOC-143	Q-SPACE/ground_support/data_processing.py	Data processing pipeline for ground support.
-QSPACE-P-144	GQOIS-QSPACE-DOC-144	Q-SPACE/testing/config/test_procedures.yaml	Configuration file for test procedures.
-QSPACE-P-145	GQOIS-QSPACE-DOC-145	Q-SPACE/testing/docs/qualification_guide.md	Guide to space qualification testing.
-QSPACE-P-146	GQOIS-QSPACE-DOC-146	Q-SPACE/digital_twin_space/README.md	README for the space systems digital twin module.
-QSPACE-P-147	GQOIS-QSPACE-DOC-147	Q-SPACE/digital_twin_space/models/satellite_model.py	Digital twin model of a satellite.
-QSPACE-P-148	GQOIS-QSPACE-DOC-148	Q-SPACE/digital_twin_space/models/constellation_model.py	Digital twin model of a satellite constellation.
-QSPACE-P-149	GQOIS-QSPACE-DOC-149	Q-SPACE/digital_twin_space/simulation/real_time_sim.py	Real-time simulation of space systems.
-QSPACE-P-150	GQOIS-QSPACE-DOC-150	Q-SPACE/digital_twin_space/analytics/performance_analytics.py	Performance analytics for space systems using the digital twin.
-QSPACE-P-151	GQOIS-QSPACE-DOC-151	Q-SPACE/docs/space_systems_overview.md	Final, compiled overview document for all space systems.
-QSPACE-P-152	GQOIS-QSPACE-DOC-152	Q-SPACE/docs/ssa_operations_manual.md	Final, compiled operations manual for Space Situational Awareness.
-QSPACE-P-153	GQOIS-QSPACE-DOC-153	Q-SPACE/docs/autonomy_handbook.md	Final, compiled handbook for satellite autonomy systems.
-QSPACE-P-154	GQOIS-QSPACE-DOC-154	Q-SPACE/docs/compliance_certification.md	Final, compiled document for space systems compliance and certification.
-QSPACE-P-155	GQOIS-QSPACE-DOC-155	Q-SPACE/docs/release_notes_v1.0.md	Release notes for version 1.0 of the space systems module.]
+  { promptId: "QSPACE-P-001", docId: "GQOIS-QSPACE-DOC-001", path: "Q-SPACE/README.md", description: "Main README for the Q-SPACE division.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-002", docId: "GQOIS-QSPACE-DOC-002", path: "Q-SPACE/ORBITAL_SYSTEMS_OVERVIEW.md", description: "Overview of orbital and suborbital systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-003", docId: "GQOIS-QSPACE-DOC-003", path: "Q-SPACE/LICENSE", description: "Software license for the Q-SPACE division.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-004", docId: "GQOIS-QSPACE-DOC-004", path: "Q-SPACE/ARCHITECTURE.md", description: "High-level architecture of space systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-005", docId: "GQOIS-QSPACE-DOC-005", path: "Q-SPACE/QUANTUM_INTEGRATION.md", description: "Plan for integrating quantum technologies into space systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-006", docId: "GQOIS-QSPACE-DOC-006", path: "Q-SPACE/API_REFERENCE.md", description: "API reference for space systems software.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-007", docId: "GQOIS-QSPACE-DOC-007", path: "Q-SPACE/SAFETY_STANDARDS.md", description: "Safety standards for space operations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-008", docId: "GQOIS-QSPACE-DOC-008", path: "Q-SPACE/INTERNATIONAL_COMPLIANCE.md", description: "Compliance with international space treaties and regulations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-009", docId: "GQOIS-QSPACE-DOC-009", path: "Q-SPACE/.gitignore", description: "Git ignore file for the Q-SPACE repository.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-010", docId: "GQOIS-QSPACE-DOC-010", path: "Q-SPACE/requirements.txt", description: "Python package requirements for space systems software.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-011", docId: "GQOIS-QSPACE-DOC-011", path: "Q-SPACE/environment.yml", description: "Conda environment configuration.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-012", docId: "GQOIS-QSPACE-DOC-012", path: "Q-SPACE/docker-compose.yml", description: "Docker Compose for deploying space operation services.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-013", docId: "GQOIS-QSPACE-DOC-013", path: "Q-SPACE/ROADMAP.md", description: "Development roadmap for the Q-SPACE division.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-014", docId: "GQOIS-QSPACE-DOC-014", path: "Q-SPACE/GLOSSARY.md", description: "Glossary of terms for the Q-SPACE division.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-015", docId: "GQOIS-QSPACE-DOC-015", path: "Q-SPACE/FAQ.md", description: "Frequently Asked Questions for the Q-SPACE division.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-016", docId: "GQOIS-QSPACE-DOC-016", path: "Q-SPACE/ssa/README.md", description: "README for the Space Situational Awareness (SSA) module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-017", docId: "GQOIS-QSPACE-DOC-017", path: "Q-SPACE/ssa/tracking/radar_systems.py", description: "Software for controlling ground-based radar systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-018", docId: "GQOIS-QSPACE-DOC-018", path: "Q-SPACE/ssa/tracking/optical_tracking.py", description: "Software for controlling optical tracking telescopes.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-019", docId: "GQOIS-QSPACE-DOC-019", path: "Q-SPACE/ssa/tracking/quantum_radar.py", description: "Software and algorithms for the quantum radar system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-020", docId: "GQOIS-QSPACE-DOC-020", path: "Q-SPACE/ssa/tracking/sensor_fusion.py", description: "Sensor fusion algorithms for combining tracking data.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-021", docId: "GQOIS-QSPACE-DOC-021", path: "Q-SPACE/ssa/catalog/object_database.py", description: "Database management for the space object catalog.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-022", docId: "GQOIS-QSPACE-DOC-022", path: "Q-SPACE/ssa/catalog/orbit_determination.py", description: "Algorithms for orbit determination.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-023", docId: "GQOIS-QSPACE-DOC-023", path: "Q-SPACE/ssa/catalog/uncertainty_propagation.py", description: "Algorithms for orbit uncertainty propagation.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-024", docId: "GQOIS-QSPACE-DOC-024", path: "Q-SPACE/ssa/debris/debris_tracking.py", description: "Algorithms specifically for tracking space debris.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-025", docId: "GQOIS-QSPACE-DOC-025", path: "Q-SPACE/ssa/debris/fragmentation_model.py", description: "Model for simulating debris fragmentation events.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-026", docId: "GQOIS-QSPACE-DOC-026", path: "Q-SPACE/ssa/debris/mitigation_strategies.py", description: "Strategies for space debris mitigation.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-027", docId: "GQOIS-QSPACE-DOC-027", path: "Q-SPACE/ssa/collision/conjunction_analysis.py", description: "Conjunction analysis for collision probability assessment.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-028", docId: "GQOIS-QSPACE-DOC-028", path: "Q-SPACE/ssa/collision/probability_calc.py", description: "Calculation of collision probabilities.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-029", docId: "GQOIS-QSPACE-DOC-029", path: "Q-SPACE/ssa/collision/avoidance_maneuver.py", description: "Planning of collision avoidance maneuvers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-030", docId: "GQOIS-QSPACE-DOC-030", path: "Q-SPACE/ssa/collision/quantum_optimization.py", description: "Quantum optimization of avoidance maneuvers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-031", docId: "GQOIS-QSPACE-DOC-031", path: "Q-SPACE/ssa/weather/space_weather_monitor.py", description: "System for monitoring space weather.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-032", docId: "GQOIS-QSPACE-DOC-032", path: "Q-SPACE/ssa/weather/solar_activity.py", description: "Monitoring and prediction of solar activity.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-033", docId: "GQOIS-QSPACE-DOC-033", path: "Q-SPACE/ssa/weather/radiation_environment.py", description: "Modeling the space radiation environment.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-034", docId: "GQOIS-QSPACE-DOC-034", path: "Q-SPACE/ssa/data/data_processing.py", description: "Data processing pipeline for SSA data.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-035", docId: "GQOIS-QSPACE-DOC-035", path: "Q-SPACE/ssa/data/real_time_fusion.py", description: "Real-time fusion of SSA data from multiple sources.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-036", docId: "GQOIS-QSPACE-DOC-036", path: "Q-SPACE/ssa/data/ml_classification.py", description: "ML models for classifying space objects.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-037", docId: "GQOIS-QSPACE-DOC-037", path: "Q-SPACE/ssa/visualization/3d_visualization.py", description: "3D visualization tool for the orbital environment.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-038", docId: "GQOIS-QSPACE-DOC-038", path: "Q-SPACE/ssa/visualization/threat_assessment.py", description: "Visualization of collision threats.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-039", docId: "GQOIS-QSPACE-DOC-039", path: "Q-SPACE/ssa/visualization/real_time_display.py", description: "Real-time display for SSA operations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-040", docId: "GQOIS-QSPACE-DOC-040", path: "Q-SPACE/ssa/integration/ground_network.py", description: "Integration with the ground station network.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-041", docId: "GQOIS-QSPACE-DOC-041", path: "Q-SPACE/ssa/integration/satellite_sensors.py", description: "Integration with on-orbit satellite sensors.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-042", docId: "GQOIS-QSPACE-DOC-042", path: "Q-SPACE/ssa/config/sensor_network.yaml", description: "Configuration file for the SSA sensor network.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-043", docId: "GQOIS-QSPACE-DOC-043", path: "Q-SPACE/ssa/config/tracking_params.yaml", description: "Configuration file for object tracking parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-044", docId: "GQOIS-QSPACE-DOC-044", path: "Q-SPACE/ssa/docs/operations_manual.md", description: "Operations manual for the SSA system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-045", docId: "GQOIS-QSPACE-DOC-045", path: "Q-SPACE/ssa/docs/data_sharing_protocol.md", description: "Protocol for sharing SSA data with partners.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-046", docId: "GQOIS-QSPACE-DOC-046", path: "Q-SPACE/sts/README.md", description: "README for the Space Transportation Systems (STS) module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-047", docId: "GQOIS-QSPACE-DOC-047", path: "Q-SPACE/sts/launch/trajectory_design.py", description: "Design of launch trajectories.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-048", docId: "GQOIS-QSPACE-DOC-048", path: "Q-SPACE/sts/launch/launch_window.py", description: "Calculation of launch windows.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-049", docId: "GQOIS-QSPACE-DOC-049", path: "Q-SPACE/sts/launch/range_safety.py", description: "Range safety analysis tools.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-050", docId: "GQOIS-QSPACE-DOC-050", path: "Q-SPACE/sts/launch/weather_constraints.py", description: "Analysis of weather constraints for launch.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-051", docId: "GQOIS-QSPACE-DOC-051", path: "Q-SPACE/sts/propulsion/electric_propulsion.py", description: "General framework for electric propulsion systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-052", docId: "GQOIS-QSPACE-DOC-052", path: "Q-SPACE/sts/propulsion/ion_thruster.py", description: "Model and control for ion thrusters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-053", docId: "GQOIS-QSPACE-DOC-053", path: "Q-SPACE/sts/propulsion/hall_effect.py", description: "Model and control for Hall effect thrusters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-054", docId: "GQOIS-QSPACE-DOC-054", path: "Q-SPACE/sts/propulsion/quantum_drive.py", description: "Research and simulation of a conceptual quantum drive.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-055", docId: "GQOIS-QSPACE-DOC-055", path: "Q-SPACE/sts/navigation/orbital_mechanics.py", description: "Core library for orbital mechanics calculations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-056", docId: "GQOIS-QSPACE-DOC-056", path: "Q-SPACE/sts/navigation/deep_space_nav.py", description: "Navigation algorithms for deep space missions.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-057", docId: "GQOIS-QSPACE-DOC-057", path: "Q-SPACE/sts/navigation/quantum_navigation.py", description: "Quantum-enhanced navigation for space vehicles.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-058", docId: "GQOIS-QSPACE-DOC-058", path: "Q-SPACE/sts/rendezvous/proximity_ops.py", description: "Algorithms for proximity operations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-059", docId: "GQOIS-QSPACE-DOC-059", path: "Q-SPACE/sts/rendezvous/docking_system.py", description: "Software for the automated docking system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-060", docId: "GQOIS-QSPACE-DOC-060", path: "Q-SPACE/sts/rendezvous/autonomous_docking.py", description: "Autonomous docking control logic.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-061", docId: "GQOIS-QSPACE-DOC-061", path: "Q-SPACE/sts/reentry/trajectory_planning.py", description: "Re-entry trajectory planning and optimization.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-062", docId: "GQOIS-QSPACE-DOC-062", path: "Q-SPACE/sts/reentry/thermal_protection.py", description: "Analysis of the Thermal Protection System (TPS) during re-entry.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-063", docId: "GQOIS-QSPACE-DOC-063", path: "Q-SPACE/sts/reentry/guidance_control.py", description: "Guidance and control logic for re-entry.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-064", docId: "GQOIS-QSPACE-DOC-064", path: "Q-SPACE/sts/ground/mission_control.py", description: "Mission control center software.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-065", docId: "GQOIS-QSPACE-DOC-065", path: "Q-SPACE/sts/ground/telemetry_processing.py", description: "Ground-based telemetry processing.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-066", docId: "GQOIS-QSPACE-DOC-066", path: "Q-SPACE/sts/ground/command_uplink.py", description: "Ground-based command uplink system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-067", docId: "GQOIS-QSPACE-DOC-067", path: "Q-SPACE/sts/config/vehicle_params.yaml", description: "Configuration file for space vehicle parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-068", docId: "GQOIS-QSPACE-DOC-068", path: "Q-SPACE/sts/config/mission_profile.yaml", description: "Configuration file for mission profiles.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-069", docId: "GQOIS-QSPACE-DOC-069", path: "Q-SPACE/sts/docs/flight_manual.md", description: "Flight manual for a space transportation system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-070", docId: "GQOIS-QSPACE-DOC-070", path: "Q-SPACE/sts/docs/safety_procedures.md", description: "Safety procedures for space transportation.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-071", docId: "GQOIS-QSPACE-DOC-071", path: "Q-SPACE/autonomy/README.md", description: "README for the satellite autonomy module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-072", docId: "GQOIS-QSPACE-DOC-072", path: "Q-SPACE/autonomy/ai/decision_engine.py", description: "AI decision engine for satellite autonomy.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-073", docId: "GQOIS-QSPACE-DOC-073", path: "Q-SPACE/autonomy/ai/mission_planner.py", description: "Onboard autonomous mission planner.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-074", docId: "GQOIS-QSPACE-DOC-074", path: "Q-SPACE/autonomy/ai/anomaly_detection.py", description: "Onboard AI for anomaly detection.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-075", docId: "GQOIS-QSPACE-DOC-075", path: "Q-SPACE/autonomy/ai/resource_optimization.py", description: "Onboard AI for resource optimization (power, data).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-076", docId: "GQOIS-QSPACE-DOC-076", path: "Q-SPACE/autonomy/ai/quantum_ml.py", description: "Quantum ML models for onboard decision-making.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-077", docId: "GQOIS-QSPACE-DOC-077", path: "Q-SPACE/autonomy/control/attitude_control.py", description: "Autonomous attitude control system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-078", docId: "GQOIS-QSPACE-DOC-078", path: "Q-SPACE/autonomy/control/orbit_maintenance.py", description: "Autonomous orbit maintenance (station-keeping).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-079", docId: "GQOIS-QSPACE-DOC-079", path: "Q-SPACE/autonomy/control/formation_flying.py", description: "Algorithms for autonomous formation flying.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-080", docId: "GQOIS-QSPACE-DOC-080", path: "Q-SPACE/autonomy/control/swarm_coordination.py", description: "Coordination algorithms for satellite swarms.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-081", docId: "GQOIS-QSPACE-DOC-081", path: "Q-SPACE/autonomy/health/fault_detection.py", description: "Onboard fault detection (FDIR).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-082", docId: "GQOIS-QSPACE-DOC-082", path: "Q-SPACE/autonomy/health/self_repair.py", description: "Onboard self-repair and reconfiguration logic.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-083", docId: "GQOIS-QSPACE-DOC-083", path: "Q-SPACE/autonomy/health/predictive_maintenance.py", description: "Predictive maintenance for satellite components.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-084", docId: "GQOIS-QSPACE-DOC-084", path: "Q-SPACE/autonomy/health/quantum_diagnostics.py", description: "Quantum diagnostics for satellite health.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-085", docId: "GQOIS-QSPACE-DOC-085", path: "Q-SPACE/autonomy/communication/inter_satellite.py", description: "Autonomous inter-satellite communication links.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-086", docId: "GQOIS-QSPACE-DOC-086", path: "Q-SPACE/autonomy/communication/laser_comm.py", description: "Autonomous laser communication pointing and tracking.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-087", docId: "GQOIS-QSPACE-DOC-087", path: "Q-SPACE/autonomy/communication/quantum_comm.py", description: "Autonomous quantum communication system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-088", docId: "GQOIS-QSPACE-DOC-088", path: "Q-SPACE/autonomy/communication/mesh_network.py", description: "Autonomous mesh networking for satellite constellations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-089", docId: "GQOIS-QSPACE-DOC-089", path: "Q-SPACE/autonomy/payload/adaptive_ops.py", description: "Adaptive payload operations based on data.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-090", docId: "GQOIS-QSPACE-DOC-090", path: "Q-SPACE/autonomy/payload/data_prioritization.py", description: "Onboard data prioritization for downlink.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-091", docId: "GQOIS-QSPACE-DOC-091", path: "Q-SPACE/autonomy/payload/onboard_processing.py", description: "Onboard data processing and compression.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-092", docId: "GQOIS-QSPACE-DOC-092", path: "Q-SPACE/autonomy/security/cyber_defense.py", description: "Autonomous cyber defense for satellites.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-093", docId: "GQOIS-QSPACE-DOC-093", path: "Q-SPACE/autonomy/security/quantum_encryption.py", description: "Autonomous management of quantum encryption keys.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-094", docId: "GQOIS-QSPACE-DOC-094", path: "Q-SPACE/autonomy/security/intrusion_detection.py", description: "Onboard intrusion detection system.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-095", docId: "GQOIS-QSPACE-DOC-095", path: "Q-SPACE/autonomy/testing/simulation_env.py", description: "Simulation environment for testing satellite autonomy.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-096", docId: "GQOIS-QSPACE-DOC-096", path: "Q-SPACE/autonomy/testing/hardware_in_loop.py", description: "HIL testing for satellite autonomy software.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-097", docId: "GQOIS-QSPACE-DOC-097", path: "Q-SPACE/autonomy/config/ai_parameters.yaml", description: "Configuration file for autonomy AI parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-098", docId: "GQOIS-QSPACE-DOC-098", path: "Q-SPACE/autonomy/config/control_settings.yaml", description: "Configuration file for autonomous control settings.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-099", docId: "GQOIS-QSPACE-DOC-099", path: "Q-SPACE/autonomy/docs/autonomy_guide.md", description: "Guide to the satellite autonomy framework.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-100", docId: "GQOIS-QSPACE-DOC-100", path: "Q-SPACE/autonomy/docs/security_manual.md", description: "Security manual for autonomous satellite operations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-101", docId: "GQOIS-QSPACE-DOC-101", path: "Q-SPACE/orbital/README.md", description: "README for the orbital mechanics and mission design module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-102", docId: "GQOIS-QSPACE-DOC-102", path: "Q-SPACE/orbital/mechanics/propagator.py", description: "High-precision orbit propagator.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-103", docId: "GQOIS-QSPACE-DOC-103", path: "Q-SPACE/orbital/mechanics/perturbations.py", description: "Models for orbital perturbations (J2, drag, SRP).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-104", docId: "GQOIS-QSPACE-DOC-104", path: "Q-SPACE/orbital/mechanics/n_body_problem.py", description: "Solver for the n-body problem.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-105", docId: "GQOIS-QSPACE-DOC-105", path: "Q-SPACE/orbital/mechanics/quantum_solver.py", description: "Quantum solver for the n-body problem.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-106", docId: "GQOIS-QSPACE-DOC-106", path: "Q-SPACE/orbital/transfers/hohmann_transfer.py", description: "Calculator for Hohmann transfers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-107", docId: "GQOIS-QSPACE-DOC-107", path: "Q-SPACE/orbital/transfers/bi_elliptic.py", description: "Calculator for bi-elliptic transfers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-108", docId: "GQOIS-QSPACE-DOC-108", path: "Q-SPACE/orbital/transfers/low_thrust.py", description: "Planner for low-thrust transfers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-109", docId: "GQOIS-QSPACE-DOC-109", path: "Q-SPACE/orbital/transfers/gravity_assist.py", description: "Planner for gravity assist maneuvers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-110", docId: "GQOIS-QSPACE-DOC-110", path: "Q-SPACE/orbital/optimization/trajectory_opt.py", description: "Trajectory optimization tools.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-111", docId: "GQOIS-QSPACE-DOC-111", path: "Q-SPACE/orbital/optimization/fuel_optimization.py", description: "Fuel optimization for orbital maneuvers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-112", docId: "GQOIS-QSPACE-DOC-112", path: "Q-SPACE/orbital/optimization/quantum_optimizer.py", description: "Quantum optimizer for trajectory design.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-113", docId: "GQOIS-QSPACE-DOC-113", path: "Q-SPACE/orbital/mission/design_tools.py", description: "General tools for mission design.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-114", docId: "GQOIS-QSPACE-DOC-114", path: "Q-SPACE/orbital/mission/constellation_design.py", description: "Tools for designing satellite constellations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-115", docId: "GQOIS-QSPACE-DOC-115", path: "Q-SPACE/orbital/mission/coverage_analysis.py", description: "Tools for constellation coverage analysis.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-116", docId: "GQOIS-QSPACE-DOC-116", path: "Q-SPACE/orbital/mission/station_keeping.py", description: "Algorithms for station-keeping maneuvers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-117", docId: "GQOIS-QSPACE-DOC-117", path: "Q-SPACE/orbital/config/constants.yaml", description: "Configuration file for physical and astronomical constants.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-118", docId: "GQOIS-QSPACE-DOC-118", path: "Q-SPACE/orbital/config/mission_params.yaml", description: "Configuration file for mission design parameters.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-119", docId: "GQOIS-QSPACE-DOC-119", path: "Q-SPACE/orbital/docs/mechanics_guide.md", description: "Guide to the orbital mechanics library.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-120", docId: "GQOIS-QSPACE-DOC-120", path: "Q-SPACE/orbital/docs/mission_design.md", description: "Guide to the mission design tools.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-121", docId: "GQOIS-QSPACE-DOC-121", path: "Q-SPACE/environment/README.md", description: "README for the space environment and effects module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-122", docId: "GQOIS-QSPACE-DOC-122", path: "Q-SPACE/environment/radiation/models.py", description: "Models of the space radiation environment (e.g., AP8/AE8).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-123", docId: "GQOIS-QSPACE-DOC-123", path: "Q-SPACE/environment/radiation/shielding_design.py", description: "Tools for designing radiation shielding.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-124", docId: "GQOIS-QSPACE-DOC-124", path: "Q-SPACE/environment/radiation/effects_analysis.py", description: "Analysis of radiation effects on electronics.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-125", docId: "GQOIS-QSPACE-DOC-125", path: "Q-SPACE/environment/thermal/thermal_model.py", description: "Model of the space thermal environment.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-126", docId: "GQOIS-QSPACE-DOC-126", path: "Q-SPACE/environment/thermal/radiator_design.py", description: "Tools for designing spacecraft radiators.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-127", docId: "GQOIS-QSPACE-DOC-127", path: "Q-SPACE/environment/thermal/mlr_insulation.py", description: "Design tools for Multi-Layer Insulation (MLI).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-128", docId: "GQOIS-QSPACE-DOC-128", path: "Q-SPACE/environment/atmosphere/drag_model.py", description: "Model for atmospheric drag in LEO.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-129", docId: "GQOIS-QSPACE-DOC-129", path: "Q-SPACE/environment/atmosphere/density_variation.py", description: "Model for atmospheric density variations.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-130", docId: "GQOIS-QSPACE-DOC-130", path: "Q-SPACE/environment/micrometeoroid/flux_model.py", description: "Model for micrometeoroid and orbital debris (MMOD) flux.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-131", docId: "GQOIS-QSPACE-DOC-131", path: "Q-SPACE/environment/micrometeoroid/protection.py", description: "Design tools for MMOD protection.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-132", docId: "GQOIS-QSPACE-DOC-132", path: "Q-SPACE/environment/magnetic/field_model.py", description: "Model of Earth's magnetic field (e.g., IGRF).", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-133", docId: "GQOIS-QSPACE-DOC-133", path: "Q-SPACE/environment/config/environment_params.yaml", description: "Configuration file for space environment models.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-134", docId: "GQOIS-QSPACE-DOC-134", path: "Q-SPACE/environment/docs/effects_manual.md", description: "Manual on space environment effects.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-135", docId: "GQOIS-QSPACE-DOC-135", path: "Q-SPACE/environment/docs/protection_guide.md", description: "Guide to designing protection against space environment effects.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-136", docId: "GQOIS-QSPACE-DOC-136", path: "Q-SPACE/testing/README.md", description: "README for the testing and ground support module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-137", docId: "GQOIS-QSPACE-DOC-137", path: "Q-SPACE/testing/vacuum/chamber_ops.py", description: "Software for operating thermal vacuum (TVAC) chambers.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-138", docId: "GQOIS-QSPACE-DOC-138", path: "Q-SPACE/testing/vibration/test_profiles.py", description: "Vibration test profiles for launch.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-139", docId: "GQOIS-QSPACE-DOC-139", path: "Q-SPACE/testing/thermal/cycling_tests.py", description: "Thermal cycling test procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-140", docId: "GQOIS-QSPACE-DOC-140", path: "Q-SPACE/testing/radiation/test_facility.py", description: "Procedures for using radiation test facilities.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-141", docId: "GQOIS-QSPACE-DOC-141", path: "Q-SPACE/testing/integration/system_tests.py", description: "Integrated system test ("day in the life") procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-142", docId: "GQOIS-QSPACE-DOC-142", path: "Q-SPACE/ground_support/tracking_station.py", description: "Software for the ground tracking station.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-143", docId: "GQOIS-QSPACE-DOC-143", path: "Q-SPACE/ground_support/data_processing.py", description: "Data processing pipeline for ground support.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-144", docId: "GQOIS-QSPACE-DOC-144", path: "Q-SPACE/testing/config/test_procedures.yaml", description: "Configuration file for test procedures.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-145", docId: "GQOIS-QSPACE-DOC-145", path: "Q-SPACE/testing/docs/qualification_guide.md", description: "Guide to space qualification testing.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-146", docId: "GQOIS-QSPACE-DOC-146", path: "Q-SPACE/digital_twin_space/README.md", description: "README for the space systems digital twin module.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-147", docId: "GQOIS-QSPACE-DOC-147", path: "Q-SPACE/digital_twin_space/models/satellite_model.py", description: "Digital twin model of a satellite.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-148", docId: "GQOIS-QSPACE-DOC-148", path: "Q-SPACE/digital_twin_space/models/constellation_model.py", description: "Digital twin model of a satellite constellation.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-149", docId: "GQOIS-QSPACE-DOC-149", path: "Q-SPACE/digital_twin_space/simulation/real_time_sim.py", description: "Real-time simulation of space systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-150", docId: "GQOIS-QSPACE-DOC-150", path: "Q-SPACE/digital_twin_space/analytics/performance_analytics.py", description: "Performance analytics for space systems using the digital twin.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-151", docId: "GQOIS-QSPACE-DOC-151", path: "Q-SPACE/docs/space_systems_overview.md", description: "Final, compiled overview document for all space systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-152", docId: "GQOIS-QSPACE-DOC-152", path: "Q-SPACE/docs/ssa_operations_manual.md", description: "Final, compiled operations manual for Space Situational Awareness.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-153", docId: "GQOIS-QSPACE-DOC-153", path: "Q-SPACE/docs/autonomy_handbook.md", description: "Final, compiled handbook for satellite autonomy systems.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-154", docId: "GQOIS-QSPACE-DOC-154", path: "Q-SPACE/docs/compliance_certification.md", description: "Final, compiled document for space systems compliance and certification.", division: "Q-UNKNOWN" },
+  { promptId: "QSPACE-P-155", docId: "GQOIS-QSPACE-DOC-155", path: "Q-SPACE/docs/release_notes_v1.0.md", description: "Release notes for version 1.0 of the space systems module.]", division: "Q-UNKNOWN" },
 };
 
 export interface S1000DTable {

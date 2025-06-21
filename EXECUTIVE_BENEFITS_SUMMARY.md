@@ -1,4 +1,18 @@
-# 🚀 Q-AVIOGEN - Resumen Ejecutivo y Beneficios
+# 🚀 ### **¿QUÉ ES Q-AVIOGEN?**
+
+Q-AVIOGEN es la **primera plataforma de IA del mundo** específicamente diseñada para transformar documentación aeroespacial en videos de entrenamiento profesionales con avatares 3D y narración de voz real.
+
+### **🎙️ NUEVO: MRO Podcast Companion**
+**El primer módulo de entrenamiento audio-first del mundo para técnicos MRO**
+
+Revolucionario complemento que convierte procedimientos ATA en **podcasts técnicos inteligentes** para técnicos con las manos ocupadas:
+- 🎧 **Audio-first design**: Perfecto para rampa, hangar y line maintenance
+- 🤖 **IA especializada**: Pronunciación perfecta de terminología aeronáutica
+- 📱 **Offline-first**: Funciona sin conectividad en ubicaciones remotas
+- 🔄 **Sync con Q-AVIOGEN**: Progreso unificado entre video y audio
+- 💰 **Pricing escalable**: €19-149/mes según nivel técnico
+
+### **El Problema que Resolvemos**OGEN - Resumen Ejecutivo y Beneficios
 ## Revolucionando la Documentación Aeroespacial con IA
 
 ---

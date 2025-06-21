@@ -35,6 +35,16 @@
 - ✅ Analytics básicos
 - ✅ Modal de upgrade integrado
 
+#### **🎙️ MRO Podcast Companion** (`website/mro-companion.html`) - **NUEVO 2025**
+- ✅ Primera plataforma mundial de procedimientos ATA en formato podcast
+- ✅ Audio-first training para técnicos MRO con manos ocupadas
+- ✅ IA especializada en terminología aeronáutica
+- ✅ Demo interactivo con player de audio funcional
+- ✅ 3 escenarios realistas: rampa, hangar, turno nocturno
+- ✅ Pricing diferenciado: Basic (€19), Pro (€39), Enterprise (€149)
+- ✅ Bundle con descuento 25% al combinar con Q-AVIOGEN
+- ✅ Landing page especializada con simulador de audio
+
 ### **2. 📚 DOCUMENTACIÓN ESTRATÉGICA COMPLETA**
 
 #### **Estrategia de Negocio:**
